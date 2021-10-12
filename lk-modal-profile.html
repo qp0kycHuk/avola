@@ -1,0 +1,41 @@
+<div class="fancybox-content">
+	<div class="modal-profile card">
+		<div class="lk-modal-plate">
+			<div class="lk-modal-top__title">Редактирование профиля</div>
+		</div>
+		<form class="lk-modal-content">
+			<div class="modal-profile-photo" data-field>
+				<input type="file" id="user-edit-photo">
+				<div class="modal-profile-photo__preview" >
+					<img src="" data-preview alt="">
+				</div>
+				<label for="user-edit-photo" class="modal-profile-photo__link">Добавить фото профиля</label>
+			</div>
+			<div class="lk-modal-fields">
+				<label class="form-field">
+					<div class="form-label">Имя и фамилия</div>
+					<div class="form-input-cover">
+						<input type="text" class="form-input" required>
+					</div>
+				</label>
+				<label class="form-field form-field--error">
+					<div class="form-label">Телефон</div>
+					<div class="form-input-cover">
+						<input type="tel" class="form-input" value="+7 (918) 000 00 00" required>
+					</div>
+					<div class="form-helper">Некорректный номер!</div>
+				</label>
+				<label class="form-field">
+					<div class="form-label">E-mail</div>
+					<div class="form-input-cover">
+						<input type="email" class="form-input" required>
+					</div>
+				</label>
+			</div>
+			<div class="lk-modal-btns">
+				<button class="lk-modal-btn btn btn--primary waves-effect waves-custom">Сохранить</button>
+				<button type="button" class="lk-modal-btn btn btn--primary--light waves-effect waves-custom">Отмена</button>
+			</div>
+		</form>
+	</div>
+</div>
