@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="shortcut icon" type="image/x-icon" href="icon/favicon.ico">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="source/_libs.css">
+	<link rel="stylesheet" href="css/frontend--fonts.css">
+	<link rel="stylesheet" href="css/frontend--style.css">
+
+	<title>Объекты - Сервис Кравченко</title>
+</head>
+
+<body data-theme="dark" class="">
+
+
+
+
+
+
+
+	<header class="lk-header">
+		<a href="/" class="lk-header-logo logo">
+			<div class="logo__img"><img src="img/icons/logo.svg" alt=""></div>
+			<div class="logo__text">
+				Помощь в подборе <br>
+				недвижимости в Москве
+			</div>
+		</a>
+
+		<section class="lk-header__content">
+			<div class="lk-header__btns">
+				<button class="lk-header__btn btn btn--link" data-modal-link="jk-edit-modal">
+					<div class="btn-icon-round">
+						<svg class="btn-icon">
+							<use xlink:href="img/sprite.svg#home-add" />
+						</svg>
+					</div>
+					Добавить объект
+				</button>
+				<button class="lk-header__btn btn btn--link">
+					<div class="btn-icon-round">
+						<svg class="btn-icon">
+							<use xlink:href="img/sprite.svg#user" />
+						</svg>
+					</div>
+					Добавить пользователя
+				</button>
+			</div>
+		</section>
+
+		<div class="header__control">
+			<div class="lk-header__user">
+				<div class="user-control  dropdown">
+					<button class="user-control__btn waves" data-toggle-link="user-control-dropdown">
+						<div class="user-control__arrow"></div>
+						<div class="user-control__img">
+							<img loading="lazy" src="img/test-avatar.png" alt="">
+						</div>
+					</button>
+					<div class="user-control-content card card--l2 dropdown-content" id="user-control-dropdown">
+						<div class="user-control__name">Иван Иванов</div>
+
+						<button class="user-control__logout btn btn--accent--light">Выйти</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<header class="lk-header lk-header-mobile header-mobile">
+		<button class="header-mobile__icon btn" data-toggle-link="lk-sidebar">
+			<svg>
+				<use xlink:href="img/sprite.svg#burger" />
+			</svg>
+		</button>
+
+		<div class="header-mobile__title">Личный кабинет</div>
+		<button class="header-mobile__btn btn btn--contur" data-toggle-link="lk-filter">
+			<svg class="btn-icon">
+				<use xlink:href="img/sprite.svg#filter" />
+			</svg>
+			Фильтр объектов
+		</button>
+	</header>
+
+	<div class="lk-sidebar" data-toggle-cover id="lk-sidebar">
+		<div class="lk-sidebar-content">
+			<div class="lk-sidebar-item waves waves-light" data-toggle-link>
+				<div class="lk-sidebar-item__img"><img src="img/icons/burger.svg" alt=""></div>
+				<div class="lk-sidebar-item__title">Свернуть меню</div>
+
+			</div>
+			<a href="lk-object.html" class="lk-sidebar-item waves waves-light current">
+				<div class="lk-sidebar-item__img"><img src="img/icons/home--white.svg" alt=""></div>
+				<div class="lk-sidebar-item__title">Объекты</div>
+
+			</a>
+			<a href="lk-users.html" class="lk-sidebar-item waves waves-light">
+				<div class="lk-sidebar-item__img"><img src="img/icons/users.svg" alt=""></div>
+				<div class="lk-sidebar-item__title">Пользователи</div>
+				<div class="lk-sidebar-item__count">25</div>
+			</a>
+			<a href="" class="lk-sidebar-item waves waves-light">
+				<div class="lk-sidebar-item__img"><img src="img/icons/search.svg" alt=""></div>
+				<div class="lk-sidebar-item__title">Запросы на подборку</div>
+				<div class="lk-sidebar-item__count">2</div>
+			</a>
+			<a href="" class="lk-sidebar-item waves waves-light">
+				<div class="lk-sidebar-item__img"><img src="img/icons/eye.svg" alt=""></div>
+				<div class="lk-sidebar-item__title">Запросы на просмотр</div>
+
+			</a>
+			<a href="" class="lk-sidebar-item waves waves-light">
+				<div class="lk-sidebar-item__img"><img src="img/icons/doc.svg" alt=""></div>
+				<div class="lk-sidebar-item__title">Запросы на экспертизу</div>
+				<div class="lk-sidebar-item__count">7</div>
+			</a>
+			<a href="" class="lk-sidebar-item waves waves-light">
+				<div class="lk-sidebar-item__img"><img src="img/icons/home-add.svg" alt=""></div>
+				<div class="lk-sidebar-item__title">Запросы на добавление</div>
+				<div class="lk-sidebar-item__count">1</div>
+			</a>
+
+			<a href="" class="lk-sidebar-item waves waves-light">
+				<div class="lk-sidebar-item__img"><img src="img/icons/folders.svg" alt=""></div>
+				<div class="lk-sidebar-item__title">Архив</div>
+
+			</a>
+			<a href="" class="lk-sidebar-item waves waves-light">
+				<div class="lk-sidebar-item__img"><img src="img/icons/logo-abc.svg" alt=""></div>
+				<div class="lk-sidebar-item__title">Команда</div>
+
+			</a>
+			<a href="" class="lk-sidebar-item waves waves-light">
+				<div class="lk-sidebar-item__img"><img src="img/icons/flag.svg" alt=""></div>
+				<div class="lk-sidebar-item__title">Сохраненные подборки</div>
+
+			</a>
+		</div>
+
+	</div>
+
+	<div class="lk-filter" data-toggle-cover id="lk-filter">
+		<div class="lk-filter__content">
+			<div class="lk-filter-link" data-toggle-link>
+				<svg>
+					<use xlink:href="img/sprite.svg#filter" />
+				</svg>
+				<div class="lk-filter-link__title">Свернуть фильтр</div>
+			</div>
+			<div class="lk-filter__form">
+				<div class="lk-filter__title">Фильтр жилья</div>
+				<div class="lk-filter__fields">
+					<label class="form-field form-field--select">
+						<div class="form-label">Жильё</div>
+						<select name="" class="form-input" placeholder="Дом">
+							<option value="Дом">Дом</option>
+							<option value="Не дом" selected>Не дом</option>
+						</select>
+					</label>
+					<label class="form-field form-field--select">
+						<div class="form-label">Тип</div>
+						<select name="" class="form-input" placeholder="Кирпичный">
+							<option value="Кирпичный">Кирпичный</option>
+							<option value="Не кирпичный">Не кирпичный</option>
+						</select>
+					</label>
+					<label class="form-field form-field--select">
+						<div class="form-label">Район</div>
+						<select name="" class="form-input" placeholder="Внуковское">
+							<option value="Внуковское">Внуковское</option>
+							<option value="Дедовское">Дедовское</option>
+							<option selected value="Дедовское 1">Дедовское 1</option>
+							<option value="Дедовское 2">Дедовское 2</option>
+						</select>
+					</label>
+					<label class="form-field form-field--select">
+						<div class="form-label">Метро</div>
+						<select name="" class="form-input" placeholder="Алтуфьево">
+							<option value="Алтуфьево">Алтуфьево</option>
+							<option value="...">...</option>
+						</select>
+					</label>
+
+					<label class="form-field">
+						<div class="form-label">Цена, руб</div>
+						<div class="form-input-group">
+							<input type="number" class="form-input" placeholder="От">
+							<input type="number" class="form-input" placeholder="До">
+						</div>
+					</label>
+					<label class="form-field">
+						<div class="form-label">Площадь дома, м²</div>
+						<div class="form-input-group">
+							<input type="number" class="form-input" placeholder="От">
+							<input type="number" class="form-input" placeholder="До">
+						</div>
+					</label>
+					<label class="form-field">
+						<div class="form-label">Площадь участка, м²</div>
+						<div class="form-input-group">
+							<input type="number" class="form-input" placeholder="От">
+							<input type="number" class="form-input" placeholder="До">
+						</div>
+					</label>
+					<label class="form-field">
+						<div class="form-label">Расстояние от МКАД, км</div>
+						<div class="form-input-group">
+							<input type="number" class="form-input" placeholder="От">
+							<input type="number" class="form-input" placeholder="До">
+						</div>
+					</label>
+				</div>
+				<div class="lk-filter__btns">
+					<button class="lk-filter__btn btn btn--primary">Показать объекты</button>
+					<button class="lk-filter__btn btn btn--contur-primary">Показать на карте</button>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+	<section class="lk-content">
+		<div class="lk-in-process">
+			<div class="lk-in-process__img">
+				<img src="img/sempl/in-process.png" alt="">
+			</div>
+			<div class="lk-in-process__title">Раздел в разработке</div>
+			<div class="lk-in-process__subtitle">
+				К сожалению, данный раздел сейчас находится в активной разработе. <br>
+				Очень скоро здесь будет рабочая страница
+			</div>
+		</div>
+
+	</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<script src="source/jquery-3.5.0.min.js"></script>
+	<script src="source/jquery.fancybox.min.js"></script>
+	<script src="source/maskedinput.js"></script>
+	<script src="source/waves.js"></script>
+	<script src="source/swiper-bundle.min.js"></script>
+	<script src="source/select.bundle.min.js"></script>
+	<script src="js/frontend--logger.js"></script>
+
+	<script src="js/frontend--polifils.js"></script>
+	<script src="js/frontend--modal.js"></script>
+	<script src="js/frontend--tab.js"></script>
+	<script src="js/frontend--toggle.js"></script>
+	<script src="js/frontend--template.js"></script>
+
+
+	<script src="js/frontend--actions.js"></script>
+
+</body>
+
+</html>

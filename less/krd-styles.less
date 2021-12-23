@@ -1,0 +1,100 @@
+.filter {
+  .form-input-group {
+    width: 100%;
+  }
+}
+
+.filter-form-fields .form-input {
+  padding-top   : 10px;
+  padding-bottom: 10px;
+}
+
+.filter-choose {
+  &-item {
+    position   : relative;
+    // overflow: hidden;
+
+    &-inner {
+      // background    : #eee;
+      margin-bottom : -10px;
+      margin-top    : -10px;
+      padding-top   : 10px;
+      padding-bottom: 10px;
+      padding-left  : 12px;
+      padding-right : 12px;
+      margin-right  : -12px;
+      margin-left   : -12px;
+      width         : calc(100% + 24px);
+      border-radius : inherit;
+      text-align    : center;
+
+    }
+
+    input {
+      position: absolute;
+      left    : 15px;
+      top     : 10px;
+      z-index : -1;
+    }
+
+    input:checked+&-inner {
+      background: rgba(0, 146, 228, 0.2);
+      box-shadow: 0 0 0 1px rgba(0, 146, 228, 0.8);
+    }
+  }
+}
+
+.filter-choose-group {
+  display: flex;
+  width  : 100%;
+
+  &-item {
+    flex-grow: 1;
+    display  : flex;
+
+    &+& {
+      margin-left: 8px;
+    }
+  }
+
+  &-num {
+    max-width: 44px;
+  }
+}
+
+.lk-header__btn--user {
+
+
+  .btn-icon-round {
+    background: rgba(242, 178, 1, 0.6);
+  }
+}
+
+
+.form-group-separator {
+  align-self: center;
+  color     : var(--color-text-40);
+  margin    : 0 6px;
+}
+
+.jk-item-gallery {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.jk-item-gallery__preview {
+  height: 46px;
+}
+
+.filter-inner-cover.fixed:not(.toggle-active) .filter--inner .filter-choose-item-inner {
+  padding-top   : 6px;
+  padding-bottom: 6px;
+  margin-top    : -6px;
+  margin-bottom : -6px;
+}
+
+.jk-edit-form-btns{
+  display: flex;
+  .btn{
+    margin-right: 15px;
+  }
+}

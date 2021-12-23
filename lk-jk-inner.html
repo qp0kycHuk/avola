@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="shortcut icon" type="image/x-icon" href="icon/favicon.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="source/_libs.css">
+  <link rel="stylesheet" href="css/frontend--fonts.css">
+  <link rel="stylesheet" href="css/frontend--style.css">
+
+  <title>Карточка - Сервис Кравченко</title>
+</head>
+
+<body data-theme="default">
+
+
+
+  <div class="lk-cover ">
+    <header class="lk-header jk-inner-header">
+      <a href="/" class="lk-header-logo logo">
+        <div class="logo__img"><img src="img/icons/logo.svg" alt=""></div>
+        <div class="logo__text">
+          Помощь в подборе <br>
+          недвижимости в Москве
+        </div>
+      </a>
+
+      <section class="lk-header__content">
+        <div class="lk-header__btns">
+          <button class="lk-header__btn btn btn--link" data-modal-link="jk-edit-modal">
+            <div class="btn-icon-round">
+              <svg class="btn-icon">
+                <use xlink:href="img/sprite.svg#home-add" />
+              </svg>
+            </div>
+            Добавить объект
+          </button>
+          <button class="lk-header__btn btn btn--link">
+            <div class="btn-icon-round">
+              <svg class="btn-icon">
+                <use xlink:href="img/sprite.svg#user" />
+              </svg>
+            </div>
+            Добавить пользователя
+          </button>
+        </div>
+      </section>
+
+      <div class="header__control">
+        <div class="lk-header__user">
+          <div class="user-control  dropdown">
+            <button class="user-control__btn waves" data-toggle-link="user-control-dropdown">
+              <div class="user-control__arrow"></div>
+              <div class="user-control__img">
+                <img loading="lazy" src="img/test-avatar.png" alt="">
+              </div>
+            </button>
+            <div class="user-control-content card card--l2 dropdown-content" id="user-control-dropdown">
+              <div class="user-control__name">Иван Иванов</div>
+
+              <button class="user-control__logout btn btn--accent--light">Выйти</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <header class="lk-header lk-header-mobile header-mobile jk-inner-header">
+      <button class="header-mobile__icon btn" data-toggle-link="lk-sidebar">
+        <svg>
+          <use xlink:href="img/sprite.svg#burger" />
+        </svg>
+      </button>
+
+      <div class="header-mobile__title">Личный кабинет</div>
+
+    </header>
+
+    <div class="lk-sidebar" data-toggle-cover id="lk-sidebar">
+      <div class="lk-sidebar-content">
+        <div class="lk-sidebar-item waves waves-light" data-toggle-link>
+          <div class="lk-sidebar-item__img"><img src="img/icons/burger.svg" alt=""></div>
+          <div class="lk-sidebar-item__title">Свернуть меню</div>
+
+        </div>
+        <a href="lk-object.html" class="lk-sidebar-item waves waves-light ">
+          <div class="lk-sidebar-item__img"><img src="img/icons/home--white.svg" alt=""></div>
+          <div class="lk-sidebar-item__title">Объекты</div>
+
+        </a>
+        <a href="lk-users.html" class="lk-sidebar-item waves waves-light current">
+          <div class="lk-sidebar-item__img"><img src="img/icons/users.svg" alt=""></div>
+          <div class="lk-sidebar-item__title">Пользователи</div>
+          <div class="lk-sidebar-item__count">25</div>
+        </a>
+        <a href="" class="lk-sidebar-item waves waves-light">
+          <div class="lk-sidebar-item__img"><img src="img/icons/search.svg" alt=""></div>
+          <div class="lk-sidebar-item__title">Запросы на подборку</div>
+          <div class="lk-sidebar-item__count">2</div>
+        </a>
+        <a href="" class="lk-sidebar-item waves waves-light">
+          <div class="lk-sidebar-item__img"><img src="img/icons/eye.svg" alt=""></div>
+          <div class="lk-sidebar-item__title">Запросы на просмотр</div>
+
+        </a>
+        <a href="" class="lk-sidebar-item waves waves-light">
+          <div class="lk-sidebar-item__img"><img src="img/icons/doc.svg" alt=""></div>
+          <div class="lk-sidebar-item__title">Запросы на экспертизу</div>
+          <div class="lk-sidebar-item__count">7</div>
+        </a>
+        <a href="" class="lk-sidebar-item waves waves-light">
+          <div class="lk-sidebar-item__img"><img src="img/icons/home-add.svg" alt=""></div>
+          <div class="lk-sidebar-item__title">Запросы на добавление</div>
+          <div class="lk-sidebar-item__count">1</div>
+        </a>
+
+        <a href="" class="lk-sidebar-item waves waves-light">
+          <div class="lk-sidebar-item__img"><img src="img/icons/folders.svg" alt=""></div>
+          <div class="lk-sidebar-item__title">Архив</div>
+
+        </a>
+        <a href="" class="lk-sidebar-item waves waves-light">
+          <div class="lk-sidebar-item__img"><img src="img/icons/logo-abc.svg" alt=""></div>
+          <div class="lk-sidebar-item__title">Команда</div>
+
+        </a>
+        <a href="" class="lk-sidebar-item waves waves-light">
+          <div class="lk-sidebar-item__img"><img src="img/icons/flag.svg" alt=""></div>
+          <div class="lk-sidebar-item__title">Сохраненные подборки</div>
+
+        </a>
+      </div>
+
+    </div>
+
+
+    <section class="jk-inner lk-content">
+      <div class="breadcrumps"><a href="/">Главная</a> > 2-этажный дом, 200 м²</div>
+
+      <div class="jk-inner-cover">
+        <div class="jk-inner-content">
+          <div class="jk-inner-content-card jk-inner-content-top card">
+            <a href="#" class="lk-back jk-inner__back">Вернуться назад</a>
+            <a href="#" class="modal-mobile-close jk-inner__mobile-back">
+              <svg>
+                <use xlink:href="img/sprite.svg#arrow" />
+              </svg>
+            </a>
+            <div class="jk-inner__info">
+              <div class="jk-inner__title">2-этажный дом, 200 м²</div>
+              <div class="jk-inner__address">Москва, ЗАО, р-н Солнцево, 3-й Дачно-Мещерский проезд <a href="#">Показать
+                  на
+                  карте</a></div>
+              <div class="jk-item-content__info"><img src="img/icons/metro.svg" alt="">Алтуфьево ⋅ 15 мин. на
+                транспорте
+              </div>
+              <div class="jk-item-content__info"><img src="img/icons/car.svg" alt="">Дмитровское шоссе, 1 км от МКАД
+              </div>
+            </div>
+            <div class="jk-inner__adaptive">
+              <div class="jk-inner__cost">41 000 000 ₽</div>
+              <div class="jk-inner__address">205 000 ₽/м²</div>
+              <div class="jk-inner-verify">
+                <img src="img/icons/verified--success.svg" alt="">
+                <div class="jk-inner-verify__content">
+                  <div class="jk-inner-verify__title">Дом прошел экспертизу</div>
+                  <a href="#" class="jk-inner-verify__link">Скачать отчет</a>
+                </div>
+
+              </div>
+              <div class="jk-inner__control">
+                <div class="jk-inner-aside__btns">
+                  <button class="jk-inner-aside__btn btn btn--primary">Показать телефон</button>
+
+                </div>
+                <div class="jk-inner-aside__control">
+                  <button id="share-mobile" class="jk-inner__like like-btn waves" data-tooltip title="Поделиться">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#share"></use>
+                    </svg>
+                  </button>
+                  <button class="jk-inner__like lk-user__print like-btn waves" data-tooltip title="Распечатать">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#printer"></use>
+                    </svg>
+                  </button>
+
+                </div>
+              </div>
+            </div>
+            <script>
+              if (navigator.share) {
+                document.getElementById('share-mobile').addEventListener('click', function () {
+                  navigator.share({
+                    url: window.location.href
+                  })
+                })
+              }
+            </script>
+
+            <div class="jk-inner-slider swiper-container">
+              <div class="jk-inner-slider-count">
+                <svg>
+                  <use xlink:href="img/sprite.svg#camera" />
+                </svg>
+                24 фото
+              </div>
+              <div class="jk-inner-slider-pagination"></div>
+              <div class="swiper-wrapper">
+                <a data-height="800" data-fancybox="gallery-1" href="img/test-exterier.jpg"
+                  class="jk-inner-slide waves swiper-slide">
+                  <picture>
+                    <source srcset="img/test-exterier.webp" type="image/webp">
+                    <img class="swiper-lazy" src="img/test-exterier.jpg" alt="" loading="lazy">
+                  </picture>
+                </a>
+                <a data-height="800" data-fancybox="gallery-1" href="img/test-interier.jpg"
+                  class="jk-inner-slide waves swiper-slide">
+                  <picture>
+                    <source srcset="img/test-interier.webp" type="image/webp">
+                    <img class="swiper-lazy" src="img/test-interier.jpg" alt="" loading="lazy">
+                  </picture>
+                </a>
+                <a data-height="800" data-fancybox="gallery-1" href="img/test-exterier.jpg"
+                  class="jk-inner-slide waves swiper-slide">
+                  <picture>
+                    <source srcset="img/test-exterier.webp" type="image/webp">
+                    <img class="swiper-lazy" src="img/test-exterier.jpg" alt="" loading="lazy">
+                  </picture>
+                </a>
+                <a data-height="800" data-fancybox="gallery-1" href="img/test-interier.jpg"
+                  class="jk-inner-slide waves swiper-slide">
+                  <picture>
+                    <source srcset="img/test-interier.webp" type="image/webp">
+                    <img class="swiper-lazy" src="img/test-interier.jpg" alt="" loading="lazy">
+                  </picture>
+                </a>
+                <a data-height="800" data-fancybox="gallery-1" href="img/test-exterier.jpg"
+                  class="jk-inner-slide waves swiper-slide">
+                  <picture>
+                    <source srcset="img/test-exterier.webp" type="image/webp">
+                    <img class="swiper-lazy" src="img/test-exterier.jpg" alt="" loading="lazy">
+                  </picture>
+                </a>
+                <a data-height="800" data-fancybox="gallery-1" href="img/test-interier.jpg"
+                  class="jk-inner-slide waves swiper-slide">
+                  <picture>
+                    <source srcset="img/test-interier.webp" type="image/webp">
+                    <img class="swiper-lazy" src="img/test-interier.jpg" alt="" loading="lazy">
+                  </picture>
+                </a>
+                <a data-height="800" data-fancybox="gallery-1" href="img/test-exterier.jpg"
+                  class="jk-inner-slide waves swiper-slide">
+                  <picture>
+                    <source srcset="img/test-exterier.webp" type="image/webp">
+                    <img class="swiper-lazy" src="img/test-exterier.jpg" alt="" loading="lazy">
+                  </picture>
+                </a>
+                <a data-height="800" data-fancybox="gallery-1" href="img/test-interier.jpg"
+                  class="jk-inner-slide waves swiper-slide">
+                  <picture>
+                    <source srcset="img/test-interier.webp" type="image/webp">
+                    <img class="swiper-lazy" src="img/test-interier.jpg" alt="" loading="lazy">
+                  </picture>
+                </a>
+                <a data-height="800" data-fancybox="gallery-1" href="img/test-exterier.jpg"
+                  class="jk-inner-slide waves swiper-slide">
+                  <picture>
+                    <source srcset="img/test-exterier.webp" type="image/webp">
+                    <img class="swiper-lazy" src="img/test-exterier.jpg" alt="" loading="lazy">
+                  </picture>
+                </a>
+                <a data-height="800" data-fancybox="gallery-1" href="img/test-interier.jpg"
+                  class="jk-inner-slide waves swiper-slide">
+                  <picture>
+                    <source srcset="img/test-interier.webp" type="image/webp">
+                    <img class="swiper-lazy" src="img/test-interier.jpg" alt="" loading="lazy">
+                  </picture>
+                </a>
+                <a data-height="800" data-fancybox="gallery-1" href="img/test-exterier.jpg"
+                  class="jk-inner-slide waves swiper-slide">
+                  <picture>
+                    <source srcset="img/test-exterier.webp" type="image/webp">
+                    <img class="swiper-lazy" src="img/test-exterier.jpg" alt="" loading="lazy">
+                  </picture>
+                </a>
+                <a data-height="800" data-fancybox="gallery-1" href="img/test-interier.jpg"
+                  class="jk-inner-slide waves swiper-slide">
+                  <picture>
+                    <source srcset="img/test-interier.webp" type="image/webp">
+                    <img class="swiper-lazy" src="img/test-interier.jpg" alt="" loading="lazy">
+                  </picture>
+                </a>
+              </div>
+              <div class="jk-inner-slider-arrow jk-inner-slider-prev">
+                <svg>
+                  <use xlink:href="img/sprite.svg#slider-arrow" />
+                </svg>
+              </div>
+              <div class="jk-inner-slider-arrow jk-inner-slider-next">
+                <svg>
+                  <use xlink:href="img/sprite.svg#slider-arrow" />
+                </svg>
+              </div>
+            </div>
+            <div class="jk-inner-thumbs-cover">
+              <div class="jk-inner-thumbs swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide jk-inner-thumb">
+                    <picture>
+                      <source srcset="img/test-exterier-min.webp" type="image/webp">
+                      <img src="img/test-exterier-min.jpg" alt="" loading="lazy">
+                    </picture>
+                  </div>
+                  <div class="swiper-slide jk-inner-thumb">
+                    <picture>
+                      <source srcset="img/test-interier-min.webp" type="image/webp">
+                      <img src="img/test-interier-min.jpg" alt="" loading="lazy">
+                    </picture>
+                  </div>
+                  <div class="swiper-slide jk-inner-thumb">
+                    <picture>
+                      <source srcset="img/test-exterier-min.webp" type="image/webp">
+                      <img src="img/test-exterier-min.jpg" alt="" loading="lazy">
+                    </picture>
+                  </div>
+                  <div class="swiper-slide jk-inner-thumb">
+                    <picture>
+                      <source srcset="img/test-interier-min.webp" type="image/webp">
+                      <img src="img/test-interier-min.jpg" alt="" loading="lazy">
+                    </picture>
+                  </div>
+                  <div class="swiper-slide jk-inner-thumb">
+                    <picture>
+                      <source srcset="img/test-exterier-min.webp" type="image/webp">
+                      <img src="img/test-exterier-min.jpg" alt="" loading="lazy">
+                    </picture>
+                  </div>
+                  <div class="swiper-slide jk-inner-thumb">
+                    <picture>
+                      <source srcset="img/test-interier-min.webp" type="image/webp">
+                      <img src="img/test-interier-min.jpg" alt="" loading="lazy">
+                    </picture>
+                  </div>
+                  <div class="swiper-slide jk-inner-thumb">
+                    <picture>
+                      <source srcset="img/test-exterier-min.webp" type="image/webp">
+                      <img src="img/test-exterier-min.jpg" alt="" loading="lazy">
+                    </picture>
+                  </div>
+                  <div class="swiper-slide jk-inner-thumb">
+                    <picture>
+                      <source srcset="img/test-interier-min.webp" type="image/webp">
+                      <img src="img/test-interier-min.jpg" alt="" loading="lazy">
+                    </picture>
+                  </div>
+                  <div class="swiper-slide jk-inner-thumb">
+                    <picture>
+                      <source srcset="img/test-exterier-min.webp" type="image/webp">
+                      <img src="img/test-exterier-min.jpg" alt="" loading="lazy">
+                    </picture>
+                  </div>
+                  <div class="swiper-slide jk-inner-thumb">
+                    <picture>
+                      <source srcset="img/test-interier-min.webp" type="image/webp">
+                      <img src="img/test-interier-min.jpg" alt="" loading="lazy">
+                    </picture>
+                  </div>
+                  <div class="swiper-slide jk-inner-thumb">
+                    <picture>
+                      <source srcset="img/test-exterier-min.webp" type="image/webp">
+                      <img src="img/test-exterier-min.jpg" alt="" loading="lazy">
+                    </picture>
+                  </div>
+                  <div class="swiper-slide jk-inner-thumb">
+                    <picture>
+                      <source srcset="img/test-interier-min.webp" type="image/webp">
+                      <img src="img/test-interier-min.jpg" alt="" loading="lazy">
+                    </picture>
+                  </div>
+                </div>
+
+              </div>
+
+              <button class="jk-inner-thumbs-arrow jk-inner-thumbs-prev">
+                <svg>
+                  <use xlink:href="img/sprite.svg#slider-arrow" />
+                </svg>
+              </button>
+              <button class="jk-inner-thumbs-arrow jk-inner-thumbs-next">
+                <svg>
+                  <use xlink:href="img/sprite.svg#slider-arrow" />
+                </svg>
+              </button>
+            </div>
+
+
+
+
+
+            <div class="jk-inner-properties">
+              <div class="jk-inner-propertie">
+                <div class="jk-inner-propertie__img">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#home" />
+                  </svg>
+                </div>
+                <div class="jk-inner-propertie__title"> Тип:&nbsp;</div>
+                <div class="jk-inner-propertie__value">Кирпичный</div>
+              </div>
+              <div class="jk-inner-propertie">
+                <div class="jk-inner-propertie__img">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#square-1" />
+                  </svg>
+                </div>
+                <div class="jk-inner-propertie__title">Площадь дома:&nbsp;</div>
+                <div class="jk-inner-propertie__value">375 м<sup>2</sup></div>
+              </div>
+              <div class="jk-inner-propertie">
+                <div class="jk-inner-propertie__img">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#square-2" />
+                  </svg>
+                </div>
+                <div class="jk-inner-propertie__title">Площадь участка:&nbsp;</div>
+                <div class="jk-inner-propertie__value">5 соток</div>
+              </div>
+              <div class="jk-inner-propertie">
+                <div class="jk-inner-propertie__img">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#floors" />
+                  </svg>
+                </div>
+                <div class="jk-inner-propertie__title">Количество этажей:&nbsp;</div>
+                <div class="jk-inner-propertie__value">2</div>
+              </div>
+            </div>
+          </div>
+          <div class="jk-inner-content-card card">
+            <div class="jk-inner__subtitle">Дополнительная информация об объекте</div>
+            <div class="jk-inner-info">
+              <div class="jk-inner-info__item">
+                <svg>
+                  <use xlink:href="img/sprite.svg#calendar" />
+                </svg>
+                <span>Год постройки:&nbsp;</span> 2019
+              </div>
+              <div class="jk-inner-info__item">
+                <svg>
+                  <use xlink:href="img/sprite.svg#i" />
+                </svg>
+                <span>Статус участка:&nbsp;</span> Личное подсобное хозяйство
+              </div>
+              <div class="jk-inner-info__item">
+                <svg>
+                  <use xlink:href="img/sprite.svg#smart-home" />
+                </svg>
+                <span>Отопление:&nbsp;</span> Центральное газовое
+              </div>
+              <div class="jk-inner-info__item">
+                <svg>
+                  <use xlink:href="img/sprite.svg#double-bed" />
+                </svg>
+                <span>Количество спален:&nbsp;</span> 7
+              </div>
+            </div>
+
+            <div class="jk-inner-line"></div>
+
+            <div class="jk-inner-tags">
+              <div class="jk-inner-tag">
+                <svg>
+                  <use xlink:href="img/sprite.svg#lightbulb" />
+                </svg>
+                Электричество
+              </div>
+              <div class="jk-inner-tag">
+                <svg>
+                  <use xlink:href="img/sprite.svg#roundabout" />
+                </svg>
+                Канализация
+              </div>
+              <div class="jk-inner-tag">
+                <svg>
+                  <use xlink:href="img/sprite.svg#h2o" />
+                </svg>
+                Водоснабжение
+              </div>
+              <div class="jk-inner-tag">
+                <svg>
+                  <use xlink:href="img/sprite.svg#fire" />
+                </svg>
+                Газ
+              </div>
+              <div class="jk-inner-tag">
+                <svg>
+                  <use xlink:href="img/sprite.svg#secure" />
+                </svg>
+                Охрана
+              </div>
+              <div class="jk-inner-tag">
+                <svg>
+                  <use xlink:href="img/sprite.svg#phone" />
+                </svg>
+                Телефон
+              </div>
+              <div class="jk-inner-tag">
+                <svg>
+                  <use xlink:href="img/sprite.svg#forester-house" />
+                </svg>
+                Баня
+              </div>
+              <div class="jk-inner-tag">
+                <svg>
+                  <use xlink:href="img/sprite.svg#garage" />
+                </svg>
+                Гараж
+              </div>
+              <div class="jk-inner-tag">
+                <svg>
+                  <use xlink:href="img/sprite.svg#pool" />
+                </svg>
+                Бассейн
+              </div>
+            </div>
+          </div>
+          <div class="jk-inner-content-card card">
+            <div class="jk-inner__subtitle">Описание объекта</div>
+            <div class="jk-inner__description">
+              Лот 34203. Дом под ключ 1075 кв.м на участке 19.73 соток. Количество спален: 7. Коттеджный посёлок
+              "Екатериновка". На участке лес, беседка для барбекю, дом для охраны. Предлагается дом, расположенный в
+              черте
+              города в одном из самых элитных посёлков Москвы. Посёлок строго охраняется, имеет свою инфраструктуру. Дом
+              с
+              лифтом, состоит из трёх этажей и цоколя. Цоколь: кинозал, кабинет, блок для персонала, винный погреб,
+              постирочная, 2 с/у. 1 этаж: каминный зал с выходом на участок, столовая, кухня, 2 с/у, встроенный гараж. 2
+              этаж: зимний сад, три спальни, две гардеробные, два балкона, 2 с/у. 3 этаж: четыре спальни, 2 с/у. Рядом
+              расположены коттеджные посёлки "Сосновка", "Новая Усадьба", "Рублево-1", "Серебряный Бор", "Ромашково-2",
+              "Silver Place", "Ромашково", "Светлый", "Остров фантазий", "Резиденция Рублево" и населённые пункты
+              Рублево,
+              Ромашково, Захарково, Немчиновка, Мякинино, Гольево, Архангельское, Раздоры, Новоивановское, Красногорск.
+            </div>
+          </div>
+          <div class="jk-inner-content-card card">
+            <div class="jk-inner__subtitle">Расположение на карте</div>
+            <div class="jk-inner__map">
+              <iframe
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3A2e5040778f1101d4afacf107320478c422ca01f0d00c537ed96eff00a6fd0ffc&amp;source=constructor"
+                width="100%" height="288" frameborder="0"></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="jk-inner-aside">
+          <div class="jk-inner-aside-card card">
+            <div class="jk-inner__cost">41 000 000 ₽</div>
+            <div class="jk-inner__address">205 000 ₽/м²</div>
+            <div class="jk-inner-verify">
+              <img src="img/icons/verified--success.svg" alt="">
+              <div class="jk-inner-verify__content">
+                <div class="jk-inner-verify__title">Дом прошел экспертизу</div>
+                <a href="#" class="jk-inner-verify__link">Скачать отчет</a>
+              </div>
+
+            </div>
+            <div class="jk-inner-aside__btns">
+              <button class="jk-inner-aside__btn btn btn--primary">Показать телефон</button>
+            </div>
+
+            <div class="jk-inner-aside__control">
+              <div class="jk-inner-share dropdown" data-toggle-cover>
+                <button class="jk-inner__like like-btn waves" data-toggle-link data-tooltip title="Поделиться">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#share"></use>
+                  </svg>
+                </button>
+                <div class="dropdown-content jk-inner-share-list card card--l2" data-toggle-content>
+                  <div class="jk-inner-share__links">
+                    <a href="" class="jk-inner-share__link"><img src="img/icons/share-vk.svg" alt=""></a>
+                    <a href="" class="jk-inner-share__link"><img src="img/icons/share-facebook.svg" alt=""></a>
+                    <a href="" class="jk-inner-share__link"><img src="img/icons/share-ok.svg" alt=""></a>
+                    <a href="" class="jk-inner-share__link"><img src="img/icons/share-twitter.svg" alt=""></a>
+                  </div>
+                  <label class="jk-inner-share__field form-field">
+                    <div class="form-input-cover">
+                      <input id="jk-link" type="text" class="form-input" placeholder=""
+                        value="https://www.figma.com/file/cFJ76x" readonly>
+                    </div>
+                  </label>
+                  <button class="jk-inner-share__copy" id="jk-copy-link">Скопировать ссылку</button>
+
+                  <script>
+                    document.getElementById('jk-copy-link').addEventListener('click', function () {
+                      var aux = document.getElementById("jk-link");
+                      aux.select();
+                      document.execCommand("copy");
+                      document.getElementById('jk-copy-link').textContent = 'Скопировано';
+                    });
+                  </script>
+
+                </div>
+              </div>
+              <button class="jk-inner__like like-btn waves" data-tooltip title="Распечатать">
+                <svg>
+                  <use xlink:href="img/sprite.svg#printer"></use>
+                </svg>
+              </button>
+
+            </div>
+          </div>
+          <div class="jk-inner-aside-card card">
+            <div class="jk-inner__subtitle" style="margin-bottom: 8px;">
+              Запросы на экспертизу
+            </div>
+            <a class="jk-inner-requests__btn" target="_blank">https://www.avito.ru/saratov/avtomobili...</a>
+          </div>
+          <div class="jk-inner-aside-card card">
+            <div class="jk-inner__subtitle">
+              <svg>
+                <use xlink:href="img/sprite.svg#eye" /></svg>
+              Записи на просмотр
+            </div>
+            <div class="jk-inner-requests">
+              <div class="jk-inner-requests-item">
+                <a href="#" class="jk-inner-requests-item__title">Иван Иванов</a>
+                <button class="jk-inner-requests-item__btn">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#cross" />
+                  </svg>
+                </button>
+              </div>
+              <div class="jk-inner-requests-item">
+                <a href="#" class="jk-inner-requests-item__title">Иван Иванов</a>
+                <button class="jk-inner-requests-item__btn">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#cross" />
+                  </svg>
+                </button>
+              </div>
+              <div class="jk-inner-requests-item">
+                <a href="#" class="jk-inner-requests-item__title">Иван Иванов</a>
+                <button class="jk-inner-requests-item__btn">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#cross" />
+                  </svg>
+                </button>
+              </div>
+              <div class="jk-inner-requests-item">
+                <a href="#" class="jk-inner-requests-item__title">Иван Иванов</a>
+                <button class="jk-inner-requests-item__btn">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#cross" />
+                  </svg>
+                </button>
+              </div>
+
+              <button class="jk-inner-requests__btn" data-fancybox data-fancybox-modal
+                data-src="lk-users-modal-prosmotr.html" data-type="ajax">Показать весь список</button>
+
+            </div>
+          </div>
+          <div class="jk-inner-aside-card card">
+            <div class="jk-inner__subtitle">
+              <svg>
+                <use xlink:href="img/sprite.svg#doc" /></svg>
+              Запросы на экспертизу
+            </div>
+            <div class="jk-inner-requests">
+              <div class="jk-inner-requests-item">
+                <a href="#" class="jk-inner-requests-item__title">Иван Иванов</a>
+                <button class="jk-inner-requests-item__btn">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#cross" />
+                  </svg>
+                </button>
+              </div>
+              <div class="jk-inner-requests-item">
+                <a href="#" class="jk-inner-requests-item__title">Иван Иванов</a>
+                <button class="jk-inner-requests-item__btn">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#cross" />
+                  </svg>
+                </button>
+              </div>
+              <div class="jk-inner-requests-item">
+                <a href="#" class="jk-inner-requests-item__title">Иван Иванов</a>
+                <button class="jk-inner-requests-item__btn">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#cross" />
+                  </svg>
+                </button>
+              </div>
+              <div class="jk-inner-requests-item">
+                <a href="#" class="jk-inner-requests-item__title">Иван Иванов</a>
+                <button class="jk-inner-requests-item__btn">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#cross" />
+                  </svg>
+                </button>
+              </div>
+
+              <button class="jk-inner-requests__btn" data-fancybox data-fancybox-modal
+                data-src="lk-users-modal-expertiza.html" data-type="ajax">Показать весь список</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+
+
+
+  <footer class="footer">
+    <div class="footer-logo logo">
+      <div class="logo__img"><img src="img/icons/logo.svg" alt=""></div>
+      <div class="logo__text">
+        Помощь в подборе <br>
+        недвижимости в Москве
+      </div>
+    </div>
+    <div class="footer-nav">
+      <a href="" class="footer-nav__item">О нас</a>
+      <a href="" class="footer-nav__item">Для партнеров</a>
+      <a href="" class="footer-nav__item">Помощь</a>
+      <a href="" class="footer-nav__item">Контакты</a>
+    </div>
+    <div class="footer-soc">
+      <a href="" class="footer-soc__item" target="_blank"><img src="img/icons/soc-instagramm.png" alt=""></a>
+      <a href="" class="footer-soc__item" target="_blank"><img src="img/icons/soc-youtube.svg" alt=""></a>
+      <a href="" class="footer-soc__item" target="_blank"><img src="img/icons/soc-vk.svg" alt=""></a>
+    </div>
+  </footer>
+
+
+  <section class="modal" data-modal-cover id="jk-edit-modal">
+    <div class="modal-container jk-edit-modal__container">
+      <div class="jk-edit-modal">
+        <form class="jk-edit-form card jk-edit-modal__form">
+          <div class="jk-edit-form__title title">Добавить объект </div>
+          <div class="jk-edit-form-block">
+            <label class="form-field form-field--check">
+              <input type="checkbox" name="" id="" data-check-type="1">
+              <div class="form-label">Эксклюзивный договор <div class="icon-star"></div>
+              </div>
+            </label>
+          </div>
+          <div class="jk-edit-form-block jk-edit-form-block--with-transport" data-edit-block id="jk-edit-1">
+            <div class="jk-edit-form-fields">
+              <label class="form-field">
+                <div class="form-label">Название объекта</div>
+                <input type="text" class="form-input" required>
+              </label>
+              <label class="form-field">
+                <div class="form-label">Адрес</div>
+                <input type="text" class="form-input" required>
+              </label>
+
+            </div>
+            <div class="jk-edit-map">
+              <iframe
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3A2e5040778f1101d4afacf107320478c422ca01f0d00c537ed96eff00a6fd0ffc&amp;source=constructor"
+                width="100%" height="288" frameborder="0"></iframe>
+            </div>
+            <div class="jk-edit-transport">
+              <div class="jk-edit-transport__fields empty" data-max-copy="3" id="transport-1" data-fields-isempty>
+                <label class="form-field">
+                  <div class="form-label">Шоссе</div>
+                  <input id="highway1" type="text" class="form-input" required placeholder="Введите название шоссе">
+                </label>
+                <label class="form-field">
+                  <div class="form-label">Км от МКАД</div>
+                  <input type="number" class="form-input" required>
+                </label>
+
+                <div class="jk-edit-transport__control">
+                  <label class="form-field form-field--radio jk-edit-transport__ismain">
+                    <input type="radio" class="form-input" name="main-transport">
+                    <div class="form-label">Основное</div>
+                  </label>
+                  <button type="button"
+                    class="btn btn--accent--light jk-edit-transport__remove jk-edit-transport__remove--mobile"
+                    data-remove-node="transport-1">
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="img/sprite.svg#cross" />
+                      </svg>
+                    </div>
+                    Удалить
+                  </button>
+                  <button type="button" class="btn btn--accent jk-edit-transport__remove"
+                    data-remove-node="transport-1">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#cross" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="jk-edit-transport__btns">
+                <button type="button" class="btn btn--primary jk-edit-transport__btn"
+                  data-copy-node="transport-1">Добавить шоссе</button>
+              </div>
+            </div>
+            <div class="jk-edit-transport">
+              <div class="jk-edit-transport__fields empty" data-max-copy="3" id="transport-2" data-fields-isempty>
+                <label class="form-field">
+                  <div class="form-label">Ближайшее метро</div>
+                  <input id="subway1" type="text" class="form-input" required placeholder="Введите название станции">
+                </label>
+                <label class="form-field">
+                  <div class="form-label">Минут до метро</div>
+                  <input type="number" class="form-input" required>
+                </label>
+                <label class="form-field form-field--select">
+                  <div class="form-label">Пешком/Транспорт</div>
+                  <select name="" class="form-input" placeholder="Пешком" required>
+                    <option value="Пешком">Пешком</option>
+                    <option value="Транспорт">Транспорт</option>
+                  </select>
+                </label>
+
+                <div class="jk-edit-transport__control">
+                  <label class="form-field form-field--radio jk-edit-transport__ismain">
+                    <input type="radio" class="form-input" name="main-transport">
+                    <div class="form-label">Основное</div>
+                  </label>
+                  <button type="button"
+                    class="btn btn--accent--light jk-edit-transport__remove jk-edit-transport__remove--mobile"
+                    data-remove-node="transport-2">
+                    <div class="icon">
+                      <svg>
+                        <use xlink:href="img/sprite.svg#cross" />
+                      </svg>
+                    </div>
+
+                    Удалить
+                  </button>
+                  <button type="button" class="btn btn--accent jk-edit-transport__remove"
+                    data-remove-node="transport-2">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#cross" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="jk-edit-transport__btns">
+                <button type="button" class="btn btn--primary jk-edit-transport__btn"
+                  data-copy-node="transport-2">Добавить станцию</button>
+              </div>
+
+
+            </div>
+
+
+          </div>
+          <div class="jk-edit-form-block" data-edit-block id="jk-edit-2">
+            <div class="jk-edit-form__subtitle">Общая информация</div>
+            <div class="jk-edit-form-fields">
+              <label class="form-field form-field--radio jk-edit-transport__ismain">
+                <input type="radio" class="form-input" name="type" checked>
+                <div class="form-label">Новостройка</div>
+              </label>
+              <label class="form-field form-field--radio jk-edit-transport__ismain">
+                <input type="radio" class="form-input" name="type">
+                <div class="form-label">Вторичное жилье</div>
+              </label>
+              <label class="jk-edit__field--middle form-field  form-field--select">
+                <div class="form-label">Тип дома</div>
+                <select name="" class="form-input" placeholder="Кирпичный" required>
+                  <option value="Кирпичный">Кирпичный</option>
+                  <option value="Не кирпичный">Не кирпичный</option>
+                </select>
+              </label>
+              <label class="jk-edit__field--small form-field">
+                <div class="form-label">Площадь дома, м² </div>
+                <input type="number" class="form-input" required>
+              </label>
+              <label class="jk-edit__field--small form-field">
+                <div class="form-label">Площадь участка, сотки </div>
+                <input type="number" class="form-input" required>
+              </label>
+              <label class="jk-edit__field--small form-field">
+                <div class="form-label">Количество этажей</div>
+                <input type="number" class="form-input" required>
+              </label>
+            </div>
+          </div>
+          <div class="jk-edit-form-block" data-edit-block id="jk-edit-3">
+            <div class="jk-edit-form__subtitle">Дополнительная информация</div>
+            <div class="jk-edit-form-fields">
+              <label class="jk-edit__field--small form-field">
+                <div class="form-label">Год постройки</div>
+                <input type="number" class="form-input">
+              </label>
+              <label class="jk-edit__field--middle form-field  form-field--select">
+                <div class="form-label">Статус участка</div>
+                <select name="" class="form-input" required>
+                  <option value="Личное подсобное хозяйство">Личное подсобное хозяйство</option>
+                  <option value="Еще">Еще</option>
+                </select>
+              </label>
+              <label class="jk-edit__field--middle form-field  form-field--select">
+                <div class="form-label">Отопление</div>
+                <select name="" class="form-input">
+                  <option value="Центральное газовое">Центральное газовое</option>
+                  <option value="Еще">Еще</option>
+                </select>
+              </label>
+
+              <label class="jk-edit__field--small form-field">
+                <div class="form-label">Количество спален</div>
+                <input type="number" class="form-input" required>
+              </label>
+
+              <div class="form-label">Дополнительные удобства</div>
+              <div class="jk-edit-grid">
+                <label class="form-field form-field--check">
+                  <input type="checkbox" name="">
+                  <div class="form-label">Электричество </div>
+                </label>
+                <label class="form-field form-field--check">
+                  <input type="checkbox" name="">
+                  <div class="form-label">Газ </div>
+                </label>
+                <label class="form-field form-field--check">
+                  <input type="checkbox" name="">
+                  <div class="form-label">Баня </div>
+                </label>
+                <label class="form-field form-field--check">
+                  <input type="checkbox" name="">
+                  <div class="form-label">Канализация </div>
+                </label>
+                <label class="form-field form-field--check">
+                  <input type="checkbox" name="">
+                  <div class="form-label">Охрана </div>
+                </label>
+                <label class="form-field form-field--check">
+                  <input type="checkbox" name="">
+                  <div class="form-label">Гараж </div>
+                </label>
+                <label class="form-field form-field--check">
+                  <input type="checkbox" name="">
+                  <div class="form-label">Водоснабжение </div>
+                </label>
+                <label class="form-field form-field--check">
+                  <input type="checkbox" name="">
+                  <div class="form-label">Телефон </div>
+                </label>
+                <label class="form-field form-field--check">
+                  <input type="checkbox" name="">
+                  <div class="form-label">Бассейн </div>
+                </label>
+              </div>
+
+            </div>
+          </div>
+          <div class="jk-edit-form-block" data-edit-block id="jk-edit-4">
+            <div class="jk-edit-form__subtitle">Описание объекта</div>
+            <label class="form-field">
+              <textarea class="form-input" name="" id="" cols="30" rows="10" required></textarea>
+            </label>
+          </div>
+          <div class="jk-edit-form-block" data-edit-block id="jk-edit-5">
+            <div class="jk-edit-form__subtitle">Цена и условия сделки</div>
+            <div class="jk-edit-form-fields">
+              <label class="jk-edit__field--middle form-field">
+                <div class="form-label">Цена объекта, ₽</div>
+                <input data-mask="money" type="text" class="form-input" required>
+              </label>
+              <label class="jk-edit__field--middle form-field">
+                <div class="form-label">Бонус агенту, ₽</div>
+                <input data-mask="money" type="text" class="form-input" required>
+              </label>
+            </div>
+
+          </div>
+          <div class="jk-edit-form-block" data-edit-block id="jk-edit-6">
+            <div class="jk-edit-form__subtitle">Фотоматериалы</div>
+            <div class="jk-edit-form__desc">
+              Не допускаются фотографии с водяными знаками, чужих объектов и рекламные баннеры. JPG, PNG, GIF.
+              Размер фото не более 10 мб
+            </div>
+            <div class="jk-edit-media">
+              <label class="form-field form-field--file form-field--dropable" data-field>
+                <input type="file" accept="image/*" class="form-input" required>
+                <div class="form-field-preview">
+
+                  <div class="form-field-preview__content waves">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#camera" />
+                    </svg>
+                    Главное фото
+                  </div>
+
+                  <img class="form-field-preview__img" src="" alt="" data-preview>
+                </div>
+              </label>
+
+
+              <label class="form-field form-field--file form-field form-field--dropable form-field--multiple"
+                data-field>
+                <input type="file" accept="image/*" class="form-input" multiple>
+
+                <div class="form-field-dropzone">
+                  <div class="form-field-dropzone__placeholder">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#img-move" /></svg>Перетащите сюда изображения
+                  </div>
+                  <div class="form-field-dropzone__files" data-field-files>
+
+                  </div>
+                </div>
+              </label>
+            </div>
+
+          </div>
+          <div class="jk-edit-form-block jk-edit-form__btns">
+            <button type="submit" data-modal-close class="btn jk-edit-form__btn btn--primary">Добавить
+              объект</button>
+            <button type="reset" data-modal-close class="btn jk-edit-form__btn btn--contur">Отмена</button>
+
+          </div>
+
+        </form>
+        <div class="jk-edit-links card jk-edit-modal__links">
+          <div class="jk-edit-links__title">Основные разделы</div>
+
+          <a href="#jk-edit-1" data-edit-nav="jk-edit-1" class="jk-edit-link">Название и адрес</a>
+          <a href="#jk-edit-2" data-edit-nav="jk-edit-2" class="jk-edit-link">Общая информация</a>
+          <a href="#jk-edit-3" data-edit-nav="jk-edit-3" class="jk-edit-link">Дополнительная информация</a>
+          <a href="#jk-edit-4" data-edit-nav="jk-edit-4" class="jk-edit-link">Описание</a>
+          <a href="#jk-edit-5" data-edit-nav="jk-edit-5" class="jk-edit-link">Цена и условия сделки</a>
+          <a href="#jk-edit-6" data-edit-nav="jk-edit-6" class="jk-edit-link">Фотоматериалы</a>
+        </div>
+      </div>
+
+
+      <button class="modal-mobile-close" data-modal-close>
+        <svg>
+          <use xlink:href="img/sprite.svg#arrow" />
+        </svg>
+      </button>
+
+      <button class="modal-close" data-modal-close>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </section>
+
+
+
+
+
+
+  <script src="source/jquery-3.5.0.min.js"></script>
+  <script src="source/jquery.fancybox.min.js"></script>
+  <script src="source/maskedinput.js"></script>
+  <script src="source/waves.js"></script>
+  <script src="source/maskedinput.js"></script>
+  <script src="source/swiper-bundle.min.js"></script>
+  <script src="source/datepicker.js"></script>
+  <script src="source/select.bundle.min.js"></script>
+
+  <script src="js/frontend--polifils.js"></script>
+  <script src="js/frontend--modal.js"></script>
+  <script src="js/frontend--tab.js"></script>
+  <script src="js/frontend--toggle.js"></script>
+  <script src="js/frontend--template.js"></script>
+
+</body>
+
+</html>

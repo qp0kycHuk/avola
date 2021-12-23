@@ -1,0 +1,1472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="shortcut icon" type="image/x-icon" href="icon/favicon.ico">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="source/_libs.css">
+	<link rel="stylesheet" href="css/frontend--fonts.css">
+	<link rel="stylesheet" href="css/frontend--style.css">
+
+	<title>Объекты - Сервис Кравченко</title>
+</head>
+
+<body data-theme="dark" class="">
+
+
+
+
+
+
+
+	<header class="lk-header">
+		<a href="/" class="lk-header-logo logo">
+			<div class="logo__img"><img src="img/icons/logo.svg" alt=""></div>
+			<div class="logo__text">
+				Помощь в подборе <br>
+				недвижимости в Москве
+			</div>
+		</a>
+
+		<section class="lk-header__content">
+			<div class="lk-header__btns">
+				<button class="lk-header__btn btn btn--link" data-modal-link="jk-edit-modal">
+					<div class="btn-icon-round">
+						<svg class="btn-icon">
+							<use xlink:href="img/sprite.svg#home-add" />
+						</svg>
+					</div>
+					Добавить объект
+				</button>
+				<button class="lk-header__btn btn btn--link">
+					<div class="btn-icon-round">
+						<svg class="btn-icon">
+							<use xlink:href="img/sprite.svg#user" />
+						</svg>
+					</div>
+					Добавить пользователя
+				</button>
+			</div>
+		</section>
+
+		<div class="header__control">
+			<div class="lk-header__user">
+				<div class="user-control  dropdown">
+					<button class="user-control__btn waves" data-toggle-link="user-control-dropdown">
+						<div class="user-control__arrow"></div>
+						<div class="user-control__img">
+							<img loading="lazy" src="img/test-avatar.png" alt="">
+						</div>
+					</button>
+					<div class="user-control-content card card--l2 dropdown-content" id="user-control-dropdown">
+						<div class="user-control__name">Иван Иванов</div>
+
+						<button class="user-control__logout btn btn--accent--light">Выйти</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<header class="lk-header lk-header-mobile header-mobile">
+		<button class="header-mobile__icon btn" data-toggle-link="lk-sidebar">
+			<svg>
+				<use xlink:href="img/sprite.svg#burger" />
+			</svg>
+		</button>
+
+		<div class="header-mobile__title">Личный кабинет</div>
+		<button class="header-mobile__btn btn btn--contur" data-toggle-link="lk-filter">
+			<svg class="btn-icon">
+				<use xlink:href="img/sprite.svg#filter" />
+			</svg>
+			Фильтр объектов
+		</button>
+	</header>
+
+	<div class="lk-sidebar" data-toggle-cover id="lk-sidebar">
+		<div class="lk-sidebar-content">
+			<div class="lk-sidebar-item waves waves-light" data-toggle-link>
+				<div class="lk-sidebar-item__img"><img src="img/icons/burger.svg" alt=""></div>
+				<div class="lk-sidebar-item__title">Свернуть меню</div>
+
+			</div>
+			<a href="lk-object.html" class="lk-sidebar-item waves waves-light current">
+				<div class="lk-sidebar-item__img"><img src="img/icons/home--white.svg" alt=""></div>
+				<div class="lk-sidebar-item__title">Объекты</div>
+
+			</a>
+			<a href="lk-users.html" class="lk-sidebar-item waves waves-light">
+				<div class="lk-sidebar-item__img"><img src="img/icons/users.svg" alt=""></div>
+				<div class="lk-sidebar-item__title">Пользователи</div>
+				<div class="lk-sidebar-item__count">25</div>
+			</a>
+			<a href="" class="lk-sidebar-item waves waves-light">
+				<div class="lk-sidebar-item__img"><img src="img/icons/search.svg" alt=""></div>
+				<div class="lk-sidebar-item__title">Запросы на подборку</div>
+				<div class="lk-sidebar-item__count">2</div>
+			</a>
+			<a href="" class="lk-sidebar-item waves waves-light">
+				<div class="lk-sidebar-item__img"><img src="img/icons/eye.svg" alt=""></div>
+				<div class="lk-sidebar-item__title">Запросы на просмотр</div>
+
+			</a>
+			<a href="" class="lk-sidebar-item waves waves-light">
+				<div class="lk-sidebar-item__img"><img src="img/icons/doc.svg" alt=""></div>
+				<div class="lk-sidebar-item__title">Запросы на экспертизу</div>
+				<div class="lk-sidebar-item__count">7</div>
+			</a>
+			<a href="" class="lk-sidebar-item waves waves-light">
+				<div class="lk-sidebar-item__img"><img src="img/icons/home-add.svg" alt=""></div>
+				<div class="lk-sidebar-item__title">Запросы на добавление</div>
+				<div class="lk-sidebar-item__count">1</div>
+			</a>
+
+			<a href="" class="lk-sidebar-item waves waves-light">
+				<div class="lk-sidebar-item__img"><img src="img/icons/folders.svg" alt=""></div>
+				<div class="lk-sidebar-item__title">Архив</div>
+
+			</a>
+			<a href="" class="lk-sidebar-item waves waves-light">
+				<div class="lk-sidebar-item__img"><img src="img/icons/logo-abc.svg" alt=""></div>
+				<div class="lk-sidebar-item__title">Команда</div>
+
+			</a>
+			<a href="" class="lk-sidebar-item waves waves-light">
+				<div class="lk-sidebar-item__img"><img src="img/icons/flag.svg" alt=""></div>
+				<div class="lk-sidebar-item__title">Сохраненные подборки</div>
+
+			</a>
+		</div>
+
+	</div>
+
+	<div class="lk-filter" data-toggle-cover id="lk-filter">
+		<div class="lk-filter__content">
+			<div class="lk-filter-link" data-toggle-link>
+				<svg>
+					<use xlink:href="img/sprite.svg#filter" />
+				</svg>
+				<div class="lk-filter-link__title">Свернуть фильтр</div>
+			</div>
+			<div class="lk-filter__form">
+				<div class="lk-filter__title">Фильтр жилья</div>
+				<div class="lk-filter__fields">
+					<label class="form-field form-field--select">
+						<div class="form-label">Жильё</div>
+						<select name="" class="form-input" placeholder="Дом">
+							<option value="Дом">Дом</option>
+							<option value="Не дом" selected>Не дом</option>
+						</select>
+					</label>
+					<label class="form-field form-field--select">
+						<div class="form-label">Тип</div>
+						<select name="" class="form-input" placeholder="Кирпичный">
+							<option value="Кирпичный">Кирпичный</option>
+							<option value="Не кирпичный">Не кирпичный</option>
+						</select>
+					</label>
+					<label class="form-field form-field--select">
+						<div class="form-label">Район</div>
+						<select name="" class="form-input" placeholder="Внуковское">
+							<option value="Внуковское">Внуковское</option>
+							<option value="Дедовское">Дедовское</option>
+							<option selected value="Дедовское 1">Дедовское 1</option>
+							<option value="Дедовское 2">Дедовское 2</option>
+						</select>
+					</label>
+					<label class="form-field form-field--select">
+						<div class="form-label">Метро</div>
+						<select name="" class="form-input" placeholder="Алтуфьево">
+							<option value="Алтуфьево">Алтуфьево</option>
+							<option value="...">...</option>
+						</select>
+					</label>
+
+					<label class="form-field">
+						<div class="form-label">Цена, руб</div>
+						<div class="form-input-group">
+							<input type="number" class="form-input" placeholder="От">
+							<input type="number" class="form-input" placeholder="До">
+						</div>
+					</label>
+					<label class="form-field">
+						<div class="form-label">Площадь дома, м²</div>
+						<div class="form-input-group">
+							<input type="number" class="form-input" placeholder="От">
+							<input type="number" class="form-input" placeholder="До">
+						</div>
+					</label>
+					<label class="form-field">
+						<div class="form-label">Площадь участка, м²</div>
+						<div class="form-input-group">
+							<input type="number" class="form-input" placeholder="От">
+							<input type="number" class="form-input" placeholder="До">
+						</div>
+					</label>
+					<label class="form-field">
+						<div class="form-label">Расстояние от МКАД, км</div>
+						<div class="form-input-group">
+							<input type="number" class="form-input" placeholder="От">
+							<input type="number" class="form-input" placeholder="До">
+						</div>
+					</label>
+				</div>
+				<div class="lk-filter__btns">
+					<button class="lk-filter__btn btn btn--primary">Показать объекты</button>
+					<button class="lk-filter__btn btn btn--contur-primary">Показать на карте</button>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+	<section class="lk-content">
+		<section class="modal active access-modal-cover access-modal-cover--manager" data-modal-cover id="access-modal">
+			<div class="modal-container ">
+				<div class="access-modal">
+					<div class="access-modal__img">
+						<img src="img/sempl/thinking-emoji.png" alt="">
+					</div>
+
+					<div class="access-modal__title">доступ запрещен</div>
+					<div class="access-modal__desc">
+						К сожалению, вы не можете посетить данный раздел. <br>
+						Воспользуйтесь помощью администратора
+					</div>
+				</div>
+
+
+				<!-- <button class="modal-mobile-close" data-modal-close>
+					<svg>
+						<use xlink:href="img/sprite.svg#arrow" />
+					</svg>
+				</button>
+	
+				<button class="modal-close" data-modal-close>
+					<span></span>
+					<span></span>
+				</button> -->
+			</div>
+		</section>
+
+
+
+
+		<div class="test">
+			<p>&lt;!-- </p>
+
+
+			<div class="lk-cover">
+				<div class="btn btn--default">
+					<div class="loader loader--prev"></div>
+					Загружаем
+				</div><br>
+
+
+				<!-- чтобы вынести модалку в фансибокс в отдельный файл - перенести в файл все что внутри modal-container -->
+				<button class="btn btn--primary js-modal-alert" data-fancybox-modal data-type="ajax"
+					data-src="confirm-modal.html">Подтверждение</button>
+
+				<br>
+				<button class="btn btn--primary js-modal-alert" data-fancybox-modal data-type="ajax"
+					data-src="access-modal.html">доступ запрещен</button>
+				<br>
+				<button class="btn btn--primary js-modal-alert" data-modal-link="lk-user-edit">Модалка Пользователь</button>
+				<br>
+				<button class="btn btn--primary js-modal-alert" data-modal-link="lk-team-edit">Модалка Команда</button>
+				<br>
+				<button class="btn btn--primary js-modal-alert" data-modal-link="lk-user-return">Вернуть пользователя из
+					архива</button>
+				<br>
+				<button class="btn btn--primary js-modal-alert" data-modal-link="lk-peredat-object">Передать объект</button>
+				<p>--&gt; </p>
+			</div>
+
+			<h1 class="lk-content__title title">Объекты</h1>
+			<form class="lk-search">
+				<button class="lk-search__btn lk-search__target waves"></button>
+				<input class="lk-search__input" placeholder="Поиск по разделу"></input>
+				<button type="reset" class="lk-search__btn lk-search__reset waves"></button>
+			</form>
+
+			<div class="lk-control">
+				<div class="lk-control__left">
+					<button class="jk-item-control__btn btn btn--accent--light">
+						<svg class="btn-icon">
+							<use xlink:href="img/sprite.svg#cross"></use>
+						</svg>
+					</button>
+				</div>
+
+				<div class="lk-control-item">
+					<div class="lk-control-item__title">Сортировка</div>
+					<div class="lk-control-item__select dropdown custom-select">
+						<button class="custom-select-btn waves" data-toggle-link="sort-toggle-dropdown"><span>Дата:</span> сначала
+							новые</button>
+						<div class="custom-select-list card card--l2 dropdown-content" id="sort-toggle-dropdown">
+							<a class="custom-select-list__item"><span>Дата:</span> сначала новые</a>
+							<a class="custom-select-list__item"><span>Дата:</span> сначала старые</a>
+							<a class="custom-select-list__line"></a>
+							<a class="custom-select-list__item"><span>Цена:</span> по возрастанию</a>
+							<a class="custom-select-list__item"><span>Цена:</span> по убыванию </a>
+							<a class="custom-select-list__line"></a>
+							<a class="custom-select-list__item"><span>Площадь:</span> от меньшего к большему</a>
+							<a class="custom-select-list__item"><span>Площадь:</span> от большего к меньшему </a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="lk-object-list">
+				<div class="card-remove-cover" data-id="jk-1">
+					<div class="card">
+						<div class="jk-item">
+							<div class="jk-item-gallery">
+								<div class="jk-item-gallery-slider swiper-container">
+									<div class="swiper-wrapper">
+										<a data-fancybox="gallery-1" href="img/test-exterier.jpg"
+											class="jk-item-gallery__anons waves swiper-slide">
+											<picture>
+												<source srcset="img/test-exterier-min.webp" type="image/webp">
+												<img src="img/test-exterier-min.jpg" alt="" loading="lazy">
+											</picture>
+										</a>
+										<a data-fancybox="gallery-1" href="img/test-interier.jpg"
+											class="jk-item-gallery__anons waves swiper-slide">
+											<picture>
+												<source srcset="img/test-interier-min.webp" type="image/webp">
+												<img src="img/test-interier-min.jpg" alt="" loading="lazy">
+											</picture>
+										</a>
+
+									</div>
+
+									<div class="jk-item-gallery-pagination"></div>
+									<button class="jk-item-gallery-arrow jk-item-gallery-arrow-prev"></button>
+									<button class="jk-item-gallery-arrow jk-item-gallery-arrow-next"></button>
+								</div>
+								<a data-fancybox="gallery-1" href="img/test-interier.jpg" class="jk-item-gallery__preview waves">
+									<picture>
+										<source srcset="img/test-interier-min.webp" type="image/webp">
+										<img src="img/test-interier-min.jpg" alt="" loading="lazy">
+									</picture>
+								</a>
+								<a data-fancybox="gallery-1" href="img/test-exterier.jpg" class="jk-item-gallery__preview waves">
+									<picture>
+										<source srcset="img/test-exterier-min.webp" type="image/webp">
+										<img src="img/test-exterier-min.jpg" alt="" loading="lazy">
+									</picture>
+								</a>
+
+								<a class="jk-item-gallery__preview waves ">
+									<div class="jk-item-gallery__link">Еще фото</div>
+									<picture>
+										<source srcset="img/test-interier-min.webp" type="image/webp">
+										<img src="img/test-interier-min.jpg" alt="" loading="lazy">
+									</picture>
+								</a>
+
+							</div>
+							<div class="jk-item-content">
+								<div class="jk-item-content__name">2-этажный коттедж, 500 м<sup>2</sup></div>
+								<div class="jk-item-content__status">Москва, СВАО, р-н Северный, Челобитьевское ш., 1Гк11
+									<a data-fancybox data-type="iframe"
+										data-src="https://yandex.ru/map-widget/v1/?um=constructor%3A2e5040778f1101d4afacf107320478c422ca01f0d00c537ed96eff00a6fd0ffc&amp;source=constructor"
+										href="javascript:;" class="link">на карте</a>
+								</div>
+								<div class="jk-item-content__verify jk-item-content__verify--success">
+									<div class="jk-item-properties__info">
+										<img src="img/icons/verified--success.svg" alt=""><span>Прошел экспертизу</span>
+									</div>
+									<button class="jk-item-properties__btn btn btn--success">Скачать отчет</button>
+								</div>
+								<div class="jk-item-content__info"><img src="img/icons/metro.svg" alt="">Алтуфьево ⋅ 15 мин. на
+									транспорте
+								</div>
+								<div class="jk-item-content__info"><img src="img/icons/car.svg" alt="">Дмитровское шоссе, 1 км от МКАД
+								</div>
+
+								<div class="jk-item-content__cost">27 100 000 ₽</div>
+								<div class="jk-item-content__user">
+									<div class="avatar avatar--star avatar--type-1">
+										<div class="avatar__img">
+											<img src="https://static.wallpapers-anime.com/upload/20170531/647/Z/s/7/Zs7FEF.jpg" alt="">
+										</div>
+										<div class="avatar__content">
+											<div class="avatar__title">Добавил(а) Алиса Константинова</div>
+											<div class="avatar__subtitle">17.11.2020</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+							<div class="jk-item-properties">
+								<div class="jk-item-properties__info">
+									<img src="img/icons/home.svg" alt=""><span>Тип: </span>Монолитный
+								</div>
+								<div class="jk-item-properties__info">
+									<img src="img/icons/square-1.svg" alt=""><span>Площадь дома: </span>191.3 м²
+								</div>
+								<div class="jk-item-properties__info">
+									<img src="img/icons/square-2.svg" alt=""><span>Площадь участка: </span>235 соток
+								</div>
+								<div class="jk-item-properties__info">
+									<img src="img/icons/floors.svg" alt=""><span>Количество этажей: </span>2
+								</div>
+								<div class="jk-item-properties__line"></div>
+								<div class="jk-item-properties__verify">
+									<div class="jk-item-properties__info">
+										<img src="img/icons/verified--success.svg" alt=""><span>Дом прошел экспертизу</span>
+									</div>
+									<button class="jk-item-properties__btn btn btn--success">Скачать отчет</button>
+								</div>
+
+							</div>
+
+							<div class="jk-item-control">
+								<div class=" jk-item-control-left">
+									<button class="jk-item-control__btn btn btn--contur-primary">
+										<svg class="btn-icon">
+											<use xlink:href="img/sprite.svg#plus-1" />
+										</svg>
+									</button>
+								</div>
+								<div class="jk-item-control-right">
+									<button class="jk-item-control__btn btn btn--icon-light btn--primary--light" title="Редактировать"
+										data-tooltip data-tooltip-position="top">
+										<svg class="btn-icon">
+											<use xlink:href="img/sprite.svg#edit" />
+										</svg>
+
+
+									</button>
+									<button class="jk-item-control__btn btn btn--icon-light btn--primary--light tooltip-parent">
+										<svg class="btn-icon">
+											<use xlink:href="img/sprite.svg#folders" />
+										</svg>
+										<div class="tooltip tooltip--top">В архив</div>
+									</button>
+									<button class="jk-item-control__btn btn btn--accent--light tooltip-parent"
+										onclick="Actions.jk().remove('jk-1').start()">
+										<svg class="btn-icon">
+											<use xlink:href="img/sprite.svg#delete" />
+										</svg>
+										<div class="tooltip tooltip--top">Удалить</div>
+									</button>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+
+					<button class="jk-return btn btn--white" onclick="Actions.jk().remove('jk-1').cancel()">
+
+						<div class="jk-return__title">2-этажный коттедж, 500 м<sup>2</sup> </div>
+						<div class="jk-return__subtitle">Москва, СВАО, р-н Северный, Челобитьевское ш., 1Гк11</div>
+						<div class="jk-return__cost">27 100 000 ₽</div>
+						<svg class="btn-icon">
+							<use xlink:href="img/sprite.svg#return" />
+						</svg>
+						Нажмите чтобы восстановить&nbsp;
+
+						<div class="jk-return-time"> 5</div>с
+					</button>
+				</div>
+
+				<div class="card-remove-cover" data-id="jk-2">
+					<div class="card">
+						<div class=" jk-item ">
+							<div class="jk-item-gallery">
+								<div class="jk-item-gallery-slider swiper-container">
+									<div class="swiper-wrapper">
+										<a data-fancybox="gallery-2" href="img/test-interier-min.jpg"
+											class="jk-item-gallery__anons waves swiper-slide">
+											<picture>
+												<source srcset="img/test-interier-min.webp" type="image/webp">
+												<img src="img/test-interier-min.jpg" alt="" loading="lazy">
+											</picture>
+										</a>
+										<a data-fancybox="gallery-2" href="img/test-exterier-min.jpg"
+											class="jk-item-gallery__anons waves swiper-slide">
+											<picture>
+												<source srcset="img/test-exterier-min.webp" type="image/webp">
+												<img src="img/test-exterier-min.jpg" alt="" loading="lazy">
+											</picture>
+										</a>
+									</div>
+
+									<div class="jk-item-gallery-pagination"></div>
+									<button class="jk-item-gallery-arrow jk-item-gallery-arrow-prev"></button>
+									<button class="jk-item-gallery-arrow jk-item-gallery-arrow-next"></button>
+								</div>
+								<a data-fancybox="gallery-2" href="img/test-exterier.jpg" class="jk-item-gallery__preview waves">
+									<picture>
+										<source srcset="img/test-exterier-min.webp" type="image/webp">
+										<img src="img/test-exterier-min.jpg" alt="" loading="lazy">
+									</picture>
+								</a>
+								<a data-fancybox="gallery-2" href="img/test-interier.jpg" class="jk-item-gallery__preview waves">
+									<picture>
+										<source srcset="img/test-interier-min.webp" type="image/webp">
+										<img src="img/test-interier-min.jpg" alt="" loading="lazy">
+									</picture>
+								</a>
+								<a class="jk-item-gallery__preview waves ">
+									<div class="jk-item-gallery__link">Еще фото</div>
+									<picture>
+										<source srcset="img/test-exterier-min.webp" type="image/webp">
+										<img src="img/test-exterier-min.jpg" alt="" loading="lazy">
+									</picture>
+								</a>
+							</div>
+							<div class="jk-item-content">
+								<div class="jk-item-content__name">2-этажный коттедж, 500 м²</div>
+								<div class="jk-item-content__status">Москва, СВАО, р-н Северный, Челобитьевское ш., 1Гк11</div>
+								<div class="jk-item-content__verify">
+									<div class="jk-item-properties__info">
+										<span>Не проходил экспертизу</span>
+									</div>
+									<button class="jk-item-properties__btn btn btn--pikachu btn--disable">Заказать отчет</button>
+								</div>
+								<div class="jk-item-content__info"><img src="img/icons/metro.svg" alt="">Алтуфьево ⋅ 15 мин. на
+									транспорте
+								</div>
+								<div class="jk-item-content__info"><img src="img/icons/car.svg" alt="">Дмитровское шоссе, 1 км от МКАД
+								</div>
+
+								<div class="jk-item-content__cost">27 100 000 ₽</div>
+								<div class="jk-item-content__user">
+									<div class="avatar avatar--type-2">
+										<div class="avatar__img">
+											<img src="https://static.wallpapers-anime.com/upload/20170531/647/Z/s/7/Zs7FEF.jpg" alt="">
+										</div>
+										<div class="avatar__content">
+											<div class="avatar__title">Добавил(а) Алиса Константинова</div>
+											<div class="avatar__subtitle">17.11.2020</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="jk-item-properties">
+								<div class="jk-item-properties__info">
+									<img src="img/icons/home.svg" alt=""><span>Тип: </span>Монолитный
+								</div>
+								<div class="jk-item-properties__info">
+									<img src="img/icons/square-1.svg" alt=""><span>Площадь дома: </span>191.3 м²
+								</div>
+								<div class="jk-item-properties__info">
+									<img src="img/icons/square-2.svg" alt=""><span>Площадь участка: </span>235 соток
+								</div>
+								<div class="jk-item-properties__info">
+									<img src="img/icons/floors.svg" alt=""><span>Количество этажей: </span>2
+								</div>
+								<div class="jk-item-properties__line"></div>
+								<div class="jk-item-properties__verify">
+									<div class="jk-item-properties__info">
+										<span>Дом не проходил экспертизу</span>
+									</div>
+									<button class="jk-item-properties__btn btn btn--disable btn--pikachu">Заказать отчет</button>
+								</div>
+
+							</div>
+
+
+
+							<div class="jk-item-control">
+								<div class="jk-item-control-left">
+									<button class="jk-item-control__btn btn btn--primary">
+										<svg class="btn-icon">
+											<use xlink:href="img/sprite.svg#gal-ochka" />
+										</svg>
+									</button>
+								</div>
+								<div class="jk-item-control-right">
+									<button class="jk-item-control__btn btn  btn--icon-light btn--primary--light" title="Редактировать"
+										data-tooltip data-tooltip-position="top">
+										<svg class="btn-icon">
+											<use xlink:href="img/sprite.svg#edit" />
+										</svg>
+									</button>
+									<button class="jk-item-control__btn btn  btn--icon-light btn--primary--light" title="В архив"
+										data-tooltip data-tooltip-position="top">
+										<svg class="btn-icon">
+											<use xlink:href="img/sprite.svg#folders" />
+										</svg>
+									</button>
+									<button class="jk-item-control__btn btn btn--accent--light" title="Удалить" data-tooltip
+										data-tooltip-position="top" onclick="Actions.jk().remove('jk-2').start()">
+										<svg class="btn-icon">
+											<use xlink:href="img/sprite.svg#delete" />
+										</svg>
+									</button>
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+
+
+					<button class="jk-return btn btn--white" onclick="Actions.jk().remove('jk-2').cancel()">
+
+						<div class="jk-return__title">2-этажный коттедж, 500 м<sup>2</sup> </div>
+						<div class="jk-return__subtitle">Москва, СВАО, р-н Северный, Челобитьевское ш., 1Гк11</div>
+						<div class="jk-return__cost">27 100 000 ₽</div>
+						<svg class="btn-icon">
+							<use xlink:href="img/sprite.svg#return" />
+						</svg>
+						Нажмите чтобы восстановить&nbsp;
+
+						<div class="jk-return-time"> 5</div>с
+					</button>
+				</div>
+
+
+				<div class="card-remove-cover" data-id="jk-3">
+					<div class="card">
+						<div class=" jk-item ">
+							<div class="jk-item-gallery">
+								<div class="jk-item-gallery-slider swiper-container">
+									<div class="swiper-wrapper">
+										<a data-fancybox="gallery-3" href="img/test-exterier.jpg"
+											class="jk-item-gallery__anons waves swiper-slide">
+											<picture>
+												<source srcset="img/test-exterier-min.webp" type="image/webp">
+												<img src="img/test-exterier-min.jpg" alt="" loading="lazy">
+											</picture>
+										</a>
+										<a data-fancybox="gallery-3" href="img/test-interier.jpg"
+											class="jk-item-gallery__anons waves swiper-slide">
+											<picture>
+												<source srcset="img/test-interier-min.webp" type="image/webp">
+												<img src="img/test-interier-min.jpg" alt="" loading="lazy">
+											</picture>
+										</a>
+
+									</div>
+
+									<div class="jk-item-gallery-pagination"></div>
+									<button class="jk-item-gallery-arrow jk-item-gallery-arrow-prev"></button>
+									<button class="jk-item-gallery-arrow jk-item-gallery-arrow-next"></button>
+								</div>
+								<a data-fancybox="gallery-3" href="img/test-interier.jpg" class="jk-item-gallery__preview waves">
+									<picture>
+										<source srcset="img/test-interier-min.webp" type="image/webp">
+										<img src="img/test-interier-min.jpg" alt="" loading="lazy">
+									</picture>
+								</a>
+								<a data-fancybox="gallery-3" href="img/test-exterier.jpg" class="jk-item-gallery__preview waves">
+									<picture>
+										<source srcset="img/test-exterier-min.webp" type="image/webp">
+										<img src="img/test-exterier-min.jpg" alt="" loading="lazy">
+									</picture>
+								</a>
+
+								<a class="jk-item-gallery__preview waves ">
+									<div class="jk-item-gallery__link">Еще фото</div>
+									<picture>
+										<source srcset="img/test-interier-min.webp" type="image/webp">
+										<img src="img/test-interier-min.jpg" alt="" loading="lazy">
+									</picture>
+								</a>
+
+							</div>
+							<div class="jk-item-content">
+								<div class="jk-item-content__name">2-этажный коттедж, 500 м²</div>
+								<div class="jk-item-content__status">Москва, СВАО, р-н Северный, Челобитьевское ш., 1Гк11</div>
+								<div class="jk-item-content__verify">
+									<div class="jk-item-properties__info">
+										<span>Не проходил экспертизу</span>
+									</div>
+									<button class="jk-item-properties__btn btn btn--pikachu btn--disable">Заказать отчет</button>
+								</div>
+								<div class="jk-item-content__info"><img src="img/icons/metro.svg" alt="">Алтуфьево ⋅ 15 мин. на
+									транспорте
+								</div>
+								<div class="jk-item-content__info"><img src="img/icons/car.svg" alt="">Дмитровское шоссе, 1 км от МКАД
+								</div>
+
+								<div class="jk-item-content__cost">27 100 000 ₽</div>
+								<div class="jk-item-content__user">
+									<div class="avatar">
+										<div class="avatar__img">
+											<img src="https://static.wallpapers-anime.com/upload/20170531/647/Z/s/7/Zs7FEF.jpg" alt="">
+										</div>
+										<div class="avatar__content">
+											<div class="avatar__title">Добавил(а) Алиса Константинова</div>
+											<div class="avatar__subtitle">17.11.2020</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="jk-item-properties">
+								<div class="jk-item-properties__info">
+									<img src="img/icons/home.svg" alt=""><span>Тип: </span>Монолитный
+								</div>
+								<div class="jk-item-properties__info">
+									<img src="img/icons/square-1.svg" alt=""><span>Площадь дома: </span>191.3 м²
+								</div>
+								<div class="jk-item-properties__info">
+									<img src="img/icons/square-2.svg" alt=""><span>Площадь участка: </span>235 соток
+								</div>
+								<div class="jk-item-properties__info">
+									<img src="img/icons/floors.svg" alt=""><span>Количество этажей: </span>2
+								</div>
+								<div class="jk-item-properties__line"></div>
+								<div class="jk-item-properties__verify">
+									<div class="jk-item-properties__info">
+										<span>Дом не проходил экспертизу</span>
+									</div>
+									<button class="jk-item-properties__btn btn btn--disable btn--pikachu">Заказать отчет</button>
+								</div>
+
+							</div>
+
+
+
+							<div class="jk-item-control">
+								<div class="jk-item-control-left">
+									<button class="jk-item-control__btn btn btn--primary">
+										<svg class="btn-icon">
+											<use xlink:href="img/sprite.svg#gal-ochka" />
+										</svg>
+									</button>
+								</div>
+								<div class="jk-item-control-right">
+									<button class="jk-item-control__btn btn  btn--icon-light btn--primary--light">
+										<svg class="btn-icon">
+											<use xlink:href="img/sprite.svg#edit" />
+										</svg>
+									</button>
+									<button class="jk-item-control__btn btn  btn--icon-light btn--primary--light">
+										<svg class="btn-icon">
+											<use xlink:href="img/sprite.svg#folders" />
+										</svg>
+									</button>
+									<button class="jk-item-control__btn btn btn--accent--light"
+										onclick="Actions.jk().remove('jk-3').start()">
+										<svg class="btn-icon">
+											<use xlink:href="img/sprite.svg#delete" />
+										</svg>
+									</button>
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+
+					<button class="jk-return btn btn--white" onclick="Actions.jk().remove('jk-3').cancel()">
+
+						<div class="jk-return__title">2-этажный коттедж, 500 м<sup>2</sup> </div>
+						<div class="jk-return__subtitle">Москва, СВАО, р-н Северный, Челобитьевское ш., 1Гк11</div>
+						<div class="jk-return__cost">27 100 000 ₽</div>
+						<svg class="btn-icon">
+							<use xlink:href="img/sprite.svg#return" />
+						</svg>
+						Нажмите чтобы восстановить&nbsp;
+
+						<div class="jk-return-time"> 5</div>с
+					</button>
+				</div>
+
+			</div>
+
+
+			<div class="lk-bottom">
+				<section class="lk-content">
+					<div class="lk-bottom__btns">
+						<button class="lk-bottom__send btn btn--white" data-modal-link="send-user-modal">
+							<svg class="btn-icon">
+								<use xlink:href="img/sprite.svg#option" />
+							</svg>
+							Отправить пользователю
+
+						</button>
+					</div>
+					<div class="lk-bottom__btns">
+						<div class="lk-bottom__info">8 объектов выбрано</div>
+					</div>
+				</section>
+			</div>
+	</section>
+
+
+
+
+
+
+	<section class="modal" data-modal-cover id="jk-edit-modal">
+		<div class="modal-container jk-edit-modal__container">
+			<div class="jk-edit-modal">
+				<form class="jk-edit-form card jk-edit-modal__form">
+					<div class="jk-edit-form__title title">Добавить объект </div>
+					<div class="jk-edit-form-block">
+						<label class="form-field form-field--check">
+							<input type="checkbox" name="" id="" data-check-type="1">
+							<div class="form-label">Эксклюзивный договор <div class="icon-star"></div>
+							</div>
+						</label>
+					</div>
+					<div class="jk-edit-form-block jk-edit-form-block--with-transport" data-edit-block id="jk-edit-1">
+						<div class="jk-edit-form-fields">
+							<label class="form-field">
+								<div class="form-label">Название объекта</div>
+								<input type="text" class="form-input" required>
+							</label>
+							<label class="form-field">
+								<div class="form-label">Адрес</div>
+								<input type="text" class="form-input" required>
+							</label>
+
+						</div>
+						<div class="jk-edit-map">
+							<iframe
+								src="https://yandex.ru/map-widget/v1/?um=constructor%3A2e5040778f1101d4afacf107320478c422ca01f0d00c537ed96eff00a6fd0ffc&amp;source=constructor"
+								width="100%" height="288" frameborder="0"></iframe>
+						</div>
+						<div class="jk-edit-transport">
+							<div class="jk-edit-transport__fields empty" data-max-copy="3" id="transport-1" data-fields-isempty>
+								<label class="form-field">
+									<div class="form-label">Шоссе</div>
+									<input type="text" class="form-input" required placeholder="Введите название шоссе">
+								</label>
+								<label class="form-field">
+									<div class="form-label">Км от МКАД</div>
+									<input type="text" class="form-input" required>
+								</label>
+
+								<div class="jk-edit-transport__control">
+									<label class="form-field form-field--radio jk-edit-transport__ismain">
+										<input type="radio" class="form-input" name="main-transport">
+										<div class="form-label">Основное</div>
+									</label>
+									<button type="button"
+										class="btn btn--accent--light jk-edit-transport__remove jk-edit-transport__remove--mobile"
+										data-remove-node="transport-1">
+										<div class="icon">
+											<svg>
+												<use xlink:href="img/sprite.svg#cross" />
+											</svg>
+										</div>
+										Удалить
+									</button>
+									<button type="button" class="btn btn--accent jk-edit-transport__remove"
+										data-remove-node="transport-1">
+										<svg>
+											<use xlink:href="img/sprite.svg#cross" />
+										</svg>
+									</button>
+								</div>
+							</div>
+							<div class="jk-edit-transport__btns">
+								<button type="button" class="btn btn--primary jk-edit-transport__btn"
+									data-copy-node="transport-1">Добавить шоссе</button>
+							</div>
+						</div>
+						<div class="jk-edit-transport">
+							<div class="jk-edit-transport__fields empty" data-max-copy="3" id="transport-2" data-fields-isempty>
+								<label class="form-field">
+									<div class="form-label">Ближайшее метро</div>
+									<input type="text" class="form-input" required placeholder="Введите название станции">
+								</label>
+								<label class="form-field">
+									<div class="form-label">Минут до метро</div>
+									<input type="text" class="form-input" required>
+								</label>
+								<label class="form-field form-field--select">
+									<div class="form-label">Пешком/Транспорт</div>
+									<select name="" class="form-input" placeholder="Пешком" required>
+										<option value="Пешком">Пешком</option>
+										<option value="Транспорт">Транспорт</option>
+									</select>
+								</label>
+
+								<div class="jk-edit-transport__control">
+									<label class="form-field form-field--radio jk-edit-transport__ismain">
+										<input type="radio" class="form-input" name="main-transport">
+										<div class="form-label">Основное</div>
+									</label>
+									<button type="button"
+										class="btn btn--accent--light jk-edit-transport__remove jk-edit-transport__remove--mobile"
+										data-remove-node="transport-2">
+										<div class="icon">
+											<svg>
+												<use xlink:href="img/sprite.svg#cross" />
+											</svg>
+										</div>
+
+										Удалить
+									</button>
+									<button type="button" class="btn btn--accent jk-edit-transport__remove"
+										data-remove-node="transport-2">
+										<svg>
+											<use xlink:href="img/sprite.svg#cross" />
+										</svg>
+									</button>
+								</div>
+							</div>
+							<div class="jk-edit-transport__btns">
+								<button type="button" class="btn btn--primary jk-edit-transport__btn"
+									data-copy-node="transport-2">Добавить станцию</button>
+							</div>
+
+
+						</div>
+
+
+					</div>
+					<div class="jk-edit-form-block" data-edit-block id="jk-edit-2">
+						<div class="jk-edit-form__subtitle">Общая информация</div>
+						<div class="jk-edit-form-fields">
+							<label class="form-field form-field--radio jk-edit-transport__ismain">
+								<input type="radio" class="form-input" name="type" checked>
+								<div class="form-label">Новостройка</div>
+							</label>
+							<label class="form-field form-field--radio jk-edit-transport__ismain">
+								<input type="radio" class="form-input" name="type">
+								<div class="form-label">Вторичное жилье</div>
+							</label>
+							<label class="jk-edit__field--middle form-field  form-field--select">
+								<div class="form-label">Тип дома</div>
+								<select name="" class="form-input" placeholder="Кирпичный" required>
+									<option value="Кирпичный">Кирпичный</option>
+									<option value="Не кирпичный">Не кирпичный</option>
+								</select>
+							</label>
+							<label class="jk-edit__field--small form-field">
+								<div class="form-label">Площадь дома, м² </div>
+								<input type="number" class="form-input" required>
+							</label>
+							<label class="jk-edit__field--small form-field">
+								<div class="form-label">Площадь участка, сотки </div>
+								<input type="number" class="form-input" required>
+							</label>
+							<label class="jk-edit__field--small form-field">
+								<div class="form-label">Количество этажей</div>
+								<input type="number" class="form-input" required>
+							</label>
+						</div>
+					</div>
+					<div class="jk-edit-form-block" data-edit-block id="jk-edit-3">
+						<div class="jk-edit-form__subtitle">Дополнительная информация</div>
+						<div class="jk-edit-form-fields">
+							<label class="jk-edit__field--small form-field">
+								<div class="form-label">Год постройки</div>
+								<input type="number" class="form-input">
+							</label>
+							<label class="jk-edit__field--middle form-field  form-field--select">
+								<div class="form-label">Статус участка</div>
+								<select name="" class="form-input" required>
+									<option value="Личное подсобное хозяйство">Личное подсобное хозяйство</option>
+									<option value="Еще">Еще</option>
+								</select>
+							</label>
+							<label class="jk-edit__field--middle form-field  form-field--select">
+								<div class="form-label">Отопление</div>
+								<select name="" class="form-input">
+									<option value="Центральное газовое">Центральное газовое</option>
+									<option value="Еще">Еще</option>
+								</select>
+							</label>
+
+							<label class="jk-edit__field--small form-field">
+								<div class="form-label">Количество спален</div>
+								<input type="text" class="form-input" required>
+							</label>
+
+							<div class="form-label">Дополнительные удобства</div>
+							<div class="jk-edit-grid">
+								<label class="form-field form-field--check">
+									<input type="checkbox" name="">
+									<div class="form-label">Электричество </div>
+								</label>
+								<label class="form-field form-field--check">
+									<input type="checkbox" name="">
+									<div class="form-label">Газ </div>
+								</label>
+								<label class="form-field form-field--check">
+									<input type="checkbox" name="">
+									<div class="form-label">Баня </div>
+								</label>
+								<label class="form-field form-field--check">
+									<input type="checkbox" name="">
+									<div class="form-label">Канализация </div>
+								</label>
+								<label class="form-field form-field--check">
+									<input type="checkbox" name="">
+									<div class="form-label">Охрана </div>
+								</label>
+								<label class="form-field form-field--check">
+									<input type="checkbox" name="">
+									<div class="form-label">Гараж </div>
+								</label>
+								<label class="form-field form-field--check">
+									<input type="checkbox" name="">
+									<div class="form-label">Водоснабжение </div>
+								</label>
+								<label class="form-field form-field--check">
+									<input type="checkbox" name="">
+									<div class="form-label">Телефон </div>
+								</label>
+								<label class="form-field form-field--check">
+									<input type="checkbox" name="">
+									<div class="form-label">Бассейн </div>
+								</label>
+							</div>
+
+						</div>
+					</div>
+					<div class="jk-edit-form-block" data-edit-block id="jk-edit-4">
+						<div class="jk-edit-form__subtitle">Описание объекта</div>
+						<label class="form-field">
+							<textarea class="form-input" name="" id="" cols="30" rows="10" required></textarea>
+						</label>
+					</div>
+					<div class="jk-edit-form-block" data-edit-block id="jk-edit-5">
+						<div class="jk-edit-form__subtitle">Цена и условия сделки</div>
+						<div class="jk-edit-form-fields">
+							<label class="jk-edit__field--middle form-field">
+								<div class="form-label">Цена объекта, ₽</div>
+								<input type="number" class="form-input" required>
+							</label>
+							<label class="jk-edit__field--middle form-field">
+								<div class="form-label">Бонус агенту, ₽</div>
+								<input type="number" class="form-input" required>
+							</label>
+						</div>
+
+					</div>
+					<div class="jk-edit-form-block" data-edit-block id="jk-edit-6">
+						<div class="jk-edit-form__subtitle">Фотоматериалы</div>
+						<div class="jk-edit-form__desc">
+							Не допускаются фотографии с водяными знаками, чужих объектов и рекламные баннеры. JPG, PNG, GIF.
+							Размер фото не более 10 мб
+						</div>
+						<div class="jk-edit-media">
+							<label class="form-field form-field--file form-field--dropable" data-field>
+								<input type="file" accept="image/*" class="form-input" required>
+								<div class="form-field-preview">
+
+									<div class="form-field-preview__content waves">
+										<svg>
+											<use xlink:href="img/sprite.svg#camera" />
+										</svg>
+										Главное фото
+									</div>
+
+									<img class="form-field-preview__img" src="" alt="" data-preview>
+								</div>
+							</label>
+
+
+							<label class="form-field form-field--file form-field form-field--dropable form-field--multiple"
+								data-field>
+								<input type="file" accept="image/*" class="form-input" multiple>
+
+								<div class="form-field-dropzone">
+									<div class="form-field-dropzone__placeholder">
+										<svg>
+											<use xlink:href="img/sprite.svg#img-move" /></svg>Перетащите сюда изображения
+									</div>
+									<div class="form-field-dropzone__files" data-field-files>
+
+									</div>
+								</div>
+							</label>
+						</div>
+
+					</div>
+					<div class="jk-edit-form-block jk-edit-form__btns">
+						<button type="submit" data-modal-close class="btn jk-edit-form__btn btn--primary">Добавить
+							объект</button>
+						<button type="reset" data-modal-close class="btn jk-edit-form__btn btn--contur">Отмена</button>
+
+					</div>
+
+				</form>
+				<div class="jk-edit-links card jk-edit-modal__links">
+					<div class="jk-edit-links__title">Основные разделы</div>
+
+					<a href="#jk-edit-1" data-edit-nav="jk-edit-1" class="jk-edit-link">Название и адрес</a>
+					<a href="#jk-edit-2" data-edit-nav="jk-edit-2" class="jk-edit-link">Общая информация</a>
+					<a href="#jk-edit-3" data-edit-nav="jk-edit-3" class="jk-edit-link">Дополнительная информация</a>
+					<a href="#jk-edit-4" data-edit-nav="jk-edit-4" class="jk-edit-link">Описание</a>
+					<a href="#jk-edit-5" data-edit-nav="jk-edit-5" class="jk-edit-link">Цена и условия сделки</a>
+					<a href="#jk-edit-6" data-edit-nav="jk-edit-6" class="jk-edit-link">Фотоматериалы</a>
+				</div>
+			</div>
+
+
+			<button class="modal-mobile-close" data-modal-close>
+				<svg>
+					<use xlink:href="img/sprite.svg#arrow" />
+				</svg>
+			</button>
+
+			<button class="modal-close" data-modal-close>
+				<span></span>
+				<span></span>
+			</button>
+		</div>
+	</section>
+
+
+
+
+
+
+
+	<section class="modal" data-modal-cover id="confirm-modal">
+		<div class="modal-container confirm-modal card">
+			<div class="confirm-modal__title">Заблокировать пользователя?</div>
+			<div class="confirm-modal__btns">
+				<button class="confirm-modal__btn btn btn--primary" data-modal-close="ok">Да</button>
+				<button class="confirm-modal__btn btn btn--primary--light" data-modal-close>Отмена</button>
+			</div>
+
+			<!-- <button class="modal-mobile-close" data-modal-close>
+				<svg>
+					<use xlink:href="img/sprite.svg#arrow" /></svg>
+			</button> -->
+
+			<!-- <button class="modal-close" data-modal-close>
+				<span></span>
+				<span></span>
+			</button> -->
+		</div>
+	</section>
+
+
+
+
+	<!-- чтобы вынести модалку в фансибокс в отдельный файл - перенести в файл все что внутри modal-container -->
+	<section class="modal" data-modal-cover id="lk-user-edit">
+		<div class="modal-container">
+			<div class="lk-user-edit-modal card">
+				<div class="lk-modal-plate lk-user-edit-top">
+					<div class="avatar avatar--star avatar--type-1">
+						<div class="avatar__img">
+							<img src="https://static.wallpapers-anime.com/upload/20170531/647/Z/s/7/Zs7FEF.jpg" alt="">
+						</div>
+						<div class="avatar__content">
+							<div class="avatar__title">Алиса Константинова</div>
+						</div>
+					</div>
+					<div class="lk-user-edit-control">
+						<button class="lk-user-edit-control__item btn btn--accent--light">
+							<svg class="icon ">
+								<use xlink:href="img/sprite.svg#lock" /></svg>
+						</button>
+						<button class="lk-user-edit-control__item btn btn--primary--light">
+							<svg class="icon ">
+								<use xlink:href="img/sprite.svg#folders" /></svg>
+						</button>
+					</div>
+				</div>
+				<div class="lk-modal-content">
+					<div class="lk-modal-form">
+						<div class="lk-user-edit-mood">
+							<label class="lk-user-edit-mood__label">
+								<input type="radio" name="lk-user-edit-mood" checked>
+								<div class="lk-user-edit-mood__item mood-item--happy">
+									<svg class="icon">
+										<use xlink:href="img/sprite.svg#mood-happy" /></svg>
+								</div>
+							</label>
+							<label class="lk-user-edit-mood__label">
+								<input type="radio" name="lk-user-edit-mood">
+								<div class="lk-user-edit-mood__item mood-item--netral">
+									<svg class="icon">
+										<use xlink:href="img/sprite.svg#mood-netral" /></svg>
+								</div>
+							</label>
+							<label class="lk-user-edit-mood__label">
+								<input type="radio" name="lk-user-edit-mood">
+								<div class="lk-user-edit-mood__item mood-item--angry">
+									<svg class="icon">
+										<use xlink:href="img/sprite.svg#mood-angry" /></svg>
+								</div>
+							</label>
+						</div>
+
+						<div class="lk-modal-fields">
+							<label class="form-field">
+								<div class="form-label">Телефон</div>
+								<div class="form-input-cover">
+									<input type="tel" class="form-input" value="+7 (918) 000 00 00">
+								</div>
+							</label>
+							<label class="form-field">
+								<div class="form-label">Комментарий</div>
+								<div class="form-input-cover">
+									<textarea class="form-input"></textarea>
+								</div>
+							</label>
+						</div>
+						<div class="lk-modal-btns">
+							<button class="lk-modal-btn btn btn--primary">Сохранить</button>
+							<button class="lk-modal-btn btn btn--primary--light">Отмена</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="modal" data-modal-cover id="lk-team-edit">
+		<div class="modal-container">
+			<div class="lk-team-edit-modal card">
+				<div class="lk-modal-plate">
+					<div class="lk-modal-top__title">Редактирование</div>
+				</div>
+				<div class="lk-modal-content">
+					<div class="lk-modal-form">
+						<div class="lk-team-edit-top">
+							<label class="lk-team-edit-avatar form-field--dropable" data-field>
+								<input type="file" name="" id="">
+								<div class="avatar avatar--large">
+									<div class="avatar__img">
+										<img src="https://static.wallpapers-anime.com/upload/20170531/647/Z/s/7/Zs7FEF.jpg" alt=""
+											data-preview>
+										<div class="avatar__load">
+											<svg class="icon">
+												<use xlink:href="img/sprite.svg#camera" /></svg>
+										</div>
+									</div>
+								</div>
+							</label>
+
+							<label class="form-field form-field--switch">
+								<input type="checkbox" name="">
+								<div class="form-switch"></div>
+								<div class="form-label">Активный </div>
+							</label>
+						</div>
+
+						<div class="lk-modal-fields">
+							<label class="form-field">
+								<div class="form-label">Имя</div>
+								<div class="form-input-cover">
+									<input type="text" class="form-input">
+								</div>
+							</label>
+							<label class="form-field">
+								<div class="form-label">Телефон</div>
+								<div class="form-input-cover">
+									<input type="tel" class="form-input" value="+7 (918) 000 00 00">
+								</div>
+							</label>
+							<label class="form-field">
+								<div class="form-label">Должность</div>
+								<div class="form-input-cover">
+									<input type="text" class="form-input">
+								</div>
+							</label>
+						</div>
+
+					</div>
+				</div>
+
+				<label class="lk-modal-plate lk-team-edit-admin form-field form-field--switch">
+					<div class="form-label df ac">Администратор <div class="lk-user-top__name-icon"><img
+								src="img/icons/corona.svg" alt=""></div>
+					</div>
+					<input type="checkbox" name="">
+					<div class="form-switch"></div>
+				</label>
+				<div class="lk-modal-content">
+					<div class="df jb ac">
+						<div class="lk-team-edit__subtitle"> Доступные разделы </div>
+						<button class="lk-team-edit__link" data-checkall="team-modal-checklist">Выделить всё</button>
+					</div>
+					<div class="lk-team-edit-checklist" id="team-modal-checklist">
+						<label class="lk-team-edit-checklist__item form-field form-field--check">
+							<input type="checkbox" name="">
+							<div class="form-label">Объекты </div>
+						</label>
+						<label class="lk-team-edit-checklist__item form-field form-field--check">
+							<input type="checkbox" name="">
+							<div class="form-label">Пользователи </div>
+						</label>
+						<label class="lk-team-edit-checklist__item form-field form-field--check">
+							<input type="checkbox" name="">
+							<div class="form-label">Запросы на подборку </div>
+						</label>
+						<label class="lk-team-edit-checklist__item form-field form-field--check">
+							<input type="checkbox" name="">
+							<div class="form-label">Запросы на просмотр </div>
+						</label>
+						<label class="lk-team-edit-checklist__item form-field form-field--check">
+							<input type="checkbox" name="">
+							<div class="form-label">Архив </div>
+						</label>
+						<label class="lk-team-edit-checklist__item form-field form-field--check">
+							<input type="checkbox" name="">
+							<div class="form-label">Команда </div>
+						</label>
+					</div>
+
+					<div class="lk-modal-btns">
+						<button class="lk-modal-btn btn btn--primary">Сохранить</button>
+						<button class="lk-modal-btn btn btn--primary--light">Отмена</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<section class="modal" data-modal-cover id="lk-user-return">
+		<div class="modal-container">
+			<div class="lk-user-edit-modal card">
+				<div class="lk-modal-plate lk-user-edit-top">
+					<div class="avatar avatar--star avatar--type-1">
+						<div class="avatar__img">
+							<img src="https://static.wallpapers-anime.com/upload/20170531/647/Z/s/7/Zs7FEF.jpg" alt="">
+						</div>
+						<div class="avatar__content">
+							<div class="avatar__title">Алиса Константинова</div>
+						</div>
+					</div>
+					<div class="lk-user-edit-control">
+						<button class="lk-user-edit-control__item btn btn--accent--light">
+							<svg class="icon ">
+								<use xlink:href="img/sprite.svg#lock" /></svg>
+						</button>
+						<button class="lk-user-edit-control__item btn btn--success--light" data-tooltip
+							title="Восстановить пользователя">
+							<svg class="icon ">
+								<use xlink:href="img/sprite.svg#return" /></svg>
+						</button>
+					</div>
+				</div>
+				<div class="lk-modal-content">
+					<div class="lk-modal-form">
+
+
+						<div class="lk-modal-fields">
+							<label class="form-field">
+								<div class="form-label">Телефон</div>
+								<div class="form-input-cover">
+									<input type="tel" class="form-input" value="+7 (918) 000 00 00">
+								</div>
+							</label>
+							<label class="form-field">
+								<div class="form-label">Комментарий</div>
+								<div class="form-input-cover">
+									<textarea class="form-input"></textarea>
+								</div>
+							</label>
+						</div>
+						<div class="lk-modal-btns">
+							<button class="lk-modal-btn btn btn--primary">Сохранить</button>
+							<button class="lk-modal-btn btn btn--primary--light">Отмена</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<section class="modal" data-modal-cover id="lk-peredat-object">
+		<div class="modal-container">
+			<div class="lk-transfer-object-modal card">
+				<div class="lk-modal-plate">
+					<div class="lk-modal-top__title">Передать объект</div>
+				</div>
+				<div class="lk-modal-content">
+					<div class="lk-transfer-object-list">
+						<div class="lk-transfer-object__item">
+							<div class="avatar avatar--type-2">
+								<div class="avatar__img">
+									<img src="https://static.wallpapers-anime.com/upload/20170531/647/Z/s/7/Zs7FEF.jpg" alt="">
+								</div>
+								<div class="avatar__content">
+									<div class="avatar__title">Алиса Константинова</div>
+								</div>
+							</div>
+							<button class="lk-transfer-object__btn">
+								<svg class="icon reverse-x">
+									<use xlink:href="img/sprite.svg#arrow" /></svg>
+							</button>
+						</div>
+						<div class="lk-transfer-object__item">
+							<div class="avatar avatar--type-2">
+								<div class="avatar__img">
+									<img src="https://static.wallpapers-anime.com/upload/20170531/647/Z/s/7/Zs7FEF.jpg" alt="">
+								</div>
+								<div class="avatar__content">
+									<div class="avatar__title">Алиса Константинова</div>
+								</div>
+							</div>
+							<button class="lk-transfer-object__btn">
+								<svg class="icon reverse-x">
+									<use xlink:href="img/sprite.svg#arrow" /></svg>
+							</button>
+						</div>
+						<div class="lk-transfer-object__item">
+							<div class="avatar avatar--type-2">
+								<div class="avatar__img">
+									<img src="https://static.wallpapers-anime.com/upload/20170531/647/Z/s/7/Zs7FEF.jpg" alt="">
+								</div>
+								<div class="avatar__content">
+									<div class="avatar__title">Алиса Константинова</div>
+								</div>
+							</div>
+							<button class="lk-transfer-object__btn">
+								<svg class="icon reverse-x">
+									<use xlink:href="img/sprite.svg#arrow" /></svg>
+							</button>
+						</div>
+					</div>
+					<div class="lk-modal-btns">
+						<button class="lk-modal-btn btn btn--primary--light">Отмена</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+
+
+
+	<script src="source/jquery-3.5.0.min.js"></script>
+	<script src="source/jquery.fancybox.min.js"></script>
+	<script src="source/maskedinput.js"></script>
+	<script src="source/waves.js"></script>
+	<script src="source/swiper-bundle.min.js"></script>
+	<script src="source/select.bundle.min.js"></script>
+	<script src="js/frontend--logger.js"></script>
+
+	<script src="js/frontend--polifils.js"></script>
+	<script src="js/frontend--modal.js"></script>
+	<script src="js/frontend--tab.js"></script>
+	<script src="js/frontend--toggle.js"></script>
+	<script src="js/frontend--template.js"></script>
+
+
+	<script src="js/frontend--actions.js"></script>
+
+
+	<script>
+		Modal.open('access-modal');
+	</script>
+
+
+</body>
+
+</html>
