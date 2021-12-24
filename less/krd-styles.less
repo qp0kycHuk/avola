@@ -4,6 +4,10 @@
   }
 }
 
+.filter-form-fields {
+  margin-bottom: 22px;
+}
+
 .filter-form-fields .form-input {
   padding-top   : 10px;
   padding-bottom: 10px;
@@ -92,9 +96,147 @@
   margin-bottom : -6px;
 }
 
-.jk-edit-form-btns{
+.jk-edit-form-btns {
   display: flex;
-  .btn{
+
+  .btn {
     margin-right: 15px;
   }
+}
+
+.jk-item-gallery {
+  position: relative;
+}
+
+.card-control {
+  position   : absolute;
+  left       : 0;
+  top        : 0;
+  // width   : 100%;
+  z-index    : 3;
+  display    : flex;
+}
+
+.jk-item-gallery .card-control {
+  // padding: 26px;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.jk-item-new-like {
+  position: absolute;
+  right   : 26px;
+  top     : 26px;
+  z-index : 3;
+  cursor  : pointer;
+
+  .icon {
+    width       : 22px;
+    height      : 22px;
+    fill        : none;
+    stroke      : #fff;
+    stroke-width: 2;
+  }
+
+  &.like-btn--active .icon {
+    fill  : currentColor;
+    stroke: currentColor;
+  }
+}
+
+.lk-content-obj {
+  .lk-control:first-of-type {
+    margin-top: 0;
+  }
+}
+
+.team__top {
+  display: none;
+}
+
+.user-cover {
+  padding-top   : 20px;
+  padding-bottom: 20px;
+}
+
+.team {
+  padding-bottom: 20px;
+}
+
+.jk-item-properties__info {
+  font-size: 12px;
+}
+
+
+.filter-bg {
+  animation: filterBg 9s infinite;
+}
+
+.filter {
+  background: url("../img/bg/filter-right.png") no-repeat calc(100% - 60px) bottom;
+
+
+  @media screen and (min-width:1960px) {
+    background: url("../img/bg/filter-right.png") no-repeat calc(50% + 760px) bottom;
+
+  }
+
+  @media screen and (max-width:1800px) {
+    background: url("../img/bg/filter-right.png") no-repeat calc(50% + 640px) bottom;
+
+
+  }
+
+  @media screen and (max-width:1386px) {
+    background: url("../img/bg/filter-right.png") no-repeat calc(50% + 600px) bottom;
+
+
+    &-form {
+      max-width   : 998px;
+      margin-left : auto;
+      margin-right: auto;
+    }
+  }
+
+  @media screen and (max-width:1280px) {
+    background: none;
+
+    &-form {
+      max-width   : 100%;
+      margin-left : auto;
+      margin-right: auto;
+    }
+  }
+
+
+
+  @media screen and (max-width:446px) {
+    background:
+      linear-gradient(180deg, rgba(25, 122, 194, 0) 31.84%, #197AC2 67.36%),
+      url("../img/bg/filter-right.png") no-repeat 50% calc(100% - 88px) / auto 315px, ;
+  }
+}
+
+
+
+
+.filterBgLoop (@n, @index: 0) when (@index <=@n) {
+  @keyframeSel: (@index / @n * 100%);
+  @keyframeDeg: (@index / @n * 360deg);
+
+  @{keyframeSel} {
+    background:
+
+      linear-gradient(@keyframeDeg, rgba(255, 109, 188, 0.8) 0%, rgba(218, 86, 239, 0) 71.93%),
+      linear-gradient(105.19deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 54.79%),
+      linear-gradient(180deg, #4DA1ED 0%, #0084E6 100%);
+  }
+
+  .filterBgLoop(@n, (@index + 1)); // Next iteration.
+}
+
+@keyframes filterBg {
+  .filterBgLoop(360); // Launch the loop.
 }

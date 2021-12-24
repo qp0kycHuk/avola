@@ -16,6 +16,17 @@
 
 <body data-theme="default">
 
+  <section class="notify" data-toggle-cover>
+    <div class="notify-inner">
+      <div class="notify-title">Сервис Avola находится на стадии тестирования и постоянно улучшается =)</div>
+      <button class="notify-btn" data-toggle-link>
+        <svg class="icon">
+          <use xlink:href="img/sprite.svg#cross" />
+        </svg>
+      </button>
+    </div>
+  </section>
+
 
   <header class="header jk-inner-header">
     <a href="/" class="lk-header-logo logo">
@@ -174,14 +185,33 @@
 
     <div class="jk-inner-cover">
       <div class="jk-inner-content">
-        <div class="jk-inner-content-card jk-inner-content-top card">
-          <a href="#" class="lk-back jk-inner__back">Вернуться назад</a>
-          <a href="#" class="modal-mobile-close jk-inner__mobile-back">
-            <svg>
+        <section class="jk-inner-mobile-header">
+          <a href="#" class="jk-inner__mobile-back">
+            <svg class="icon">
               <use xlink:href="img/sprite.svg#arrow" />
             </svg>
           </a>
+          <a href="#" class="jk-inner__mobile-share">
+            <svg class="icon">
+              <use xlink:href="img/sprite.svg#share" />
+            </svg>
+          </a>
+        </section>
+        <div class="jk-inner-content-card jk-inner-content-top card">
+          <a href="#" class="lk-back jk-inner__back">Вернуться назад</a>
+          <button class="jk-inner__like jk-inner__mobile-like like-btn waves" data-tooltip title="Нравится">
+            <svg>
+              <use xlink:href="img/sprite.svg#like" />
+            </svg>
+          </button>
+       
           <div class="jk-inner__info">
+            <div class="jk-item-content__verify jk-item-content__verify--success">
+              <div class="jk-item-properties__info">
+                <img src="img/icons/verified--success.svg" alt=""><span>Прошел экспертизу</span>
+              </div>
+              <button class="jk-item-properties__btn btn btn--success">Скачать отчет</button>
+            </div>
             <div class="jk-inner__title">2-этажный дом, 200 м²</div>
             <div class="jk-inner__address">Москва, ЗАО, р-н Солнцево, 3-й Дачно-Мещерский проезд <a href="#">Показать на
                 карте</a></div>
@@ -194,14 +224,14 @@
           <div class="jk-inner__adaptive">
             <div class="jk-inner__cost">41 000 000 ₽</div>
             <div class="jk-inner__address">205 000 ₽/м²</div>
-            <div class="jk-inner-verify">
+            <!-- <div class="jk-inner-verify">
               <img src="img/icons/verified--success.svg" alt="">
               <div class="jk-inner-verify__content">
                 <div class="jk-inner-verify__title">Дом прошел экспертизу</div>
                 <a href="#" class="jk-inner-verify__link">Скачать отчет</a>
               </div>
 
-            </div>
+            </div> -->
             <div class="jk-inner__control">
               <div class="jk-inner-aside__btns">
                 <button class="jk-inner-aside__btn btn btn--primary">Показать телефон</button>

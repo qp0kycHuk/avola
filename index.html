@@ -18,12 +18,14 @@
 <body data-theme="default">
 
 	<section class="notify" data-toggle-cover>
-		<div class="notify-title">Сервис Avola находится на стадии тестирования и постоянно улучшается =)</div>
-		<button class="notify-btn" data-toggle-link>
-			<svg class="icon">
-				<use xlink:href="img/sprite.svg#cross" />
-			</svg>
-		</button>
+		<div class="notify-inner">
+			<div class="notify-title">Сервис Avola находится на стадии тестирования и постоянно улучшается =)</div>
+			<button class="notify-btn" data-toggle-link>
+				<svg class="icon">
+					<use xlink:href="img/sprite.svg#cross" />
+				</svg>
+			</button>
+		</div>
 	</section>
 
 	<script>
@@ -166,7 +168,7 @@
 			</svg>
 		</button>
 		<div class="header-mobile-logo logo">
-			<div class="logo__img"><img src="img/icons/logo.svg" alt=""></div>
+			<div class="logo__img"><svg class="icon"><use xlink:href="img/sprite.svg#logo" /></svg></div>
 		</div>
 		<!-- <div class="header-mobile__title">Личный кабинет</div> -->
 		<button class="header-mobile__btn btn btn--contur" data-modal-link="filter-modal">
@@ -177,146 +179,155 @@
 		</button>
 	</header>
 
-	<section class="filter">
-		<div class="filter__title">подберем Вам идеальное жилье в москве</div>
-		<div class="filter-form card">
+	<div class="filter-bg">
+		
+		<section class="filter">
+			<div class="filter__title">подберем Вам идеальное жилье в москве</div>
+			<button data-modal-link="filter-modal" class="btn btn--white filter-mobile-btn">
+				<svg class="icon btn-icon">
+					<use xlink:href="img/sprite.svg#filter" />
+				</svg>
+				Поиск объектов
+			</button>
+			<div class="filter-form card">
 
-			<div class="filter-form-fields">
+				<div class="filter-form-fields">
 
-				<div class="form-field">
-					<div class="form-label">Цена, руб</div>
-					<div class="form-input-group">
-						<label class="filter-choose-item form-input">
-							<input type="radio" name="filter-choose-1" checked>
-							<div class="filter-choose-item-inner ">
-								Дом
+					<div class="form-field">
+						<div class="form-label">Цена, руб</div>
+						<div class="form-input-group">
+							<label class="filter-choose-item form-input">
+								<input type="radio" name="filter-choose-1" checked>
+								<div class="filter-choose-item-inner ">
+									Дом
+								</div>
+							</label>
+							<label class="filter-choose-item form-input">
+								<input type="radio" name="filter-choose-1">
+								<div class="filter-choose-item-inner ">
+									Квартира
+								</div>
+							</label>
+						</div>
+					</div>
+					<div class="form-field">
+						<div class="form-label">Количество комнат</div>
+						<div class="filter-choose-group">
+							<div class="filter-choose-group-item">
+								<label class="filter-choose-item form-input">
+									<input type="radio" name="filter-choose-2">
+									<div class="filter-choose-item-inner ">
+										Студия
+									</div>
+								</label>
 							</div>
-						</label>
-						<label class="filter-choose-item form-input">
-							<input type="radio" name="filter-choose-1">
-							<div class="filter-choose-item-inner ">
-								Квартира
+							<div class="filter-choose-group-item filter-choose-group-num">
+								<label class="filter-choose-item form-input">
+									<input type="radio" name="filter-choose-2">
+									<div class="filter-choose-item-inner ">
+										1
+									</div>
+								</label>
 							</div>
-						</label>
+							<div class="filter-choose-group-item filter-choose-group-num">
+								<label class="filter-choose-item form-input">
+									<input type="radio" name="filter-choose-2">
+									<div class="filter-choose-item-inner ">
+										2
+									</div>
+								</label>
+							</div>
+							<div class="filter-choose-group-item filter-choose-group-num">
+								<label class="filter-choose-item form-input">
+									<input type="radio" name="filter-choose-2">
+									<div class="filter-choose-item-inner ">
+										3
+									</div>
+								</label>
+							</div>
+							<div class="filter-choose-group-item filter-choose-group-num">
+								<label class="filter-choose-item form-input">
+									<input type="radio" name="filter-choose-2">
+									<div class="filter-choose-item-inner ">
+										4+
+									</div>
+								</label>
+							</div>
+						</div>
+					</div>
+
+
+					<label class="form-field form-field--select">
+						<div class="form-label">Жильё</div>
+						<select name="" class="form-input" placeholder="Дом">
+							<option value="Дом" selected>Дом</option>
+							<option value="Не дом">Не дом</option>
+						</select>
+					</label>
+					<label class="form-field form-field--select">
+						<div class="form-label">Тип</div>
+						<select name="" class="form-input" placeholder="Кирпичный">
+							<option value="Кирпичный">Кирпичный</option>
+							<option value="Не кирпичный">Не кирпичный</option>
+						</select>
+					</label>
+					<label class="form-field form-field--select">
+						<div class="form-label">Район</div>
+						<select name="" class="form-input" placeholder="Внуковское">
+							<option value="Внуковское">Внуковское</option>
+							<option value="Дедовское">Дедовское</option>
+						</select>
+					</label>
+					<label class="form-field form-field--select">
+						<div class="form-label">Метро</div>
+						<select name="" class="form-input" placeholder="Алтуфьево">
+							<option value="Алтуфьево">Алтуфьево</option>
+							<option value="...">...</option>
+						</select>
+					</label>
+
+					<label class="form-field">
+						<div class="form-label">Цена, руб</div>
+						<div class="form-input-group">
+							<input type="number" class="form-input" placeholder="От">
+							<input type="number" class="form-input" placeholder="До">
+						</div>
+					</label>
+					<label class="form-field">
+						<div class="form-label">Площадь дома, м²</div>
+						<div class="form-input-group">
+							<input type="number" class="form-input" placeholder="От">
+							<input type="number" class="form-input" placeholder="До">
+						</div>
+					</label>
+					<label class="form-field">
+						<div class="form-label">Площадь участка, м²</div>
+						<div class="form-input-group">
+							<input type="number" class="form-input" placeholder="От">
+							<input type="number" class="form-input" placeholder="До">
+						</div>
+					</label>
+					<label class="form-field">
+						<div class="form-label">Расстояние от МКАД, км</div>
+						<div class="form-input-group">
+							<input type="number" class="form-input" placeholder="От">
+							<input type="number" class="form-input" placeholder="До">
+						</div>
+					</label>
+				</div>
+				<div class="filter-form-control">
+					<div class="filter-form__link ">
+						<button class="link" data-modal-link="filter-help-modal">Не нашли что искали?</button>
+					</div>
+					<div class="filter-form__btns">
+						<button class="filter-form__btn btn btn--contur-primary">Показать на карте</button>
+						<button class="filter-form__btn btn btn--primary">Показать объекты</button>
 					</div>
 				</div>
-				<div class="form-field">
-					<div class="form-label">Количество комнат</div>
-					<div class="filter-choose-group">
-						<div class="filter-choose-group-item">
-							<label class="filter-choose-item form-input">
-								<input type="radio" name="filter-choose-2" >
-								<div class="filter-choose-item-inner ">
-									Студия
-								</div>
-							</label>
-						</div>
-						<div class="filter-choose-group-item filter-choose-group-num">
-							<label class="filter-choose-item form-input">
-								<input type="radio" name="filter-choose-2" >
-								<div class="filter-choose-item-inner ">
-									1
-								</div>
-							</label>
-						</div>
-						<div class="filter-choose-group-item filter-choose-group-num">
-							<label class="filter-choose-item form-input">
-								<input type="radio" name="filter-choose-2" >
-								<div class="filter-choose-item-inner ">
-									2
-								</div>
-							</label>
-						</div>
-						<div class="filter-choose-group-item filter-choose-group-num">
-							<label class="filter-choose-item form-input">
-								<input type="radio" name="filter-choose-2" >
-								<div class="filter-choose-item-inner ">
-									3
-								</div>
-							</label>
-						</div>
-						<div class="filter-choose-group-item filter-choose-group-num">
-							<label class="filter-choose-item form-input">
-								<input type="radio" name="filter-choose-2" >
-								<div class="filter-choose-item-inner ">
-									4+
-								</div>
-							</label>
-						</div>
-					</div>
-				</div>
 
-
-				<label class="form-field form-field--select">
-					<div class="form-label">Жильё</div>
-					<select name="" class="form-input" placeholder="Дом">
-						<option value="Дом" selected>Дом</option>
-						<option value="Не дом">Не дом</option>
-					</select>
-				</label>
-				<label class="form-field form-field--select">
-					<div class="form-label">Тип</div>
-					<select name="" class="form-input" placeholder="Кирпичный">
-						<option value="Кирпичный">Кирпичный</option>
-						<option value="Не кирпичный">Не кирпичный</option>
-					</select>
-				</label>
-				<label class="form-field form-field--select">
-					<div class="form-label">Район</div>
-					<select name="" class="form-input" placeholder="Внуковское">
-						<option value="Внуковское">Внуковское</option>
-						<option value="Дедовское">Дедовское</option>
-					</select>
-				</label>
-				<label class="form-field form-field--select">
-					<div class="form-label">Метро</div>
-					<select name="" class="form-input" placeholder="Алтуфьево">
-						<option value="Алтуфьево">Алтуфьево</option>
-						<option value="...">...</option>
-					</select>
-				</label>
-
-				<label class="form-field">
-					<div class="form-label">Цена, руб</div>
-					<div class="form-input-group">
-						<input type="number" class="form-input" placeholder="От">
-						<input type="number" class="form-input" placeholder="До">
-					</div>
-				</label>
-				<label class="form-field">
-					<div class="form-label">Площадь дома, м²</div>
-					<div class="form-input-group">
-						<input type="number" class="form-input" placeholder="От">
-						<input type="number" class="form-input" placeholder="До">
-					</div>
-				</label>
-				<label class="form-field">
-					<div class="form-label">Площадь участка, м²</div>
-					<div class="form-input-group">
-						<input type="number" class="form-input" placeholder="От">
-						<input type="number" class="form-input" placeholder="До">
-					</div>
-				</label>
-				<label class="form-field">
-					<div class="form-label">Расстояние от МКАД, км</div>
-					<div class="form-input-group">
-						<input type="number" class="form-input" placeholder="От">
-						<input type="number" class="form-input" placeholder="До">
-					</div>
-				</label>
 			</div>
-			<div class="filter-form-control">
-				<div class="filter-form__link ">
-					<button class="link" data-modal-link="filter-help-modal">Не нашли что искали?</button>
-				</div>
-				<div class="filter-form__btns">
-					<button class="filter-form__btn btn btn--contur-primary">Показать на карте</button>
-					<button class="filter-form__btn btn btn--primary">Показать объекты</button>
-				</div>
-			</div>
-
-		</div>
-	</section>
+		</section>
+	</div>
 
 	<div class="float-buner-wrapper">
 
