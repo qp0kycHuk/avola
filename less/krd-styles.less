@@ -81,12 +81,14 @@
   margin    : 0 6px;
 }
 
-.jk-item-gallery {
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
+@media(min-width:680px) {
+  .jk-item-gallery {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 
-.jk-item-gallery__preview {
-  height: 46px;
+  .jk-item-gallery__preview {
+    height: 46px;
+  }
 }
 
 .filter-inner-cover.fixed:not(.toggle-active) .filter--inner .filter-choose-item-inner {
@@ -238,5 +240,5 @@
 }
 
 @keyframes filterBg {
-  .filterBgLoop(360); // Launch the loop.
+  .filterBgLoop(270); // Launch the loop.
 }
