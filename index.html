@@ -168,7 +168,11 @@
 			</svg>
 		</button>
 		<div class="header-mobile-logo logo">
-			<div class="logo__img"><svg class="icon"><use xlink:href="img/sprite.svg#logo" /></svg></div>
+			<div class="logo__img"><svg class="icon"><use xlink:href="img/utils.svg#logo" /></svg></div>
+			<div class="logo__text">
+				Помощь в подборе <br>
+				недвижимости в Москве
+			</div>
 		</div>
 		<!-- <div class="header-mobile__title">Личный кабинет</div> -->
 		<button class="header-mobile__btn btn btn--contur" data-modal-link="filter-modal">
@@ -178,6 +182,16 @@
 			Фильтр объектов
 		</button>
 	</header>
+	<script>
+		window.addEventListener('scroll',()=>{
+			if(window.pageYOffset > 0){
+				document.querySelector('.header-mobile').classList.add('scrolled')
+			}else{
+				document.querySelector('.header-mobile').classList.remove('scrolled')
+
+			}
+		})
+	</script>
 
 	<div class="filter-bg">
 		

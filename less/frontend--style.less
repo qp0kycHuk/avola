@@ -1811,6 +1811,8 @@ svg {
 	padding-top    : 10px;
 	padding-bottom : 10px;
 	z-index        : @zi-l3;
+	position: sticky;
+	top: 0;
 
 	&-control {
 		display    : flex;
@@ -1955,6 +1957,7 @@ svg {
 			.icon {
 				width : 80px;
 				height: 22px;
+				display: block;
 			}
 		}
 	}
@@ -2234,7 +2237,7 @@ svg {
 
 
 			&:last-of-type {
-				margin-right: 0;
+				// margin-right: 0;
 			}
 
 			&--mobile {
@@ -3156,21 +3159,69 @@ svg {
 
 @media screen and (max-width:446px) {
 
-	.user-card{
+	.user-card {
 		border-radius: 0;
-		width: calc(100% + 16px);
-		margin-left: -8px;
+		width        : calc(100% + 16px);
+		margin-left  : -8px;
 
 	}
-	.user-tab-links{
+
+	.user-tab-links {
 		border-top: 12px solid @background-l1;
 	}
+
 	.header {
 		display: none;
 	}
 
 	.header-mobile {
-		display: flex;
+		display      : flex;
+		height       : 48px;
+		margin-bottom: -48px;
+		transition   : .2s ease;
+
+
+		.logo__img,
+		.header-mobile__icon svg,
+		.header-mobile__btn,
+		.header-mobile__btn svg {
+			transition: .2s;
+		}
+
+		.logo__text{
+			display: none;
+			font-size: 12px;
+			line-height: 1.15;
+			font-weight: 300;
+		}
+
+		&:not(.scrolled) {
+			background: none;
+
+			.logo__img {
+				color: #fff;
+			}
+
+			.header-mobile__icon svg {
+				fill: #fff;
+			}
+
+			.logo__text{
+				display: block;
+				color: #fff;
+			}
+			.header-mobile__btn {
+				color       : #fff;
+				border-color: #fff;
+				@media(min-width:360px){
+				display: none;
+			}
+
+				svg {
+					fill: #fff;
+				}
+			}
+		}
 	}
 
 
@@ -3345,6 +3396,29 @@ svg {
 
 
 
+.filter-bg {
+	animation: filterBg 9s infinite;
+}
+
+
+.filterBgLoop (@n, @index: 0) when (@index <=@n) {
+	@keyframeSel: (@index / @n * 100%);
+	@keyframeDeg: (@index / @n * 360deg);
+
+	@{keyframeSel} {
+		background:
+
+			linear-gradient(@keyframeDeg, rgba(255, 109, 188, 0.8) 0%, rgba(218, 86, 239, 0) 71.93%),
+			linear-gradient(105.19deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 54.79%),
+			linear-gradient(180deg, #4DA1ED 0%, #0084E6 100%);
+	}
+
+	.filterBgLoop(@n, (@index + 1)); // Next iteration.
+}
+
+@keyframes filterBg {
+	.filterBgLoop(270); // Launch the loop.
+}
 
 
 
@@ -3438,8 +3512,8 @@ svg {
 	@media screen and (max-width:446px) {
 		background:
 			linear-gradient(180deg, rgba(25, 122, 194, 0) 31.84%, #197AC2 67.36%),
-			url("../img/bg/filter-left.png") no-repeat -28px calc(100% - 88px) / auto 315px,
-			url("../img/bg/filter-right.png") no-repeat calc(100% + 48px) calc(100% - 88px) / auto 315px,
+			url("../img/bg/filter-left.png") no-repeat -28px calc(100% - 68px) / auto 315px,
+			url("../img/bg/filter-right.png") no-repeat calc(100% + 48px) calc(100% - 68px) / auto 315px,
 			#4395DE;
 		// background: none;
 	}
@@ -3465,6 +3539,11 @@ svg {
 	overflow     : hidden;
 	min-height   : 150px;
 	margin       : 32px 0;
+
+	&--yellow {
+		background: #FFE2AD;
+		color     : @color-text-const;
+	}
 
 	&--orange {
 		background: #FFBFA8;
@@ -4007,11 +4086,11 @@ svg {
 		padding-bottom: 46px;
 
 		&__title {
-			font-size  : 32px;
-			line-height: 1;
-			margin     : 0 auto;
-			text-align : center;
-			max-width  : 300px;
+			font-size     : 32px;
+			line-height   : 1;
+			margin        : 0 auto;
+			text-align    : center;
+			// max-width  : 300px;
 		}
 
 		&-form {
@@ -7802,7 +7881,7 @@ a.lk-table-jk {
 
 		&-slider {
 			width     : 100%;
-			order     : 1;
+			order     : -1;
 			margin-top: 0;
 		}
 

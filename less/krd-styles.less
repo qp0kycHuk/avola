@@ -74,6 +74,9 @@
   }
 }
 
+.header-mobile-logo .logo__img img {
+  height: 30px;
+}
 
 .form-group-separator {
   align-self: center;
@@ -168,77 +171,111 @@
 }
 
 .jk-item-properties__info {
-  font-size: 12px;
+  // font-size: 12px;
 }
 
-
-.filter-bg {
-  animation: filterBg 9s infinite;
+.jk-item-properties {
+  padding-left: 10px;
 }
+
 
 .filter {
-  background: url("../img/bg/filter-right.png") no-repeat calc(100% - 60px) bottom;
+  background      : url("../img/bg/filter-left.png") no-repeat 92px bottom, url("../img/bg/filter-right.png") no-repeat calc(100% - 60px) bottom;
 
+	@media screen and (min-width:1960px) {
+		background      : url("../img/bg/filter-left.png") no-repeat calc(50% - 760px) bottom, url("../img/bg/filter-right.png") no-repeat calc(50% + 760px) bottom;
+	}
 
-  @media screen and (min-width:1960px) {
-    background: url("../img/bg/filter-right.png") no-repeat calc(50% + 760px) bottom;
+	@media screen and (max-width:1800px) {
+		background      : url("../img/bg/filter-left.png") no-repeat calc(50% - 640px) bottom, url("../img/bg/filter-right.png") no-repeat calc(50% + 640px) bottom;
+	}
 
-  }
+	@media screen and (max-width:1386px) {
+		background      : url("../img/bg/filter-left.png") no-repeat calc(50% - 600px) bottom, url("../img/bg/filter-right.png") no-repeat calc(50% + 600px) bottom;
 
-  @media screen and (max-width:1800px) {
-    background: url("../img/bg/filter-right.png") no-repeat calc(50% + 640px) bottom;
+		&-form {
+			max-width   : 998px;
+			margin-left : auto;
+			margin-right: auto;
+		}
+	}
 
+	@media screen and (max-width:1280px) {
+		background: none;
 
-  }
-
-  @media screen and (max-width:1386px) {
-    background: url("../img/bg/filter-right.png") no-repeat calc(50% + 600px) bottom;
-
-
-    &-form {
-      max-width   : 998px;
-      margin-left : auto;
-      margin-right: auto;
-    }
-  }
-
-  @media screen and (max-width:1280px) {
-    background: none;
-
-    &-form {
-      max-width   : 100%;
-      margin-left : auto;
-      margin-right: auto;
-    }
-  }
+		&-form {
+			max-width   : 100%;
+			margin-left : auto;
+			margin-right: auto;
+		}
+	}
 
 
 
-  @media screen and (max-width:446px) {
-    background:
-      linear-gradient(180deg, rgba(25, 122, 194, 0) 31.84%, #197AC2 67.36%),
-      url("../img/bg/filter-right.png") no-repeat 50% calc(100% - 88px) / auto 315px, ;
-  }
+	@media screen and (max-width:446px) {
+		background:
+			linear-gradient(180deg, rgba(25, 122, 194, 0) 31.84%, #197AC2 67.36%),
+			url("../img/bg/filter-left.png") no-repeat -28px calc(100% - 68px) / auto 315px,
+			url("../img/bg/filter-right.png") no-repeat calc(100% + 48px) calc(100% - 68px) / auto 315px;
+		// background: none;
+	}
 }
 
 
 
 
-.filterBgLoop (@n, @index: 0) when (@index <=@n) {
-  @keyframeSel: (@index / @n * 100%);
-  @keyframeDeg: (@index / @n * 360deg);
+@media screen and (max-width:520px) {
 
-  @{keyframeSel} {
-    background:
+  .jk-item-new-like {
+    right     : auto;
+    width     : 48px;
+    height    : 48px;
+    left      : 16px;
+    top       : 16px;
+    background: rgba(0, 0, 0, 0.4);
 
-      linear-gradient(@keyframeDeg, rgba(255, 109, 188, 0.8) 0%, rgba(218, 86, 239, 0) 71.93%),
-      linear-gradient(105.19deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 54.79%),
-      linear-gradient(180deg, #4DA1ED 0%, #0084E6 100%);
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    border-radius  : 50%;
+
+    &.like-btn--active {
+      background: #fff;
+    }
   }
-
-  .filterBgLoop(@n, (@index + 1)); // Next iteration.
 }
 
-@keyframes filterBg {
-  .filterBgLoop(270); // Launch the loop.
+.pray--yellow {
+  background: #FFE2AD;
+}
+
+@media screen and (max-width: 680px) {
+  .pray--yellow .pray__img {
+    background: #ffdc9b;
+  }
+}
+
+.lk-content--success {
+  display       : flex;
+  flex-direction: column;
+  flex-grow     : 1;
+}
+
+.success-page {
+  display        : flex;
+  flex-direction : column;
+  align-items    : center;
+  justify-content: center;
+  text-align     : center;
+  width          : 100%;
+  min-height     : 100%;
+  flex-grow      : 1;
+}
+
+.success-page .success-modal__btn {
+  max-width: 360px;
+}
+
+.header-mobile-logo .logo__img .icon{
+  height: 32px;
 }

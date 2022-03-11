@@ -1237,12 +1237,36 @@
 							</div>
 						</label>
 					</div>
-					<div class="jk-edit-form-block">
-						<label class="form-field">
-							<div class="form-label">Ссылка на исходное объявление</div>
-							<input type="text" class="form-input">
-						</label>
+
+
+					<div class="jk-edit-transport">
+						<div class="jk-edit-form-block">
+							<div class="jk-edit-transport__fields empty" data-max-copy="3" id="link-1" data-fields-isempty>
+								<label class="form-field ">
+									<div class="form-label">Ссылка на исходное объявление</div>
+									<input type="text" class="form-input" required>
+
+								</label>
+								<div class="jk-edit-transport__control">
+
+									<button type="button" class="btn btn--accent jk-edit-transport__remove" data-remove-node="link-1">
+										<svg>
+											<use xlink:href="img/sprite.svg#cross" />
+										</svg>
+									</button>
+								</div>
+							</div>
+							<div class="jk-edit-transport__btns">
+								<button type="button" class="btn btn--primary jk-edit-transport__btn" data-copy-node="link-1">Добавить
+									ещё ссылку</button>
+							</div>
+						</div>
+
 					</div>
+
+
+
+
 					<div class="jk-edit-form-block jk-edit-form-block--with-transport" data-edit-block id="jk-edit-1">
 						<div class="jk-edit-form-fields">
 							<label class="form-field">
@@ -1278,7 +1302,7 @@
 								width="100%" height="288" frameborder="0"></iframe>
 						</div>
 						<div class="jk-edit-transport">
-							<div class="jk-edit-transport__fields empty" data-max-copy="3" id="transport-1" data-fields-isempty>
+							<div class="jk-edit-transport__fields empty " data-max-copy="3" id="transport-1" data-fields-isempty>
 								<label class="form-field">
 									<div class="form-label">Шоссе</div>
 									<input type="text" class="form-input" required placeholder="Введите название шоссе">
