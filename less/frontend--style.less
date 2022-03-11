@@ -1811,8 +1811,8 @@ svg {
 	padding-top    : 10px;
 	padding-bottom : 10px;
 	z-index        : @zi-l3;
-	position: sticky;
-	top: 0;
+	position       : sticky;
+	top            : 0;
 
 	&-control {
 		display    : flex;
@@ -1955,8 +1955,8 @@ svg {
 
 		.logo__img {
 			.icon {
-				width : 80px;
-				height: 22px;
+				width  : 80px;
+				height : 22px;
 				display: block;
 			}
 		}
@@ -2451,6 +2451,36 @@ svg {
 			line-height    : 1.1;
 			color          : @color-primary;
 			text-decoration: underline;
+		}
+
+		&__list {
+			display: flex;
+			margin-top: 6px;
+		}
+
+		&__item {
+			min-width: 20px;
+			width    : 20px;
+			height   : 20px;
+			cursor   : pointer;
+
+			background   : #FFFFFF;
+			border-radius: 5px;
+			display      : block;
+
+
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			&+& {
+				margin-left: 4px;
+			}
+
+			.tooltip{
+				left: -14px;
+
+			}
 		}
 	}
 
@@ -3188,9 +3218,9 @@ svg {
 			transition: .2s;
 		}
 
-		.logo__text{
-			display: none;
-			font-size: 12px;
+		.logo__text {
+			display    : none;
+			font-size  : 12px;
 			line-height: 1.15;
 			font-weight: 300;
 		}
@@ -3206,16 +3236,18 @@ svg {
 				fill: #fff;
 			}
 
-			.logo__text{
+			.logo__text {
 				display: block;
-				color: #fff;
+				color  : #fff;
 			}
+
 			.header-mobile__btn {
 				color       : #fff;
 				border-color: #fff;
-				@media(min-width:360px){
-				display: none;
-			}
+
+				@media(min-width:360px) {
+					display: none;
+				}
 
 				svg {
 					fill: #fff;
