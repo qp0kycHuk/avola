@@ -2454,7 +2454,7 @@ svg {
 		}
 
 		&__list {
-			display: flex;
+			display   : flex;
 			margin-top: 6px;
 		}
 
@@ -2469,15 +2469,15 @@ svg {
 			display      : block;
 
 
-			display: flex;
-			align-items: center;
+			display        : flex;
+			align-items    : center;
 			justify-content: center;
 
 			&+& {
 				margin-left: 4px;
 			}
 
-			.tooltip{
+			.tooltip {
 				left: -14px;
 
 			}
@@ -7399,6 +7399,26 @@ a.lk-table-jk {
 			height    : 100%;
 			object-fit: cover;
 		}
+
+		&.youtube-slide {
+			&:after {
+				content : '';
+				position: absolute;
+				width   : 148px;
+				height  : 148px;
+				left    : calc(50% - 74px);
+				top     : calc(50% - 74px);
+				border-radius: 50%;
+				background: url("../img/icons/play-circle.svg") no-repeat center / contain;
+
+				@media (max-width:520px){
+					width   : 92px;
+					height  : 92px;
+					left    : calc(50% - 46px);
+					top     : calc(50% - 46px);
+				}
+			}
+		}
 	}
 
 
@@ -7474,6 +7494,18 @@ a.lk-table-jk {
 			object-fit: cover;
 		}
 
+		&.youtube-thumb {
+			&:after {
+				content : '';
+				width: 36px;
+				height: 36px;
+				position: absolute;
+				left    : calc(50% - 18px);
+				top     : calc(50% - 18px);
+				border-radius: 50%;
+				background: url("../img/icons/play-circle.svg") no-repeat center / contain;
+			}
+		}
 	}
 
 
@@ -12072,6 +12104,11 @@ a.lk-table-jk {
 	.fancybox-navigation .fancybox-button--arrow_right {
 		top  : 0;
 		right: 0;
+	}
+
+	.fancybox-slide{
+		padding-left: 240px;
+		padding-right: 240px;
 	}
 }
 
