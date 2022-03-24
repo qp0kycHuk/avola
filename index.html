@@ -168,7 +168,9 @@
 			</svg>
 		</button>
 		<div class="header-mobile-logo logo">
-			<div class="logo__img"><svg class="icon"><use xlink:href="img/utils.svg#logo" /></svg></div>
+			<div class="logo__img"><svg class="icon">
+					<use xlink:href="img/utils.svg#logo" />
+				</svg></div>
 			<div class="logo__text">
 				Помощь в подборе <br>
 				недвижимости в Москве
@@ -183,18 +185,18 @@
 		</button>
 	</header>
 	<script>
-		window.addEventListener('scroll',()=>{
-			if(window.pageYOffset > 0){
+		window.addEventListener('scroll', () => {
+			if (window.pageYOffset > 0) {
 				document.querySelector('.header-mobile').classList.add('scrolled')
-			}else{
+			} else {
 				document.querySelector('.header-mobile').classList.remove('scrolled')
 
 			}
 		})
 	</script>
 
-	<div class="filter-bg">
-		
+	<div class="filter-bg" id="filter-bg">
+
 		<section class="filter">
 			<div class="filter__title">подберем Вам идеальное жилье в москве</div>
 			<button data-modal-link="filter-modal" class="btn btn--white filter-mobile-btn">
@@ -343,6 +345,24 @@
 		</section>
 	</div>
 
+	<script>
+			(() => {
+				const cover = document.getElementById('filter-bg')
+				const fps = 60;
+				const duration = 10000
+				let degree = 0;
+
+				setInterval(() => {
+					cover.style.setProperty('--keyframeDeg', degree + 'deg')
+					const coof = ((degree > 45 && degree < 135) || (degree > 225 && degree < 315)) ? 2 : 0.5
+					degree += coof * 360 / (60 * duration / 1000)
+				}, duration / (60 * duration / 1000))
+
+				
+			})();
+	</script>
+
+
 	<div class="float-buner-wrapper">
 
 		<div class="float-buner float-buner-hidden" style="display:none">
@@ -483,6 +503,104 @@
 	<section class="user-cover">
 		<div class="user-cover__title title">Популярные предложения</div>
 		<div class="jk-list">
+			<div class="card jk-item ">
+				<div class="jk-item-gallery">
+					<div class="jk-item-gallery-slider swiper-container">
+						<div class="swiper-wrapper">
+							<a data-height="800" data-fancybox="gallery-2" href="img/test-interier-min.jpg"
+								class="jk-item-gallery__anons waves swiper-slide">
+								<picture>
+									<source srcset="img/test-interier-min.webp" type="image/webp">
+									<img src="img/test-interier-min.jpg" alt="" loading="lazy">
+								</picture>
+							</a>
+							<a data-height="800" data-fancybox="gallery-2" href="img/test-exterier-min.jpg"
+								class="jk-item-gallery__anons waves swiper-slide">
+								<picture>
+									<source srcset="img/test-exterier-min.webp" type="image/webp">
+									<img src="img/test-exterier-min.jpg" alt="" loading="lazy">
+								</picture>
+							</a>
+						</div>
+
+						<div class="jk-item-gallery-pagination"></div>
+						<button class="jk-item-gallery-arrow jk-item-gallery-arrow-prev"></button>
+						<button class="jk-item-gallery-arrow jk-item-gallery-arrow-next"></button>
+					</div>
+					<a data-height="800" data-fancybox="gallery-2" href="img/test-exterier.jpg"
+						class="jk-item-gallery__preview waves">
+						<picture>
+							<source srcset="img/test-exterier-min.webp" type="image/webp">
+							<img src="img/test-exterier-min.jpg" alt="" loading="lazy">
+						</picture>
+					</a>
+					<a data-height="800" data-fancybox="gallery-2" href="img/test-interier.jpg"
+						class="jk-item-gallery__preview waves">
+						<picture>
+							<source srcset="img/test-interier-min.webp" type="image/webp">
+							<img src="img/test-interier-min.jpg" alt="" loading="lazy">
+						</picture>
+					</a>
+					<a class="jk-item-gallery__preview waves ">
+						<div class="jk-item-gallery__link">Еще фото</div>
+						<picture>
+							<source srcset="img/test-exterier-min.webp" type="image/webp">
+							<img src="img/test-exterier-min.jpg" alt="" loading="lazy">
+						</picture>
+					</a>
+				</div>
+				<div class="jk-item-content">
+					<div class="jk-item-content__name">2-этажный коттедж, 500 м²</div>
+					<div class="jk-item-content__status">Москва, СВАО, р-н Северный, Челобитьевское ш., 1Гк11</div>
+					<div class="jk-item-content__verify">
+						<div class="jk-item-properties__info">
+							<span>Не проходил экспертизу</span>
+						</div>
+						<button class="jk-item-properties__btn btn btn--pikachu">Заказать отчет</button>
+					</div>
+					<div class="jk-item-content__info"><img src="img/icons/metro.svg" alt="">Алтуфьево ⋅ 15 мин. на транспорте
+					</div>
+					<div class="jk-item-content__info"><img src="img/icons/car.svg" alt="">Дмитровское шоссе, 1 км от МКАД
+					</div>
+
+					<div class="jk-item-content__cost">27 100 000 ₽</div>
+					<div class="jk-item-content__btns">
+						<button class="jk-item-content__like like-btn like-btn--active waves">
+							<svg>
+								<use xlink:href="img/sprite.svg#like" />
+							</svg>
+						</button>
+						<button class="jk-item-content__btn jk-item-content__btn--mobile btn btn--primary">Подробнее</button>
+						<button class="jk-item-content__btn jk-item-content__phone btn btn--primary">Показать телефон</button>
+						<a class="jk-item-content__btn jk-item-content__record btn--icon-left btn btn--contur">
+							<img src="img/icons/play-circle.svg" alt="" class="btn-icon">
+							Смотреть видеообзор
+						</a>
+					</div>
+				</div>
+				<div class="jk-item-properties">
+					<div class="jk-item-properties__info">
+						<img src="img/icons/home.svg" alt=""><span>Тип: </span>Монолитный
+					</div>
+					<div class="jk-item-properties__info">
+						<img src="img/icons/square-1.svg" alt=""><span>Площадь дома: </span>191.3 м²
+					</div>
+					<div class="jk-item-properties__info">
+						<img src="img/icons/square-2.svg" alt=""><span>Площадь участка: </span>235 соток
+					</div>
+					<div class="jk-item-properties__info">
+						<img src="img/icons/floors.svg" alt=""><span>Количество этажей: </span>2
+					</div>
+					<div class="jk-item-properties__line"></div>
+					<div class="jk-item-properties__verify">
+						<div class="jk-item-properties__info">
+							<span>Дом не проходил экспертизу</span>
+						</div>
+						<button class="jk-item-properties__btn btn btn--pikachu">Заказать отчет</button>
+					</div>
+
+				</div>
+			</div>
 			<div class="card jk-item ">
 				<div class="jk-item-gallery">
 					<div class="jk-item-gallery-slider swiper-container">
@@ -1263,7 +1381,7 @@
 						</svg>
 						Заказать экспертизу
 					</button>
-					<button class="menu-modal__btn btn btn--contur-red btn--contur btn--icon-left"> 	Выход 	</button>
+					<button class="menu-modal__btn btn btn--contur-red btn--contur btn--icon-left"> Выход </button>
 				</div>
 			</div>
 

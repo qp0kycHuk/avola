@@ -2050,7 +2050,21 @@ svg {
 
 		}
 
-		&__anons {}
+		&__anons {
+			&.youtube-slide {
+				position: relative;
+				&:after {
+					content      : '';
+					width        : 36px;
+					height       : 36px;
+					position     : absolute;
+					left         : calc(50% - 18px);
+					top          : calc(50% - 18px);
+					border-radius: 50%;
+					background   : url("../img/icons/play-circle.svg") no-repeat center / contain;
+				}
+			}
+		}
 
 
 
@@ -2060,6 +2074,19 @@ svg {
 
 			position: relative;
 
+
+			&.youtube-thumb {
+				&:after {
+					content      : '';
+					width        : 24px;
+					height       : 24px;
+					position     : absolute;
+					left         : calc(50% - 12px);
+					top          : calc(50% - 12px);
+					border-radius: 50%;
+					background   : url("../img/icons/play-circle.svg") no-repeat center / contain;
+				}
+			}
 
 		}
 
@@ -3429,28 +3456,33 @@ svg {
 
 
 .filter-bg {
-	animation: filterBg 9s infinite;
+	--keyframeDeg: 0deg;
+	background   :
+
+		linear-gradient(var(--keyframeDeg), rgba(255, 109, 188, 0.8) 0%, rgba(218, 86, 239, 0) 71.93%),
+		linear-gradient(105.19deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 54.79%),
+		linear-gradient(180deg, #4DA1ED 0%, #0084E6 100%);
 }
 
 
-.filterBgLoop (@n, @index: 0) when (@index <=@n) {
-	@keyframeSel: (@index / @n * 100%);
-	@keyframeDeg: (@index / @n * 360deg);
+// .filterBgLoop (@n, @index: 0) when (@index <=@n) {
+// 	@keyframeSel: (@index / @n * 100%);
+// 	@keyframeDeg: (@index / @n * 360deg);
 
-	@{keyframeSel} {
-		background:
+// 	@{keyframeSel} {
+// 		background:
 
-			linear-gradient(@keyframeDeg, rgba(255, 109, 188, 0.8) 0%, rgba(218, 86, 239, 0) 71.93%),
-			linear-gradient(105.19deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 54.79%),
-			linear-gradient(180deg, #4DA1ED 0%, #0084E6 100%);
-	}
+// 			linear-gradient(@keyframeDeg, rgba(255, 109, 188, 0.8) 0%, rgba(218, 86, 239, 0) 71.93%),
+// 			linear-gradient(105.19deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 54.79%),
+// 			linear-gradient(180deg, #4DA1ED 0%, #0084E6 100%);
+// 	}
 
-	.filterBgLoop(@n, (@index + 1)); // Next iteration.
-}
+// 	.filterBgLoop(@n, (@index + 1)); // Next iteration.
+// }
 
-@keyframes filterBg {
-	.filterBgLoop(270); // Launch the loop.
-}
+// @keyframes filterBg {
+// 	.filterBgLoop(270); // Launch the loop.
+// }
 
 
 
@@ -6599,12 +6631,17 @@ svg {
 			border-radius: 10px 10px 0 0;
 			font-weight  : 500;
 			font-size    : 14px;
+			margin-top   : 10px;
 		}
 
 		&-head &-cell {
 			padding: 8px 8px;
 		}
 
+		&-row+&-head {
+			margin-top: 10px;
+
+		}
 
 
 		&-row {
@@ -6628,7 +6665,7 @@ svg {
 			}
 		}
 
-		& &-row+&-row {
+		& &-row+&-row:not(&-head) {
 			border-top: none;
 		}
 
@@ -7402,20 +7439,20 @@ a.lk-table-jk {
 
 		&.youtube-slide {
 			&:after {
-				content : '';
-				position: absolute;
-				width   : 148px;
-				height  : 148px;
-				left    : calc(50% - 74px);
-				top     : calc(50% - 74px);
+				content      : '';
+				position     : absolute;
+				width        : 148px;
+				height       : 148px;
+				left         : calc(50% - 74px);
+				top          : calc(50% - 74px);
 				border-radius: 50%;
-				background: url("../img/icons/play-circle.svg") no-repeat center / contain;
+				background   : url("../img/icons/play-circle.svg") no-repeat center / contain;
 
-				@media (max-width:520px){
-					width   : 92px;
-					height  : 92px;
-					left    : calc(50% - 46px);
-					top     : calc(50% - 46px);
+				@media (max-width:520px) {
+					width : 92px;
+					height: 92px;
+					left  : calc(50% - 46px);
+					top   : calc(50% - 46px);
 				}
 			}
 		}
@@ -7496,14 +7533,14 @@ a.lk-table-jk {
 
 		&.youtube-thumb {
 			&:after {
-				content : '';
-				width: 36px;
-				height: 36px;
-				position: absolute;
-				left    : calc(50% - 18px);
-				top     : calc(50% - 18px);
+				content      : '';
+				width        : 36px;
+				height       : 36px;
+				position     : absolute;
+				left         : calc(50% - 18px);
+				top          : calc(50% - 18px);
 				border-radius: 50%;
-				background: url("../img/icons/play-circle.svg") no-repeat center / contain;
+				background   : url("../img/icons/play-circle.svg") no-repeat center / contain;
 			}
 		}
 	}
@@ -7700,6 +7737,18 @@ a.lk-table-jk {
 			font-size  : 14px;
 			color      : @color-primary;
 			margin-top : 20px;
+
+			display    : flex;
+			align-items: center;
+
+			img {
+				min-width    : 20px;
+				width        : 20px;
+				height       : 20px;
+				margin-right : 8px;
+				box-sizing   : border-box;
+				border-radius: 5px;
+			}
 
 			@media screen and (hover) {
 				&:hover {
@@ -10430,22 +10479,26 @@ a.lk-table-jk {
 			}
 
 			.jk-item-gallery-slider {
-				height: 134px;
+				height: 140px;
 			}
 
 			.jk-item-content__name {
 				font-size: 16px;
+				margin-bottom: 0;
 			}
 
 			.jk-item-content__status {
 				font-size    : 10px;
-				margin-bottom: 10px;
+				margin-bottom: 5px;
 			}
 
 			.jk-item-content__info {
 				font-size: 10px;
 
-				img {}
+				img {
+					width : 10px;
+					height: 10px;
+				}
 			}
 
 			.jk-item-content__info+.jk-item-content__info {
@@ -10453,8 +10506,8 @@ a.lk-table-jk {
 			}
 
 			.jk-item-content__cost {
-				font-size    : 22px;
-				margin-top   : 20px;
+				font-size    : 16px;
+				margin-top   : 6px;
 				margin-bottom: 0;
 			}
 
@@ -10494,11 +10547,41 @@ a.lk-table-jk {
 			}
 
 			.jk-item-properties__info+.jk-item-properties__info {
-				margin-top: 8px;
+				margin-top: 6px;
 			}
 
 			.jk-item-properties__verify {
 				margin-top: 16px;
+			}
+
+			.btn--icon-left .btn-icon {
+				left: 10px;
+			}
+
+			.btn-icon {
+				width : 12px;
+				height: 12px;
+			}
+
+			.jk-item-content__btns {
+				margin-top: 0;
+			}
+
+			.jk-item-content__btn {
+				min-width   : 80px;
+				font-size   : 10px;
+				height      : 26px;
+				// padding  : 0 10px;
+				margin-right: 6px;
+			}
+
+			.obj_number {
+				margin-bottom: 3px;
+				font-size    : 11px;
+			}
+
+			.link {
+				font-size: 10px;
 			}
 		}
 	}
@@ -12106,8 +12189,8 @@ a.lk-table-jk {
 		right: 0;
 	}
 
-	.fancybox-slide{
-		padding-left: 240px;
+	.fancybox-slide {
+		padding-left : 240px;
 		padding-right: 240px;
 	}
 }
