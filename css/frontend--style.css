@@ -9107,3 +9107,12 @@ input:checked + .lk-user-edit-mood__item.mood-item--angry {
 .jk-item-properties__verify {
   width: 100%;
 }
+.copied-enabled {
+  display: none !important;
+}
+.copied .copied-disabled {
+  display: none !important;
+}
+.copied .copied-enabled {
+  display: block !important;
+}

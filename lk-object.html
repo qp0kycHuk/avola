@@ -706,6 +706,9 @@
 				архива</button>
 			<br>
 			<button class="btn btn--primary js-modal-alert" data-modal-link="lk-peredat-object">Передать объект</button>
+			<br>
+			<button class="btn btn--primary js-modal-alert" data-modal-link="copy-modal">Модалка с кнопкой на
+				копирование</button>
 			<p>--&gt; </p>
 
 
@@ -11324,6 +11327,25 @@
 		</div>
 	</section>
 
+	<section class="modal" data-modal-cover id="copy-modal">
+		<div class="modal-container confirm-modal card">
+			<img src="img/icons/success.svg" alt="" style="margin:0 auto;width: 54px; margin-bottom: 24px;">
+			<div class="filter-help-modal__title">подборка сохранена</div>	
+			<br>
+			<a class="btn btn--primary ">Перейти в подборки</a>
+			<br>
+			<button class=" btn--icon-left btn btn--contur " data-copy-to-clipboard="fucking url">
+				<img src="img/icons/link.svg" alt="" class="btn-icon copied-disabled">
+				<div class="copied-disabled">Скопировать ссылку	</div>
+
+				<img src="img/icons/success-1.svg" alt="" class="btn-icon copied-enabled">
+				<div class="copied-enabled">Ссылка скопирована</div>
+				
+					
+			
+			</button>
+		</div>
+	</section>
 
 
 
@@ -11341,6 +11363,9 @@
 	<script src="js/frontend--toggle.js"></script>
 	<script src="js/frontend--template.js"></script>
 
+	<script>
+		Modal.open('copy-modal')
+	</script>
 
 	<script src="js/frontend--actions.js"></script>
 

@@ -2053,6 +2053,7 @@ svg {
 		&__anons {
 			&.youtube-slide {
 				position: relative;
+
 				&:after {
 					content      : '';
 					width        : 36px;
@@ -10483,7 +10484,7 @@ a.lk-table-jk {
 			}
 
 			.jk-item-content__name {
-				font-size: 16px;
+				font-size    : 16px;
 				margin-bottom: 0;
 			}
 
@@ -12198,4 +12199,19 @@ a.lk-table-jk {
 
 .jk-item-properties__verify {
 	width: 100%;
+}
+
+
+.copied-enabled {
+	display: none !important;
+}
+
+.copied {
+	.copied-disabled {
+		display: none !important;
+	}
+
+	.copied-enabled {
+		display: block !important;
+	}
 }
