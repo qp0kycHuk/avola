@@ -1,7 +1,0 @@
-{
-  "less.compile": {
-    "out": "../css/",
-    "autoprefixer": "> 10%, last 2 Chrome versions, last 2 Opera versions, last 2 safari versions, not ie 6-9"
-  },
-  "liveServer.settings.port": 5501
-}

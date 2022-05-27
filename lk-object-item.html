@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="shortcut icon" type="image/x-icon" href="icon/favicon.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- <link rel="stylesheet" href="source/_libs.css"> -->
+  <!-- <link rel="stylesheet" href="css/frontend--fonts.css"> -->
+  <!-- <link rel="stylesheet" href="css/frontend--style.css"> -->
+  <!-- <link rel="stylesheet" href="css/krd-styles.css"> -->
+  <link rel="stylesheet" href="dist/style.css">
+
+  <title>Объекты - Сервис Кравченко</title>
+</head>
+
+<body class="">
+  <section>
+    <div class="jk-item-content__name">Карточка с главной</div>
+    <div class="card jk-item ">
+      <div class="jk-item-gallery">
+        <div class="jk-item-gallery-slider swiper-container">
+          <div class="swiper-wrapper">
+            <a data-height="800" data-fancybox="gallery-2" href="dist/img/test-interier-min.jpg"
+              class="jk-item-gallery__anons waves swiper-slide">
+              <picture>
+                <source srcset="dist/img/test-interier-min.webp" type="image/webp">
+                <img src="dist/img/test-interier-min.jpg" alt="" loading="lazy">
+              </picture>
+            </a>
+            <a data-height="800" data-fancybox="gallery-2" href="dist/img/test-exterier-min.jpg"
+              class="jk-item-gallery__anons waves swiper-slide">
+              <picture>
+                <source srcset="dist/img/test-exterier-min.webp" type="image/webp">
+                <img src="dist/img/test-exterier-min.jpg" alt="" loading="lazy">
+              </picture>
+            </a>
+          </div>
+
+          <div class="jk-item-gallery-pagination"></div>
+          <button class="jk-item-gallery-arrow jk-item-gallery-arrow-prev"></button>
+          <button class="jk-item-gallery-arrow jk-item-gallery-arrow-next"></button>
+        </div>
+        <a data-height="800" data-fancybox="gallery-2" href="dist/img/test-exterier.jpg"
+          class="jk-item-gallery__preview waves">
+          <picture>
+            <source srcset="dist/img/test-exterier-min.webp" type="image/webp">
+            <img src="dist/img/test-exterier-min.jpg" alt="" loading="lazy">
+          </picture>
+        </a>
+        <a data-height="800" data-fancybox="gallery-2" href="dist/img/test-interier.jpg"
+          class="jk-item-gallery__preview waves">
+          <picture>
+            <source srcset="dist/img/test-interier-min.webp" type="image/webp">
+            <img src="dist/img/test-interier-min.jpg" alt="" loading="lazy">
+          </picture>
+        </a>
+        <a data-height="800" data-fancybox="gallery-2" href="dist/img/test-exterier.jpg"
+          class="jk-item-gallery__preview waves">
+          <picture>
+            <source srcset="dist/img/test-interier-min.webp" type="image/webp">
+            <img src="dist/img/test-interier-min.jpg" alt="" loading="lazy">
+          </picture>
+        </a>
+        <a class="jk-item-gallery__preview waves ">
+          <div class="jk-item-gallery__link">Еще фото</div>
+          <picture>
+            <source srcset="dist/img/test-exterier-min.webp" type="image/webp">
+            <img src="dist/img/test-exterier-min.jpg" alt="" loading="lazy">
+          </picture>
+        </a>
+        <!-- LIKE -->
+        <div data-fancybox-modal="" data-fancybox="" data-type="ajax" href="/auth/?ajax=Y" data-options="{touch: false}"
+          class="jk-item-new-like">
+          <svg class="icon">
+            <use xlink:href="dist/img/sprite.svg#like"></use>
+          </svg>
+        </div>
+        <!-- LIKE -->
+        <div data-fancybox-modal="" data-fancybox="" data-type="ajax" href="/auth/?ajax=Y" data-options="{touch: false}"
+          class="jk-item-new-like jk-item-new-like--share">
+          <svg class="icon">
+            <use xlink:href="dist/img/sprite.svg#share-contur"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="jk-item-content">
+        <div class="obj_number">#219</div>
+        <div class="jk-item-content__name">2-этажный коттедж, 500 м²</div>
+        <div class="jk-item-content__status">Москва, СВАО, р-н Северный, Челобитьевское ш., 1Гк11</div>
+        <div class="jk-item-content__verify">
+          <div class="jk-item-properties__info">
+            <span>Не проходил экспертизу</span>
+          </div>
+          <button class="jk-item-properties__btn btn btn--pikachu">Заказать отчет</button>
+        </div>
+        <div class="jk-item-content__info">
+          <img src="dist/img/icons/i-1.svg">
+          <strong>
+            ЖК Грани,&nbsp;
+          </strong>
+          Первичка
+        </div>
+
+        <div class="jk-item-content__cost">27 100 000 ₽</div>
+        <div class="jk-item-content__btns">
+          <button class="jk-item-content__like like-btn like-btn--active waves">
+            <svg>
+              <use xlink:href="dist/img/sprite.svg#like" />
+            </svg>
+          </button>
+          <button class="jk-item-content__btn jk-item-content__btn--mobile btn btn--primary">Подробнее</button>
+          <button class="jk-item-content__btn jk-item-content__phone btn btn--primary">Показать телефон</button>
+          <a class="jk-item-content__btn jk-item-content__record btn--icon-left btn btn--contur">
+            <img src="dist/img/icons/play-circle.svg" alt="" class="btn-icon">
+            Смотреть видеообзор
+          </a>
+        </div>
+      </div>
+      <div class="jk-item-properties">
+        <div class="jk-item-properties__info">
+          <img src="dist/img/icons/home.svg" alt=""><span>Тип: </span>Монолитный
+        </div>
+        <div class="jk-item-properties__info">
+          <img src="dist/img/icons/square-1.svg" alt=""><span>Площадь дома: </span>191.3 м²
+        </div>
+        <div class="jk-item-properties__info">
+          <img src="dist/img/icons/square-2.svg" alt=""><span>Площадь участка: </span>235 соток
+        </div>
+        <div class="jk-item-properties__info">
+          <img src="dist/img/icons/floors.svg" alt=""><span>Количество этажей: </span>2
+        </div>
+        <div class="jk-item-properties__line"></div>
+        <div class="jk-item-properties__verify">
+          <div class="jk-item-properties__info">
+            <span>Дом не проходил экспертизу</span>
+          </div>
+          <button class="jk-item-properties__btn btn btn--pikachu">Заказать отчет</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="jk-item-content__name">Карточка с админки</div>
+    <div class="card-remove-cover" data-id="jk-1">
+      <div class="card">
+        <div class="jk-item">
+          <div class="jk-item-gallery">
+            <div class="jk-item-gallery-slider swiper-container">
+              <div class="swiper-wrapper">
+                <a data-fancybox="gallery-1" href="dist/img/test-exterier.jpg"
+                  class="jk-item-gallery__anons waves swiper-slide">
+                  <picture>
+                    <source srcset="dist/img/test-exterier-min.webp" type="image/webp">
+                    <img src="dist/img/test-exterier-min.jpg" alt="" loading="lazy">
+                  </picture>
+                </a>
+                <a data-fancybox="gallery-1" href="dist/img/test-interier.jpg"
+                  class="jk-item-gallery__anons waves swiper-slide">
+                  <picture>
+                    <source srcset="dist/img/test-interier-min.webp" type="image/webp">
+                    <img src="dist/img/test-interier-min.jpg" alt="" loading="lazy">
+                  </picture>
+                </a>
+
+              </div>
+
+              <div class="jk-item-gallery-pagination"></div>
+              <button class="jk-item-gallery-arrow jk-item-gallery-arrow-prev"></button>
+              <button class="jk-item-gallery-arrow jk-item-gallery-arrow-next"></button>
+            </div>
+            <a data-fancybox="gallery-1-previews" href="dist/img/test-interier.jpg" class="jk-item-gallery__preview waves">
+              <picture>
+                <source srcset="dist/img/test-interier-min.webp" type="image/webp">
+                <img src="dist/img/test-interier-min.jpg" alt="" loading="lazy">
+              </picture>
+            </a>
+            <a data-fancybox="gallery-1-previews" href="dist/img/test-exterier.jpg" class="jk-item-gallery__preview waves">
+              <picture>
+                <source srcset="dist/img/test-exterier-min.webp" type="image/webp">
+                <img src="dist/img/test-exterier-min.jpg" alt="" loading="lazy">
+              </picture>
+            </a>
+            <a data-fancybox="gallery-1-previews" href="dist/img/test-exterier.jpg" class="jk-item-gallery__preview waves">
+              <picture>
+                <source srcset="dist/img/test-exterier-min.webp" type="image/webp">
+                <img src="dist/img/test-exterier-min.jpg" alt="" loading="lazy">
+              </picture>
+            </a>
+
+            <a data-fancybox="gallery-1-previews" href="https://picsum.photo/600/400?random=5" style="display:none"></a>
+            <a data-fancybox="gallery-1-previews" href="https://picsum.photo/600/400?random=6" style="display:none"></a>
+            <a data-fancybox="gallery-1-previews" href="https://picsum.photo/600/400?random=7" style="display:none"></a>
+
+
+            <a class="jk-item-gallery__preview waves ">
+              <div class="jk-item-gallery__link">Еще фото</div>
+              <picture>
+                <source srcset="dist/img/test-interier-min.webp" type="image/webp">
+                <img src="dist/img/test-interier-min.jpg" alt="" loading="lazy">
+              </picture>
+            </a>
+
+          </div>
+          <div class="jk-item-content">
+            <div class="obj_number">#219</div>
+            <div class="jk-item-content__name">2-этажный коттедж, 500 м<sup>2</sup></div>
+            <div class="jk-item-content__status">Москва, СВАО, р-н Северный, Челобитьевское ш., 1Гк11
+              <a data-fancybox data-type="iframe"
+                data-src="https://yandex.ru/map-widget/v1/?um=constructor%3A2e5040778f1101d4afacf107320478c422ca01f0d00c537ed96eff00a6fd0ffc&amp;source=constructor"
+                href="javascript:;" class="link">на карте</a>
+            </div>
+            <div class="jk-item-content__verify jk-item-content__verify--success">
+              <div class="jk-item-properties__info">
+                <img src="dist/img/icons/verified--success.svg" alt=""><span>Прошел экспертизу</span>
+              </div>
+              <button class="jk-item-properties__btn btn btn--success">Скачать отчет</button>
+            </div>
+            <div class="jk-item-content__info"><img src="dist/img/icons/metro.svg" alt="">Алтуфьево ⋅ 15 мин. на
+              транспорте
+            </div>
+            <div class="jk-item-content__info"><img src="dist/img/icons/car.svg" alt="">Дмитровское шоссе, 1 км от МКАД
+            </div>
+
+            <div class="jk-item-content__cost">27 100 000 ₽</div>
+            <div class="jk-item-content__user">
+              <div class="avatar avatar--star avatar--type-1">
+                <div class="avatar__img">
+                  <img src="https://static.wallpapers-anime.com/upload/20170531/647/Z/s/7/Zs7FEF.jpg" alt="">
+                </div>
+                <div class="avatar__content">
+                  <div class="avatar__title">Добавил(а) Алиса Константинова</div>
+                  <div class="avatar__subtitle">17.11.2020</div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="jk-item-asign">
+              <div class="jk-item-source">
+                <div class="jk-item-source__title">Исходное объявление</div>
+                <!-- <div class="jk-item-source__link">https://www.avito.ru/s...</div> -->
+                <div class="jk-item-source__list">
+                  <div class="jk-item-source__item tooltip-parent">
+                    <img src="https://picsum.photos/id/1081/600/400" alt="">
+                    <div class="tooltip tooltip--top">domhub.com</div>
+                  </div>
+                  <div class="jk-item-source__item tooltip-parent">
+                    <img src="https://picsum.photos/id/1081/600/400" alt="">
+                    <div class="tooltip tooltip--top">domhub.com</div>
+                  </div>
+                  <div class="jk-item-source__item tooltip-parent">
+                    <img src="https://picsum.photos/id/1081/600/400" alt="">
+                    <div class="tooltip tooltip--top">domhub.com</div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="jk-item-builder">
+                <div class="jk-item-builder__title">Застройщик</div>
+                <div class="jk-item-builder__link">8 (918) 000-00-00</div>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="jk-item-properties">
+            <div class="jk-item-properties__info">
+              <img src="dist/img/icons/home.svg" alt=""><span>Тип: </span>Монолитный
+            </div>
+            <div class="jk-item-properties__info">
+              <img src="dist/img/icons/square-1.svg" alt=""><span>Площадь дома: </span>191.3 м²
+            </div>
+            <div class="jk-item-properties__info">
+              <img src="dist/img/icons/square-2.svg" alt=""><span>Площадь участка: </span>235 соток
+            </div>
+            <div class="jk-item-properties__info">
+              <img src="dist/img/icons/floors.svg" alt=""><span>Количество этажей: </span>2
+            </div>
+            <div class="jk-item-properties__line"></div>
+            <div class="jk-item-properties__verify">
+              <div class="jk-item-properties__info">
+                <img src="dist/img/icons/verified--success.svg" alt=""><span>Дом прошел экспертизу</span>
+              </div>
+              <button data-modal-link="message-modal" class="jk-item-properties__btn btn btn--red">И не пройдет
+                =)</button>
+            </div>
+
+          </div>
+
+          <div class="jk-item-control">
+            <div class=" jk-item-control-left">
+              <button class="jk-item-control__btn btn btn--contur-primary">
+                <svg class="btn-icon">
+                  <use xlink:href="dist/img/sprite.svg#plus-1" />
+                </svg>
+              </button>
+            </div>
+            <div class="jk-item-control-right">
+              <button class="jk-item-control__btn btn btn--icon-light btn--primary--light" title="Редактировать"
+                data-tooltip data-tooltip-position="top">
+                <svg class="btn-icon">
+                  <use xlink:href="dist/img/sprite.svg#edit" />
+                </svg>
+
+
+              </button>
+              <button class="jk-item-control__btn btn btn--icon-light btn--primary--light tooltip-parent">
+                <svg class="btn-icon">
+                  <use xlink:href="dist/img/sprite.svg#folders" />
+                </svg>
+                <div class="tooltip tooltip--top">В архив</div>
+              </button>
+              <button class="jk-item-control__btn btn btn--accent--light tooltip-parent"
+                onclick="Actions.jk().remove('jk-1').start()">
+                <svg class="btn-icon">
+                  <use xlink:href="dist/img/sprite.svg#delete" />
+                </svg>
+                <div class="tooltip tooltip--top">Удалить</div>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+      <button class="jk-return btn btn--white" onclick="Actions.jk().remove('jk-1').cancel()">
+
+        <div class="jk-return__title">2-этажный коттедж, 500 м<sup>2</sup> </div>
+        <div class="jk-return__subtitle">Москва, СВАО, р-н Северный, Челобитьевское ш., 1Гк11</div>
+        <div class="jk-return__cost">27 100 000 ₽</div>
+        <svg class="btn-icon">
+          <use xlink:href="dist/img/sprite.svg#return" />
+        </svg>
+        Нажмите чтобы восстановить&nbsp;
+
+        <div class="jk-return-time"> 5</div>с
+      </button>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+	<script src="src/source/jquery-3.5.0.min.js"></script>
+	<script src="src/source/jquery.fancybox.min.js"></script>
+	<script src="src/source/maskedinput.js"></script>
+	<script src="src/source/waves.js"></script>
+	<script src="src/source/swiper-bundle.min.js"></script>
+	<script src="src/source/select.bundle.min.js"></script>
+
+	<script src="src/js/frontend--polifils.js"></script>
+	<script src="src/js/frontend--modal.js"></script>
+	<script src="src/js/frontend--tab.js"></script>
+	<script src="src/js/frontend--toggle.js"></script>
+	<script src="src/js/frontend--template.js"></script>
+
+
+</body>
+
+</html>
