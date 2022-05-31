@@ -9,7 +9,10 @@
   $lighten               : lighten($color, 5%);
   $darken                : darken($color, 5%);
   --color-#{$name}       : #{$color};
+  --color-#{$name}-100       : #{$color};
+  --color-#{$name}-5    : rgba(#{$rgb}, 0.05);
   --color-#{$name}-10    : rgba(#{$rgb}, 0.1);
+  --color-#{$name}-15    : rgba(#{$rgb}, 0.15);
   --color-#{$name}-20    : rgba(#{$rgb}, 0.20);
   --color-#{$name}-30    : rgba(#{$rgb}, 0.30);
   --color-#{$name}-40    : rgba(#{$rgb}, 0.40);

@@ -6,8 +6,10 @@
 @import './ui/Flex.scss';
 @import './ui/Margin.scss';
 @import './ui/Padding.scss';
+@import './ui/Icon.scss';
 @import './ui/Progress.scss';
 @import './ui/Text.scss';
+@import './ui/Colors.scss';
 @import './ui/Width.scss';
 
 
@@ -15,62 +17,8 @@
 // custom     :=-=:|:=-=:|:=-=:|:=-=:|:=-=:|:=-=:|:=-=:|:=-=:|:=-=:|:=-=:|:=-=:|:=-=:|:=-=:|:=-=:|:=-=:|:=-=:|:=-=:|:=-=:|:=-=:|:=-=:|:=-=:|:=-=:|:=-=:|:
 //            :=-=:|:=-=:|:=-=:|:=-=:|:=-=:|:=-=:|:=-=:|:=-=:|:=-=:|:=-=:|:=-=:|:=-=:|:=-=:|:=-=:|:=-=:|:=-=:|:=-=:|:=-=:|:=-=:|:=-=:|:=-=:|:=-=:|:=-=:|:
 
-
-body {
-
-	--background-l1: #E9EAEC;
-	--background-l2: #F4F5F6;
-	--background-l3: #FFFFFF;
-
-	--color-text-100: #252B42;
-	--color-text-80 : rgba(37, 43, 66, 0.80);
-	--color-text-60 : rgba(37, 43, 66, 0.60);
-	--color-text-50 : rgba(37, 43, 66, 0.50);
-	--color-text-40 : rgba(37, 43, 66, 0.40);
-	--color-text-20 : rgba(37, 43, 66, 0.20);
-	--color-text-15 : rgba(37, 43, 66, 0.15);
-	--color-text-5  : rgba(37, 43, 66, 0.05);
-
-
-	--const-color-text-100: #252B42;
-	--default-text        : #000;
-	overflow-y            : scroll;
-}
-
-.logo__img--light {
-	display: none;
-}
-
-body[data-theme="dark"] {
-
-	--background-l1: #181818;
-	--background-l2: #282828;
-	--background-l3: #323232;
-
-	--color-text-100: #ffffff;
-	--color-text-80 : rgba(255, 255, 255, 0.8);
-	--color-text-60 : rgba(255, 255, 255, 0.6);
-	--color-text-50 : rgba(255, 255, 255, 0.5);
-	--color-text-40 : rgba(255, 255, 255, 0.4);
-	--color-text-20 : rgba(255, 255, 255, 0.2);
-	--color-text-15 : rgba(255, 255, 255, 0.15);
-	--color-text-5  : rgba(255, 255, 255, 0.05);
-
-	--default-text: #fff;
-
-	.logo__img {
-		display: none;
-	}
-
-	.logo__img--light {
-		display: block;
-	}
-}
-
-
-
-
-$base-font :'Roboto', sans-serif;
+$base-font :'Roboto',
+sans-serif;
 $alt-font :'Bebas Neue';
 
 
@@ -128,6 +76,52 @@ $font-size-4: 16px;
 $font-size-5: 14px;
 $font-size-6: 12px;
 
+:root {
+	@include getColors(#0084E6, "primary");
+	@include getColors(#DD9831, "sec");
+	@include getColors(#0092E4, "blue");
+	@include getColors(#FF9820, "yellow");
+	@include getColors(#3EA849, "green");
+	@include getColors(#E85050, "red");
+	@include getColors(#252B42, "text");
+
+	--font-base: 'Roboto', Arial, Helvetica, sans-serif;
+	--font-alt : 'Bebas Neue';
+
+	--spacing: 4px;
+}
+
+body {
+	--background-l1: #E9EAEC;
+	--background-l2: #F4F5F6;
+	--background-l3: #FFFFFF;
+
+	--const-color-text-100: #252B42;
+	--default-text        : #000;
+	overflow-y            : scroll;
+}
+
+.logo__img--light {
+	display: none;
+}
+
+body[data-theme="dark"] {
+	--background-l1: #181818;
+	--background-l2: #282828;
+	--background-l3: #323232;
+
+	@include getColors(#fff, "text");
+
+	--default-text: #fff;
+
+	.logo__img {
+		display: none;
+	}
+
+	.logo__img--light {
+		display: block;
+	}
+}
 
 .waves-effect.waves-custom .waves-ripple {
 	background: rgba(0, 0, 0, 0.3);
@@ -177,7 +171,6 @@ body {
 	flex-direction : column;
 
 	overflow-y: scroll;
-
 }
 
 body * {
@@ -187,9 +180,9 @@ body * {
 }
 
 
-svg {
-	fill: var(--color-text-60);
-}
+// svg {
+// 	fill: var(--color-text-60);
+// }
 
 
 .df {
@@ -449,10 +442,7 @@ svg {
 	}
 }
 
-.icon {
-	fill: currentColor;
 
-}
 
 .btn {
 	display        : flex;
@@ -1913,14 +1903,20 @@ svg {
 }
 
 .jk-item {
-	padding      : 8px;
-	display      : flex;
-	position     : relative;
 	transition   : .5s ease;
 	margin-bottom: 24px;
+	display      : flex;
+	flex-wrap    : wrap;
+	position     : relative;
+	padding      : 8px;
 
-
-
+	&-inner {
+		width   : calc(100% + 16px);
+		display : flex;
+		position: relative;
+		padding : 8px;
+		margin  : -8px;
+	}
 
 
 	&-gallery {
@@ -1930,6 +1926,7 @@ svg {
 		display              : grid;
 		grid-gap             : 8px;
 		grid-template-columns: 1fr 1fr 1fr;
+		position             : relative;
 
 		&__anons,
 		&__preview {
@@ -2438,6 +2435,165 @@ svg {
 		&__link {
 			font-weight: 500;
 			font-size  : 12px;
+		}
+	}
+
+	&-votes {
+		position     : absolute;
+		bottom       : 8px;
+		left         : 50%;
+		transform    : translate(-50%);
+		background   : #FFFFFF;
+		box-shadow   : 0px 6px 10px rgba(0, 0, 0, 0.5);
+		border-radius: 100px;
+		z-index      : 2;
+		overflow     : hidden;
+		display      : flex;
+		transition: .2s ease;
+
+		&__item {
+			padding: 10px 22px;
+			cursor : pointer;
+			color  : #808492;
+			transition: .2s ease;
+
+			&+& {
+				border-left: 1px solid #DCDCDC;
+			}
+
+			@media(hover) {
+				&:hover {
+					background: rgba(0, 0, 0, 0.05);
+				}
+			}
+
+			&--up {
+				&.active {
+					color: var(--color-green);
+				}
+
+				@media(hover) {
+					&:hover {
+						background: var(--color-green-5);
+					}
+				}
+			}
+
+			&--down {
+				&.active {
+					color: var(--color-red);
+				}
+
+				@media(hover) {
+					&:hover {
+						background: var(--color-red-5);
+					}
+				}
+			}
+
+			.icon {
+				transition: .2s ease;
+			}
+
+			&:active .icon {
+				transform: translateY(2px);
+			}
+		}
+	}
+
+	@media(hover) {
+		&:not(:hover) &-votes {
+			background: rgba(255, 255, 255, 0.4);
+			&__item{
+				opacity: .7;
+			}
+		}
+	}
+
+	&-bottom {
+		// position        : absolute;
+		// bottom          : 0;
+		// left            : 0;
+		// width           : 100%;
+		display         : flex;
+		align-items     : center;
+		flex-wrap       : wrap;
+		padding         : 6px 10px;
+		// background : #fff;
+		border-top      : 1px solid rgba(168, 170, 179, 0.3);
+		// border-radius: 0 0 10px 10px;
+		transition      : .2s ease .3s;
+
+
+		&__btn {
+			display        : flex;
+			align-items    : center;
+			justify-content: center;
+			color          : var(--color-text-80);
+			text-decoration: underline;
+			cursor         : pointer;
+			transition     : .1s;
+			padding        : 10px 20px;
+
+			@media(hover) {
+				&:hover {
+					color: var(--color-text)
+				}
+			}
+
+			&:active {
+				transform: translateY(2px);
+			}
+
+			&+& {
+				margin-left: 10px;
+			}
+
+			.icon {
+				color       : #808492;
+				margin-right: 6px;
+			}
+
+
+		}
+
+		&__note {
+			width        : 100%;
+			display      : flex;
+			align-items  : center;
+			border-radius: 0 0 10px 10px;
+			background   : var(--color-primary-20);
+			padding      : 10px 16px;
+
+			&-btn {
+				height   : 30px;
+				padding  : 0 12px;
+				font-size: 14px;
+			}
+
+			&-close {
+				margin-left: auto;
+				font-size  : 12px;
+				color      : var(--color-text-60);
+			}
+
+		}
+	}
+
+	&--with-bottom {
+		position: relative;
+	}
+
+	@media(hover) {
+		// &--with-bottom:hover {
+		// 	padding-bottom: 60px;
+
+
+		// }
+
+
+		&--with-bottom:not(:hover) &-bottom {
+			display: none;
 		}
 	}
 }

@@ -1705,7 +1705,7 @@ document.addEventListener('click', (event) => {
 })
 
 
-if (navigator.share) {
+if (navigator.share && screen.width < 992) {
 	document.addEventListener('click', (event) => {
 		if (event.target.closest('[data-share-mobile]')) {
 			navigator.share({

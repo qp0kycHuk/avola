@@ -10,7 +10,7 @@
   <!-- <link rel="stylesheet" href="css/frontend--fonts.css"> -->
   <!-- <link rel="stylesheet" href="css/frontend--style.css"> -->
   <!-- <link rel="stylesheet" href="css/krd-styles.css"> -->
-  <link rel="stylesheet" href="dist/style.css">
+  <link rel="stylesheet" href="dist/css/style.css">
 
   <title>Объекты - Сервис Кравченко</title>
 </head>
@@ -18,127 +18,183 @@
 <body class="">
   <section>
     <div class="jk-item-content__name">Карточка с главной</div>
-    <div class="card jk-item ">
-      <div class="jk-item-gallery">
-        <div class="jk-item-gallery-slider swiper-container">
-          <div class="swiper-wrapper">
-            <a data-height="800" data-fancybox="gallery-2" href="dist/img/test-interier-min.jpg"
-              class="jk-item-gallery__anons waves swiper-slide">
-              <picture>
-                <source srcset="dist/img/test-interier-min.webp" type="image/webp">
-                <img src="dist/img/test-interier-min.jpg" alt="" loading="lazy">
-              </picture>
-            </a>
-            <a data-height="800" data-fancybox="gallery-2" href="dist/img/test-exterier-min.jpg"
-              class="jk-item-gallery__anons waves swiper-slide">
-              <picture>
-                <source srcset="dist/img/test-exterier-min.webp" type="image/webp">
-                <img src="dist/img/test-exterier-min.jpg" alt="" loading="lazy">
-              </picture>
-            </a>
+    <div class="card jk-item jk-item--with-bottom">
+      <div class="jk-item-inner">
+        <div class="jk-item-gallery">
+          <div class="jk-item-gallery-slider swiper-container">
+            <div class="swiper-wrapper">
+              <a data-height="800" data-fancybox="gallery-2" href="dist/img/test-interier-min.jpg"
+                class="jk-item-gallery__anons waves swiper-slide">
+                <picture>
+                  <source srcset="dist/img/test-interier-min.webp" type="image/webp">
+                  <img src="dist/img/test-interier-min.jpg" alt="" loading="lazy">
+                </picture>
+              </a>
+              <a data-height="800" data-fancybox="gallery-2" href="dist/img/test-exterier-min.jpg"
+                class="jk-item-gallery__anons waves swiper-slide">
+                <picture>
+                  <source srcset="dist/img/test-exterier-min.webp" type="image/webp">
+                  <img src="dist/img/test-exterier-min.jpg" alt="" loading="lazy">
+                </picture>
+              </a>
+            </div>
+
+            <div class="jk-item-gallery-pagination"></div>
+            <button class="jk-item-gallery-arrow jk-item-gallery-arrow-prev"></button>
+            <button class="jk-item-gallery-arrow jk-item-gallery-arrow-next"></button>
+
+            <div class="jk-item-votes">
+              <div class="jk-item-votes__item jk-item-votes__item--up active">
+                <svg class="icon">
+                  <use xlink:href="dist/img/icons.svg#vote-up" />
+                </svg>
+              </div>
+              <div class="jk-item-votes__item jk-item-votes__item--down active">
+                <svg class="icon">
+                  <use xlink:href="dist/img/icons.svg#vote-down" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <a data-height="800" data-fancybox="gallery-2" href="dist/img/test-exterier.jpg"
+            class="jk-item-gallery__preview waves">
+            <picture>
+              <source srcset="dist/img/test-exterier-min.webp" type="image/webp">
+              <img src="dist/img/test-exterier-min.jpg" alt="" loading="lazy">
+            </picture>
+          </a>
+          <a data-height="800" data-fancybox="gallery-2" href="dist/img/test-interier.jpg"
+            class="jk-item-gallery__preview waves">
+            <picture>
+              <source srcset="dist/img/test-interier-min.webp" type="image/webp">
+              <img src="dist/img/test-interier-min.jpg" alt="" loading="lazy">
+            </picture>
+          </a>
+          <a data-height="800" data-fancybox="gallery-2" href="dist/img/test-exterier.jpg"
+            class="jk-item-gallery__preview waves">
+            <picture>
+              <source srcset="dist/img/test-interier-min.webp" type="image/webp">
+              <img src="dist/img/test-interier-min.jpg" alt="" loading="lazy">
+            </picture>
+          </a>
+          <a class="jk-item-gallery__preview waves ">
+            <div class="jk-item-gallery__link">Еще фото</div>
+            <picture>
+              <source srcset="dist/img/test-exterier-min.webp" type="image/webp">
+              <img src="dist/img/test-exterier-min.jpg" alt="" loading="lazy">
+            </picture>
+          </a>
+          <!-- LIKE -->
+          <div data-fancybox-modal="" data-fancybox="" data-type="ajax" href="/auth/?ajax=Y"
+            data-options="{touch: false}" class="jk-item-new-like">
+            <svg class="icon">
+              <use xlink:href="dist/img/sprite.svg#like"></use>
+            </svg>
+          </div>
+          <!-- LIKE -->
+          <div data-fancybox-modal="" data-fancybox="" data-type="ajax" href="/auth/?ajax=Y"
+            data-options="{touch: false}" class="jk-item-new-like jk-item-new-like--share">
+            <svg class="icon">
+              <use xlink:href="dist/img/sprite.svg#share-contur"></use>
+            </svg>
           </div>
 
-          <div class="jk-item-gallery-pagination"></div>
-          <button class="jk-item-gallery-arrow jk-item-gallery-arrow-prev"></button>
-          <button class="jk-item-gallery-arrow jk-item-gallery-arrow-next"></button>
-        </div>
-        <a data-height="800" data-fancybox="gallery-2" href="dist/img/test-exterier.jpg"
-          class="jk-item-gallery__preview waves">
-          <picture>
-            <source srcset="dist/img/test-exterier-min.webp" type="image/webp">
-            <img src="dist/img/test-exterier-min.jpg" alt="" loading="lazy">
-          </picture>
-        </a>
-        <a data-height="800" data-fancybox="gallery-2" href="dist/img/test-interier.jpg"
-          class="jk-item-gallery__preview waves">
-          <picture>
-            <source srcset="dist/img/test-interier-min.webp" type="image/webp">
-            <img src="dist/img/test-interier-min.jpg" alt="" loading="lazy">
-          </picture>
-        </a>
-        <a data-height="800" data-fancybox="gallery-2" href="dist/img/test-exterier.jpg"
-          class="jk-item-gallery__preview waves">
-          <picture>
-            <source srcset="dist/img/test-interier-min.webp" type="image/webp">
-            <img src="dist/img/test-interier-min.jpg" alt="" loading="lazy">
-          </picture>
-        </a>
-        <a class="jk-item-gallery__preview waves ">
-          <div class="jk-item-gallery__link">Еще фото</div>
-          <picture>
-            <source srcset="dist/img/test-exterier-min.webp" type="image/webp">
-            <img src="dist/img/test-exterier-min.jpg" alt="" loading="lazy">
-          </picture>
-        </a>
-        <!-- LIKE -->
-        <div data-fancybox-modal="" data-fancybox="" data-type="ajax" href="/auth/?ajax=Y" data-options="{touch: false}"
-          class="jk-item-new-like">
-          <svg class="icon">
-            <use xlink:href="dist/img/sprite.svg#like"></use>
-          </svg>
-        </div>
-        <!-- LIKE -->
-        <div data-fancybox-modal="" data-fancybox="" data-type="ajax" href="/auth/?ajax=Y" data-options="{touch: false}"
-          class="jk-item-new-like jk-item-new-like--share">
-          <svg class="icon">
-            <use xlink:href="dist/img/sprite.svg#share-contur"></use>
-          </svg>
-        </div>
-      </div>
-      <div class="jk-item-content">
-        <div class="obj_number">#219</div>
-        <div class="jk-item-content__name">2-этажный коттедж, 500 м²</div>
-        <div class="jk-item-content__status">Москва, СВАО, р-н Северный, Челобитьевское ш., 1Гк11</div>
-        <div class="jk-item-content__verify">
-          <div class="jk-item-properties__info">
-            <span>Не проходил экспертизу</span>
-          </div>
-          <button class="jk-item-properties__btn btn btn--pikachu">Заказать отчет</button>
-        </div>
-        <div class="jk-item-content__info">
-          <img src="dist/img/icons/i-1.svg">
-          <strong>
-            ЖК Грани,&nbsp;
-          </strong>
-          Первичка
-        </div>
 
-        <div class="jk-item-content__cost">27 100 000 ₽</div>
-        <div class="jk-item-content__btns">
-          <button class="jk-item-content__like like-btn like-btn--active waves">
+        </div>
+        <div class="jk-item-content">
+          <div class="flex flex-align-center">
+            <div class="obj_number mr-3">#219</div>
+            <img src="dist/img/icons/verified--success.svg" alt="" class="mr-1">
+            <div class="color-green text--demibold">Документы проверены</div>
+          </div>
+
+          <div class="jk-item-content__name">2-этажный коттедж, 500 м²</div>
+          <div class="jk-item-content__status">Москва, СВАО, р-н Северный, Челобитьевское ш., 1Гк11</div>
+          <div class="jk-item-content__verify">
+            <div class="jk-item-properties__info">
+              <span>Не проходил экспертизу</span>
+            </div>
+            <button class="jk-item-properties__btn btn btn--pikachu">Заказать отчет</button>
+          </div>
+          <div class="jk-item-content__info">
+            <img src="dist/img/icons/i-1.svg">
+            <strong>
+              ЖК Грани,&nbsp;
+            </strong>
+            Первичка
+          </div>
+
+          <div class="jk-item-content__cost">27 100 000 ₽</div>
+          <div class="jk-item-content__btns">
+            <!-- <button class="jk-item-content__like like-btn like-btn--active waves">
             <svg>
               <use xlink:href="dist/img/sprite.svg#like" />
             </svg>
-          </button>
-          <button class="jk-item-content__btn jk-item-content__btn--mobile btn btn--primary">Подробнее</button>
-          <button class="jk-item-content__btn jk-item-content__phone btn btn--primary">Показать телефон</button>
-          <a class="jk-item-content__btn jk-item-content__record btn--icon-left btn btn--contur">
-            <img src="dist/img/icons/play-circle.svg" alt="" class="btn-icon">
-            Смотреть видеообзор
-          </a>
+          </button> -->
+            <button class="jk-item-content__btn jk-item-content__btn--mobile btn btn--primary">Подробнее</button>
+            <button class="jk-item-content__btn jk-item-content__phone btn btn--primary">Показать телефон</button>
+            <a class="jk-item-content__btn jk-item-content__record btn--icon-left btn btn--contur">
+              <img src="dist/img/icons/play-circle.svg" alt="" class="btn-icon">
+              Смотреть видеообзор
+            </a>
+          </div>
+        </div>
+        <div class="jk-item-properties">
+          <div class="jk-item-properties__info">
+            <img src="dist/img/icons/home.svg" alt=""><span>Тип: </span>Монолитный
+          </div>
+          <div class="jk-item-properties__info">
+            <img src="dist/img/icons/square-1.svg" alt=""><span>Площадь дома: </span>191.3 м²
+          </div>
+          <div class="jk-item-properties__info">
+            <img src="dist/img/icons/square-2.svg" alt=""><span>Площадь участка: </span>235 соток
+          </div>
+          <div class="jk-item-properties__info">
+            <img src="dist/img/icons/floors.svg" alt=""><span>Количество этажей: </span>2
+          </div>
+          <div class="jk-item-properties__line"></div>
+          <div class="jk-item-properties__verify">
+            <div class="jk-item-properties__info">
+              <span>Дом не проходил экспертизу</span>
+            </div>
+            <button class="jk-item-properties__btn btn btn--pikachu">Заказать отчет</button>
+          </div>
+
         </div>
       </div>
-      <div class="jk-item-properties">
-        <div class="jk-item-properties__info">
-          <img src="dist/img/icons/home.svg" alt=""><span>Тип: </span>Монолитный
+
+      <div class="jk-item-bottom">
+        <div class="jk-item-bottom__btn">
+          <svg class="icon">
+            <use xlink:href="dist/img/icons.svg#doc-add" />
+          </svg>
+          Подать заявку на ипотеку
         </div>
-        <div class="jk-item-properties__info">
-          <img src="dist/img/icons/square-1.svg" alt=""><span>Площадь дома: </span>191.3 м²
+        <div class="jk-item-bottom__btn">
+          <svg class="icon">
+            <use xlink:href="dist/img/icons.svg#doc-search" />
+          </svg>
+          Заказать юридическую проверку
         </div>
-        <div class="jk-item-properties__info">
-          <img src="dist/img/icons/square-2.svg" alt=""><span>Площадь участка: </span>235 соток
-        </div>
-        <div class="jk-item-properties__info">
-          <img src="dist/img/icons/floors.svg" alt=""><span>Количество этажей: </span>2
-        </div>
-        <div class="jk-item-properties__line"></div>
-        <div class="jk-item-properties__verify">
-          <div class="jk-item-properties__info">
-            <span>Дом не проходил экспертизу</span>
-          </div>
-          <button class="jk-item-properties__btn btn btn--pikachu">Заказать отчет</button>
+        <div class="jk-item-bottom__btn">
+          <svg class="icon">
+            <use xlink:href="dist/img/icons.svg#user" />
+          </svg>
+          Консультация эксперта по недвижимости
         </div>
 
+        <div class="jk-item-bottom__note mt-2">
+          <div class="fade-80 mr-4">
+            Звонили по этому номеру? Актуально ли это предложение?
+          </div>
+          <button class="jk-item-bottom__note-btn btn btn--primary mr-1">Да</button>
+          <button class="jk-item-bottom__note-btn btn btn--white mr-1">Нет</button>
+          <div class="jk-item-bottom__note-close">
+            <svg class="icon">
+              <use xlink:href="dist/img/icons.svg#cross" />
+            </svg>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -172,19 +228,22 @@
               <button class="jk-item-gallery-arrow jk-item-gallery-arrow-prev"></button>
               <button class="jk-item-gallery-arrow jk-item-gallery-arrow-next"></button>
             </div>
-            <a data-fancybox="gallery-1-previews" href="dist/img/test-interier.jpg" class="jk-item-gallery__preview waves">
+            <a data-fancybox="gallery-1-previews" href="dist/img/test-interier.jpg"
+              class="jk-item-gallery__preview waves">
               <picture>
                 <source srcset="dist/img/test-interier-min.webp" type="image/webp">
                 <img src="dist/img/test-interier-min.jpg" alt="" loading="lazy">
               </picture>
             </a>
-            <a data-fancybox="gallery-1-previews" href="dist/img/test-exterier.jpg" class="jk-item-gallery__preview waves">
+            <a data-fancybox="gallery-1-previews" href="dist/img/test-exterier.jpg"
+              class="jk-item-gallery__preview waves">
               <picture>
                 <source srcset="dist/img/test-exterier-min.webp" type="image/webp">
                 <img src="dist/img/test-exterier-min.jpg" alt="" loading="lazy">
               </picture>
             </a>
-            <a data-fancybox="gallery-1-previews" href="dist/img/test-exterier.jpg" class="jk-item-gallery__preview waves">
+            <a data-fancybox="gallery-1-previews" href="dist/img/test-exterier.jpg"
+              class="jk-item-gallery__preview waves">
               <picture>
                 <source srcset="dist/img/test-exterier-min.webp" type="image/webp">
                 <img src="dist/img/test-exterier-min.jpg" alt="" loading="lazy">
@@ -355,18 +414,18 @@
 
 
 
-	<script src="src/source/jquery-3.5.0.min.js"></script>
-	<script src="src/source/jquery.fancybox.min.js"></script>
-	<script src="src/source/maskedinput.js"></script>
-	<script src="src/source/waves.js"></script>
-	<script src="src/source/swiper-bundle.min.js"></script>
-	<script src="src/source/select.bundle.min.js"></script>
+  <script src="src/source/jquery-3.5.0.min.js"></script>
+  <script src="src/source/jquery.fancybox.min.js"></script>
+  <script src="src/source/maskedinput.js"></script>
+  <script src="src/source/waves.js"></script>
+  <script src="src/source/swiper-bundle.min.js"></script>
+  <script src="src/source/select.bundle.min.js"></script>
 
-	<script src="src/js/frontend--polifils.js"></script>
-	<script src="src/js/frontend--modal.js"></script>
-	<script src="src/js/frontend--tab.js"></script>
-	<script src="src/js/frontend--toggle.js"></script>
-	<script src="src/js/frontend--template.js"></script>
+  <script src="src/js/frontend--polifils.js"></script>
+  <script src="src/js/frontend--modal.js"></script>
+  <script src="src/js/frontend--tab.js"></script>
+  <script src="src/js/frontend--toggle.js"></script>
+  <script src="src/js/frontend--template.js"></script>
 
 
 </body>
