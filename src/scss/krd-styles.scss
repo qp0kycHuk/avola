@@ -290,3 +290,15 @@
 .header-mobile-logo .logo__img .icon {
   height: 32px;
 }
+
+.jk-item-new-like-wrapper{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 20%;
+
+  .jk-inner-share-list:before{
+    left: calc(74% - 9px);
+  }
+}
