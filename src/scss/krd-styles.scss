@@ -136,7 +136,7 @@
   top     : 16px;
   z-index : 3;
   cursor  : pointer;
-  padding: 5px;
+  padding : 5px;
 
   .icon {
     width       : 22px;
@@ -151,10 +151,10 @@
     stroke: currentColor;
   }
 
-  &--share{
+  &--share {
     right: 58px;
 
-    .icon{}
+    .icon {}
   }
 }
 
@@ -187,45 +187,45 @@
 
 
 .filter {
-  background      : url("../img/bg/filter-left.png") no-repeat 92px bottom, url("../img/bg/filter-right.png") no-repeat calc(100% - 60px) bottom;
+  background: url("../img/bg/filter-left.png") no-repeat 92px bottom, url("../img/bg/filter-right.png") no-repeat calc(100% - 60px) bottom;
 
-	@media screen and (min-width:1960px) {
-		background      : url("../img/bg/filter-left.png") no-repeat calc(50% - 760px) bottom, url("../img/bg/filter-right.png") no-repeat calc(50% + 760px) bottom;
-	}
+  @media screen and (min-width:1960px) {
+    background: url("../img/bg/filter-left.png") no-repeat calc(50% - 760px) bottom, url("../img/bg/filter-right.png") no-repeat calc(50% + 760px) bottom;
+  }
 
-	@media screen and (max-width:1800px) {
-		background      : url("../img/bg/filter-left.png") no-repeat calc(50% - 640px) bottom, url("../img/bg/filter-right.png") no-repeat calc(50% + 640px) bottom;
-	}
+  @media screen and (max-width:1800px) {
+    background: url("../img/bg/filter-left.png") no-repeat calc(50% - 640px) bottom, url("../img/bg/filter-right.png") no-repeat calc(50% + 640px) bottom;
+  }
 
-	@media screen and (max-width:1386px) {
-		background      : url("../img/bg/filter-left.png") no-repeat calc(50% - 600px) bottom, url("../img/bg/filter-right.png") no-repeat calc(50% + 600px) bottom;
+  @media screen and (max-width:1386px) {
+    background: url("../img/bg/filter-left.png") no-repeat calc(50% - 600px) bottom, url("../img/bg/filter-right.png") no-repeat calc(50% + 600px) bottom;
 
-		&-form {
-			max-width   : 998px;
-			margin-left : auto;
-			margin-right: auto;
-		}
-	}
+    &-form {
+      max-width   : 998px;
+      margin-left : auto;
+      margin-right: auto;
+    }
+  }
 
-	@media screen and (max-width:1280px) {
-		background: none;
+  @media screen and (max-width:1280px) {
+    background: none;
 
-		&-form {
-			max-width   : 100%;
-			margin-left : auto;
-			margin-right: auto;
-		}
-	}
+    &-form {
+      max-width   : 100%;
+      margin-left : auto;
+      margin-right: auto;
+    }
+  }
 
 
 
-	@media screen and (max-width:446px) {
-		background:
-			linear-gradient(180deg, rgba(25, 122, 194, 0) 31.84%, #197AC2 67.36%),
-			url("../img/bg/filter-left.png") no-repeat -28px calc(100% - 68px) / auto 315px,
-			url("../img/bg/filter-right.png") no-repeat calc(100% + 48px) calc(100% - 68px) / auto 315px;
-		// background: none;
-	}
+  @media screen and (max-width:446px) {
+    background:
+      linear-gradient(180deg, rgba(25, 122, 194, 0) 31.84%, #197AC2 67.36%),
+      url("../img/bg/filter-left.png") no-repeat -28px calc(100% - 68px) / auto 315px,
+      url("../img/bg/filter-right.png") no-repeat calc(100% + 48px) calc(100% - 68px) / auto 315px;
+    // background: none;
+  }
 }
 
 
@@ -248,6 +248,10 @@
 
     &.like-btn--active {
       background: #fff;
+    }
+
+    &--share {
+      left: 72px;
     }
   }
 }
@@ -283,6 +287,6 @@
   max-width: 360px;
 }
 
-.header-mobile-logo .logo__img .icon{
+.header-mobile-logo .logo__img .icon {
   height: 32px;
 }

@@ -2019,6 +2019,7 @@ body * {
 			transition : .3s ease;
 
 			background: rgba(0, 0, 0, 0.6);
+			text-align: center;
 
 			@media screen and (hover) {
 				&:hover {
@@ -2449,12 +2450,12 @@ body * {
 		z-index      : 2;
 		overflow     : hidden;
 		display      : flex;
-		transition: .2s ease;
+		transition   : .2s ease;
 
 		&__item {
-			padding: 10px 22px;
-			cursor : pointer;
-			color  : #808492;
+			padding   : 10px 22px;
+			cursor    : pointer;
+			color     : #808492;
 			transition: .2s ease;
 
 			&+& {
@@ -2504,7 +2505,8 @@ body * {
 	@media(hover) {
 		&:not(:hover) &-votes {
 			background: rgba(255, 255, 255, 0.4);
-			&__item{
+
+			&__item {
 				opacity: .7;
 			}
 		}
@@ -2543,10 +2545,6 @@ body * {
 
 			&:active {
 				transform: translateY(2px);
-			}
-
-			&+& {
-				margin-left: 10px;
 			}
 
 			.icon {
@@ -2864,6 +2862,7 @@ body * {
 	padding: 0;
 }
 
+
 .footer {
 	display        : flex;
 	align-items    : center;
@@ -2949,6 +2948,11 @@ body * {
 	.jk-item {
 		flex-wrap  : wrap;
 		align-items: flex-start;
+
+		&-inner {
+			flex-wrap  : wrap;
+			align-items: flex-start;
+		}
 
 		&-gallery {
 			min-width: 272px;
@@ -3077,6 +3081,13 @@ body * {
 @media screen and (max-width:992px) {
 	.jk-item {
 		padding: 0;
+
+		&-inner {
+			padding: 0;
+			width  : 100%;
+			margin : 0;
+
+		}
 
 		&-gallery {
 			padding: 16px;
@@ -3376,6 +3387,11 @@ body * {
 
 	.jk-item {
 		position: relative;
+
+		&-inner {
+			position: relative;
+
+		}
 
 		&-gallery {
 			display: block;
@@ -7876,11 +7892,14 @@ a.lk-table-jk {
 
 	&-share {
 		&-list {
-			width: max-content;
-
+			width    : max-content;
 			top      : calc(100% + 12px);
 			left     : 50%;
 			transform: translateX(-50%);
+
+			@media(max-width:992px) {
+				display: none;
+			}
 
 			&:before {
 				content : '';
