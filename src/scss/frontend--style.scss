@@ -3706,6 +3706,21 @@ body * {
 		color     : #fff;
 	}
 
+	&--green {
+		background: #C5EAC4;
+		color     : $color-text-const;
+	}
+
+	&--pink {
+		background: #D3CDF9;
+		color     : $color-text-const;
+	}
+
+	&--blue {
+		background: #CDE1F9;
+		color     : $color-text-const;
+	}
+
 	&__img {
 		margin-right: 32px;
 		align-self  : stretch;
@@ -3713,6 +3728,7 @@ body * {
 
 		img {
 			height: 100%;
+			object-fit: fill;
 		}
 	}
 
@@ -4024,8 +4040,8 @@ body * {
 		&__content {
 			flex-direction: column;
 			align-items   : flex-start;
-			padding-top   : 32px;
-			padding-bottom: 32px;
+			padding-top   : 15px;
+			padding-bottom: 15px;
 
 		}
 
@@ -4038,7 +4054,7 @@ body * {
 		&__btn {
 			margin-left: 0;
 			align-self : auto;
-			margin-top : 24px;
+			margin-top : 12px;
 		}
 	}
 
@@ -4064,9 +4080,9 @@ body * {
 		padding-right : 0;
 
 		&__img {
-			padding     : 20px 0 0;
-			margin-right: 0;
-
+			padding        : 0;
+			margin-right   : 0;
+			max-width: 100%;
 			display        : flex;
 			align-items    : center;
 			justify-content: center;
@@ -4086,6 +4102,18 @@ body * {
 
 		&--orange &__img {
 			background: #FFAE92;
+		}
+
+		&--green &__img {
+			// background: rgba(224, 248, 224, 0.7);
+		}
+
+		&--pink &__img {
+			// background: rgba(231, 228, 250, 0.7);
+		}
+
+		&--blue &__img {
+			// background: rgba(228, 242, 250, 0.7);
 		}
 
 		&__content {
