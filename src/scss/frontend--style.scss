@@ -6568,6 +6568,14 @@ $header-height    : 60px;
 			.edit-btn {
 				margin-left: 6px;
 			}
+
+			&-badge{
+				border-radius: 4px;
+
+				&--rieltor{
+					background: #FFF1C1;
+				}
+			}
 		}
 
 

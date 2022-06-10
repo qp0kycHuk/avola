@@ -6,9 +6,11 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="source/_libs.css">
-	<link rel="stylesheet" href="css/frontend--fonts.css">
-	<link rel="stylesheet" href="css/frontend--style.css">
+  <!-- <link rel="stylesheet" href="source/_libs.css"> -->
+  <!-- <link rel="stylesheet" href="css/frontend--fonts.css"> -->
+  <!-- <link rel="stylesheet" href="css/frontend--style.css"> -->
+  <!-- <link rel="stylesheet" href="css/krd-styles.css"> -->
+  <link rel="stylesheet" href="dist/css/style.css">
 	<title>Пользователи - Сервис Кравченко</title>
 </head>
 
@@ -16,173 +18,6 @@
 
 
 	<div class="lk-cover">
-		<header class="lk-header">
-			<a href="/" class="lk-header-logo logo">
-				<div class="logo__img"><img src="img/icons/logo.svg" alt=""></div>
-				<div class="logo__text">
-					Помощь в подборе <br>
-					недвижимости в Москве
-				</div>
-			</a>
-
-			<section class="lk-header__content">
-				<div class="lk-header__btns">
-					<button class="lk-header__btn btn btn--link">
-						<div class="btn-icon-round">
-							<svg class="btn-icon">
-								<use xlink:href="img/sprite.svg#home-add" />
-							</svg>
-						</div>
-						Добавить объект
-					</button>
-					<button class="lk-header__btn btn btn--link">
-						<div class="btn-icon-round">
-							<svg class="btn-icon">
-								<use xlink:href="img/sprite.svg#user" />
-							</svg>
-						</div>
-						Добавить пользователя
-					</button>
-				</div>
-			</section>
-
-			<div class="header__control">
-				<div class="lk-header__user">
-					<div class="user-control  dropdown">
-						<button class="user-control__btn waves" data-toggle-link="user-control-dropdown">
-							<div class="user-control__arrow"></div>
-							<div class="user-control__img">
-								<img loading="lazy" src="img/test-avatar.png" alt="">
-							</div>
-						</button>
-						<div class="user-control-content card card--l2 dropdown-content" id="user-control-dropdown">
-							<div class="user-control__name">Иван Иванов</div>
-							<div class="user-control__info"><svg>
-									<use xlink:href="img/sprite.svg#eye" />
-								</svg> Записи на просмотр (2)</div>
-							<div class="user-control__info"><svg>
-									<use xlink:href="img/sprite.svg#doc" />
-								</svg> Заказы экспертизы (0)</div>
-							<div class="user-control__info"><svg>
-									<use xlink:href="img/sprite.svg#plus" />
-								</svg> Добавленные объекты (12)</div>
-							<button class="user-control__logout btn btn--accent--light">Выйти</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</header>
-
-		<header class="lk-header lk-header-mobile header-mobile">
-			<button class="header-mobile__icon btn" data-toggle-link="lk-sidebar">
-				<svg>
-					<use xlink:href="img/sprite.svg#burger" />
-				</svg>
-			</button>
-
-			<div class="header-mobile__title">Личный кабинет</div>
-			<button class="header-mobile__btn btn btn--contur" data-toggle-link="lk-filter">
-				<svg class="btn-icon">
-					<use xlink:href="img/sprite.svg#filter" />
-				</svg>
-				Фильтр объектов
-			</button>
-		</header>
-
-		<div class="lk-sidebar" data-toggle-cover id="lk-sidebar">
-			<div class="lk-sidebar-content">
-				<div class="lk-sidebar-item waves waves-light" data-toggle-link>
-					<div class="lk-sidebar-item__img"><img src="img/icons/burger.svg" alt=""></div>
-					<div class="lk-sidebar-item__title">Свернуть меню</div>
-
-				</div>
-				<a href="lk-object.html" class="lk-sidebar-item waves waves-light ">
-					<div class="lk-sidebar-item__img"><img src="img/icons/home--white.svg" alt=""></div>
-					<div class="lk-sidebar-item__title">Объекты</div>
-
-				</a>
-				<a href="lk-users.html" class="lk-sidebar-item waves waves-light current">
-					<div class="lk-sidebar-item__img"><img src="img/icons/users.svg" alt=""></div>
-					<div class="lk-sidebar-item__title">Пользователи</div>
-					<div class="lk-sidebar-item__count">25</div>
-				</a>
-				<a href="" class="lk-sidebar-item waves waves-light">
-					<div class="lk-sidebar-item__img"><img src="img/icons/search.svg" alt=""></div>
-					<div class="lk-sidebar-item__title">Запросы на подборку</div>
-					<div class="lk-sidebar-item__count">2</div>
-				</a>
-				<a href="" class="lk-sidebar-item waves waves-light">
-					<div class="lk-sidebar-item__img"><img src="img/icons/eye.svg" alt=""></div>
-					<div class="lk-sidebar-item__title">Запросы на просмотр</div>
-
-				</a>
-				<a href="" class="lk-sidebar-item waves waves-light">
-					<div class="lk-sidebar-item__img"><img src="img/icons/doc.svg" alt=""></div>
-					<div class="lk-sidebar-item__title">Запросы на экспертизу</div>
-					<div class="lk-sidebar-item__count">7</div>
-				</a>
-				<a href="" class="lk-sidebar-item waves waves-light">
-					<div class="lk-sidebar-item__img"><img src="img/icons/home-add.svg" alt=""></div>
-					<div class="lk-sidebar-item__title">Запросы на добавление</div>
-					<div class="lk-sidebar-item__count">1</div>
-				</a>
-
-				<a href="" class="lk-sidebar-item waves waves-light">
-					<div class="lk-sidebar-item__img"><img src="img/icons/folders.svg" alt=""></div>
-					<div class="lk-sidebar-item__title">Архив</div>
-
-				</a>
-				<a href="" class="lk-sidebar-item waves waves-light">
-					<div class="lk-sidebar-item__img"><img src="img/icons/logo-abc.svg" alt=""></div>
-					<div class="lk-sidebar-item__title">Команда</div>
-
-				</a>
-				<a href="" class="lk-sidebar-item waves waves-light">
-					<div class="lk-sidebar-item__img"><img src="img/icons/flag.svg" alt=""></div>
-					<div class="lk-sidebar-item__title">Сохраненные подборки</div>
-
-				</a>
-			</div>
-
-		</div>
-
-		<div class="lk-filter" data-toggle-cover id="lk-filter">
-			<div class="lk-filter__content">
-				<div class="lk-filter-link" data-toggle-link="lk-filter">
-					<svg>
-						<use xlink:href="img/sprite.svg#filter" />
-					</svg>
-					<div class="lk-filter-link__title">Свернуть фильтр</div>
-				</div>
-				<div class="lk-filter__form">
-					<div class="lk-filter__title">Фильтр</div>
-					<div class="lk-filter__fields">
-
-						<label class="form-field form-field--check">
-							<input type="checkbox" class="form-input">
-							<div class="form-label">Просмотр</div>
-						</label>
-
-						<label class="form-field form-field--check">
-							<input type="checkbox" class="form-input">
-							<div class="form-label">Экспертиза</div>
-						</label>
-
-						<label class="form-field form-field--check">
-							<input type="checkbox" class="form-input">
-							<div class="form-label">Подбор</div>
-						</label>
-
-					</div>
-					<div class="lk-filter__btns">
-						<button class="lk-filter__btn btn btn--primary">Показать </button>
-					</div>
-				</div>
-
-			</div>
-
-		</div>
-
 		<section class="lk-content">
 			<h1 class="lk-content__title title">Пользователи</h1>
 			<form class="lk-search">
@@ -229,7 +64,7 @@
 								<input type="radio" name="user-mood-1" id="user-mood-1-1" checked>
 								<span class="mood-item__content">
 									<svg>
-										<use xlink:href="img/sprite.svg#mood-new" />
+										<use xlink:href="/dist/img/sprite.svg#mood-new" />
 									</svg>
 								</span>
 							</div>
@@ -238,7 +73,7 @@
 								<input type="radio" name="user-mood-1" id="user-mood-1-1">
 								<span class="mood-item__content">
 									<svg>
-										<use xlink:href="img/sprite.svg#mood-happy" />
+										<use xlink:href="/dist/img/sprite.svg#mood-happy" />
 									</svg>
 								</span>
 							</div>
@@ -247,7 +82,7 @@
 								<input type="radio" name="user-mood-1" id="user-mood-1-2">
 								<span class="mood-item__content">
 									<svg>
-										<use xlink:href="img/sprite.svg#mood-angry" />
+										<use xlink:href="/dist/img/sprite.svg#mood-angry" />
 									</svg>
 								</span>
 							</div>
@@ -256,7 +91,7 @@
 								<input type="radio" name="user-mood-1" id="user-mood-1-3">
 								<span class="mood-item__content">
 									<svg>
-										<use xlink:href="img/sprite.svg#mood-netral" />
+										<use xlink:href="/dist/img/sprite.svg#mood-netral" />
 									</svg>
 								</span>
 							</div>
@@ -266,19 +101,19 @@
 								<label for="user-mood-1-1" class="lk-user-mood-select__item mood-item mood-item--happy"
 									data-tab-link="user-mood-1-1">
 									<svg>
-										<use xlink:href="img/sprite.svg#mood-happy" />
+										<use xlink:href="/dist/img/sprite.svg#mood-happy" />
 									</svg>
 								</label>
 								<label for="user-mood-1-2" class="lk-user-mood-select__item mood-item mood-item--angry"
 									data-tab-link="user-mood-1-2">
 									<svg>
-										<use xlink:href="img/sprite.svg#mood-angry" />
+										<use xlink:href="/dist/img/sprite.svg#mood-angry" />
 									</svg>
 								</label>
 								<label for="user-mood-1-3" class="lk-user-mood-select__item mood-item mood-item--netral"
 									data-tab-link="user-mood-1-3">
 									<svg>
-										<use xlink:href="img/sprite.svg#mood-netral" />
+										<use xlink:href="/dist/img/sprite.svg#mood-netral" />
 									</svg>
 								</label>
 							</div>
@@ -291,7 +126,7 @@
 								<img src="https://static.wallpapers-anime.com/upload/20170531/647/Z/s/7/Zs7FEF.jpg" alt="">
 								<div class="avatar__edit">
 									<svg>
-										<use xlink:href="img/sprite.svg#edit" />
+										<use xlink:href="/dist/img/sprite.svg#edit" />
 									</svg>
 								</div>
 							</button>
@@ -309,7 +144,7 @@
 								<div class="lk-user-top-propertie__title">Просмотр</div>
 								<div class="lk-user-top-propertie__value">
 									<svg>
-										<use xlink:href="img/sprite.svg#eye" />
+										<use xlink:href="/dist/img/sprite.svg#eye" />
 									</svg>
 									4
 								</div>
@@ -318,7 +153,7 @@
 								<div class="lk-user-top-propertie__title">Экспертиза</div>
 								<div class="lk-user-top-propertie__value">
 									<svg>
-										<use xlink:href="img/sprite.svg#doc" />
+										<use xlink:href="/dist/img/sprite.svg#doc" />
 									</svg>
 									2
 								</div>
@@ -327,7 +162,7 @@
 								<div class="lk-user-top-propertie__title">Подбор</div>
 								<div class="lk-user-top-propertie__value">
 									<svg>
-										<use xlink:href="img/sprite.svg#gal-ochka" />
+										<use xlink:href="/dist/img/sprite.svg#gal-ochka" />
 									</svg>
 									Запрошено
 								</div>
@@ -335,14 +170,14 @@
 						</div>
 						<button class="lk-user-top__btn btn btn--contur" data-toggle-link="user-content-1">
 							<svg>
-								<use xlink:href="img/sprite.svg#slider-arrow" />
+								<use xlink:href="/dist/img/sprite.svg#slider-arrow" />
 							</svg>
 						</button>
 					</div>
 					<div class="lk-user-content" id="user-content-1" data-toggle-static="true" data-toggle-height="true">
 						<div class="lk-user__sign">
 							<svg>
-								<use xlink:href="img/sprite.svg#quote" />
+								<use xlink:href="/dist/img/sprite.svg#quote" />
 							</svg>
 							Поиск недвижимости в Москве – задача не из легких. Сейчас найти
 							подходящее предложение стало нелегко, независимо от специфики предстоящей сделки
@@ -377,8 +212,8 @@
 											<a href="jk-inner.html" class="lk-user-table__info lk-table-jk lk-user-table-cell">
 												<div class="lk-table-jk__img">
 													<picture>
-														<source srcset="img/test-interier-min.webp" type="image/webp">
-														<img src="img/test-interier-min.jpg" alt="" loading="lazy">
+														<source srcset="/dist/img/test-interier-min.webp" type="image/webp">
+														<img src="/dist/img/test-interier-min.jpg" alt="" loading="lazy">
 													</picture>
 												</div>
 												<div class="lk-table-jk__title">2-этажный коттедж, 500 м²</div>
@@ -397,7 +232,7 @@
 												Никологорское коттеджный поселок, ул. Звенигородская
 												<div class="tooltip tooltip--primary tooltip--center tooltip--top">
 													<svg>
-														<use xlink:href="img/sprite.svg#map-flag" />
+														<use xlink:href="/dist/img/sprite.svg#map-flag" />
 													</svg>
 													Смотреть на карте
 												</div>
@@ -416,8 +251,8 @@
 											<a href="jk-inner.html" class="lk-user-table__info lk-table-jk lk-user-table-cell">
 												<div class="lk-table-jk__img">
 													<picture>
-														<source srcset="img/test-exterier-min.webp" type="image/webp">
-														<img src="img/test-exterier-min.jpg" alt="" loading="lazy">
+														<source srcset="/dist/img/test-exterier-min.webp" type="image/webp">
+														<img src="/dist/img/test-exterier-min.jpg" alt="" loading="lazy">
 													</picture>
 												</div>
 												<div class="lk-table-jk__title">2-этажный коттедж, 500 м²</div>
@@ -436,7 +271,7 @@
 												Никологорское коттеджный поселок, ул. Звенигородская
 												<div class="tooltip tooltip--primary tooltip--center tooltip--top">
 													<svg>
-														<use xlink:href="img/sprite.svg#map-flag" />
+														<use xlink:href="/dist/img/sprite.svg#map-flag" />
 													</svg>
 													Смотреть на карте
 												</div>
@@ -455,8 +290,8 @@
 											<a href="jk-inner.html" class="lk-user-table__info lk-table-jk lk-user-table-cell">
 												<div class="lk-table-jk__img">
 													<picture>
-														<source srcset="img/test-interier-min.webp" type="image/webp">
-														<img src="img/test-interier-min.jpg" alt="" loading="lazy">
+														<source srcset="/dist/img/test-interier-min.webp" type="image/webp">
+														<img src="/dist/img/test-interier-min.jpg" alt="" loading="lazy">
 													</picture>
 												</div>
 												<div class="lk-table-jk__title">2-этажный коттедж, 500 м²</div>
@@ -475,7 +310,7 @@
 												Никологорское коттеджный поселок, ул. Звенигородская
 												<div class="tooltip tooltip--primary tooltip--center tooltip--top">
 													<svg>
-														<use xlink:href="img/sprite.svg#map-flag" />
+														<use xlink:href="/dist/img/sprite.svg#map-flag" />
 													</svg>
 													Смотреть на карте
 												</div>
@@ -503,8 +338,8 @@
 											<a href="jk-inner.html" class="lk-user-table__info lk-table-jk lk-user-table-cell">
 												<div class="lk-table-jk__img">
 													<picture>
-														<source srcset="img/test-exterier-min.webp" type="image/webp">
-														<img src="img/test-exterier-min.jpg" alt="" loading="lazy">
+														<source srcset="/dist/img/test-exterier-min.webp" type="image/webp">
+														<img src="/dist/img/test-exterier-min.jpg" alt="" loading="lazy">
 													</picture>
 												</div>
 												<div class="lk-table-jk__title">2-этажный коттедж, 500 м²</div>
@@ -523,7 +358,7 @@
 												Никологорское коттеджный поселок, ул. Звенигородская
 												<div class="tooltip tooltip--primary tooltip--center tooltip--top">
 													<svg>
-														<use xlink:href="img/sprite.svg#map-flag" />
+														<use xlink:href="/dist/img/sprite.svg#map-flag" />
 													</svg>
 													Смотреть на карте
 												</div>
@@ -542,8 +377,8 @@
 											<a href="jk-inner.html" class="lk-user-table__info lk-table-jk lk-user-table-cell">
 												<div class="lk-table-jk__img">
 													<picture>
-														<source srcset="img/test-interier-min.webp" type="image/webp">
-														<img src="img/test-interier-min.jpg" alt="" loading="lazy">
+														<source srcset="/dist/img/test-interier-min.webp" type="image/webp">
+														<img src="/dist/img/test-interier-min.jpg" alt="" loading="lazy">
 													</picture>
 												</div>
 												<div class="lk-table-jk__title">2-этажный коттедж, 500 м²</div>
@@ -562,7 +397,7 @@
 												Никологорское коттеджный поселок, ул. Звенигородская
 												<div class="tooltip tooltip--primary tooltip--center tooltip--top">
 													<svg>
-														<use xlink:href="img/sprite.svg#map-flag" />
+														<use xlink:href="/dist/img/sprite.svg#map-flag" />
 													</svg>
 													Смотреть на карте
 												</div>
@@ -601,8 +436,8 @@
 											<a href="jk-inner.html" class="lk-user-table__info lk-table-jk lk-user-table-cell">
 												<div class="lk-table-jk__img">
 													<picture>
-														<source srcset="img/test-interier-min.webp" type="image/webp">
-														<img src="img/test-interier-min.jpg" alt="" loading="lazy">
+														<source srcset="/dist/img/test-interier-min.webp" type="image/webp">
+														<img src="/dist/img/test-interier-min.jpg" alt="" loading="lazy">
 													</picture>
 												</div>
 												<div class="lk-table-jk__title">2-этажный коттедж, 500 м²</div>
@@ -621,7 +456,7 @@
 												Никологорское коттеджный поселок, ул. Звенигородская
 												<div class="tooltip tooltip--primary tooltip--center tooltip--top">
 													<svg>
-														<use xlink:href="img/sprite.svg#map-flag" />
+														<use xlink:href="/dist/img/sprite.svg#map-flag" />
 													</svg>
 													Смотреть на карте
 												</div>
@@ -640,7 +475,7 @@
 											<div class="lk-user-table__info lk-table-jk lk-user-table-cell">
 												<div class="lk-table-jk__img jk-img-placeholder">
 													<svg>
-														<use xlink:href="img/sprite.svg#home" />
+														<use xlink:href="/dist/img/sprite.svg#home" />
 													</svg>
 												</div>
 												<div class="lk-table-jk__title">Запрос на экспертизу собственного объекта</div>
@@ -665,8 +500,8 @@
 											<a href="jk-inner.html" class="lk-user-table__info lk-table-jk lk-user-table-cell">
 												<div class="lk-table-jk__img">
 													<picture>
-														<source srcset="img/test-exterier-min.webp" type="image/webp">
-														<img src="img/test-exterier-min.jpg" alt="" loading="lazy">
+														<source srcset="/dist/img/test-exterier-min.webp" type="image/webp">
+														<img src="/dist/img/test-exterier-min.jpg" alt="" loading="lazy">
 													</picture>
 												</div>
 												<div class="lk-table-jk__title">3-этажный Особняк, 500 м²</div>
@@ -685,7 +520,7 @@
 												Никологорское коттеджный поселок, ул. Звенигородская
 												<div class="tooltip tooltip--primary tooltip--center tooltip--top">
 													<svg>
-														<use xlink:href="img/sprite.svg#map-flag" />
+														<use xlink:href="/dist/img/sprite.svg#map-flag" />
 													</svg>
 													Смотреть на карте
 												</div>
@@ -750,16 +585,16 @@
 							<div class="lk-user-btns">
 								<button class="lk-user__like like-btn waves" data-tooltip title="Поделиться">
 									<svg>
-										<use xlink:href="img/sprite.svg#share"></use>
+										<use xlink:href="/dist/img/sprite.svg#share"></use>
 									</svg>
 								</button>
 								<button class="lk-user__like like-btn waves" data-tooltip title="Распечатать">
 									<svg>
-										<use xlink:href="img/sprite.svg#printer"></use>
+										<use xlink:href="/dist/img/sprite.svg#printer"></use>
 									</svg>
 								</button>
 								<button class="lk-user__like like-btn waves" data-tooltip title="Отправить">
-									<img class="amo-img" src="img/icons/amosrm-like.png" alt="">
+									<img class="amo-img" src="/dist/img/icons/amosrm-like.png" alt="">
 								</button>
 							</div>
 						</div>
@@ -782,7 +617,7 @@
 								<input type="radio" name="user-mood-1" id="user-mood-1-1">
 								<span class="mood-item__content">
 									<svg>
-										<use xlink:href="img/sprite.svg#mood-happy" />
+										<use xlink:href="/dist/img/sprite.svg#mood-happy" />
 									</svg>
 								</span>
 							</div>
@@ -791,7 +626,7 @@
 								<input type="radio" name="user-mood-1" id="user-mood-1-2">
 								<span class="mood-item__content">
 									<svg>
-										<use xlink:href="img/sprite.svg#mood-angry" />
+										<use xlink:href="/dist/img/sprite.svg#mood-angry" />
 									</svg>
 								</span>
 							</div>
@@ -800,7 +635,7 @@
 								<input type="radio" name="user-mood-1" id="user-mood-1-3">
 								<span class="mood-item__content">
 									<svg>
-										<use xlink:href="img/sprite.svg#mood-netral" />
+										<use xlink:href="/dist/img/sprite.svg#mood-netral" />
 									</svg>
 								</span>
 							</div>
@@ -810,19 +645,19 @@
 								<label for="user-mood-1-1" class="lk-user-mood-select__item mood-item mood-item--happy"
 									data-tab-link="user-mood-1-1">
 									<svg>
-										<use xlink:href="img/sprite.svg#mood-happy" />
+										<use xlink:href="/dist/img/sprite.svg#mood-happy" />
 									</svg>
 								</label>
 								<label for="user-mood-1-2" class="lk-user-mood-select__item mood-item mood-item--angry"
 									data-tab-link="user-mood-1-2">
 									<svg>
-										<use xlink:href="img/sprite.svg#mood-angry" />
+										<use xlink:href="/dist/img/sprite.svg#mood-angry" />
 									</svg>
 								</label>
 								<label for="user-mood-1-3" class="lk-user-mood-select__item mood-item mood-item--netral"
 									data-tab-link="user-mood-1-3">
 									<svg>
-										<use xlink:href="img/sprite.svg#mood-netral" />
+										<use xlink:href="/dist/img/sprite.svg#mood-netral" />
 									</svg>
 								</label>
 							</div>
@@ -835,13 +670,18 @@
 								<img src="https://static.wallpapers-anime.com/upload/20170531/647/Z/s/7/Zs7FEF.jpg" alt="">
 								<div class="avatar__edit">
 									<svg>
-										<use xlink:href="img/sprite.svg#edit" />
+										<use xlink:href="/dist/img/sprite.svg#edit" />
 									</svg>
 								</div>
 							</button>
 						</div>
 						<div class="lk-user-top__info">
-							<div class="lk-user-top__name">Ин Ян</div>
+							<div class="lk-user-top__name">
+								<div class="p-1 mr-1 lk-user-top__name-badge lk-user-top__name-badge--rieltor">
+									<svg class="icon color-yellow text-body-1"><use xlink:href="/dist/img/icons.svg#rieltor" /></svg>
+								</div>
+								Ин Ян
+							</div>
 							<div class="lk-user-top__phone">+7 (918) 000 00 00</div>
 						</div>
 						<div class="lk-user-top-properties">
@@ -853,7 +693,7 @@
 								<div class="lk-user-top-propertie__title">Просмотр</div>
 								<div class="lk-user-top-propertie__value">
 									<svg>
-										<use xlink:href="img/sprite.svg#eye" />
+										<use xlink:href="/dist/img/sprite.svg#eye" />
 									</svg>
 									4
 								</div>
@@ -862,7 +702,7 @@
 								<div class="lk-user-top-propertie__title">Экспертиза</div>
 								<div class="lk-user-top-propertie__value">
 									<svg>
-										<use xlink:href="img/sprite.svg#doc" />
+										<use xlink:href="/dist/img/sprite.svg#doc" />
 									</svg>
 									2
 								</div>
@@ -871,7 +711,7 @@
 								<div class="lk-user-top-propertie__title">Подбор</div>
 								<div class="lk-user-top-propertie__value">
 									<svg>
-										<use xlink:href="img/sprite.svg#gal-ochka" />
+										<use xlink:href="/dist/img/sprite.svg#gal-ochka" />
 									</svg>
 									Запрошено
 								</div>
@@ -879,14 +719,14 @@
 						</div>
 						<button class="lk-user-top__btn btn btn--contur" data-toggle-link="user-content-2">
 							<svg>
-								<use xlink:href="img/sprite.svg#slider-arrow" />
+								<use xlink:href="/dist/img/sprite.svg#slider-arrow" />
 							</svg>
 						</button>
 					</div>
 					<div class="lk-user-content" id="user-content-2" data-toggle-static="true" data-toggle-height="true">
 						<div class="lk-user__sign">
 							<svg>
-								<use xlink:href="img/sprite.svg#quote" />
+								<use xlink:href="/dist/img/sprite.svg#quote" />
 							</svg>
 							Поиск недвижимости в Москве – задача не из легких. Сейчас найти
 							подходящее предложение стало нелегко, независимо от специфики предстоящей сделки
@@ -914,12 +754,12 @@
 											<a href="jk-inner.html" class="lk-user-table__info lk-table-jk lk-user-table-cell">
 												<div class="lk-table-jk__img">
 													<picture>
-														<source srcset="img/test-exterier-min.webp" type="image/webp">
-														<img src="img/test-exterier-min.jpg" alt="" loading="lazy">
+														<source srcset="/dist/img/test-exterier-min.webp" type="image/webp">
+														<img src="/dist/img/test-exterier-min.jpg" alt="" loading="lazy">
 													</picture>
 												</div>
 												<div class="lk-table-jk__title">
-													<img src="img/icons/verified--success.svg" alt="">
+													<img src="/dist/img/icons/verified--success.svg" alt="">
 													2-этажный коттедж, 500 м²
 												</div>
 											</a>
@@ -937,7 +777,7 @@
 												Никологорское коттеджный поселок, ул. Звенигородская
 												<div class="tooltip tooltip--primary tooltip--center tooltip--top">
 													<svg>
-														<use xlink:href="img/sprite.svg#map-flag" />
+														<use xlink:href="/dist/img/sprite.svg#map-flag" />
 													</svg>
 													Смотреть на карте
 												</div>
@@ -954,25 +794,25 @@
 											<div class="lk-user-table-settings settings dropdown" data-toggle-cover>
 												<div class="waves settings-btn" data-toggle-link>
 													<svg>
-														<use xlink:href="img/sprite.svg#settings" />
+														<use xlink:href="/dist/img/sprite.svg#settings" />
 													</svg>
 												</div>
 												<div class="settings-list dropdown-content card card--l2" data-toggle-content>
 													<div class="settings-link btn btn--link ">
 														<svg>
-															<use xlink:href="img/sprite.svg#flag" />
+															<use xlink:href="/dist/img/sprite.svg#flag" />
 														</svg>
 														В подборку
 													</div>
 													<div class="settings-link btn btn--link ">
 														<svg>
-															<use xlink:href="img/sprite.svg#eye" />
+															<use xlink:href="/dist/img/sprite.svg#eye" />
 														</svg>
 														В просмотренное
 													</div>
 													<div class="settings-link btn btn--link link--accent">
 														<svg>
-															<use xlink:href="img/sprite.svg#delete" />
+															<use xlink:href="/dist/img/sprite.svg#delete" />
 														</svg>
 														Удалить
 													</div>
@@ -988,8 +828,8 @@
 											<a href="jk-inner.html" class="lk-user-table__info lk-table-jk lk-user-table-cell">
 												<div class="lk-table-jk__img">
 													<picture>
-														<source srcset="img/test-interier-min.webp" type="image/webp">
-														<img src="img/test-interier-min.jpg" alt="" loading="lazy">
+														<source srcset="/dist/img/test-interier-min.webp" type="image/webp">
+														<img src="/dist/img/test-interier-min.jpg" alt="" loading="lazy">
 													</picture>
 												</div>
 												<div class="lk-table-jk__title">2-этажный коттедж, 500 м²</div>
@@ -1008,7 +848,7 @@
 												Никологорское коттеджный поселок, ул. Звенигородская
 												<div class="tooltip tooltip--primary tooltip--center tooltip--top">
 													<svg>
-														<use xlink:href="img/sprite.svg#map-flag" />
+														<use xlink:href="/dist/img/sprite.svg#map-flag" />
 													</svg>
 													Смотреть на карте
 												</div>
@@ -1026,25 +866,25 @@
 											<div class="lk-user-table-settings settings dropdown" data-toggle-cover>
 												<div class="waves settings-btn" data-toggle-link>
 													<svg>
-														<use xlink:href="img/sprite.svg#settings" />
+														<use xlink:href="/dist/img/sprite.svg#settings" />
 													</svg>
 												</div>
 												<div class="settings-list dropdown-content card card--l2" data-toggle-content>
 													<div class="settings-link btn btn--link ">
 														<svg>
-															<use xlink:href="img/sprite.svg#flag" />
+															<use xlink:href="/dist/img/sprite.svg#flag" />
 														</svg>
 														В подборку
 													</div>
 													<div class="settings-link btn btn--link ">
 														<svg>
-															<use xlink:href="img/sprite.svg#eye" />
+															<use xlink:href="/dist/img/sprite.svg#eye" />
 														</svg>
 														В просмотренное
 													</div>
 													<div class="settings-link btn btn--link link--accent">
 														<svg>
-															<use xlink:href="img/sprite.svg#delete" />
+															<use xlink:href="/dist/img/sprite.svg#delete" />
 														</svg>
 														Удалить
 													</div>
@@ -1060,8 +900,8 @@
 											<a href="jk-inner.html" class="lk-user-table__info lk-table-jk lk-user-table-cell">
 												<div class="lk-table-jk__img">
 													<picture>
-														<source srcset="img/test-exterier-min.webp" type="image/webp">
-														<img src="img/test-exterier-min.jpg" alt="" loading="lazy">
+														<source srcset="/dist/img/test-exterier-min.webp" type="image/webp">
+														<img src="/dist/img/test-exterier-min.jpg" alt="" loading="lazy">
 													</picture>
 												</div>
 												<div class="lk-table-jk__title">2-этажный коттедж, 500 м²</div>
@@ -1080,7 +920,7 @@
 												Никологорское коттеджный поселок, ул. Звенигородская
 												<div class="tooltip tooltip--primary tooltip--center tooltip--top">
 													<svg>
-														<use xlink:href="img/sprite.svg#map-flag" />
+														<use xlink:href="/dist/img/sprite.svg#map-flag" />
 													</svg>
 													Смотреть на карте
 												</div>
@@ -1098,25 +938,25 @@
 											<div class="lk-user-table-settings settings dropdown" data-toggle-cover>
 												<div class="waves settings-btn" data-toggle-link>
 													<svg>
-														<use xlink:href="img/sprite.svg#settings" />
+														<use xlink:href="/dist/img/sprite.svg#settings" />
 													</svg>
 												</div>
 												<div class="settings-list dropdown-content card card--l2" data-toggle-content>
 													<div class="settings-link btn btn--link ">
 														<svg>
-															<use xlink:href="img/sprite.svg#flag" />
+															<use xlink:href="/dist/img/sprite.svg#flag" />
 														</svg>
 														В подборку
 													</div>
 													<div class="settings-link btn btn--link ">
 														<svg>
-															<use xlink:href="img/sprite.svg#eye" />
+															<use xlink:href="/dist/img/sprite.svg#eye" />
 														</svg>
 														В просмотренное
 													</div>
 													<div class="settings-link btn btn--link link--accent">
 														<svg>
-															<use xlink:href="img/sprite.svg#delete" />
+															<use xlink:href="/dist/img/sprite.svg#delete" />
 														</svg>
 														Удалить
 													</div>
@@ -1132,8 +972,8 @@
 											<a href="jk-inner.html" class="lk-user-table__info lk-table-jk lk-user-table-cell">
 												<div class="lk-table-jk__img">
 													<picture>
-														<source srcset="img/test-interier-min.webp" type="image/webp">
-														<img src="img/test-interier-min.jpg" alt="" loading="lazy">
+														<source srcset="/dist/img/test-interier-min.webp" type="image/webp">
+														<img src="/dist/img/test-interier-min.jpg" alt="" loading="lazy">
 													</picture>
 												</div>
 												<div class="lk-table-jk__title">2-этажный коттедж, 500 м²</div>
@@ -1152,7 +992,7 @@
 												Никологорское коттеджный поселок, ул. Звенигородская
 												<div class="tooltip tooltip--primary tooltip--center tooltip--top">
 													<svg>
-														<use xlink:href="img/sprite.svg#map-flag" />
+														<use xlink:href="/dist/img/sprite.svg#map-flag" />
 													</svg>
 													Смотреть на карте
 												</div>
@@ -1170,25 +1010,25 @@
 											<div class="lk-user-table-settings settings dropdown" data-toggle-cover>
 												<div class="waves settings-btn" data-toggle-link>
 													<svg>
-														<use xlink:href="img/sprite.svg#settings" />
+														<use xlink:href="/dist/img/sprite.svg#settings" />
 													</svg>
 												</div>
 												<div class="settings-list dropdown-content card card--l2" data-toggle-content>
 													<div class="settings-link btn btn--link ">
 														<svg>
-															<use xlink:href="img/sprite.svg#flag" />
+															<use xlink:href="/dist/img/sprite.svg#flag" />
 														</svg>
 														В подборку
 													</div>
 													<div class="settings-link btn btn--link ">
 														<svg>
-															<use xlink:href="img/sprite.svg#eye" />
+															<use xlink:href="/dist/img/sprite.svg#eye" />
 														</svg>
 														В просмотренное
 													</div>
 													<div class="settings-link btn btn--link link--accent">
 														<svg>
-															<use xlink:href="img/sprite.svg#delete" />
+															<use xlink:href="/dist/img/sprite.svg#delete" />
 														</svg>
 														Удалить
 													</div>
@@ -1214,8 +1054,8 @@
 											<a href="jk-inner.html" class="lk-user-table__info lk-table-jk lk-user-table-cell">
 												<div class="lk-table-jk__img">
 													<picture>
-														<source srcset="img/test-interier-min.webp" type="image/webp">
-														<img src="img/test-interier-min.jpg" alt="" loading="lazy">
+														<source srcset="/dist/img/test-interier-min.webp" type="image/webp">
+														<img src="/dist/img/test-interier-min.jpg" alt="" loading="lazy">
 													</picture>
 												</div>
 												<div class="lk-table-jk__title">2-этажный коттедж, 500 м²</div>
@@ -1234,7 +1074,7 @@
 												Никологорское коттеджный поселок, ул. Звенигородская
 												<div class="tooltip tooltip--primary tooltip--center tooltip--top">
 													<svg>
-														<use xlink:href="img/sprite.svg#map-flag" />
+														<use xlink:href="/dist/img/sprite.svg#map-flag" />
 													</svg>
 													Смотреть на карте
 												</div>
@@ -1253,8 +1093,8 @@
 											<a href="jk-inner.html" class="lk-user-table__info lk-table-jk lk-user-table-cell">
 												<div class="lk-table-jk__img">
 													<picture>
-														<source srcset="img/test-exterier-min.webp" type="image/webp">
-														<img src="img/test-exterier-min.jpg" alt="" loading="lazy">
+														<source srcset="/dist/img/test-exterier-min.webp" type="image/webp">
+														<img src="/dist/img/test-exterier-min.jpg" alt="" loading="lazy">
 													</picture>
 												</div>
 												<div class="lk-table-jk__title">2-этажный коттедж, 500 м²</div>
@@ -1273,7 +1113,7 @@
 												Никологорское коттеджный поселок, ул. Звенигородская
 												<div class="tooltip tooltip--primary tooltip--center tooltip--top">
 													<svg>
-														<use xlink:href="img/sprite.svg#map-flag" />
+														<use xlink:href="/dist/img/sprite.svg#map-flag" />
 													</svg>
 													Смотреть на карте
 												</div>
@@ -1292,8 +1132,8 @@
 											<a href="jk-inner.html" class="lk-user-table__info lk-table-jk lk-user-table-cell">
 												<div class="lk-table-jk__img">
 													<picture>
-														<source srcset="img/test-interier-min.webp" type="image/webp">
-														<img src="img/test-interier-min.jpg" alt="" loading="lazy">
+														<source srcset="/dist/img/test-interier-min.webp" type="image/webp">
+														<img src="/dist/img/test-interier-min.jpg" alt="" loading="lazy">
 													</picture>
 												</div>
 												<div class="lk-table-jk__title">2-этажный коттедж, 500 м²</div>
@@ -1312,7 +1152,7 @@
 												Никологорское коттеджный поселок, ул. Звенигородская
 												<div class="tooltip tooltip--primary tooltip--center tooltip--top">
 													<svg>
-														<use xlink:href="img/sprite.svg#map-flag" />
+														<use xlink:href="/dist/img/sprite.svg#map-flag" />
 													</svg>
 													Смотреть на карте
 												</div>
@@ -1340,8 +1180,8 @@
 											<a href="jk-inner.html" class="lk-user-table__info lk-table-jk lk-user-table-cell">
 												<div class="lk-table-jk__img">
 													<picture>
-														<source srcset="img/test-exterier-min.webp" type="image/webp">
-														<img src="img/test-exterier-min.jpg" alt="" loading="lazy">
+														<source srcset="/dist/img/test-exterier-min.webp" type="image/webp">
+														<img src="/dist/img/test-exterier-min.jpg" alt="" loading="lazy">
 													</picture>
 												</div>
 												<div class="lk-table-jk__title">2-этажный коттедж, 500 м²</div>
@@ -1360,7 +1200,7 @@
 												Никологорское коттеджный поселок, ул. Звенигородская
 												<div class="tooltip tooltip--primary tooltip--center tooltip--top">
 													<svg>
-														<use xlink:href="img/sprite.svg#map-flag" />
+														<use xlink:href="/dist/img/sprite.svg#map-flag" />
 													</svg>
 													Смотреть на карте
 												</div>
@@ -1379,8 +1219,8 @@
 											<a href="jk-inner.html" class="lk-user-table__info lk-table-jk lk-user-table-cell">
 												<div class="lk-table-jk__img">
 													<picture>
-														<source srcset="img/test-interier-min.webp" type="image/webp">
-														<img src="img/test-interier-min.jpg" alt="" loading="lazy">
+														<source srcset="/dist/img/test-interier-min.webp" type="image/webp">
+														<img src="/dist/img/test-interier-min.jpg" alt="" loading="lazy">
 													</picture>
 												</div>
 												<div class="lk-table-jk__title">2-этажный коттедж, 500 м²</div>
@@ -1399,7 +1239,7 @@
 												Никологорское коттеджный поселок, ул. Звенигородская
 												<div class="tooltip tooltip--primary tooltip--center tooltip--top">
 													<svg>
-														<use xlink:href="img/sprite.svg#map-flag" />
+														<use xlink:href="/dist/img/sprite.svg#map-flag" />
 													</svg>
 													Смотреть на карте
 												</div>
@@ -1438,8 +1278,8 @@
 											<a href="jk-inner.html" class="lk-user-table__info lk-table-jk lk-user-table-cell">
 												<div class="lk-table-jk__img">
 													<picture>
-														<source srcset="img/test-interier-min.webp" type="image/webp">
-														<img src="img/test-interier-min.jpg" alt="" loading="lazy">
+														<source srcset="/dist/img/test-interier-min.webp" type="image/webp">
+														<img src="/dist/img/test-interier-min.jpg" alt="" loading="lazy">
 													</picture>
 												</div>
 												<div class="lk-table-jk__title">2-этажный коттедж, 500 м²</div>
@@ -1458,7 +1298,7 @@
 												Никологорское коттеджный поселок, ул. Звенигородская
 												<div class="tooltip tooltip--primary tooltip--center tooltip--top">
 													<svg>
-														<use xlink:href="img/sprite.svg#map-flag" />
+														<use xlink:href="/dist/img/sprite.svg#map-flag" />
 													</svg>
 													Смотреть на карте
 												</div>
@@ -1477,7 +1317,7 @@
 											<div class="lk-user-table__info lk-table-jk lk-user-table-cell">
 												<div class="lk-table-jk__img jk-img-placeholder">
 													<svg>
-														<use xlink:href="img/sprite.svg#home" />
+														<use xlink:href="/dist/img/sprite.svg#home" />
 													</svg>
 												</div>
 												<div class="lk-table-jk__title">Запрос на экспертизу собственного объекта</div>
@@ -1502,8 +1342,8 @@
 											<a href="jk-inner.html" class="lk-user-table__info lk-table-jk lk-user-table-cell">
 												<div class="lk-table-jk__img">
 													<picture>
-														<source srcset="img/test-exterier-min.webp" type="image/webp">
-														<img src="img/test-exterier-min.jpg" alt="" loading="lazy">
+														<source srcset="/dist/img/test-exterier-min.webp" type="image/webp">
+														<img src="/dist/img/test-exterier-min.jpg" alt="" loading="lazy">
 													</picture>
 												</div>
 												<div class="lk-table-jk__title">3-этажный Особняк, 500 м²</div>
@@ -1522,7 +1362,7 @@
 												Никологорское коттеджный поселок, ул. Звенигородская
 												<div class="tooltip tooltip--primary tooltip--center tooltip--top">
 													<svg>
-														<use xlink:href="img/sprite.svg#map-flag" />
+														<use xlink:href="/dist/img/sprite.svg#map-flag" />
 													</svg>
 													Смотреть на карте
 												</div>
@@ -1587,16 +1427,16 @@
 							<div class="lk-user-btns">
 								<button class="lk-user__like like-btn waves" data-tooltip title="Поделиться">
 									<svg>
-										<use xlink:href="img/sprite.svg#share"></use>
+										<use xlink:href="/dist/img/sprite.svg#share"></use>
 									</svg>
 								</button>
 								<button class="lk-user__like like-btn waves" data-tooltip title="Распечатать">
 									<svg>
-										<use xlink:href="img/sprite.svg#printer"></use>
+										<use xlink:href="/dist/img/sprite.svg#printer"></use>
 									</svg>
 								</button>
 								<button class="lk-user__like like-btn waves" data-tooltip title="Отправить">
-									<img class="amo-img" src="img/icons/amosrm-like.png" alt="">
+									<img class="amo-img" src="/dist/img/icons/amosrm-like.png" alt="">
 								</button>
 							</div>
 						</div>
@@ -1661,7 +1501,7 @@
 									<button type="button" class="btn btn--accent jk-edit-transport__remove"
 										data-remove-node="transport-1">
 										<svg>
-											<use xlink:href="img/sprite.svg#cross" />
+											<use xlink:href="/dist/img/sprite.svg#cross" />
 										</svg>
 									</button>
 								</div>
@@ -1697,7 +1537,7 @@
 									<button type="button" class="btn btn--accent jk-edit-transport__remove"
 										data-remove-node="transport-2">
 										<svg>
-											<use xlink:href="img/sprite.svg#cross" />
+											<use xlink:href="/dist/img/sprite.svg#cross" />
 										</svg>
 									</button>
 								</div>
@@ -1797,7 +1637,7 @@
 
 								<div class="form-field-preview__content waves">
 									<svg>
-										<use xlink:href="img/sprite.svg#camera" />
+										<use xlink:href="/dist/img/sprite.svg#camera" />
 									</svg>
 									Вставить фото
 								</div>
@@ -1828,7 +1668,7 @@
 
 			<button class="modal-mobile-close" data-modal-close>
 				<svg>
-					<use xlink:href="img/sprite.svg#arrow" />
+					<use xlink:href="/dist/img/sprite.svg#arrow" />
 				</svg>
 			</button>
 
@@ -1852,7 +1692,7 @@
 
 			<!-- <button class="modal-mobile-close" data-modal-close>
 				<svg>
-					<use xlink:href="img/sprite.svg#arrow" /></svg>
+					<use xlink:href="/dist/img/sprite.svg#arrow" /></svg>
 			</button> -->
 
 			<!-- <button class="modal-close" data-modal-close>
