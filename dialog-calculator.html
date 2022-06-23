@@ -87,121 +87,124 @@
     </div>
 
     <script>
-        const percent = 65;
-        const radius = 178 / 2;
-
-        const $form = document.querySelector('.-calculator-form-')
-        const $diagramm = document.querySelector('.-diagramm-')
-        const $round = document.querySelector('.-diagramm-round-')
-        const $value1 = document.querySelector('.-value-1-')
-        const $value2 = document.querySelector('.-value-2-')
-        const $result = document.querySelector('.-result-')
-
-        $diagramm.style.setProperty('--radius', radius);
-        $form.addEventListener('submit', submitHandler);
-        $form.querySelector('.-input-cost-').addEventListener('input',inputHandler)
-        $form.querySelector('.-input-start-pay-').addEventListener('input',inputHandler)
-
-        calcRender({ percent });
-        inputHandler();
-
-        function inputHandler(event) {
-            const formatter = new Intl.NumberFormat('ru-RU');
-            const cost = +$form.querySelector('.-input-cost-').value.replace(/[^0-9]/g, '');
-            const startPay = +$form.querySelector('.-input-start-pay-').value.replace(/[^0-9]/g, '');
-            const $summ = $form.querySelector('.-summ-');
-            $summ.textContent = formatter.format(Math.round(cost - startPay)) + ' ₽';
-        }
-
-        function submitHandler(event) {
-            event.preventDefault();
-
-            $result.classList.add('loading');
-            const $btn = event.target.querySelector('[type="submit"]');
-            const btnHtml = $btn.innerHTML;
-            $btn.innerHTML = '<div class="progress progress-circle text-small"></div>';
-            $btn.disabled = true;
-            $btn.classList.add('disabled');
-
-            const cost = +event.target.querySelector('.-input-cost-').value.replace(/[^0-9]/g, '');
-            const startPay = +event.target.querySelector('.-input-start-pay-').value.replace(/[^0-9]/g, '');
-            const duration = +event.target.querySelector('.-input-duration-').value;
-            const bankRate = +event.target.querySelector('.-input-bank-rate-').value; // ПРОЦЕНТНАЯ_СТАВКА_ГОДОВЫХ
-
-            const summ = cost - startPay; // СУММА_КРЕДИТА
-            const monthRate = bankRate / 12 / 100; // ЕЖЕМЕСЯЧНАЯ_СТАВКА
-            const rate = Math.pow(1 + monthRate, duration * 12); // ОБЩАЯ_СТАВКА
-            const monthPay = summ * monthRate * rate / (rate - 1); // ЕЖЕМЕСЯЧНЫЙ_ПЛАТЕЖ
-
-            const percentPart = summ * monthRate; // ПРОЦЕНТНАЯ_ЧАСТЬ
-            const mainPart = monthPay - percentPart; // ОСНОВНАЯ_ЧАСТЬ
-
-            const percent = monthPay * (duration * 12) - summ; // Начисленные_проценты
-            const summAndPercent = summ + percent; // Долг + проценты
-
-            const diagrammPercent = Math.round(100 * summ / summAndPercent);
+        (() => {
 
 
-            // const info = {
-            //     ['СУММА_КРЕДИТА']: summ,
-            //     ['ЕЖЕМЕСЯЧНАЯ_СТАВКА']: monthRate,
-            //     ['ОБЩАЯ_СТАВКА']: rate,
-            //     ['ЕЖЕМЕСЯЧНЫЙ_ПЛАТЕЖ']: monthPay,
-            //     ['ПРОЦЕНТНАЯ_ЧАСТЬ']: percentPart,
-            //     ['ОСНОВНАЯ_ЧАСТЬ']: mainPart,
-            //     ['Начисленные_проценты']: percent,
-            //     ['Долг+проценты']: summAndPercent
-            // };
-            const formatter = new Intl.NumberFormat('ru-RU');
+            const percent = 65;
+            const radius = 178 / 2;
 
-            setTimeout(() => {
-                $result.classList.remove('hidden');
-                $result.classList.remove('loading');
+            const $form = document.querySelector('.-calculator-form-')
+            const $diagramm = document.querySelector('.-diagramm-')
+            const $round = document.querySelector('.-diagramm-round-')
+            const $value1 = document.querySelector('.-value-1-')
+            const $value2 = document.querySelector('.-value-2-')
+            const $result = document.querySelector('.-result-')
 
-                $btn.innerHTML = btnHtml;
-                $btn.disabled = false;
-                $btn.classList.remove('disabled');
+            $diagramm.style.setProperty('--radius', radius);
+            $form.addEventListener('submit', submitHandler);
+            $form.querySelector('.-input-cost-').addEventListener('input', inputHandler)
+            $form.querySelector('.-input-start-pay-').addEventListener('input', inputHandler)
 
-                // render diagramm
-                calcRender({ percent: diagrammPercent });
+            calcRender({ percent });
+            inputHandler();
 
-                // Show result
-                const $monthPay = $result.querySelector('.-result-monthPay-');
-                const $percent = $result.querySelector('.-result-percent-');
-                const $summAndPercent = $result.querySelector('.-result-summAndPercent-');
-                $monthPay.textContent = formatter.format(Math.round(monthPay)) + ' ₽';
-                $percent.textContent = formatter.format(Math.round(percent)) + ' ₽';
-                $summAndPercent.textContent = formatter.format(Math.round(summAndPercent)) + ' ₽';
+            function inputHandler(event) {
+                const formatter = new Intl.NumberFormat('ru-RU');
+                const cost = +$form.querySelector('.-input-cost-').value.replace(/[^0-9]/g, '');
+                const startPay = +$form.querySelector('.-input-start-pay-').value.replace(/[^0-9]/g, '');
+                const $summ = $form.querySelector('.-summ-');
+                $summ.textContent = formatter.format(Math.round(cost - startPay)) + ' ₽';
+            }
+
+            function submitHandler(event) {
+                event.preventDefault();
+
+                $result.classList.add('loading');
+                const $btn = event.target.querySelector('[type="submit"]');
+                const btnHtml = $btn.innerHTML;
+                $btn.innerHTML = '<div class="progress progress-circle text-small"></div>';
+                $btn.disabled = true;
+                $btn.classList.add('disabled');
+
+                const cost = +event.target.querySelector('.-input-cost-').value.replace(/[^0-9]/g, '');
+                const startPay = +event.target.querySelector('.-input-start-pay-').value.replace(/[^0-9]/g, '');
+                const duration = +event.target.querySelector('.-input-duration-').value;
+                const bankRate = +event.target.querySelector('.-input-bank-rate-').value; // ПРОЦЕНТНАЯ_СТАВКА_ГОДОВЫХ
+
+                const summ = cost - startPay; // СУММА_КРЕДИТА
+                const monthRate = bankRate / 12 / 100; // ЕЖЕМЕСЯЧНАЯ_СТАВКА
+                const rate = Math.pow(1 + monthRate, duration * 12); // ОБЩАЯ_СТАВКА
+                const monthPay = summ * monthRate * rate / (rate - 1); // ЕЖЕМЕСЯЧНЫЙ_ПЛАТЕЖ
+
+                const percentPart = summ * monthRate; // ПРОЦЕНТНАЯ_ЧАСТЬ
+                const mainPart = monthPay - percentPart; // ОСНОВНАЯ_ЧАСТЬ
+
+                const percent = monthPay * (duration * 12) - summ; // Начисленные_проценты
+                const summAndPercent = summ + percent; // Долг + проценты
+
+                const diagrammPercent = Math.round(100 * summ / summAndPercent);
 
 
-            }, 1000)
-        }
+                // const info = {
+                //     ['СУММА_КРЕДИТА']: summ,
+                //     ['ЕЖЕМЕСЯЧНАЯ_СТАВКА']: monthRate,
+                //     ['ОБЩАЯ_СТАВКА']: rate,
+                //     ['ЕЖЕМЕСЯЧНЫЙ_ПЛАТЕЖ']: monthPay,
+                //     ['ПРОЦЕНТНАЯ_ЧАСТЬ']: percentPart,
+                //     ['ОСНОВНАЯ_ЧАСТЬ']: mainPart,
+                //     ['Начисленные_проценты']: percent,
+                //     ['Долг+проценты']: summAndPercent
+                // };
+                const formatter = new Intl.NumberFormat('ru-RU');
 
-        function calcRender({ percent }) {
-            $diagramm.style.setProperty('--percent', percent);
-            setCoords($value1, getCoordsByPercent(percent / 2, radius));
-            setCoords($value2, getCoordsByPercent(percent + (100 - percent) / 2, radius));
-            $value1.textContent = percent + '%';
-            $value2.textContent = (100 - percent) + '%';
+                setTimeout(() => {
+                    $result.classList.remove('hidden');
+                    $result.classList.remove('loading');
 
-        }
+                    $btn.innerHTML = btnHtml;
+                    $btn.disabled = false;
+                    $btn.classList.remove('disabled');
 
-        function setCoords(item, coords) {
-            item.style.left = coords.x + 'px'
-            item.style.bottom = coords.y + 'px'
-        }
+                    // render diagramm
+                    calcRender({ percent: diagrammPercent });
 
-        function getCoordsByPercent(percent, radius) {
-            const angle_css = 360 * percent / 100;
-            const angle_math = (360 / 4) - (360 * percent / 100);
-            const radian_css = 2 * Math.PI * percent / 100;
-            const radian_math = (Math.PI / 2) - (2 * Math.PI * percent / 100);
-            const cos = Math.cos(radian_math)
-            const sin = Math.sin(radian_math)
-            const x = radius + (radius - 20) * cos
-            const y = radius + (radius - 20) * sin
-            return { x, y }
-        }
+                    // Show result
+                    const $monthPay = $result.querySelector('.-result-monthPay-');
+                    const $percent = $result.querySelector('.-result-percent-');
+                    const $summAndPercent = $result.querySelector('.-result-summAndPercent-');
+                    $monthPay.textContent = formatter.format(Math.round(monthPay)) + ' ₽';
+                    $percent.textContent = formatter.format(Math.round(percent)) + ' ₽';
+                    $summAndPercent.textContent = formatter.format(Math.round(summAndPercent)) + ' ₽';
 
+
+                }, 1000)
+            }
+
+            function calcRender({ percent }) {
+                $diagramm.style.setProperty('--percent', percent);
+                setCoords($value1, getCoordsByPercent(percent / 2, radius));
+                setCoords($value2, getCoordsByPercent(percent + (100 - percent) / 2, radius));
+                $value1.textContent = percent + '%';
+                $value2.textContent = (100 - percent) + '%';
+
+            }
+
+            function setCoords(item, coords) {
+                item.style.left = coords.x + 'px'
+                item.style.bottom = coords.y + 'px'
+            }
+
+            function getCoordsByPercent(percent, radius) {
+                const angle_css = 360 * percent / 100;
+                const angle_math = (360 / 4) - (360 * percent / 100);
+                const radian_css = 2 * Math.PI * percent / 100;
+                const radian_math = (Math.PI / 2) - (2 * Math.PI * percent / 100);
+                const cos = Math.cos(radian_math)
+                const sin = Math.sin(radian_math)
+                const x = radius + (radius - 20) * cos
+                const y = radius + (radius - 20) * sin
+                return { x, y }
+            }
+        })();
     </script>
 </div>
