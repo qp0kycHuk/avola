@@ -27,7 +27,7 @@
                 </label>
                 <div class="dialog-calculator__field">
                     <div class="text--demibold">Сумма кредита</div>
-                    <div class="text-body-1 ml-3 fade-60 flex-self-center">0₽</div>
+                    <div class="text-body-1 ml-3 fade-60 flex-self-center"><span class="-summ-">0₽</span></div>
 
                 </div>
                 <label class="dialog-calculator__field">
@@ -99,8 +99,19 @@
 
         $diagramm.style.setProperty('--radius', radius);
         $form.addEventListener('submit', submitHandler);
+        $form.querySelector('.-input-cost-').addEventListener('input',inputHandler)
+        $form.querySelector('.-input-start-pay-').addEventListener('input',inputHandler)
 
         calcRender({ percent });
+        inputHandler();
+
+        function inputHandler(event) {
+            const formatter = new Intl.NumberFormat('ru-RU');
+            const cost = +$form.querySelector('.-input-cost-').value.replace(/[^0-9]/g, '');
+            const startPay = +$form.querySelector('.-input-start-pay-').value.replace(/[^0-9]/g, '');
+            const $summ = $form.querySelector('.-summ-');
+            $summ.textContent = formatter.format(Math.round(cost - startPay)) + ' ₽';
+        }
 
         function submitHandler(event) {
             event.preventDefault();
@@ -142,9 +153,6 @@
             //     ['Долг+проценты']: summAndPercent
             // };
             const formatter = new Intl.NumberFormat('ru-RU');
-
-
-
 
             setTimeout(() => {
                 $result.classList.remove('hidden');
