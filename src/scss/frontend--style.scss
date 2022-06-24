@@ -3954,6 +3954,148 @@ body * {
 	}
 }
 
+.team-banner {
+	background: #FFD892;
+	border-radius: 10px;
+	padding: 0 50px;
+	position: relative;
+	overflow: hidden;
+	&__bg {
+		position: absolute;
+		border-radius: 50%;
+		filter: blur(50px);
+		&--1 {
+			width: 270px;
+			height: 270px;
+			background-color: #FFFFFF;
+			opacity: 0.8;
+			top: 100px;
+			left: 90px;
+		}
+		&--2 {
+			background-color: #FFAE81;
+			opacity: 0.3;
+			width: 470px;
+			height: 470px;
+			right: -110px;
+			bottom: -250px;
+		}
+	}
+	&__block {
+		display: flex;
+		align-items: center;
+		grid-gap: 50px;
+		position: relative;
+	}
+	&__pic {
+		min-width: 350px;
+	}
+	&__img {
+		width: 100%;
+	}
+	&__content {
+		display: flex;
+		flex-direction: column;
+	}
+	&__title {
+		font-style: normal;
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 36px;
+		letter-spacing: 0.1px;
+		font-family: var(--font-alt);
+		margin-bottom: 10px;
+	}
+	&__text {
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 19px;
+		opacity: 0.8;
+	}
+	&__die {
+		background: linear-gradient(126.6deg, rgba(255, 255, 255, 0.16) 28.69%, rgba(255, 255, 255, 0.16) 100%);
+		backdrop-filter: blur(140px);
+		border-radius: 12px;
+		border: 1px solid rgba(255, 255, 255, 0.1);
+		padding: 15px 30px;
+		width: 100%;
+		max-width: 480px;
+		margin: 30px 0;
+	}
+	&__name {
+		font-style: normal;
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 21px;
+		margin-bottom: 5px;
+	}
+	&__yt {
+		display: flex;
+		align-items: center;
+		margin-top: 10px;
+		&-text {
+			font-weight: 600;
+			font-size: 16px;
+			line-height: 19px;
+		}
+		&:hover &-text {
+			text-decoration: underline;
+		}
+	}
+	&__icon {
+		margin-right: 10px;
+		font-size: 32px;
+	}
+	&__btn {
+		max-width: max-content;
+		letter-spacing: 0.1px;
+		color: #252B42;
+		padding: 15px 30px;
+	}
+
+	@media(max-width: 991px) {
+		& {
+			padding: 0;
+		}
+		& br {
+			display: block;
+		}
+		&__block {
+			flex-direction: column;
+			grid-gap: 0;
+		}
+		&__pic {
+			min-width: auto;
+			width: 100%;
+			background-color: rgba(255, 255, 255, 0.25);
+			margin-bottom: 20px;
+		}
+		&__img {
+			max-width: 300px;
+			margin: 0 auto;
+		}
+		&__content {
+			padding: 25px 15px;
+		}
+	}
+
+	@media(max-width: 576px) {
+		&__bg {
+			display: none;
+		}
+		&__title {
+			font-size: 32px;
+		}
+		&__text, &__yt-text {
+			font-size: 14px;
+		}
+		&__name {
+			font-size: 16px;
+		}
+	}
+}
+
 @media screen and (max-width:1200px) {
 	.team-item__person {
 		padding-top   : 10px;
