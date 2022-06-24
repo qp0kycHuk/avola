@@ -4056,8 +4056,7 @@ body * {
 
 	@media(max-width: 991px) {
 		& {
-			padding: 30px 15px;
-			padding-bottom: 0;
+			padding: 0;
 		}
 		& br {
 			display: block;
@@ -4066,19 +4065,25 @@ body * {
 			flex-direction: column;
 			grid-gap: 0;
 		}
-		&__content {
-			order: 1;
-			margin-bottom: 20px;
-		}
 		&__pic {
-			order: 2;
 			min-width: auto;
 			width: 100%;
+			background-color: rgba(255, 255, 255, 0.25);
+			margin-bottom: 20px;
+		}
+		&__img {
 			max-width: 300px;
+			margin: 0 auto;
+		}
+		&__content {
+			padding: 25px 15px;
 		}
 	}
 
 	@media(max-width: 576px) {
+		&__bg {
+			display: none;
+		}
 		&__title {
 			font-size: 32px;
 		}
