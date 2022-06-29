@@ -6,10 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="source/_libs.css">
-	<link rel="stylesheet" href="css/frontend--fonts.css">
-	<link rel="stylesheet" href="css/frontend--style.css">
-	<link rel="stylesheet" href="css/krd-styles.css">
+    <link rel="stylesheet" href="dist/css/style.css">
 
 	<title>Объекты - Сервис Кравченко</title>
 </head>
@@ -23,7 +20,7 @@
 
 	<header class="lk-header">
 		<a href="/" class="lk-header-logo logo">
-			<div class="logo__img"><img src="img/icons/logo.svg" alt=""></div>
+			<div class="logo__img"><img src="dist/img/icons/logo.svg" alt=""></div>
 			<div class="logo__text">
 				Помощь в подборе <br>
 				недвижимости в Москве
@@ -35,7 +32,7 @@
 				<button class="lk-header__btn btn btn--link" data-modal-link="jk-edit-modal">
 					<div class="btn-icon-round">
 						<svg class="btn-icon">
-							<use xlink:href="img/sprite.svg#flat" />
+							<use xlink:href="dist/img/sprite.svg#flat" />
 						</svg>
 					</div>
 					Добавить квартиру
@@ -43,7 +40,7 @@
 				<button class="lk-header__btn btn btn--link" data-modal-link="jk-edit-modal">
 					<div class="btn-icon-round">
 						<svg class="btn-icon">
-							<use xlink:href="img/sprite.svg#home-add" />
+							<use xlink:href="dist/img/sprite.svg#home-add" />
 						</svg>
 					</div>
 					Добавить объект
@@ -51,7 +48,7 @@
 				<button class="lk-header__btn btn btn--link lk-header__btn--user">
 					<div class="btn-icon-round">
 						<svg class="btn-icon">
-							<use xlink:href="img/sprite.svg#user" />
+							<use xlink:href="dist/img/sprite.svg#user" />
 						</svg>
 					</div>
 					Добавить пользователя
@@ -65,7 +62,7 @@
 					<button class="user-control__btn waves" data-toggle-link="user-control-dropdown">
 						<div class="user-control__arrow"></div>
 						<div class="user-control__img">
-							<img loading="lazy" src="img/test-avatar.png" alt="">
+							<img loading="lazy" src="dist/img/test-avatar.png" alt="">
 						</div>
 					</button>
 					<div class="user-control-content card card--l2 dropdown-content" id="user-control-dropdown">
@@ -81,14 +78,14 @@
 	<header class="lk-header lk-header-mobile header-mobile">
 		<button class="header-mobile__icon btn" data-toggle-link="lk-sidebar">
 			<svg>
-				<use xlink:href="img/sprite.svg#burger" />
+				<use xlink:href="dist/img/sprite.svg#burger" />
 			</svg>
 		</button>
 
 		<div class="header-mobile__title">Личный кабинет</div>
 		<button class="header-mobile__btn btn btn--contur" data-toggle-link="lk-filter">
 			<svg class="btn-icon">
-				<use xlink:href="img/sprite.svg#filter" />
+				<use xlink:href="dist/img/sprite.svg#filter" />
 			</svg>
 			Фильтр объектов
 		</button>
@@ -97,53 +94,53 @@
 	<div class="lk-sidebar" data-toggle-cover id="lk-sidebar">
 		<div class="lk-sidebar-content">
 			<div class="lk-sidebar-item waves waves-light" data-toggle-link>
-				<div class="lk-sidebar-item__img"><img src="img/icons/burger.svg" alt=""></div>
+				<div class="lk-sidebar-item__img"><img src="dist/img/icons/burger.svg" alt=""></div>
 				<div class="lk-sidebar-item__title">Свернуть меню</div>
 
 			</div>
 			<a href="lk-object.html" class="lk-sidebar-item waves waves-light current">
-				<div class="lk-sidebar-item__img"><img src="img/icons/home--white.svg" alt=""></div>
+				<div class="lk-sidebar-item__img"><img src="dist/img/icons/home--white.svg" alt=""></div>
 				<div class="lk-sidebar-item__title">Объекты</div>
 
 			</a>
 			<a href="lk-users.html" class="lk-sidebar-item waves waves-light">
-				<div class="lk-sidebar-item__img"><img src="img/icons/users.svg" alt=""></div>
+				<div class="lk-sidebar-item__img"><img src="dist/img/icons/users.svg" alt=""></div>
 				<div class="lk-sidebar-item__title">Пользователи</div>
 				<div class="lk-sidebar-item__count">25</div>
 			</a>
 			<a href="" class="lk-sidebar-item waves waves-light">
-				<div class="lk-sidebar-item__img"><img src="img/icons/search.svg" alt=""></div>
+				<div class="lk-sidebar-item__img"><img src="dist/img/icons/search.svg" alt=""></div>
 				<div class="lk-sidebar-item__title">Запросы на подборку</div>
 				<div class="lk-sidebar-item__count">2</div>
 			</a>
 			<a href="" class="lk-sidebar-item waves waves-light">
-				<div class="lk-sidebar-item__img"><img src="img/icons/eye.svg" alt=""></div>
+				<div class="lk-sidebar-item__img"><img src="dist/img/icons/eye.svg" alt=""></div>
 				<div class="lk-sidebar-item__title">Запросы на просмотр</div>
 
 			</a>
 			<a href="" class="lk-sidebar-item waves waves-light">
-				<div class="lk-sidebar-item__img"><img src="img/icons/doc.svg" alt=""></div>
+				<div class="lk-sidebar-item__img"><img src="dist/img/icons/doc.svg" alt=""></div>
 				<div class="lk-sidebar-item__title">Запросы на экспертизу</div>
 				<div class="lk-sidebar-item__count">7</div>
 			</a>
 			<a href="" class="lk-sidebar-item waves waves-light">
-				<div class="lk-sidebar-item__img"><img src="img/icons/home-add.svg" alt=""></div>
+				<div class="lk-sidebar-item__img"><img src="dist/img/icons/home-add.svg" alt=""></div>
 				<div class="lk-sidebar-item__title">Запросы на добавление</div>
 				<div class="lk-sidebar-item__count">1</div>
 			</a>
 
 			<a href="" class="lk-sidebar-item waves waves-light">
-				<div class="lk-sidebar-item__img"><img src="img/icons/folders.svg" alt=""></div>
+				<div class="lk-sidebar-item__img"><img src="dist/img/icons/folders.svg" alt=""></div>
 				<div class="lk-sidebar-item__title">Архив</div>
 
 			</a>
 			<a href="" class="lk-sidebar-item waves waves-light">
-				<div class="lk-sidebar-item__img"><img src="img/icons/logo-abc.svg" alt=""></div>
+				<div class="lk-sidebar-item__img"><img src="dist/img/icons/logo-abc.svg" alt=""></div>
 				<div class="lk-sidebar-item__title">Команда</div>
 
 			</a>
 			<a href="" class="lk-sidebar-item waves waves-light">
-				<div class="lk-sidebar-item__img"><img src="img/icons/flag.svg" alt=""></div>
+				<div class="lk-sidebar-item__img"><img src="dist/img/icons/flag.svg" alt=""></div>
 				<div class="lk-sidebar-item__title">Сохраненные подборки</div>
 
 			</a>
@@ -155,7 +152,7 @@
 		<div class="lk-filter__content">
 			<div class="lk-filter-link" data-toggle-link>
 				<svg>
-					<use xlink:href="img/sprite.svg#filter" />
+					<use xlink:href="dist/img/sprite.svg#filter" />
 				</svg>
 				<div class="lk-filter-link__title">Свернуть фильтр</div>
 			</div>
@@ -166,7 +163,7 @@
 						<button class="lk-filter-compas-btn" data-toggle-link>
 							Сторона света
 							<svg class="icon">
-								<use xlink:href="img/sprite.svg#slider-arrow" />
+								<use xlink:href="dist/img/sprite.svg#slider-arrow" />
 							</svg>
 						</button>
 						<div class="lk-filter-compas-content">
@@ -347,49 +344,49 @@
 		<div class="lk-filter-badges">
 			<div class="lk-filter-badges-item">
 				<svg class="icon">
-					<use xlink:href="img/sprite.svg#homegroup" />
+					<use xlink:href="dist/img/sprite.svg#homegroup" />
 				</svg>
 			</div>
 			<div class="lk-filter-badges-item">
 				<svg class="icon">
-					<use xlink:href="img/sprite.svg#home" />
+					<use xlink:href="dist/img/sprite.svg#home" />
 				</svg>
 			</div>
 			<div class="lk-filter-badges-item">
 				<svg class="icon">
-					<use xlink:href="img/sprite.svg#bench" />
+					<use xlink:href="dist/img/sprite.svg#bench" />
 				</svg>
 			</div>
 			<div class="lk-filter-badges-item">
 				<svg class="icon">
-					<use xlink:href="img/sprite.svg#metro" />
+					<use xlink:href="dist/img/sprite.svg#metro" />
 				</svg>
 			</div>
 			<div class="lk-filter-badges-item">
 				<svg class="icon">
-					<use xlink:href="img/sprite.svg#wallet-filled-money-tool" />
+					<use xlink:href="dist/img/sprite.svg#wallet-filled-money-tool" />
 				</svg>
 			</div>
 			<div class="lk-filter-badges-item">
 				<svg class="icon">
-					<use xlink:href="img/sprite.svg#square-1" />
+					<use xlink:href="dist/img/sprite.svg#square-1" />
 				</svg>
 			</div>
 			<div class="lk-filter-badges-item">
 				<svg class="icon">
-					<use xlink:href="img/sprite.svg#square-2" />
-				</svg>
-			</div>
-
-			<div class="lk-filter-badges-item">
-				<svg class="icon">
-					<use xlink:href="img/sprite.svg#car" />
+					<use xlink:href="dist/img/sprite.svg#square-2" />
 				</svg>
 			</div>
 
 			<div class="lk-filter-badges-item">
 				<svg class="icon">
-					<use xlink:href="img/sprite.svg#call" />
+					<use xlink:href="dist/img/sprite.svg#car" />
+				</svg>
+			</div>
+
+			<div class="lk-filter-badges-item">
+				<svg class="icon">
+					<use xlink:href="dist/img/sprite.svg#call" />
 				</svg>
 			</div>
 		</div>
@@ -402,18 +399,18 @@
 					<div class="jk-item-gallery">
 						<div class="jk-item-gallery-slider swiper-container">
 							<div class="swiper-wrapper">
-								<a data-fancybox="gallery-1" href="img/test-exterier.jpg"
+								<a data-fancybox="gallery-1" href="dist/img/test-exterier.jpg"
 									class="jk-item-gallery__anons waves swiper-slide">
 									<picture>
-										<source srcset="img/test-exterier-min.webp" type="image/webp">
-										<img src="img/test-exterier-min.jpg" alt="" loading="lazy">
+										<source srcset="dist/img/test-exterier-min.webp" type="image/webp">
+										<img src="dist/img/test-exterier-min.jpg" alt="" loading="lazy">
 									</picture>
 								</a>
-								<a data-fancybox="gallery-1" href="img/test-interier.jpg"
+								<a data-fancybox="gallery-1" href="dist/img/test-interier.jpg"
 									class="jk-item-gallery__anons waves swiper-slide">
 									<picture>
-										<source srcset="img/test-interier-min.webp" type="image/webp">
-										<img src="img/test-interier-min.jpg" alt="" loading="lazy">
+										<source srcset="dist/img/test-interier-min.webp" type="image/webp">
+										<img src="dist/img/test-interier-min.jpg" alt="" loading="lazy">
 									</picture>
 								</a>
 
@@ -423,22 +420,22 @@
 							<button class="jk-item-gallery-arrow jk-item-gallery-arrow-prev"></button>
 							<button class="jk-item-gallery-arrow jk-item-gallery-arrow-next"></button>
 						</div>
-						<a data-fancybox="gallery-1-previews" href="img/test-interier.jpg" class="jk-item-gallery__preview waves">
+						<a data-fancybox="gallery-1-previews" href="dist/img/test-interier.jpg" class="jk-item-gallery__preview waves">
 							<picture>
-								<source srcset="img/test-interier-min.webp" type="image/webp">
-								<img src="img/test-interier-min.jpg" alt="" loading="lazy">
+								<source srcset="dist/img/test-interier-min.webp" type="image/webp">
+								<img src="dist/img/test-interier-min.jpg" alt="" loading="lazy">
 							</picture>
 						</a>
-						<a data-fancybox="gallery-1-previews" href="img/test-exterier.jpg" class="jk-item-gallery__preview waves">
+						<a data-fancybox="gallery-1-previews" href="dist/img/test-exterier.jpg" class="jk-item-gallery__preview waves">
 							<picture>
-								<source srcset="img/test-exterier-min.webp" type="image/webp">
-								<img src="img/test-exterier-min.jpg" alt="" loading="lazy">
+								<source srcset="dist/img/test-exterier-min.webp" type="image/webp">
+								<img src="dist/img/test-exterier-min.jpg" alt="" loading="lazy">
 							</picture>
 						</a>
-						<a data-fancybox="gallery-1-previews" href="img/test-exterier.jpg" class="jk-item-gallery__preview waves">
+						<a data-fancybox="gallery-1-previews" href="dist/img/test-exterier.jpg" class="jk-item-gallery__preview waves">
 							<picture>
-								<source srcset="img/test-exterier-min.webp" type="image/webp">
-								<img src="img/test-exterier-min.jpg" alt="" loading="lazy">
+								<source srcset="dist/img/test-exterier-min.webp" type="image/webp">
+								<img src="dist/img/test-exterier-min.jpg" alt="" loading="lazy">
 							</picture>
 						</a>
 
@@ -450,8 +447,8 @@
 						<a class="jk-item-gallery__preview waves ">
 							<div class="jk-item-gallery__link">Еще фото</div>
 							<picture>
-								<source srcset="img/test-interier-min.webp" type="image/webp">
-								<img src="img/test-interier-min.jpg" alt="" loading="lazy">
+								<source srcset="dist/img/test-interier-min.webp" type="image/webp">
+								<img src="dist/img/test-interier-min.jpg" alt="" loading="lazy">
 							</picture>
 						</a>
 
@@ -465,14 +462,14 @@
 						</div>
 						<div class="jk-item-content__verify jk-item-content__verify--success">
 							<div class="jk-item-properties__info">
-								<img src="img/icons/verified--success.svg" alt=""><span>Прошел экспертизу</span>
+								<img src="dist/img/icons/verified--success.svg" alt=""><span>Прошел экспертизу</span>
 							</div>
 							<button class="jk-item-properties__btn btn btn--success">Скачать отчет</button>
 						</div>
-						<div class="jk-item-content__info"><img src="img/icons/metro.svg" alt="">Алтуфьево ⋅ 15 мин. на
+						<div class="jk-item-content__info"><img src="dist/img/icons/metro.svg" alt="">Алтуфьево ⋅ 15 мин. на
 							транспорте
 						</div>
-						<div class="jk-item-content__info"><img src="img/icons/car.svg" alt="">Дмитровское шоссе, 1 км от МКАД
+						<div class="jk-item-content__info"><img src="dist/img/icons/car.svg" alt="">Дмитровское шоссе, 1 км от МКАД
 						</div>
 
 						<div class="jk-item-content__cost">27 100 000 ₽</div>
@@ -521,21 +518,21 @@
 					</div>
 					<div class="jk-item-properties">
 						<div class="jk-item-properties__info">
-							<img src="img/icons/home.svg" alt=""><span>Тип: </span>Монолитный
+							<img src="dist/img/icons/home.svg" alt=""><span>Тип: </span>Монолитный
 						</div>
 						<div class="jk-item-properties__info">
-							<img src="img/icons/square-1.svg" alt=""><span>Площадь дома: </span>191.3 м²
+							<img src="dist/img/icons/square-1.svg" alt=""><span>Площадь дома: </span>191.3 м²
 						</div>
 						<div class="jk-item-properties__info">
-							<img src="img/icons/square-2.svg" alt=""><span>Площадь участка: </span>235 соток
+							<img src="dist/img/icons/square-2.svg" alt=""><span>Площадь участка: </span>235 соток
 						</div>
 						<div class="jk-item-properties__info">
-							<img src="img/icons/floors.svg" alt=""><span>Количество этажей: </span>2
+							<img src="dist/img/icons/floors.svg" alt=""><span>Количество этажей: </span>2
 						</div>
 						<div class="jk-item-properties__line"></div>
 						<div class="jk-item-properties__verify">
 							<div class="jk-item-properties__info">
-								<img src="img/icons/verified--success.svg" alt=""><span>Дом прошел экспертизу</span>
+								<img src="dist/img/icons/verified--success.svg" alt=""><span>Дом прошел экспертизу</span>
 							</div>
 							<button data-modal-link="message-modal" class="jk-item-properties__btn btn btn--red">И не пройдет
 								=)</button>
@@ -547,7 +544,7 @@
 						<div class=" jk-item-control-left">
 							<button class="jk-item-control__btn btn btn--contur-primary">
 								<svg class="btn-icon">
-									<use xlink:href="img/sprite.svg#plus-1" />
+									<use xlink:href="dist/img/sprite.svg#plus-1" />
 								</svg>
 							</button>
 						</div>
@@ -555,21 +552,21 @@
 							<button class="jk-item-control__btn btn btn--icon-light btn--primary--light" title="Редактировать"
 								data-tooltip data-tooltip-position="top">
 								<svg class="btn-icon">
-									<use xlink:href="img/sprite.svg#edit" />
+									<use xlink:href="dist/img/sprite.svg#edit" />
 								</svg>
 
 
 							</button>
 							<button class="jk-item-control__btn btn btn--icon-light btn--primary--light tooltip-parent">
 								<svg class="btn-icon">
-									<use xlink:href="img/sprite.svg#folders" />
+									<use xlink:href="dist/img/sprite.svg#folders" />
 								</svg>
 								<div class="tooltip tooltip--top">В архив</div>
 							</button>
 							<button class="jk-item-control__btn btn btn--accent--light tooltip-parent"
 								onclick="Actions.jk().remove('jk-1').start()">
 								<svg class="btn-icon">
-									<use xlink:href="img/sprite.svg#delete" />
+									<use xlink:href="dist/img/sprite.svg#delete" />
 								</svg>
 								<div class="tooltip tooltip--top">Удалить</div>
 							</button>
@@ -586,7 +583,7 @@
 				<div class="jk-return__subtitle">Москва, СВАО, р-н Северный, Челобитьевское ш., 1Гк11</div>
 				<div class="jk-return__cost">27 100 000 ₽</div>
 				<svg class="btn-icon">
-					<use xlink:href="img/sprite.svg#return" />
+					<use xlink:href="dist/img/sprite.svg#return" />
 				</svg>
 				Нажмите чтобы восстановить&nbsp;
 
@@ -649,11 +646,11 @@
 						округ, деревня Матвейково, 2-е Успенское шоссе
 					</div>
 					<div class="baloon__prop">
-						<img src="img/icons/metro.svg" alt="">
+						<img src="dist/img/icons/metro.svg" alt="">
 						Алтуфьево ⋅ 15 мин. на транспорте
 					</div>
 					<div class="baloon__prop">
-						<img src="img/icons/car.svg" alt="">
+						<img src="dist/img/icons/car.svg" alt="">
 						Дмитровское шоссе, 1 км от МКАД
 					</div>
 				</div>
@@ -723,7 +720,7 @@
 				<div class="lk-control__left">
 					<button class="jk-item-control__btn btn btn--accent--light">
 						<svg class="btn-icon">
-							<use xlink:href="img/sprite.svg#cross"></use>
+							<use xlink:href="dist/img/sprite.svg#cross"></use>
 						</svg>
 					</button>
 				</div>
@@ -754,18 +751,18 @@
 							<div class="jk-item-gallery">
 								<div class="jk-item-gallery-slider swiper-container">
 									<div class="swiper-wrapper">
-										<a data-fancybox="gallery-1" href="img/test-exterier.jpg"
+										<a data-fancybox="gallery-1" href="dist/img/test-exterier.jpg"
 											class="jk-item-gallery__anons waves swiper-slide">
 											<picture>
-												<source srcset="img/test-exterier-min.webp" type="image/webp">
-												<img src="img/test-exterier-min.jpg" alt="" loading="lazy">
+												<source srcset="dist/img/test-exterier-min.webp" type="image/webp">
+												<img src="dist/img/test-exterier-min.jpg" alt="" loading="lazy">
 											</picture>
 										</a>
-										<a data-fancybox="gallery-1" href="img/test-interier.jpg"
+										<a data-fancybox="gallery-1" href="dist/img/test-interier.jpg"
 											class="jk-item-gallery__anons waves swiper-slide">
 											<picture>
-												<source srcset="img/test-interier-min.webp" type="image/webp">
-												<img src="img/test-interier-min.jpg" alt="" loading="lazy">
+												<source srcset="dist/img/test-interier-min.webp" type="image/webp">
+												<img src="dist/img/test-interier-min.jpg" alt="" loading="lazy">
 											</picture>
 										</a>
 
@@ -775,24 +772,24 @@
 									<button class="jk-item-gallery-arrow jk-item-gallery-arrow-prev"></button>
 									<button class="jk-item-gallery-arrow jk-item-gallery-arrow-next"></button>
 								</div>
-								<a data-fancybox="gallery-1" href="img/test-interier.jpg" class="jk-item-gallery__preview waves">
+								<a data-fancybox="gallery-1" href="dist/img/test-interier.jpg" class="jk-item-gallery__preview waves">
 									<picture>
-										<source srcset="img/test-interier-min.webp" type="image/webp">
-										<img src="img/test-interier-min.jpg" alt="" loading="lazy">
+										<source srcset="dist/img/test-interier-min.webp" type="image/webp">
+										<img src="dist/img/test-interier-min.jpg" alt="" loading="lazy">
 									</picture>
 								</a>
-								<a data-fancybox="gallery-1" href="img/test-exterier.jpg" class="jk-item-gallery__preview waves">
+								<a data-fancybox="gallery-1" href="dist/img/test-exterier.jpg" class="jk-item-gallery__preview waves">
 									<picture>
-										<source srcset="img/test-exterier-min.webp" type="image/webp">
-										<img src="img/test-exterier-min.jpg" alt="" loading="lazy">
+										<source srcset="dist/img/test-exterier-min.webp" type="image/webp">
+										<img src="dist/img/test-exterier-min.jpg" alt="" loading="lazy">
 									</picture>
 								</a>
 
 								<a class="jk-item-gallery__preview waves ">
 									<div class="jk-item-gallery__link">Еще фото</div>
 									<picture>
-										<source srcset="img/test-interier-min.webp" type="image/webp">
-										<img src="img/test-interier-min.jpg" alt="" loading="lazy">
+										<source srcset="dist/img/test-interier-min.webp" type="image/webp">
+										<img src="dist/img/test-interier-min.jpg" alt="" loading="lazy">
 									</picture>
 								</a>
 
@@ -806,14 +803,14 @@
 								</div>
 								<div class="jk-item-content__verify jk-item-content__verify--success">
 									<div class="jk-item-properties__info">
-										<img src="img/icons/verified--success.svg" alt=""><span>Прошел экспертизу</span>
+										<img src="dist/img/icons/verified--success.svg" alt=""><span>Прошел экспертизу</span>
 									</div>
 									<button class="jk-item-properties__btn btn btn--success">Скачать отчет</button>
 								</div>
-								<div class="jk-item-content__info"><img src="img/icons/metro.svg" alt="">Алтуфьево ⋅ 15 мин. на
+								<div class="jk-item-content__info"><img src="dist/img/icons/metro.svg" alt="">Алтуфьево ⋅ 15 мин. на
 									транспорте
 								</div>
-								<div class="jk-item-content__info"><img src="img/icons/car.svg" alt="">Дмитровское шоссе, 1 км от МКАД
+								<div class="jk-item-content__info"><img src="dist/img/icons/car.svg" alt="">Дмитровское шоссе, 1 км от МКАД
 								</div>
 
 								<div class="jk-item-content__cost">27 100 000 ₽</div>
@@ -832,21 +829,21 @@
 							</div>
 							<div class="jk-item-properties">
 								<div class="jk-item-properties__info">
-									<img src="img/icons/home.svg" alt=""><span>Тип: </span>Монолитный
+									<img src="dist/img/icons/home.svg" alt=""><span>Тип: </span>Монолитный
 								</div>
 								<div class="jk-item-properties__info">
-									<img src="img/icons/square-1.svg" alt=""><span>Площадь дома: </span>191.3 м²
+									<img src="dist/img/icons/square-1.svg" alt=""><span>Площадь дома: </span>191.3 м²
 								</div>
 								<div class="jk-item-properties__info">
-									<img src="img/icons/square-2.svg" alt=""><span>Площадь участка: </span>235 соток
+									<img src="dist/img/icons/square-2.svg" alt=""><span>Площадь участка: </span>235 соток
 								</div>
 								<div class="jk-item-properties__info">
-									<img src="img/icons/floors.svg" alt=""><span>Количество этажей: </span>2
+									<img src="dist/img/icons/floors.svg" alt=""><span>Количество этажей: </span>2
 								</div>
 								<div class="jk-item-properties__line"></div>
 								<div class="jk-item-properties__verify">
 									<div class="jk-item-properties__info">
-										<img src="img/icons/verified--success.svg" alt=""><span>Дом прошел экспертизу</span>
+										<img src="dist/img/icons/verified--success.svg" alt=""><span>Дом прошел экспертизу</span>
 									</div>
 									<button class="jk-item-properties__btn btn btn--success">Скачать отчет</button>
 								</div>
@@ -857,7 +854,7 @@
 								<div class=" jk-item-control-left">
 									<button class="jk-item-control__btn btn btn--contur-primary">
 										<svg class="btn-icon">
-											<use xlink:href="img/sprite.svg#plus-1" />
+											<use xlink:href="dist/img/sprite.svg#plus-1" />
 										</svg>
 									</button>
 								</div>
@@ -865,21 +862,21 @@
 									<button class="jk-item-control__btn btn btn--icon-light btn--primary--light" title="Редактировать"
 										data-tooltip data-tooltip-position="top">
 										<svg class="btn-icon">
-											<use xlink:href="img/sprite.svg#edit" />
+											<use xlink:href="dist/img/sprite.svg#edit" />
 										</svg>
 
 
 									</button>
 									<button class="jk-item-control__btn btn btn--icon-light btn--primary--light tooltip-parent">
 										<svg class="btn-icon">
-											<use xlink:href="img/sprite.svg#folders" />
+											<use xlink:href="dist/img/sprite.svg#folders" />
 										</svg>
 										<div class="tooltip tooltip--top">В архив</div>
 									</button>
 									<button class="jk-item-control__btn btn btn--accent--light tooltip-parent"
 										onclick="Actions.jk().remove('jk-1').start()">
 										<svg class="btn-icon">
-											<use xlink:href="img/sprite.svg#delete" />
+											<use xlink:href="dist/img/sprite.svg#delete" />
 										</svg>
 										<div class="tooltip tooltip--top">Удалить</div>
 									</button>
@@ -896,7 +893,7 @@
 						<div class="jk-return__subtitle">Москва, СВАО, р-н Северный, Челобитьевское ш., 1Гк11</div>
 						<div class="jk-return__cost">27 100 000 ₽</div>
 						<svg class="btn-icon">
-							<use xlink:href="img/sprite.svg#return" />
+							<use xlink:href="dist/img/sprite.svg#return" />
 						</svg>
 						Нажмите чтобы восстановить&nbsp;
 
@@ -910,18 +907,18 @@
 							<div class="jk-item-gallery">
 								<div class="jk-item-gallery-slider swiper-container">
 									<div class="swiper-wrapper">
-										<a data-fancybox="gallery-2" href="img/test-interier-min.jpg"
+										<a data-fancybox="gallery-2" href="dist/img/test-interier-min.jpg"
 											class="jk-item-gallery__anons waves swiper-slide">
 											<picture>
-												<source srcset="img/test-interier-min.webp" type="image/webp">
-												<img src="img/test-interier-min.jpg" alt="" loading="lazy">
+												<source srcset="dist/img/test-interier-min.webp" type="image/webp">
+												<img src="dist/img/test-interier-min.jpg" alt="" loading="lazy">
 											</picture>
 										</a>
-										<a data-fancybox="gallery-2" href="img/test-exterier-min.jpg"
+										<a data-fancybox="gallery-2" href="dist/img/test-exterier-min.jpg"
 											class="jk-item-gallery__anons waves swiper-slide">
 											<picture>
-												<source srcset="img/test-exterier-min.webp" type="image/webp">
-												<img src="img/test-exterier-min.jpg" alt="" loading="lazy">
+												<source srcset="dist/img/test-exterier-min.webp" type="image/webp">
+												<img src="dist/img/test-exterier-min.jpg" alt="" loading="lazy">
 											</picture>
 										</a>
 									</div>
@@ -930,23 +927,23 @@
 									<button class="jk-item-gallery-arrow jk-item-gallery-arrow-prev"></button>
 									<button class="jk-item-gallery-arrow jk-item-gallery-arrow-next"></button>
 								</div>
-								<a data-fancybox="gallery-2" href="img/test-exterier.jpg" class="jk-item-gallery__preview waves">
+								<a data-fancybox="gallery-2" href="dist/img/test-exterier.jpg" class="jk-item-gallery__preview waves">
 									<picture>
-										<source srcset="img/test-exterier-min.webp" type="image/webp">
-										<img src="img/test-exterier-min.jpg" alt="" loading="lazy">
+										<source srcset="dist/img/test-exterier-min.webp" type="image/webp">
+										<img src="dist/img/test-exterier-min.jpg" alt="" loading="lazy">
 									</picture>
 								</a>
-								<a data-fancybox="gallery-2" href="img/test-interier.jpg" class="jk-item-gallery__preview waves">
+								<a data-fancybox="gallery-2" href="dist/img/test-interier.jpg" class="jk-item-gallery__preview waves">
 									<picture>
-										<source srcset="img/test-interier-min.webp" type="image/webp">
-										<img src="img/test-interier-min.jpg" alt="" loading="lazy">
+										<source srcset="dist/img/test-interier-min.webp" type="image/webp">
+										<img src="dist/img/test-interier-min.jpg" alt="" loading="lazy">
 									</picture>
 								</a>
 								<a class="jk-item-gallery__preview waves ">
 									<div class="jk-item-gallery__link">Еще фото</div>
 									<picture>
-										<source srcset="img/test-exterier-min.webp" type="image/webp">
-										<img src="img/test-exterier-min.jpg" alt="" loading="lazy">
+										<source srcset="dist/img/test-exterier-min.webp" type="image/webp">
+										<img src="dist/img/test-exterier-min.jpg" alt="" loading="lazy">
 									</picture>
 								</a>
 							</div>
@@ -959,10 +956,10 @@
 									</div>
 									<button class="jk-item-properties__btn btn btn--pikachu btn--disable">Заказать отчет</button>
 								</div>
-								<div class="jk-item-content__info"><img src="img/icons/metro.svg" alt="">Алтуфьево ⋅ 15 мин. на
+								<div class="jk-item-content__info"><img src="dist/img/icons/metro.svg" alt="">Алтуфьево ⋅ 15 мин. на
 									транспорте
 								</div>
-								<div class="jk-item-content__info"><img src="img/icons/car.svg" alt="">Дмитровское шоссе, 1 км от МКАД
+								<div class="jk-item-content__info"><img src="dist/img/icons/car.svg" alt="">Дмитровское шоссе, 1 км от МКАД
 								</div>
 
 								<div class="jk-item-content__cost">27 100 000 ₽</div>
@@ -980,16 +977,16 @@
 							</div>
 							<div class="jk-item-properties">
 								<div class="jk-item-properties__info">
-									<img src="img/icons/home.svg" alt=""><span>Тип: </span>Монолитный
+									<img src="dist/img/icons/home.svg" alt=""><span>Тип: </span>Монолитный
 								</div>
 								<div class="jk-item-properties__info">
-									<img src="img/icons/square-1.svg" alt=""><span>Площадь дома: </span>191.3 м²
+									<img src="dist/img/icons/square-1.svg" alt=""><span>Площадь дома: </span>191.3 м²
 								</div>
 								<div class="jk-item-properties__info">
-									<img src="img/icons/square-2.svg" alt=""><span>Площадь участка: </span>235 соток
+									<img src="dist/img/icons/square-2.svg" alt=""><span>Площадь участка: </span>235 соток
 								</div>
 								<div class="jk-item-properties__info">
-									<img src="img/icons/floors.svg" alt=""><span>Количество этажей: </span>2
+									<img src="dist/img/icons/floors.svg" alt=""><span>Количество этажей: </span>2
 								</div>
 								<div class="jk-item-properties__line"></div>
 								<div class="jk-item-properties__verify">
@@ -1007,7 +1004,7 @@
 								<div class="jk-item-control-left">
 									<button class="jk-item-control__btn btn btn--primary">
 										<svg class="btn-icon">
-											<use xlink:href="img/sprite.svg#gal-ochka" />
+											<use xlink:href="dist/img/sprite.svg#gal-ochka" />
 										</svg>
 									</button>
 								</div>
@@ -1015,19 +1012,19 @@
 									<button class="jk-item-control__btn btn  btn--icon-light btn--primary--light" title="Редактировать"
 										data-tooltip data-tooltip-position="top">
 										<svg class="btn-icon">
-											<use xlink:href="img/sprite.svg#edit" />
+											<use xlink:href="dist/img/sprite.svg#edit" />
 										</svg>
 									</button>
 									<button class="jk-item-control__btn btn  btn--icon-light btn--primary--light" title="В архив"
 										data-tooltip data-tooltip-position="top">
 										<svg class="btn-icon">
-											<use xlink:href="img/sprite.svg#folders" />
+											<use xlink:href="dist/img/sprite.svg#folders" />
 										</svg>
 									</button>
 									<button class="jk-item-control__btn btn btn--accent--light" title="Удалить" data-tooltip
 										data-tooltip-position="top" onclick="Actions.jk().remove('jk-2').start()">
 										<svg class="btn-icon">
-											<use xlink:href="img/sprite.svg#delete" />
+											<use xlink:href="dist/img/sprite.svg#delete" />
 										</svg>
 									</button>
 								</div>
@@ -1044,7 +1041,7 @@
 						<div class="jk-return__subtitle">Москва, СВАО, р-н Северный, Челобитьевское ш., 1Гк11</div>
 						<div class="jk-return__cost">27 100 000 ₽</div>
 						<svg class="btn-icon">
-							<use xlink:href="img/sprite.svg#return" />
+							<use xlink:href="dist/img/sprite.svg#return" />
 						</svg>
 						Нажмите чтобы восстановить&nbsp;
 
@@ -1059,18 +1056,18 @@
 							<div class="jk-item-gallery">
 								<div class="jk-item-gallery-slider swiper-container">
 									<div class="swiper-wrapper">
-										<a data-fancybox="gallery-3" href="img/test-exterier.jpg"
+										<a data-fancybox="gallery-3" href="dist/img/test-exterier.jpg"
 											class="jk-item-gallery__anons waves swiper-slide">
 											<picture>
-												<source srcset="img/test-exterier-min.webp" type="image/webp">
-												<img src="img/test-exterier-min.jpg" alt="" loading="lazy">
+												<source srcset="dist/img/test-exterier-min.webp" type="image/webp">
+												<img src="dist/img/test-exterier-min.jpg" alt="" loading="lazy">
 											</picture>
 										</a>
-										<a data-fancybox="gallery-3" href="img/test-interier.jpg"
+										<a data-fancybox="gallery-3" href="dist/img/test-interier.jpg"
 											class="jk-item-gallery__anons waves swiper-slide">
 											<picture>
-												<source srcset="img/test-interier-min.webp" type="image/webp">
-												<img src="img/test-interier-min.jpg" alt="" loading="lazy">
+												<source srcset="dist/img/test-interier-min.webp" type="image/webp">
+												<img src="dist/img/test-interier-min.jpg" alt="" loading="lazy">
 											</picture>
 										</a>
 
@@ -1080,24 +1077,24 @@
 									<button class="jk-item-gallery-arrow jk-item-gallery-arrow-prev"></button>
 									<button class="jk-item-gallery-arrow jk-item-gallery-arrow-next"></button>
 								</div>
-								<a data-fancybox="gallery-3" href="img/test-interier.jpg" class="jk-item-gallery__preview waves">
+								<a data-fancybox="gallery-3" href="dist/img/test-interier.jpg" class="jk-item-gallery__preview waves">
 									<picture>
-										<source srcset="img/test-interier-min.webp" type="image/webp">
-										<img src="img/test-interier-min.jpg" alt="" loading="lazy">
+										<source srcset="dist/img/test-interier-min.webp" type="image/webp">
+										<img src="dist/img/test-interier-min.jpg" alt="" loading="lazy">
 									</picture>
 								</a>
-								<a data-fancybox="gallery-3" href="img/test-exterier.jpg" class="jk-item-gallery__preview waves">
+								<a data-fancybox="gallery-3" href="dist/img/test-exterier.jpg" class="jk-item-gallery__preview waves">
 									<picture>
-										<source srcset="img/test-exterier-min.webp" type="image/webp">
-										<img src="img/test-exterier-min.jpg" alt="" loading="lazy">
+										<source srcset="dist/img/test-exterier-min.webp" type="image/webp">
+										<img src="dist/img/test-exterier-min.jpg" alt="" loading="lazy">
 									</picture>
 								</a>
 
 								<a class="jk-item-gallery__preview waves ">
 									<div class="jk-item-gallery__link">Еще фото</div>
 									<picture>
-										<source srcset="img/test-interier-min.webp" type="image/webp">
-										<img src="img/test-interier-min.jpg" alt="" loading="lazy">
+										<source srcset="dist/img/test-interier-min.webp" type="image/webp">
+										<img src="dist/img/test-interier-min.jpg" alt="" loading="lazy">
 									</picture>
 								</a>
 
@@ -1111,10 +1108,10 @@
 									</div>
 									<button class="jk-item-properties__btn btn btn--pikachu btn--disable">Заказать отчет</button>
 								</div>
-								<div class="jk-item-content__info"><img src="img/icons/metro.svg" alt="">Алтуфьево ⋅ 15 мин. на
+								<div class="jk-item-content__info"><img src="dist/img/icons/metro.svg" alt="">Алтуфьево ⋅ 15 мин. на
 									транспорте
 								</div>
-								<div class="jk-item-content__info"><img src="img/icons/car.svg" alt="">Дмитровское шоссе, 1 км от МКАД
+								<div class="jk-item-content__info"><img src="dist/img/icons/car.svg" alt="">Дмитровское шоссе, 1 км от МКАД
 								</div>
 
 								<div class="jk-item-content__cost">27 100 000 ₽</div>
@@ -1132,16 +1129,16 @@
 							</div>
 							<div class="jk-item-properties">
 								<div class="jk-item-properties__info">
-									<img src="img/icons/home.svg" alt=""><span>Тип: </span>Монолитный
+									<img src="dist/img/icons/home.svg" alt=""><span>Тип: </span>Монолитный
 								</div>
 								<div class="jk-item-properties__info">
-									<img src="img/icons/square-1.svg" alt=""><span>Площадь дома: </span>191.3 м²
+									<img src="dist/img/icons/square-1.svg" alt=""><span>Площадь дома: </span>191.3 м²
 								</div>
 								<div class="jk-item-properties__info">
-									<img src="img/icons/square-2.svg" alt=""><span>Площадь участка: </span>235 соток
+									<img src="dist/img/icons/square-2.svg" alt=""><span>Площадь участка: </span>235 соток
 								</div>
 								<div class="jk-item-properties__info">
-									<img src="img/icons/floors.svg" alt=""><span>Количество этажей: </span>2
+									<img src="dist/img/icons/floors.svg" alt=""><span>Количество этажей: </span>2
 								</div>
 								<div class="jk-item-properties__line"></div>
 								<div class="jk-item-properties__verify">
@@ -1159,25 +1156,25 @@
 								<div class="jk-item-control-left">
 									<button class="jk-item-control__btn btn btn--primary">
 										<svg class="btn-icon">
-											<use xlink:href="img/sprite.svg#gal-ochka" />
+											<use xlink:href="dist/img/sprite.svg#gal-ochka" />
 										</svg>
 									</button>
 								</div>
 								<div class="jk-item-control-right">
 									<button class="jk-item-control__btn btn  btn--icon-light btn--primary--light">
 										<svg class="btn-icon">
-											<use xlink:href="img/sprite.svg#edit" />
+											<use xlink:href="dist/img/sprite.svg#edit" />
 										</svg>
 									</button>
 									<button class="jk-item-control__btn btn  btn--icon-light btn--primary--light">
 										<svg class="btn-icon">
-											<use xlink:href="img/sprite.svg#folders" />
+											<use xlink:href="dist/img/sprite.svg#folders" />
 										</svg>
 									</button>
 									<button class="jk-item-control__btn btn btn--accent--light"
 										onclick="Actions.jk().remove('jk-3').start()">
 										<svg class="btn-icon">
-											<use xlink:href="img/sprite.svg#delete" />
+											<use xlink:href="dist/img/sprite.svg#delete" />
 										</svg>
 									</button>
 								</div>
@@ -1193,7 +1190,7 @@
 						<div class="jk-return__subtitle">Москва, СВАО, р-н Северный, Челобитьевское ш., 1Гк11</div>
 						<div class="jk-return__cost">27 100 000 ₽</div>
 						<svg class="btn-icon">
-							<use xlink:href="img/sprite.svg#return" />
+							<use xlink:href="dist/img/sprite.svg#return" />
 						</svg>
 						Нажмите чтобы восстановить&nbsp;
 
@@ -1208,7 +1205,7 @@
 				<div class="pagination">
 					<div class="pagination-prev">
 						<svg class="icon">
-							<use xlink:href="img/sprite.svg#slider-arrow" />
+							<use xlink:href="dist/img/sprite.svg#slider-arrow" />
 						</svg>
 					</div>
 					<div class="pagination-list">
@@ -1221,7 +1218,7 @@
 					</div>
 					<div class="pagination-next">
 						<svg class="icon">
-							<use xlink:href="img/sprite.svg#slider-arrow" />
+							<use xlink:href="dist/img/sprite.svg#slider-arrow" />
 						</svg>
 					</div>
 				</div>
@@ -1234,7 +1231,7 @@
 					<div class="lk-bottom__btns">
 						<button class="lk-bottom__send btn btn--white" data-modal-link="send-user-modal">
 							<svg class="btn-icon">
-								<use xlink:href="img/sprite.svg#option" />
+								<use xlink:href="dist/img/sprite.svg#option" />
 							</svg>
 							Отправить пользователю
 
@@ -1279,7 +1276,7 @@
 
 									<button type="button" class="btn btn--accent jk-edit-transport__remove" data-remove-node="link-1">
 										<svg>
-											<use xlink:href="img/sprite.svg#cross" />
+											<use xlink:href="dist/img/sprite.svg#cross" />
 										</svg>
 									</button>
 								</div>
@@ -1350,7 +1347,7 @@
 										data-remove-node="transport-1">
 										<div class="icon">
 											<svg>
-												<use xlink:href="img/sprite.svg#cross" />
+												<use xlink:href="dist/img/sprite.svg#cross" />
 											</svg>
 										</div>
 										Удалить
@@ -1358,7 +1355,7 @@
 									<button type="button" class="btn btn--accent jk-edit-transport__remove"
 										data-remove-node="transport-1">
 										<svg>
-											<use xlink:href="img/sprite.svg#cross" />
+											<use xlink:href="dist/img/sprite.svg#cross" />
 										</svg>
 									</button>
 								</div>
@@ -1396,7 +1393,7 @@
 										data-remove-node="transport-2">
 										<div class="icon">
 											<svg>
-												<use xlink:href="img/sprite.svg#cross" />
+												<use xlink:href="dist/img/sprite.svg#cross" />
 											</svg>
 										</div>
 
@@ -1405,7 +1402,7 @@
 									<button type="button" class="btn btn--accent jk-edit-transport__remove"
 										data-remove-node="transport-2">
 										<svg>
-											<use xlink:href="img/sprite.svg#cross" />
+											<use xlink:href="dist/img/sprite.svg#cross" />
 										</svg>
 									</button>
 								</div>
@@ -1554,7 +1551,7 @@
 
 									<div class="form-field-preview__content waves">
 										<svg>
-											<use xlink:href="img/sprite.svg#camera" />
+											<use xlink:href="dist/img/sprite.svg#camera" />
 										</svg>
 										Главное фото
 									</div>
@@ -1571,7 +1568,7 @@
 								<div class="form-field-dropzone">
 									<div class="form-field-dropzone__placeholder">
 										<svg>
-											<use xlink:href="img/sprite.svg#img-move" />
+											<use xlink:href="dist/img/sprite.svg#img-move" />
 										</svg>Перетащите сюда изображения
 									</div>
 									<div class="form-field-dropzone__files" data-field-files>
@@ -1605,7 +1602,7 @@
 
 			<button class="modal-mobile-close" data-modal-close>
 				<svg>
-					<use xlink:href="img/sprite.svg#arrow" />
+					<use xlink:href="dist/img/sprite.svg#arrow" />
 				</svg>
 			</button>
 
@@ -1624,7 +1621,7 @@
 			<section class="pdf-modal-header">
 				<button class="pdf-modal-header__back">
 					<svg class="icon">
-						<use xlink:href="img/sprite.svg#arrow" />
+						<use xlink:href="dist/img/sprite.svg#arrow" />
 					</svg>
 				</button>
 				<div class="pdf-modal-header__mobile-title">Пример отчета</div>
@@ -1632,7 +1629,7 @@
 					жилого дома</div>
 				<a href="" class="pdf-modal-header__btn btn btn--primary">
 					<svg class="icon">
-						<use xlink:href="img/sprite.svg#pdf" />
+						<use xlink:href="dist/img/sprite.svg#pdf" />
 					</svg>
 					Скачать PDF
 				</a>
@@ -1860,7 +1857,7 @@
 							<div id="p4dimg1">
 
 
-								<img src="img/example-pdf/p4img1.png" id="p4img1">
+								<img src="dist/img/example-pdf/p4img1.png" id="p4img1">
 							</div>
 							<p class="p28 ft4">Дата составления заключения:</p>
 							<p class="p13 ft2">15.12.2019</p>
@@ -1882,7 +1879,7 @@
 							<p class="p33 ft14">Высокий уровень грунтовых вод – около 1 м. Результаты гидрогеологических изысканий
 								отсутствуют.</p>
 							<div id="p5dimg1">
-								<img src="img/example-pdf/p5dimg1.png" id="p5img1">
+								<img src="dist/img/example-pdf/p5dimg1.png" id="p5img1">
 							</div>
 							<p class="p34 ft2">Дом имеет два этажа и мансарду.</p>
 							<p class="p35 ft10">На первом этаже расположены: котельная, холл, санузел, одна жилая комната, совмещенная
@@ -1922,7 +1919,7 @@
 								поясом 300х400мм. Заполнение проемов каркаса осуществлено из газосиликатных блоков.</p>
 							<p class="p47 ft2">Содержание углекислого газа не превышает нормативов.</p>
 							<div id="p6dimg1">
-								<img src="img/example-pdf/p6dimg1.png" id="p6img1">
+								<img src="dist/img/example-pdf/p6dimg1.png" id="p6img1">
 							</div>
 							<p class="p48 ft2">6</p>
 						</div>
@@ -1935,7 +1932,7 @@
 							<p class="p31 ft2">Уровень радиации и электромагнитного излучения не превышает</p>
 							<p class="p20 ft2">нормативного.</p>
 							<div id="p7dimg1">
-								<img src="img/example-pdf/p7img1.png" id="p7img1">
+								<img src="dist/img/example-pdf/p7img1.png" id="p7img1">
 							</div>
 							<p class="p49 ft4" id="pdf-part-2-2"><span class="ft5">2.2</span><span class="ft7">Обследование
 									конструкций
@@ -1968,7 +1965,7 @@
 								4 ряда полимерными кладочными сетками д4 50х50.</p>
 							<p class="p13 ft2">Геометрия кладки соответствует требованиям.</p>
 							<div id="p8dimg1">
-								<img src="img/example-pdf/p8img1.png" id="p8img1">
+								<img src="dist/img/example-pdf/p8img1.png" id="p8img1">
 							</div>
 							<p class="p58 ft15">Расчет индекса изоляции воздушного шума однослойной ограждающей конструкции HWK <nobr>
 									PH-ACOUSTIC</nobr> 1.0.0.55</p>
@@ -10235,7 +10232,7 @@
 								Д400 класса прочности <nobr>B1.5-2.5</nobr> на цементно- песчаном растворе, утеплитель экструдированный
 								ППС 50мм, облицовочный <nobr>евро-кирпич</nobr> толщиной 85 мм.</p>
 							<div id="p15dimg1">
-								<img src="img/example-pdf/p15dimg1.png" id="p15img1">
+								<img src="dist/img/example-pdf/p15dimg1.png" id="p15img1">
 							</div>
 
 							<p class="p138 ft10">Стыки ж/б колонн каркаса и стенового заполнения из газосиликатных блоков имеют
@@ -10247,7 +10244,7 @@
 					<div class="doc-page card" id="pdf-page-16">
 						<div class="doc-page__inner">
 							<div id="p16dimg1">
-								<img src="img/example-pdf/p16dimg1.png" id="p16img1">
+								<img src="dist/img/example-pdf/p16dimg1.png" id="p16img1">
 							</div>
 
 
@@ -10258,7 +10255,7 @@
 					<div class="doc-page card" id="pdf-page-17">
 						<div class="doc-page__inner">
 							<div id="p17dimg1">
-								<img src="img/example-pdf/p17dimg1.png" id="p17img1">
+								<img src="dist/img/example-pdf/p17dimg1.png" id="p17img1">
 							</div>
 
 
@@ -10269,7 +10266,7 @@
 					<div class="doc-page card" id="pdf-page-18">
 						<div class="doc-page__inner">
 							<div id="p18dimg1">
-								<img src="img/example-pdf/p18dimg1.png" id="p18img1">
+								<img src="dist/img/example-pdf/p18dimg1.png" id="p18img1">
 							</div>
 
 
@@ -10293,7 +10290,7 @@
 							<div class="dclr"></div>
 							<p class="p144 ft2">Армопояс выполнен не по всем стенам.</p>
 							<div id="p19dimg1">
-								<img src="img/example-pdf/p19dimg1.png" id="p19img1">
+								<img src="dist/img/example-pdf/p19dimg1.png" id="p19img1">
 							</div>
 							<p class="p145 ft16">Перекрытие чердачное выполнено по деревянным балкам. Конструкция балок представляет
 								собой балки 150х50. Межбалочное пространство частичо заполнено минеральной ватой по дощатому настилу.
@@ -10310,7 +10307,7 @@
 							<p class="p148 ft13">звукоизоляции необходимо заполнить межбалочное пространство акустическим материалом с
 								защитой поверх от возможного увлажнения.</p>
 							<div id="p20dimg1">
-								<img src="img/example-pdf/p20dimg1.png" id="p20img1">
+								<img src="dist/img/example-pdf/p20dimg1.png" id="p20img1">
 							</div>
 
 							<p class="p149 ft4" id="pdf-part-2-5"><span class="ft5">2.5.</span><span class="ft7">Обследование
@@ -10340,7 +10337,7 @@
 							<p class="p155 ft15">Неверно выполнен карнизный узел – пароизоляция в наружном слое утепления. В
 								минеральной вате накопление влаги.</p>
 							<div id="p21dimg1">
-								<img src="img/example-pdf/p21dimg1.png" id="p21img1">
+								<img src="dist/img/example-pdf/p21dimg1.png" id="p21img1">
 							</div>
 							<p class="p156 ft13">Изнутри пароизоляция не проклеена специальным скотчем. В минеральной вате постепенно
 								скапливается влага.</p>
@@ -10379,7 +10376,7 @@
 					<div class="doc-page card" id="pdf-page-23">
 						<div class="doc-page__inner">
 							<div id="p23dimg1">
-								<img src="img/example-pdf/p23dimg1.png" id="p23img1">
+								<img src="dist/img/example-pdf/p23dimg1.png" id="p23img1">
 							</div>
 
 
@@ -10392,7 +10389,7 @@
 					<div class="doc-page card" id="pdf-page-24">
 						<div class="doc-page__inner">
 							<div id="p24dimg1">
-								<img src="img/example-pdf/p24dimg1.png" id="p24img1">
+								<img src="dist/img/example-pdf/p24dimg1.png" id="p24img1">
 							</div>
 
 
@@ -10405,7 +10402,7 @@
 					<div class="doc-page card" id="pdf-page-25">
 						<div class="doc-page__inner">
 							<div id="p25dimg1">
-								<img src="img/example-pdf/p25dimg1.png" id="p25img1">
+								<img src="dist/img/example-pdf/p25dimg1.png" id="p25img1">
 							</div>
 
 
@@ -10429,7 +10426,7 @@
 							<p class="p177 ft15">Вентиляция естественного типа - вытяжная. На каждое «мокрое» помещение предусмотрен
 								отдельный вентканал. Все вентканалы расположены у внешней стены, но в тепловом контуре.</p>
 							<div id="p26dimg1">
-								<img src="img/example-pdf/p26dimg1.png" id="p26img1">
+								<img src="dist/img/example-pdf/p26dimg1.png" id="p26img1">
 							</div>
 
 							<p class="p178 ft4">Водоснабжение и канализация</p>
@@ -10567,7 +10564,7 @@
 
 			<button class="modal-mobile-close" data-modal-close>
 				<svg>
-					<use xlink:href="img/sprite.svg#arrow" />
+					<use xlink:href="dist/img/sprite.svg#arrow" />
 				</svg>
 			</button>
 
@@ -10646,7 +10643,7 @@
 
 			<!-- <button class="modal-mobile-close" data-modal-close>
 				<svg>
-					<use xlink:href="img/sprite.svg#arrow" /></svg>
+					<use xlink:href="dist/img/sprite.svg#arrow" /></svg>
 			</button> -->
 
 			<!-- <button class="modal-close" data-modal-close>
@@ -10668,7 +10665,7 @@
 
 			<!-- <button class="modal-mobile-close" data-modal-close>
 				<svg>
-					<use xlink:href="img/sprite.svg#arrow" /></svg>
+					<use xlink:href="dist/img/sprite.svg#arrow" /></svg>
 			</button> -->
 
 			<!-- <button class="modal-close" data-modal-close>
@@ -10697,12 +10694,12 @@
 					<div class="lk-user-edit-control">
 						<button class="lk-user-edit-control__item btn btn--accent--light">
 							<svg class="icon ">
-								<use xlink:href="img/sprite.svg#lock" />
+								<use xlink:href="dist/img/sprite.svg#lock" />
 							</svg>
 						</button>
 						<button class="lk-user-edit-control__item btn btn--primary--light">
 							<svg class="icon ">
-								<use xlink:href="img/sprite.svg#folders" />
+								<use xlink:href="dist/img/sprite.svg#folders" />
 							</svg>
 						</button>
 					</div>
@@ -10714,7 +10711,7 @@
 								<input type="radio" name="lk-user-edit-mood" checked>
 								<div class="lk-user-edit-mood__item mood-item--happy">
 									<svg class="icon">
-										<use xlink:href="img/sprite.svg#mood-happy" />
+										<use xlink:href="dist/img/sprite.svg#mood-happy" />
 									</svg>
 								</div>
 							</label>
@@ -10722,7 +10719,7 @@
 								<input type="radio" name="lk-user-edit-mood">
 								<div class="lk-user-edit-mood__item mood-item--netral">
 									<svg class="icon">
-										<use xlink:href="img/sprite.svg#mood-netral" />
+										<use xlink:href="dist/img/sprite.svg#mood-netral" />
 									</svg>
 								</div>
 							</label>
@@ -10730,7 +10727,7 @@
 								<input type="radio" name="lk-user-edit-mood">
 								<div class="lk-user-edit-mood__item mood-item--angry">
 									<svg class="icon">
-										<use xlink:href="img/sprite.svg#mood-angry" />
+										<use xlink:href="dist/img/sprite.svg#mood-angry" />
 									</svg>
 								</div>
 							</label>
@@ -10777,7 +10774,7 @@
 											data-preview>
 										<div class="avatar__load">
 											<svg class="icon">
-												<use xlink:href="img/sprite.svg#camera" />
+												<use xlink:href="dist/img/sprite.svg#camera" />
 											</svg>
 										</div>
 									</div>
@@ -10817,7 +10814,7 @@
 
 				<label class="lk-modal-plate lk-team-edit-admin form-field form-field--switch">
 					<div class="form-label df ac">Администратор <div class="lk-user-top__name-icon"><img
-								src="img/icons/corona.svg" alt=""></div>
+								src="dist/img/icons/corona.svg" alt=""></div>
 					</div>
 					<input type="checkbox" name="">
 					<div class="form-switch"></div>
@@ -10880,13 +10877,13 @@
 					<div class="lk-user-edit-control">
 						<button class="lk-user-edit-control__item btn btn--accent--light">
 							<svg class="icon ">
-								<use xlink:href="img/sprite.svg#lock" />
+								<use xlink:href="dist/img/sprite.svg#lock" />
 							</svg>
 						</button>
 						<button class="lk-user-edit-control__item btn btn--success--light" data-tooltip
 							title="Восстановить пользователя">
 							<svg class="icon ">
-								<use xlink:href="img/sprite.svg#return" />
+								<use xlink:href="dist/img/sprite.svg#return" />
 							</svg>
 						</button>
 					</div>
@@ -10941,7 +10938,7 @@
 							</div>
 							<button class="lk-transfer-object__btn">
 								<svg class="icon reverse-x">
-									<use xlink:href="img/sprite.svg#arrow" />
+									<use xlink:href="dist/img/sprite.svg#arrow" />
 								</svg>
 							</button>
 						</div>
@@ -10956,7 +10953,7 @@
 							</div>
 							<button class="lk-transfer-object__btn">
 								<svg class="icon reverse-x">
-									<use xlink:href="img/sprite.svg#arrow" />
+									<use xlink:href="dist/img/sprite.svg#arrow" />
 								</svg>
 							</button>
 						</div>
@@ -10971,7 +10968,7 @@
 							</div>
 							<button class="lk-transfer-object__btn">
 								<svg class="icon reverse-x">
-									<use xlink:href="img/sprite.svg#arrow" />
+									<use xlink:href="dist/img/sprite.svg#arrow" />
 								</svg>
 							</button>
 						</div>
@@ -11051,11 +11048,11 @@
 								<div class=" jk-item print-modal-object-item">
 									<div class="jk-item-gallery">
 										<div class="jk-item-gallery-slider">
-											<a data-fancybox="gallery-2" href="img/test-interier-min.jpg"
+											<a data-fancybox="gallery-2" href="dist/img/test-interier-min.jpg"
 												class="jk-item-gallery__anons waves swiper-slide">
 												<picture>
-													<source srcset="img/test-interier-min.webp" type="image/webp">
-													<img src="img/test-interier-min.jpg" alt="" loading="lazy">
+													<source srcset="dist/img/test-interier-min.webp" type="image/webp">
+													<img src="dist/img/test-interier-min.jpg" alt="" loading="lazy">
 												</picture>
 											</a>
 										</div>
@@ -11072,13 +11069,13 @@
 											<button class="jk-item-properties__btn btn btn--pikachu btn--disable">Заказать отчет</button>
 										</div>
 										<div class="jk-item-content__info">
-											<img src="img/i-1.svg" alt="">
+											<img src="dist/img/i-1.svg" alt="">
 											КП «ДОМИНО», Первичное жилье
 										</div>
-										<!-- <div class="jk-item-content__info"><img src="img/icons/metro.svg" alt="">Алтуфьево ⋅ 15 мин. на
+										<!-- <div class="jk-item-content__info"><img src="dist/img/icons/metro.svg" alt="">Алтуфьево ⋅ 15 мин. на
 											транспорте
 										</div>
-										<div class="jk-item-content__info"><img src="img/icons/car.svg" alt="">Дмитровское шоссе, 1 км от
+										<div class="jk-item-content__info"><img src="dist/img/icons/car.svg" alt="">Дмитровское шоссе, 1 км от
 											МКАД
 										</div> -->
 
@@ -11087,27 +11084,27 @@
 										<div class="jk-item-content__btns">
 											<a class="jk-item-content__btn jk-item-content__phone btn btn--primary">Открыть объявление</a>
 											<a class="jk-item-content__btn jk-item-content__record btn--icon-left btn btn--contur">
-												<img src="img/icons/play-circle.svg" alt="" class="btn-icon">
+												<img src="dist/img/icons/play-circle.svg" alt="" class="btn-icon">
 												Смотреть видеообзор
 											</a>
 										</div>
 									</div>
 									<div class="jk-item-properties">
 										<div class="jk-item-properties__info">
-											<img src="img/icons/home.svg" alt=""><span>Тип: </span>Монолитный
+											<img src="dist/img/icons/home.svg" alt=""><span>Тип: </span>Монолитный
 										</div>
 										<div class="jk-item-properties__info">
-											<img src="img/icons/square-1.svg" alt=""><span>Площадь дома: </span>191.3 м²
+											<img src="dist/img/icons/square-1.svg" alt=""><span>Площадь дома: </span>191.3 м²
 										</div>
 										<div class="jk-item-properties__info">
-											<img src="img/icons/square-2.svg" alt=""><span>Площадь участка: </span>235 соток
+											<img src="dist/img/icons/square-2.svg" alt=""><span>Площадь участка: </span>235 соток
 										</div>
 										<div class="jk-item-properties__info">
-											<img src="img/icons/floors.svg" alt=""><span>Количество этажей: </span>2
+											<img src="dist/img/icons/floors.svg" alt=""><span>Количество этажей: </span>2
 										</div>
 										<div class="jk-item-properties__verify">
 											<div class="jk-item-properties__info">
-												<img src="img/icons/verified--success.svg" alt=""><span>Дом прошел экспертизу</span>
+												<img src="dist/img/icons/verified--success.svg" alt=""><span>Дом прошел экспертизу</span>
 											</div>
 										</div>
 									</div>
@@ -11122,11 +11119,11 @@
 								<div class=" jk-item print-modal-object-item">
 									<div class="jk-item-gallery">
 										<div class="jk-item-gallery-slider">
-											<a data-fancybox="gallery-2" href="img/test-interier-min.jpg"
+											<a data-fancybox="gallery-2" href="dist/img/test-interier-min.jpg"
 												class="jk-item-gallery__anons waves swiper-slide">
 												<picture>
-													<source srcset="img/test-interier-min.webp" type="image/webp">
-													<img src="img/test-interier-min.jpg" alt="" loading="lazy">
+													<source srcset="dist/img/test-interier-min.webp" type="image/webp">
+													<img src="dist/img/test-interier-min.jpg" alt="" loading="lazy">
 												</picture>
 											</a>
 										</div>
@@ -11140,10 +11137,10 @@
 											</div>
 											<button class="jk-item-properties__btn btn btn--pikachu btn--disable">Заказать отчет</button>
 										</div>
-										<div class="jk-item-content__info"><img src="img/icons/metro.svg" alt="">Алтуфьево ⋅ 15 мин. на
+										<div class="jk-item-content__info"><img src="dist/img/icons/metro.svg" alt="">Алтуфьево ⋅ 15 мин. на
 											транспорте
 										</div>
-										<div class="jk-item-content__info"><img src="img/icons/car.svg" alt="">Дмитровское шоссе, 1 км от
+										<div class="jk-item-content__info"><img src="dist/img/icons/car.svg" alt="">Дмитровское шоссе, 1 км от
 											МКАД
 										</div>
 
@@ -11152,20 +11149,20 @@
 									</div>
 									<div class="jk-item-properties">
 										<div class="jk-item-properties__info">
-											<img src="img/icons/home.svg" alt=""><span>Тип: </span>Монолитный
+											<img src="dist/img/icons/home.svg" alt=""><span>Тип: </span>Монолитный
 										</div>
 										<div class="jk-item-properties__info">
-											<img src="img/icons/square-1.svg" alt=""><span>Площадь дома: </span>191.3 м²
+											<img src="dist/img/icons/square-1.svg" alt=""><span>Площадь дома: </span>191.3 м²
 										</div>
 										<div class="jk-item-properties__info">
-											<img src="img/icons/square-2.svg" alt=""><span>Площадь участка: </span>235 соток
+											<img src="dist/img/icons/square-2.svg" alt=""><span>Площадь участка: </span>235 соток
 										</div>
 										<div class="jk-item-properties__info">
-											<img src="img/icons/floors.svg" alt=""><span>Количество этажей: </span>2
+											<img src="dist/img/icons/floors.svg" alt=""><span>Количество этажей: </span>2
 										</div>
 										<div class="jk-item-properties__verify">
 											<div class="jk-item-properties__info">
-												<img src="img/icons/verified--success.svg" alt=""><span>Дом прошел экспертизу</span>
+												<img src="dist/img/icons/verified--success.svg" alt=""><span>Дом прошел экспертизу</span>
 											</div>
 										</div>
 									</div>
@@ -11180,11 +11177,11 @@
 								<div class=" jk-item print-modal-object-item">
 									<div class="jk-item-gallery">
 										<div class="jk-item-gallery-slider">
-											<a data-fancybox="gallery-2" href="img/test-interier-min.jpg"
+											<a data-fancybox="gallery-2" href="dist/img/test-interier-min.jpg"
 												class="jk-item-gallery__anons waves swiper-slide">
 												<picture>
-													<source srcset="img/test-interier-min.webp" type="image/webp">
-													<img src="img/test-interier-min.jpg" alt="" loading="lazy">
+													<source srcset="dist/img/test-interier-min.webp" type="image/webp">
+													<img src="dist/img/test-interier-min.jpg" alt="" loading="lazy">
 												</picture>
 											</a>
 										</div>
@@ -11198,10 +11195,10 @@
 											</div>
 											<button class="jk-item-properties__btn btn btn--pikachu btn--disable">Заказать отчет</button>
 										</div>
-										<div class="jk-item-content__info"><img src="img/icons/metro.svg" alt="">Алтуфьево ⋅ 15 мин. на
+										<div class="jk-item-content__info"><img src="dist/img/icons/metro.svg" alt="">Алтуфьево ⋅ 15 мин. на
 											транспорте
 										</div>
-										<div class="jk-item-content__info"><img src="img/icons/car.svg" alt="">Дмитровское шоссе, 1 км от
+										<div class="jk-item-content__info"><img src="dist/img/icons/car.svg" alt="">Дмитровское шоссе, 1 км от
 											МКАД
 										</div>
 
@@ -11210,20 +11207,20 @@
 									</div>
 									<div class="jk-item-properties">
 										<div class="jk-item-properties__info">
-											<img src="img/icons/home.svg" alt=""><span>Тип: </span>Монолитный
+											<img src="dist/img/icons/home.svg" alt=""><span>Тип: </span>Монолитный
 										</div>
 										<div class="jk-item-properties__info">
-											<img src="img/icons/square-1.svg" alt=""><span>Площадь дома: </span>191.3 м²
+											<img src="dist/img/icons/square-1.svg" alt=""><span>Площадь дома: </span>191.3 м²
 										</div>
 										<div class="jk-item-properties__info">
-											<img src="img/icons/square-2.svg" alt=""><span>Площадь участка: </span>235 соток
+											<img src="dist/img/icons/square-2.svg" alt=""><span>Площадь участка: </span>235 соток
 										</div>
 										<div class="jk-item-properties__info">
-											<img src="img/icons/floors.svg" alt=""><span>Количество этажей: </span>2
+											<img src="dist/img/icons/floors.svg" alt=""><span>Количество этажей: </span>2
 										</div>
 										<div class="jk-item-properties__verify">
 											<div class="jk-item-properties__info">
-												<img src="img/icons/verified--success.svg" alt=""><span>Дом прошел экспертизу</span>
+												<img src="dist/img/icons/verified--success.svg" alt=""><span>Дом прошел экспертизу</span>
 											</div>
 										</div>
 									</div>
@@ -11238,11 +11235,11 @@
 								<div class=" jk-item print-modal-object-item">
 									<div class="jk-item-gallery">
 										<div class="jk-item-gallery-slider">
-											<a data-fancybox="gallery-2" href="img/test-interier-min.jpg"
+											<a data-fancybox="gallery-2" href="dist/img/test-interier-min.jpg"
 												class="jk-item-gallery__anons waves swiper-slide">
 												<picture>
-													<source srcset="img/test-interier-min.webp" type="image/webp">
-													<img src="img/test-interier-min.jpg" alt="" loading="lazy">
+													<source srcset="dist/img/test-interier-min.webp" type="image/webp">
+													<img src="dist/img/test-interier-min.jpg" alt="" loading="lazy">
 												</picture>
 											</a>
 										</div>
@@ -11256,10 +11253,10 @@
 											</div>
 											<button class="jk-item-properties__btn btn btn--pikachu btn--disable">Заказать отчет</button>
 										</div>
-										<div class="jk-item-content__info"><img src="img/icons/metro.svg" alt="">Алтуфьево ⋅ 15 мин. на
+										<div class="jk-item-content__info"><img src="dist/img/icons/metro.svg" alt="">Алтуфьево ⋅ 15 мин. на
 											транспорте
 										</div>
-										<div class="jk-item-content__info"><img src="img/icons/car.svg" alt="">Дмитровское шоссе, 1 км от
+										<div class="jk-item-content__info"><img src="dist/img/icons/car.svg" alt="">Дмитровское шоссе, 1 км от
 											МКАД
 										</div>
 
@@ -11268,20 +11265,20 @@
 									</div>
 									<div class="jk-item-properties">
 										<div class="jk-item-properties__info">
-											<img src="img/icons/home.svg" alt=""><span>Тип: </span>Монолитный
+											<img src="dist/img/icons/home.svg" alt=""><span>Тип: </span>Монолитный
 										</div>
 										<div class="jk-item-properties__info">
-											<img src="img/icons/square-1.svg" alt=""><span>Площадь дома: </span>191.3 м²
+											<img src="dist/img/icons/square-1.svg" alt=""><span>Площадь дома: </span>191.3 м²
 										</div>
 										<div class="jk-item-properties__info">
-											<img src="img/icons/square-2.svg" alt=""><span>Площадь участка: </span>235 соток
+											<img src="dist/img/icons/square-2.svg" alt=""><span>Площадь участка: </span>235 соток
 										</div>
 										<div class="jk-item-properties__info">
-											<img src="img/icons/floors.svg" alt=""><span>Количество этажей: </span>2
+											<img src="dist/img/icons/floors.svg" alt=""><span>Количество этажей: </span>2
 										</div>
 										<div class="jk-item-properties__verify">
 											<div class="jk-item-properties__info">
-												<img src="img/icons/verified--success.svg" alt=""><span>Дом прошел экспертизу</span>
+												<img src="dist/img/icons/verified--success.svg" alt=""><span>Дом прошел экспертизу</span>
 											</div>
 										</div>
 									</div>
@@ -11311,13 +11308,13 @@
 					<div class="print-modal-control__btns">
 						<button class="print-modal-control__btn btn btn--primary">
 							<svg class="icon">
-								<use xlink:href="img/sprite.svg#pdf" />
+								<use xlink:href="dist/img/sprite.svg#pdf" />
 							</svg>
 							Скачать PDF
 						</button>
 						<button class="print-modal-control__btn btn btn--contur">
 							<svg class="icon">
-								<use xlink:href="img/sprite.svg#printer" />
+								<use xlink:href="dist/img/sprite.svg#printer" />
 							</svg>
 							Распечатать
 						</button>
@@ -11329,16 +11326,16 @@
 
 	<section class="modal" data-modal-cover id="copy-modal">
 		<div class="modal-container confirm-modal card">
-			<img src="img/icons/success.svg" alt="" style="margin:0 auto;width: 54px; margin-bottom: 24px;">
+			<img src="dist/img/icons/success.svg" alt="" style="margin:0 auto;width: 54px; margin-bottom: 24px;">
 			<div class="filter-help-modal__title">подборка сохранена</div>	
 			<br>
 			<a class="btn btn--primary ">Перейти в подборки</a>
 			<br>
 			<button class=" btn--icon-left btn btn--contur " data-copy-to-clipboard="fucking url">
-				<img src="img/icons/link.svg" alt="" class="btn-icon copied-disabled">
+				<img src="dist/img/icons/link.svg" alt="" class="btn-icon copied-disabled">
 				<div class="copied-disabled">Скопировать ссылку	</div>
 
-				<img src="img/icons/success-1.svg" alt="" class="btn-icon copied-enabled">
+				<img src="dist/img/icons/success-1.svg" alt="" class="btn-icon copied-enabled">
 				<div class="copied-enabled">Ссылка скопирована</div>
 				
 					
@@ -11349,23 +11346,25 @@
 
 
 
-	<script src="source/jquery-3.5.0.min.js"></script>
-	<script src="source/jquery.fancybox.min.js"></script>
-	<script src="source/maskedinput.js"></script>
-	<script src="source/waves.js"></script>
-	<script src="source/swiper-bundle.min.js"></script>
-	<script src="source/select.bundle.min.js"></script>
-	<script src="js/frontend--logger.js"></script>
+    <script src="src/source/jquery-3.5.0.min.js"></script>
+    <script src="src/source/jquery.fancybox.min.js"></script>
+    <script src="src/source/waves.js"></script>
+    <script src="src/source/maskedinput.js"></script>
+    <script src="src/source/swiper-bundle.min.js"></script>
+    <script src="src/source/select.bundle.min.js"></script>
+    <script src="src/js/frontend--logger.js"></script>
 
-	<script src="js/frontend--polifils.js"></script>
-	<script src="js/frontend--modal.js"></script>
-	<script src="js/frontend--tab.js"></script>
-	<script src="js/frontend--toggle.js"></script>
-	<script src="js/frontend--template.js"></script>
+    <script src="src/js/frontend--polifils.js"></script>
+    <script src="src/js/frontend--modal.js"></script>
+    <script src="src/js/frontend--tab.js"></script>
+    <script src="src/js/frontend--toggle.js"></script>
+    <script src="src/js/frontend--template.js"></script>
 
-	<script>
+    <script src="src/js/frontend--actions.js"></script>
+
+	<!-- <script>
 		Modal.open('copy-modal')
-	</script>
+	</script> -->
 
 	<script src="js/frontend--actions.js"></script>
 

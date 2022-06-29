@@ -6,9 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="source/_libs.css">
-	<link rel="stylesheet" href="css/frontend--fonts.css">
-	<link rel="stylesheet" href="css/frontend--style.css">
+    <link rel="stylesheet" href="dist/css/style.css">
 	<title>Команда - Сервис Кравченко</title>
 </head>
 
@@ -18,7 +16,7 @@
 	<div class="lk-cover">
 		<header class="lk-header">
 			<a href="/" class="lk-header-logo logo">
-				<div class="logo__img"><img src="img/icons/logo.svg" alt=""></div>
+				<div class="logo__img"><img src="dist/img/icons/logo.svg" alt=""></div>
 				<div class="logo__text">
 					Помощь в подборе <br>
 					недвижимости в Москве
@@ -30,7 +28,7 @@
 					<button class="lk-header__btn btn btn--link">
 						<div class="btn-icon-round">
 							<svg class="btn-icon">
-								<use xlink:href="img/sprite.svg#home-add" />
+								<use xlink:href="dist/img/sprite.svg#home-add" />
 							</svg>
 						</div>
 						Добавить объект
@@ -38,7 +36,7 @@
 					<button class="lk-header__btn btn btn--link">
 						<div class="btn-icon-round">
 							<svg class="btn-icon">
-								<use xlink:href="img/sprite.svg#user" />
+								<use xlink:href="dist/img/sprite.svg#user" />
 							</svg>
 						</div>
 						Добавить пользователя
@@ -52,7 +50,7 @@
 						<button class="user-control__btn waves" data-toggle-link="user-control-dropdown">
 							<div class="user-control__arrow"></div>
 							<div class="user-control__img">
-								<img loading="lazy" src="img/test-avatar.png" alt="">
+								<img loading="lazy" src="dist/img/test-avatar.png" alt="">
 							</div>
 						</button>
 						<div class="user-control-content card card--l2 dropdown-content" id="user-control-dropdown">
@@ -68,14 +66,14 @@
 		<header class="lk-header lk-header-mobile header-mobile">
 			<button class="header-mobile__icon btn" data-toggle-link="lk-sidebar">
 				<svg>
-					<use xlink:href="img/sprite.svg#burger" />
+					<use xlink:href="dist/img/sprite.svg#burger" />
 				</svg>
 			</button>
 
 			<div class="header-mobile__title">Личный кабинет</div>
 			<button class="header-mobile__btn btn btn--contur" data-toggle-link="lk-filter">
 				<svg class="btn-icon">
-					<use xlink:href="img/sprite.svg#filter" />
+					<use xlink:href="dist/img/sprite.svg#filter" />
 				</svg>
 				Фильтр объектов
 			</button>
@@ -84,53 +82,53 @@
 		<div class="lk-sidebar" data-toggle-cover id="lk-sidebar">
 			<div class="lk-sidebar-content">
 				<div class="lk-sidebar-item waves waves-light" data-toggle-link>
-					<div class="lk-sidebar-item__img"><img src="img/icons/burger.svg" alt=""></div>
+					<div class="lk-sidebar-item__img"><img src="dist/img/icons/burger.svg" alt=""></div>
 					<div class="lk-sidebar-item__title">Свернуть меню</div>
 
 				</div>
 				<a href="lk-object.html" class="lk-sidebar-item waves waves-light ">
-					<div class="lk-sidebar-item__img"><img src="img/icons/home--white.svg" alt=""></div>
+					<div class="lk-sidebar-item__img"><img src="dist/img/icons/home--white.svg" alt=""></div>
 					<div class="lk-sidebar-item__title">Объекты</div>
 
 				</a>
 				<a href="lk-users.html" class="lk-sidebar-item waves waves-light current">
-					<div class="lk-sidebar-item__img"><img src="img/icons/users.svg" alt=""></div>
+					<div class="lk-sidebar-item__img"><img src="dist/img/icons/users.svg" alt=""></div>
 					<div class="lk-sidebar-item__title">Пользователи</div>
 					<div class="lk-sidebar-item__count">25</div>
 				</a>
 				<a href="" class="lk-sidebar-item waves waves-light">
-					<div class="lk-sidebar-item__img"><img src="img/icons/search.svg" alt=""></div>
+					<div class="lk-sidebar-item__img"><img src="dist/img/icons/search.svg" alt=""></div>
 					<div class="lk-sidebar-item__title">Запросы на подборку</div>
 					<div class="lk-sidebar-item__count">2</div>
 				</a>
 				<a href="" class="lk-sidebar-item waves waves-light">
-					<div class="lk-sidebar-item__img"><img src="img/icons/eye.svg" alt=""></div>
+					<div class="lk-sidebar-item__img"><img src="dist/img/icons/eye.svg" alt=""></div>
 					<div class="lk-sidebar-item__title">Запросы на просмотр</div>
 
 				</a>
 				<a href="" class="lk-sidebar-item waves waves-light">
-					<div class="lk-sidebar-item__img"><img src="img/icons/doc.svg" alt=""></div>
+					<div class="lk-sidebar-item__img"><img src="dist/img/icons/doc.svg" alt=""></div>
 					<div class="lk-sidebar-item__title">Запросы на экспертизу</div>
 					<div class="lk-sidebar-item__count">7</div>
 				</a>
 				<a href="" class="lk-sidebar-item waves waves-light">
-					<div class="lk-sidebar-item__img"><img src="img/icons/home-add.svg" alt=""></div>
+					<div class="lk-sidebar-item__img"><img src="dist/img/icons/home-add.svg" alt=""></div>
 					<div class="lk-sidebar-item__title">Запросы на добавление</div>
 					<div class="lk-sidebar-item__count">1</div>
 				</a>
 
 				<a href="" class="lk-sidebar-item waves waves-light">
-					<div class="lk-sidebar-item__img"><img src="img/icons/folders.svg" alt=""></div>
+					<div class="lk-sidebar-item__img"><img src="dist/img/icons/folders.svg" alt=""></div>
 					<div class="lk-sidebar-item__title">Архив</div>
 
 				</a>
 				<a href="" class="lk-sidebar-item waves waves-light">
-					<div class="lk-sidebar-item__img"><img src="img/icons/logo-abc.svg" alt=""></div>
+					<div class="lk-sidebar-item__img"><img src="dist/img/icons/logo-abc.svg" alt=""></div>
 					<div class="lk-sidebar-item__title">Команда</div>
 
 				</a>
 				<a href="" class="lk-sidebar-item waves waves-light">
-					<div class="lk-sidebar-item__img"><img src="img/icons/flag.svg" alt=""></div>
+					<div class="lk-sidebar-item__img"><img src="dist/img/icons/flag.svg" alt=""></div>
 					<div class="lk-sidebar-item__title">Сохраненные подборки</div>
 
 				</a>
@@ -158,7 +156,7 @@
 								<img src="https://static.wallpapers-anime.com/upload/20170531/647/Z/s/7/Zs7FEF.jpg" alt="">
 								<div class="avatar__edit">
 									<svg>
-										<use xlink:href="img/sprite.svg#edit" />
+										<use xlink:href="dist/img/sprite.svg#edit" />
 									</svg>
 								</div>
 							</button>
@@ -167,14 +165,14 @@
 							<div class="lk-user-top__name">
 								Ин Ян
 								
-								<div class="lk-user-top__name-icon"><img src="img/icons/corona.svg" alt=""></div>
+								<div class="lk-user-top__name-icon"><img src="dist/img/icons/corona.svg" alt=""></div>
 							</div>
 							<div class="lk-user-top__phone">+7 (918) 000 00 00</div>
 						</div>
 
 						<button class="lk-user-top__btn btn btn--contur" data-toggle-link="user-content-1">
 							<svg>
-								<use xlink:href="img/sprite.svg#slider-arrow" />
+								<use xlink:href="dist/img/sprite.svg#slider-arrow" />
 							</svg>
 						</button>
 					</div>
@@ -182,23 +180,23 @@
 						<div class="lk-user-tables">
 							<div class="lk-user-team-properties">
 								<div class="lk-user-team-propertie">
-									<svg><use xlink:href="img/sprite.svg#gal-ochka" /></svg>
+									<svg><use xlink:href="dist/img/sprite.svg#gal-ochka" /></svg>
 									Объекты
 								</div>
 								<div class="lk-user-team-propertie">
-									<svg><use xlink:href="img/sprite.svg#gal-ochka" /></svg>
+									<svg><use xlink:href="dist/img/sprite.svg#gal-ochka" /></svg>
 									Архив
 								</div>
 								<div class="lk-user-team-propertie">
-									<svg><use xlink:href="img/sprite.svg#gal-ochka" /></svg>
+									<svg><use xlink:href="dist/img/sprite.svg#gal-ochka" /></svg>
 									Пользователи
 								</div>
 								<div class="lk-user-team-propertie">
-									<svg><use xlink:href="img/sprite.svg#gal-ochka" /></svg>
+									<svg><use xlink:href="dist/img/sprite.svg#gal-ochka" /></svg>
 									Команда
 								</div>
 								<div class="lk-user-team-propertie">
-									<svg><use xlink:href="img/sprite.svg#gal-ochka" /></svg>
+									<svg><use xlink:href="dist/img/sprite.svg#gal-ochka" /></svg>
 									Запросы на подборку
 								</div>
 							</div>
@@ -215,7 +213,7 @@
 								<img src="https://static.wallpapers-anime.com/upload/20170531/647/Z/s/7/Zs7FEF.jpg" alt="">
 								<div class="avatar__edit">
 									<svg>
-										<use xlink:href="img/sprite.svg#edit" />
+										<use xlink:href="dist/img/sprite.svg#edit" />
 									</svg>
 								</div>
 							</button>
@@ -227,7 +225,7 @@
 
 						<button class="lk-user-top__btn btn btn--contur" data-toggle-link="user-content-2">
 							<svg>
-								<use xlink:href="img/sprite.svg#slider-arrow" />
+								<use xlink:href="dist/img/sprite.svg#slider-arrow" />
 							</svg>
 						</button>
 					</div>
@@ -235,23 +233,23 @@
 						<div class="lk-user-tables">
 							<div class="lk-user-team-properties">
 								<div class="lk-user-team-propertie">
-									<svg><use xlink:href="img/sprite.svg#gal-ochka" /></svg>
+									<svg><use xlink:href="dist/img/sprite.svg#gal-ochka" /></svg>
 									Объекты
 								</div>
 								<div class="lk-user-team-propertie">
-									<svg><use xlink:href="img/sprite.svg#gal-ochka" /></svg>
+									<svg><use xlink:href="dist/img/sprite.svg#gal-ochka" /></svg>
 									Архив
 								</div>
 								<div class="lk-user-team-propertie">
-									<svg><use xlink:href="img/sprite.svg#gal-ochka" /></svg>
+									<svg><use xlink:href="dist/img/sprite.svg#gal-ochka" /></svg>
 									Пользователи
 								</div>
 								<div class="lk-user-team-propertie">
-									<svg><use xlink:href="img/sprite.svg#gal-ochka" /></svg>
+									<svg><use xlink:href="dist/img/sprite.svg#gal-ochka" /></svg>
 									Команда
 								</div>
 								<div class="lk-user-team-propertie">
-									<svg><use xlink:href="img/sprite.svg#gal-ochka" /></svg>
+									<svg><use xlink:href="dist/img/sprite.svg#gal-ochka" /></svg>
 									Запросы на подборку
 								</div>
 							</div>
@@ -293,22 +291,21 @@
 
 
 
-	<script src="source/jquery-3.5.0.min.js"></script>
-	<script src="source/jquery.fancybox.min.js"></script>
-	<script src="source/waves.js"></script>
-	<script src="source/swiper-bundle.min.js"></script>
-	<script src="source/select.bundle.min.js"></script>
-	<script src="js/frontend--logger.js"></script>
+    <script src="src/source/jquery-3.5.0.min.js"></script>
+    <script src="src/source/jquery.fancybox.min.js"></script>
+    <script src="src/source/waves.js"></script>
+    <script src="src/source/maskedinput.js"></script>
+    <script src="src/source/swiper-bundle.min.js"></script>
+    <script src="src/source/select.bundle.min.js"></script>
+    <script src="src/js/frontend--logger.js"></script>
 
-	<script src="js/frontend--polifils.js"></script>
-	<script src="js/frontend--modal.js"></script>
-	<script src="js/frontend--tab.js"></script>
-	<script src="js/frontend--toggle.js"></script>
-	<script src="js/frontend--template.js"></script>
+    <script src="src/js/frontend--polifils.js"></script>
+    <script src="src/js/frontend--modal.js"></script>
+    <script src="src/js/frontend--tab.js"></script>
+    <script src="src/js/frontend--toggle.js"></script>
+    <script src="src/js/frontend--template.js"></script>
 
-
-
-	<script src="js/frontend--actions.js"></script>
+    <script src="src/js/frontend--actions.js"></script>
 
 </body>
 
