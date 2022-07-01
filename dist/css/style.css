@@ -4069,6 +4069,12 @@ body * {
 .btn:active {
   transform: translateY(2px);
 }
+.btn--fab {
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  border-radius: 50%;
+}
 
 .link {
   color: #0084E6;
@@ -5784,11 +5790,11 @@ body * {
 }
 
 .filter {
-  background: url(../img/filter-left.png) no-repeat left bottom, url(../img/filter-right.png) no-repeat right bottom;
+  background: url(../img/filter-left.png) no-repeat left bottom/auto 95%, url(../img/filter-right.png) no-repeat right bottom/auto 95%;
 }
 @media screen and (min-width: 1960px) {
   .filter {
-    background: url(../img/filter-left.png) no-repeat left bottom, url(../img/filter-right.png) no-repeat right bottom;
+    background: url(../img/filter-left.png) no-repeat left bottom/auto 95%, url(../img/filter-right.png) no-repeat right bottom/auto 95%;
   }
 }
 @media screen and (max-width: 1386px) {
