@@ -7081,7 +7081,7 @@ a.lk-table-jk {
 
 
 		&__btns {
-			margin-top   : 40px;
+			margin-top   : 28px;
 			margin-bottom: 20px;
 		}
 
@@ -10941,8 +10941,7 @@ a.lk-table-jk {
 
 
 	&.jk-inner-aside__phone {
-		height: 58px;
-
+		// height: 58px;
 		background: $color-primary--pale;
 	}
 
@@ -12248,4 +12247,19 @@ a.lk-table-jk {
 	--tooltip-background: #FFFFFF;
 	color               : var(--color-text);
 	box-shadow          : 0px 2px 10px rgba(0, 0, 0, 0.16);
+}
+
+.jk-inner {
+	.jk-item-bottom__btn {
+		justify-content: flex-start;
+		padding        : 10px 15px;
+		width          : calc(100% + 30px);
+		margin-left    : -15px;
+		font-size      : 14px;
+		font-weight    : 500;
+
+		.icon {
+			font-size: 16px;
+		}
+	}
 }
