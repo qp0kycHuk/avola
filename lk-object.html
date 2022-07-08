@@ -695,7 +695,8 @@
 			<br>
 			<button class="btn btn--primary" data-modal-link="success-or-not-modal">успех отказ</button>
 			<br>
-			<button class="btn btn--primary js-modal-alert" data-modal-link="lk-user-edit">Модалка Пользователь</button>
+			<button class="btn btn--primary js-modal-alert" data-fancybox-modal data-type="ajax"
+				data-src="lk-user-edit-modal.html">Модалка Пользователь</button>
 			<br>
 			<button class="btn btn--primary js-modal-alert" data-modal-link="lk-team-edit">Модалка Команда</button>
 			<br>
@@ -10678,84 +10679,7 @@
 
 
 
-	<!-- чтобы вынести модалку в фансибокс в отдельный файл - перенести в файл все что внутри modal-container -->
-	<section class="modal" data-modal-cover id="lk-user-edit">
-		<div class="modal-container">
-			<div class="lk-user-edit-modal card">
-				<div class="lk-modal-plate lk-user-edit-top">
-					<div class="avatar avatar--star avatar--type-1">
-						<div class="avatar__img">
-							<img src="https://static.wallpapers-anime.com/upload/20170531/647/Z/s/7/Zs7FEF.jpg" alt="">
-						</div>
-						<div class="avatar__content">
-							<div class="avatar__title">Алиса Константинова</div>
-						</div>
-					</div>
-					<div class="lk-user-edit-control">
-						<button class="lk-user-edit-control__item btn btn--accent--light">
-							<svg class="icon ">
-								<use xlink:href="dist/img/sprite.svg#lock" />
-							</svg>
-						</button>
-						<button class="lk-user-edit-control__item btn btn--primary--light">
-							<svg class="icon ">
-								<use xlink:href="dist/img/sprite.svg#folders" />
-							</svg>
-						</button>
-					</div>
-				</div>
-				<div class="lk-modal-content">
-					<div class="lk-modal-form">
-						<div class="lk-user-edit-mood">
-							<label class="lk-user-edit-mood__label">
-								<input type="radio" name="lk-user-edit-mood" checked>
-								<div class="lk-user-edit-mood__item mood-item--happy">
-									<svg class="icon">
-										<use xlink:href="dist/img/sprite.svg#mood-happy" />
-									</svg>
-								</div>
-							</label>
-							<label class="lk-user-edit-mood__label">
-								<input type="radio" name="lk-user-edit-mood">
-								<div class="lk-user-edit-mood__item mood-item--netral">
-									<svg class="icon">
-										<use xlink:href="dist/img/sprite.svg#mood-netral" />
-									</svg>
-								</div>
-							</label>
-							<label class="lk-user-edit-mood__label">
-								<input type="radio" name="lk-user-edit-mood">
-								<div class="lk-user-edit-mood__item mood-item--angry">
-									<svg class="icon">
-										<use xlink:href="dist/img/sprite.svg#mood-angry" />
-									</svg>
-								</div>
-							</label>
-						</div>
 
-						<div class="lk-modal-fields">
-							<label class="form-field">
-								<div class="form-label">Телефон</div>
-								<div class="form-input-cover">
-									<input type="tel" class="form-input" value="+7 (918) 000 00 00">
-								</div>
-							</label>
-							<label class="form-field">
-								<div class="form-label">Комментарий</div>
-								<div class="form-input-cover">
-									<textarea class="form-input"></textarea>
-								</div>
-							</label>
-						</div>
-						<div class="lk-modal-btns">
-							<button class="lk-modal-btn btn btn--primary">Сохранить</button>
-							<button class="lk-modal-btn btn btn--primary--light">Отмена</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
 
 	<section class="modal" data-modal-cover id="lk-team-edit">
 		<div class="modal-container">

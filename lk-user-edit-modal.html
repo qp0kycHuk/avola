@@ -12,47 +12,34 @@
 			<div class="lk-user-edit-control">
 				<button class="lk-user-edit-control__item btn btn--accent--light">
 					<svg class="icon ">
-						<use xlink:href="img/sprite.svg#lock" /></svg>
+						<use xlink:href="dist/img/sprite.svg#lock" />
+					</svg>
 				</button>
 				<button class="lk-user-edit-control__item btn btn--primary--light">
 					<svg class="icon ">
-						<use xlink:href="img/sprite.svg#folders" /></svg>
+						<use xlink:href="dist/img/sprite.svg#folders" />
+					</svg>
 				</button>
 			</div>
 		</div>
 		<div class="lk-modal-content">
 			<div class="lk-modal-form">
-				<div class="lk-user-edit-mood">
-					<label class="lk-user-edit-mood__label">
-						<input type="radio" name="lk-user-edit-mood" checked>
-						<div class="lk-user-edit-mood__item mood-item--happy">
-							<svg class="icon">
-								<use xlink:href="img/sprite.svg#mood-happy" /></svg>
-						</div>
-					</label>
-					<label class="lk-user-edit-mood__label">
-						<input type="radio" name="lk-user-edit-mood">
-						<div class="lk-user-edit-mood__item mood-item--netral">
-							<svg class="icon">
-								<use xlink:href="img/sprite.svg#mood-netral" /></svg>
-						</div>
-					</label>
-					<label class="lk-user-edit-mood__label">
-						<input type="radio" name="lk-user-edit-mood">
-						<div class="lk-user-edit-mood__item mood-item--angry">
-							<svg class="icon">
-								<use xlink:href="img/sprite.svg#mood-angry" /></svg>
-						</div>
-					</label>
-				</div>
+
 
 				<div class="lk-modal-fields">
-					<label class="form-field">
-						<div class="form-label">Телефон</div>
-						<div class="form-input-cover">
-							<input type="tel" class="form-input" value="+7 (918) 000 00 00">
-						</div>
+					<label class="form-field form-field--select">
+						<div class="form-label">Статус</div>
+						<select name="" class="form-input" placeholder="Дом" id="mood-select-id">
+							<option data-icon="dist/img/user/status/1.png" value="Риелтор">Риелтор</option>
+							<option data-icon="dist/img/user/status/2.png" value="Сейчас в поиске">Сейчас в поиске</option>
+							<option data-icon="dist/img/user/status/3.png" value="Планирует покупку скоро">Планирует покупку скоро</option>
+							<option data-icon="dist/img/user/status/4.png" value="Смотрящий-мечтатель">Смотрящий-мечтатель</option>
+							<option data-icon="dist/img/user/status/5.png" value="Купил">Купил</option>
+							<option data-icon="dist/img/user/status/6.png" value="Не планирует покупку">Не планирует покупку</option>
+							<option data-icon="dist/img/user/status/7.png" value="Бан">Бан</option>
+						</select>
 					</label>
+		
 					<label class="form-field">
 						<div class="form-label">Комментарий</div>
 						<div class="form-input-cover">
@@ -67,4 +54,10 @@
 			</div>
 		</div>
 	</div>
+
+	<script>
+		initSelect(document.getElementById('mood-select-id'), {
+			
+		})
+	</script>
 </div>

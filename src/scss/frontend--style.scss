@@ -5910,6 +5910,7 @@ $header-height    : 60px;
 .mood {
 	&-item {
 		border-radius: 50%;
+		background   : #F7EFD1;
 
 		input[type="radio"] {
 			display: none;
@@ -5919,12 +5920,21 @@ $header-height    : 60px;
 		// 	display: none;
 		// }
 
-		svg {
-			width  : 24px;
-			height : 24px;
-			display: block;
+		.icon {
+			font-size: 36px;
+			display  : block;
 		}
 
+		&__content {
+			position: relative;
+		}
+
+		&__note {
+			position: absolute;
+			right   : -8px;
+			top     : -8px;
+
+		}
 
 		&--happy {
 			background: $color-success--light;

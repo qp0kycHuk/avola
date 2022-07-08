@@ -54,10 +54,22 @@ function initSelect(select, settings = {
 	}
 
 	let options = [...select.querySelectorAll('option')]
-	let customOptions = options.map((option) => ({
-		label: option.innerHTML,
-		value: option.value,
-	}));
+
+
+
+	let customOptions = options.map((option) => {
+
+		const icon = option.getAttribute('data-icon')
+
+		const iconHtml = icon ? `<img class="icon mr-2 text-h6" src="${icon}">` : ''
+
+		return {
+			label: '<div class="flex flex-align-center pe-none">' + iconHtml + option.innerHTML + '</div>',
+			// label: '<div>' + option.innerHTML + '</div>',
+			value: option.value,
+
+		}
+	});
 	let id = select.id
 
 	select.setAttribute('data-select-id', id);
@@ -925,7 +937,7 @@ function isReady(block) {
 
 
 	function input(event) {
-		if (event.target.type == 'number') maskNumber(event);
+		// if (event.target.type == 'number') maskNumber(event);
 
 		if (event.target.getAttribute('data-mask') != null) {
 			if (event.target.getAttribute('data-mask').includes('number')) maskNumber(event);
@@ -1127,12 +1139,23 @@ function validateForm(form) {
 			}
 			console.log(iblockid, p13, p11MAX, p20MAX);
 
-			$.fancybox.open({
-				src: encodeURI('/local/ajax/modal_save_user_filter_form.php?iblockid=' + iblockid + '&type=' + p13 + '&pricemax=' + p20MAX + '&shousemax=' + p11MAX),
-				type: 'ajax',
-				touch: false,
-				baseTpl: jQuery.fancybox.defaults.ajaxTpl,
-			});
+			if (p13 != 'Все' && p11MAX != '' && p20MAX != '') {
+				console.log('save');
+				$.fancybox.open({
+					src: encodeURI('/local/ajax/modal_save_user_filter_form.php?iblockid=' + iblockid + '&type=' + p13 + '&pricemax=' + p20MAX + '&shousemax=' + p11MAX),
+					type: 'ajax',
+					touch: false,
+					baseTpl: jQuery.fancybox.defaults.ajaxTpl,
+				});
+			} else {
+				console.log('error');
+				$.fancybox.open({
+					src: encodeURI('/local/ajax/modal/error_universal.php?text=Недостаточно данных'),
+					type: 'ajax',
+					touch: false,
+					baseTpl: jQuery.fancybox.defaults.ajaxTpl,
+				});
+			}
 
 		}
 	})
@@ -1698,7 +1721,8 @@ document.addEventListener('tabchange', (event) => {
 
 document.addEventListener('click', (event) => {
 	if (event.target.closest('.-statistic-call-')) {
-		fetch('/local/ajax/php/statistic-call.php')
+		const id = event.target.closest('.jk-item').getAttribute('data-id')
+		fetch('/local/ajax/php/statistic-call.php?id=' + id)
 			.then((response) => response.text())
 			.then((result) => console.log(result))
 	}
@@ -1716,3 +1740,13 @@ if (navigator.share && screen.width < 992) {
 
 
 }
+
+
+document.addEventListener('click', (event) => {
+	if (event.target.closest('.jk-inner-share__copy')) {
+		var aux = event.target.closest('.jk-item').querySelector('#jk-link')
+		aux.select();
+		document.execCommand("copy");
+		event.target.closest('.jk-inner-share__copy').textContent = 'Скопировано';
+	}
+})

@@ -7949,14 +7949,22 @@ body * {
 }
 .mood-item {
   border-radius: 50%;
+  background: #F7EFD1;
 }
 .mood-item input[type=radio] {
   display: none;
 }
-.mood-item svg {
-  width: 24px;
-  height: 24px;
+.mood-item .icon {
+  font-size: 36px;
   display: block;
+}
+.mood-item__content {
+  position: relative;
+}
+.mood-item__note {
+  position: absolute;
+  right: -8px;
+  top: -8px;
 }
 .mood-item--happy {
   background: rgba(62, 168, 73, 0.3);
