@@ -7,7 +7,7 @@ const PUBLIC_PATH = path.resolve(__dirname, 'dist')
 
 const htmlWebpackPluginDefaults = {
   scriptLoading: 'blocking',
-  inject: 'head'
+  inject: 'body'
 }
 
 const pages = [
@@ -66,7 +66,12 @@ module.exports = {
             presets: ['@babel/preset-env']
           }
         }
-      }
+      },
+      {
+        test: /\.html$/,
+        include: path.resolve(__dirname, 'src/html_includes'),
+        use: ['raw-loader']
+      },
     ],
   },
   plugins: [

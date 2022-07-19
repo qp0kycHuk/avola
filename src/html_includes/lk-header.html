@@ -1,0 +1,72 @@
+<header class="lk-header">
+    <a href="/" class="lk-header-logo logo">
+        <div class="logo__img"><img src="img/icons/logo.svg" alt=""></div>
+        <div class="logo__text">
+            Помощь в подборе <br>
+            недвижимости в Москве
+        </div>
+    </a>
+
+    <section class="lk-header__content">
+        <div class="lk-header__btns">
+            <button class="lk-header__btn btn btn--link" data-modal-link="jk-edit-modal">
+                <div class="btn-icon-round">
+                    <svg class="btn-icon">
+                        <use xlink:href="img/sprite.svg#flat" />
+                    </svg>
+                </div>
+                Добавить квартиру
+            </button>
+            <button class="lk-header__btn btn btn--link" data-modal-link="jk-edit-modal">
+                <div class="btn-icon-round">
+                    <svg class="btn-icon">
+                        <use xlink:href="img/sprite.svg#home-add" />
+                    </svg>
+                </div>
+                Добавить объект
+            </button>
+            <button class="lk-header__btn btn btn--link lk-header__btn--user">
+                <div class="btn-icon-round">
+                    <svg class="btn-icon">
+                        <use xlink:href="img/sprite.svg#user" />
+                    </svg>
+                </div>
+                Добавить пользователя
+            </button>
+        </div>
+    </section>
+
+    <div class="header__control">
+        <div class="lk-header__user">
+            <div class="user-control  dropdown">
+                <button class="user-control__btn waves" data-toggle-link="user-control-dropdown">
+                    <div class="user-control__arrow"></div>
+                    <div class="user-control__img">
+                        <img loading="lazy" src="img/test-avatar.png" alt="">
+                    </div>
+                </button>
+                <div class="user-control-content card card--l2 dropdown-content" id="user-control-dropdown">
+                    <div class="user-control__name">Иван Иванов</div>
+
+                    <button class="user-control__logout btn btn--accent--light">Выйти</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<header class="lk-header lk-header-mobile header-mobile">
+    <button class="header-mobile__icon btn" data-toggle-link="lk-sidebar">
+        <svg>
+            <use xlink:href="img/sprite.svg#burger" />
+        </svg>
+    </button>
+
+    <div class="header-mobile__title">Личный кабинет</div>
+    <button class="header-mobile__btn btn btn--contur" data-toggle-link="lk-filter">
+        <svg class="btn-icon">
+            <use xlink:href="img/sprite.svg#filter" />
+        </svg>
+        Фильтр объектов
+    </button>
+</header>

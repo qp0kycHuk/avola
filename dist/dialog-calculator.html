@@ -1,0 +1,210 @@
+<div class="fancybox-content">
+    <div class="card dialog-calculator">
+        <div class="lk-modal-plate">
+            <div class="lk-modal-top__title">Ипотечный калькулятор</div>
+        </div>
+        <form class="dialog-calculator__content -calculator-form-">
+            <div class="dialog-calculator__fields">
+                <label class="dialog-calculator__field">
+                    <div class="text--demibold">Стоимость недвижимости</div>
+                    <div class="form-field">
+                        <div class="form-input-cover">
+                            <input type="text" class="form-input -input-cost-" required value="2 000 000"
+                                data-mask="money">
+                            <div class="text-body-1 ml-3 fade-60 flex-self-center">₽</div>
+                        </div>
+                    </div>
+                </label>
+                <label class="dialog-calculator__field">
+                    <div class="text--demibold">Первоначальный взнос</div>
+                    <div class="form-field">
+                        <div class="form-input-cover">
+                            <input type="text" class="form-input -input-start-pay-" required value="500 000"
+                                data-mask="money">
+                            <div class="text-body-1 ml-3 fade-60 flex-self-center">₽</div>
+                        </div>
+                    </div>
+                </label>
+                <div class="dialog-calculator__field">
+                    <div class="text--demibold">Сумма кредита</div>
+                    <div class="text-body-1 ml-3 fade-60 flex-self-center"><span class="-summ-">0₽</span></div>
+
+                </div>
+                <label class="dialog-calculator__field">
+                    <div class="text--demibold">Срок кредита</div>
+                    <div class="form-field">
+                        <div class="form-input-cover">
+                            <input type="number" class="form-input -input-duration-" required value="20">
+                            <div class="text-body-1 ml-3 fade-60 flex-self-center">лет</div>
+                        </div>
+                    </div>
+                </label>
+                <label class="dialog-calculator__field">
+                    <div class="text--demibold">Процентная ставка</div>
+                    <div class="form-field">
+                        <div class="form-input-cover">
+                            <input type="number" step="0.01" class="form-input -input-bank-rate-" required value="9.6">
+                            <div class="text-body-1 ml-3 fade-60 flex-self-center">%</div>
+                        </div>
+                    </div>
+                </label>
+                <div class="dialog-calculator__field">
+                    <div class="text--demibold">Тип ежемесячных платежей</div>
+                    <div class="text-body-1">Аннуитетные</div>
+                </div>
+            </div>
+            <div class="dialog-calculator__separator"></div>
+            <div class="dialog-calculator__btns">
+                <button type="submit" class="dialog-calculator__btn btn btn--primary">Рассчитать</button>
+            </div>
+        </form>
+        <div class="dialog-calculator__result -result- hidden">
+            <div class="dialog-calculator__result-content">
+                <div class="dialog-calculator__result-sign">
+                    <div class="fade-80">Ежемесячный платеж</div>
+                    <div class="text--demibold -result-monthPay-">17 623 ₽</div>
+                </div>
+                <div class="dialog-calculator__result-sign">
+                    <div class="fade-80">Начисленные проценты</div>
+                    <div class="text--demibold -result-percent-">3 186 936,00 ₽</div>
+                </div>
+                <div class="dialog-calculator__result-sign">
+                    <div class="fade-80">Долг + проценты</div>
+                    <div class="text--demibold -result-summAndPercent-">5 286 936,00 ₽</div>
+                </div>
+            </div>
+            <div class="diagramm -diagramm-">
+                <div class="diagramm__round -diagramm-round-">
+                    <div class="diagramm__value -value-1-">60%</div>
+                    <div class="diagramm__value -value-2-">40%</div>
+                </div>
+                <div class="diagramm__legend">
+                    <div class="diagramm__legend-item diagramm__legend-item--1 mb-3">Кредит</div>
+                    <div class="diagramm__legend-item diagramm__legend-item--2">Проценты</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        (() => {
+
+
+            const percent = 65;
+            const radius = 178 / 2;
+
+            const $form = document.querySelector('.-calculator-form-')
+            const $diagramm = document.querySelector('.-diagramm-')
+            const $round = document.querySelector('.-diagramm-round-')
+            const $value1 = document.querySelector('.-value-1-')
+            const $value2 = document.querySelector('.-value-2-')
+            const $result = document.querySelector('.-result-')
+
+            $diagramm.style.setProperty('--radius', radius);
+            $form.addEventListener('submit', submitHandler);
+            $form.querySelector('.-input-cost-').addEventListener('input', inputHandler)
+            $form.querySelector('.-input-start-pay-').addEventListener('input', inputHandler)
+
+            calcRender({ percent });
+            inputHandler();
+
+            function inputHandler(event) {
+                const formatter = new Intl.NumberFormat('ru-RU');
+                const cost = +$form.querySelector('.-input-cost-').value.replace(/[^0-9]/g, '');
+                const startPay = +$form.querySelector('.-input-start-pay-').value.replace(/[^0-9]/g, '');
+                const $summ = $form.querySelector('.-summ-');
+                $summ.textContent = formatter.format(Math.round(cost - startPay)) + ' ₽';
+            }
+
+            function submitHandler(event) {
+                event.preventDefault();
+
+                $result.classList.add('loading');
+                const $btn = event.target.querySelector('[type="submit"]');
+                const btnHtml = $btn.innerHTML;
+                $btn.innerHTML = '<div class="progress progress-circle text-small"></div>';
+                $btn.disabled = true;
+                $btn.classList.add('disabled');
+
+                const cost = +event.target.querySelector('.-input-cost-').value.replace(/[^0-9]/g, '');
+                const startPay = +event.target.querySelector('.-input-start-pay-').value.replace(/[^0-9]/g, '');
+                const duration = +event.target.querySelector('.-input-duration-').value;
+                const bankRate = +event.target.querySelector('.-input-bank-rate-').value; // ПРОЦЕНТНАЯ_СТАВКА_ГОДОВЫХ
+
+                const summ = cost - startPay; // СУММА_КРЕДИТА
+                const monthRate = bankRate / 12 / 100; // ЕЖЕМЕСЯЧНАЯ_СТАВКА
+                const rate = Math.pow(1 + monthRate, duration * 12); // ОБЩАЯ_СТАВКА
+                const monthPay = summ * monthRate * rate / (rate - 1); // ЕЖЕМЕСЯЧНЫЙ_ПЛАТЕЖ
+
+                const percentPart = summ * monthRate; // ПРОЦЕНТНАЯ_ЧАСТЬ
+                const mainPart = monthPay - percentPart; // ОСНОВНАЯ_ЧАСТЬ
+
+                const percent = monthPay * (duration * 12) - summ; // Начисленные_проценты
+                const summAndPercent = summ + percent; // Долг + проценты
+
+                const diagrammPercent = Math.round(100 * summ / summAndPercent);
+
+
+                // const info = {
+                //     ['СУММА_КРЕДИТА']: summ,
+                //     ['ЕЖЕМЕСЯЧНАЯ_СТАВКА']: monthRate,
+                //     ['ОБЩАЯ_СТАВКА']: rate,
+                //     ['ЕЖЕМЕСЯЧНЫЙ_ПЛАТЕЖ']: monthPay,
+                //     ['ПРОЦЕНТНАЯ_ЧАСТЬ']: percentPart,
+                //     ['ОСНОВНАЯ_ЧАСТЬ']: mainPart,
+                //     ['Начисленные_проценты']: percent,
+                //     ['Долг+проценты']: summAndPercent
+                // };
+                const formatter = new Intl.NumberFormat('ru-RU');
+
+                setTimeout(() => {
+                    $result.classList.remove('hidden');
+                    $result.classList.remove('loading');
+
+                    $btn.innerHTML = btnHtml;
+                    $btn.disabled = false;
+                    $btn.classList.remove('disabled');
+
+                    // render diagramm
+                    calcRender({ percent: diagrammPercent });
+
+                    // Show result
+                    const $monthPay = $result.querySelector('.-result-monthPay-');
+                    const $percent = $result.querySelector('.-result-percent-');
+                    const $summAndPercent = $result.querySelector('.-result-summAndPercent-');
+                    $monthPay.textContent = formatter.format(Math.round(monthPay)) + ' ₽';
+                    $percent.textContent = formatter.format(Math.round(percent)) + ' ₽';
+                    $summAndPercent.textContent = formatter.format(Math.round(summAndPercent)) + ' ₽';
+
+
+                }, 1000)
+            }
+
+            function calcRender({ percent }) {
+                $diagramm.style.setProperty('--percent', percent);
+                setCoords($value1, getCoordsByPercent(percent / 2, radius));
+                setCoords($value2, getCoordsByPercent(percent + (100 - percent) / 2, radius));
+                $value1.textContent = percent + '%';
+                $value2.textContent = (100 - percent) + '%';
+
+            }
+
+            function setCoords(item, coords) {
+                item.style.left = coords.x + 'px'
+                item.style.bottom = coords.y + 'px'
+            }
+
+            function getCoordsByPercent(percent, radius) {
+                const angle_css = 360 * percent / 100;
+                const angle_math = (360 / 4) - (360 * percent / 100);
+                const radian_css = 2 * Math.PI * percent / 100;
+                const radian_math = (Math.PI / 2) - (2 * Math.PI * percent / 100);
+                const cos = Math.cos(radian_math)
+                const sin = Math.sin(radian_math)
+                const x = radius + (radius - 20) * cos
+                const y = radius + (radius - 20) * sin
+                return { x, y }
+            }
+        })();
+    </script>
+</div>

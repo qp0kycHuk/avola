@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="icon/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- <link rel="stylesheet" href="source/_libs.css"> -->
+    <!-- <link rel="stylesheet" href="css/frontend--fonts.css"> -->
+    <!-- <link rel="stylesheet" href="css/frontend--style.css"> -->
+    <!-- <link rel="stylesheet" href="css/krd-styles.css"> -->
+    <link rel="stylesheet" href="dist/css/style.css">
+
+    <title>Фильтр - Сервис Кравченко</title>
+<link href="css/style.css" rel="stylesheet"></head>
+
+<body data-theme="default">
+
+    <div class="filter-bg" id="filter-bg">
+
+        <section class="filter">
+            <div class="filter__title">подберем Вам идеальное жилье в москве</div>
+            <button data-modal-link="filter-modal" class="btn btn--white filter-mobile-btn">
+                <svg class="icon btn-icon">
+                    <use xlink:href="img/sprite.svg#filter" />
+                </svg>
+                Поиск объектов
+            </button>
+            <div class="filter-form card">
+                <label class="form-field mb-8">
+                    <div class="form-input-cover">
+                        <div class="form-input__start">
+                            <svg class="icon fade-60">
+                                <use xlink:href="img/icons.svg#search" />
+                            </svg>
+                        </div>
+                        <input type="number" class="form-input focus pl-10" placeholder="Поиск по разделу">
+                    </div>
+
+                </label>
+                <div class="filter-form-fields">
+
+                    <div class="form-field">
+                        <div class="form-label">Цена, руб</div>
+                        <div class="form-input-group">
+                            <label class="filter-choose-item form-input">
+                                <input type="radio" name="filter-choose-1" checked>
+                                <div class="filter-choose-item-inner ">
+                                    Дом
+                                </div>
+                            </label>
+                            <label class="filter-choose-item form-input">
+                                <input type="radio" name="filter-choose-1">
+                                <div class="filter-choose-item-inner ">
+                                    Квартира
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-field">
+                        <div class="form-label">Количество комнат</div>
+                        <div class="filter-choose-group">
+                            <div class="filter-choose-group-item">
+                                <label class="filter-choose-item form-input">
+                                    <input type="radio" name="filter-choose-2">
+                                    <div class="filter-choose-item-inner ">
+                                        Студия
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="filter-choose-group-item filter-choose-group-num">
+                                <label class="filter-choose-item form-input">
+                                    <input type="radio" name="filter-choose-2">
+                                    <div class="filter-choose-item-inner ">
+                                        1
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="filter-choose-group-item filter-choose-group-num">
+                                <label class="filter-choose-item form-input">
+                                    <input type="radio" name="filter-choose-2">
+                                    <div class="filter-choose-item-inner ">
+                                        2
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="filter-choose-group-item filter-choose-group-num">
+                                <label class="filter-choose-item form-input">
+                                    <input type="radio" name="filter-choose-2">
+                                    <div class="filter-choose-item-inner ">
+                                        3
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="filter-choose-group-item filter-choose-group-num">
+                                <label class="filter-choose-item form-input">
+                                    <input type="radio" name="filter-choose-2">
+                                    <div class="filter-choose-item-inner ">
+                                        4+
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <label class="form-field form-field--select">
+                        <div class="form-label">Жильё</div>
+                        <select name="" class="form-input" placeholder="Дом">
+                            <option value="Дом" selected>Дом</option>
+                            <option value="Не дом">Не дом</option>
+                        </select>
+                    </label>
+                    <label class="form-field form-field--select">
+                        <div class="form-label">Тип</div>
+                        <select name="" class="form-input" placeholder="Кирпичный">
+                            <option value="Кирпичный">Кирпичный</option>
+                            <option value="Не кирпичный">Не кирпичный</option>
+                        </select>
+                    </label>
+                    <label class="form-field form-field--select">
+                        <div class="form-label">Район</div>
+                        <select name="" class="form-input" placeholder="Внуковское">
+                            <option value="Внуковское">Внуковское</option>
+                            <option value="Дедовское">Дедовское</option>
+                        </select>
+                    </label>
+                    <label class="form-field form-field--select">
+                        <div class="form-label">Метро</div>
+                        <select name="" class="form-input" placeholder="Алтуфьево">
+                            <option value="Алтуфьево">Алтуфьево</option>
+                            <option value="...">...</option>
+                        </select>
+                    </label>
+
+                    <label class="form-field">
+                        <div class="form-label">Цена, руб</div>
+                        <div class="form-input-group">
+                            <input type="number" class="form-input" placeholder="От">
+                            <input type="number" class="form-input" placeholder="До">
+                        </div>
+                    </label>
+                    <label class="form-field">
+                        <div class="form-label">Площадь дома, м²</div>
+                        <div class="form-input-group">
+                            <input type="number" class="form-input" placeholder="От">
+                            <input type="number" class="form-input" placeholder="До">
+                        </div>
+                    </label>
+                    <label class="form-field">
+                        <div class="form-label">Площадь участка, м²</div>
+                        <div class="form-input-group">
+                            <input type="number" class="form-input" placeholder="От">
+                            <input type="number" class="form-input" placeholder="До">
+                        </div>
+                    </label>
+                    <label class="form-field">
+                        <div class="form-label">Расстояние от МКАД, км</div>
+                        <div class="form-input-group">
+                            <input type="number" class="form-input" placeholder="От">
+                            <input type="number" class="form-input" placeholder="До">
+                        </div>
+                    </label>
+                    <label class="form-field">
+                        <div class="form-label">Дата публикации</div>
+                        <div class="form-input-group">
+                            <input type="date" class="form-input form-input--date" placeholder="От">
+                            <input type="date" class="form-input form-input--date" placeholder="До">
+                        </div>
+                    </label>
+                </div>
+                <div class="filter-form-control">
+                    <div class="filter-form__link ">
+                        <button class="link" data-modal-link="filter-help-modal">Не нашли что искали?</button>
+                    </div>
+                    <div class="filter-form__btns">
+                        <button class="filter-form__btn btn btn--contur-primary">Показать на карте</button>
+                        <button class="filter-form__btn btn btn--primary">Показать объекты</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // (() => {
+        //     const cover = document.getElementById('filter-bg')
+        //     const fps = 60;
+        //     const duration = 10000
+        //     let degree = 0;
+
+        //     setInterval(() => {
+        //         cover.style.setProperty('--keyframeDeg', degree + 'deg')
+        //         const coof = ((degree > 45 && degree < 135) || (degree > 225 && degree < 315)) ? 2 : 0.5
+        //         degree += coof * 360 / (60 * duration / 1000)
+        //         if(degree > 360){
+        //             degree = degree - 360
+        //         }
+        //     }, duration / (60 * duration / 1000))
+
+
+        // })();
+    </script>
+    <script src="src/source/jquery-3.5.0.min.js"></script>
+    <script src="src/source/jquery.fancybox.min.js"></script>
+    <script src="src/source/maskedinput.js"></script>
+    <script src="src/source/waves.js"></script>
+    <script src="src/source/swiper-bundle.min.js"></script>
+    <script src="src/source/select.bundle.min.js"></script>
+
+    <script src="src/js/frontend--polifils.js"></script>
+    <script src="src/js/frontend--modal.js"></script>
+    <script src="src/js/frontend--tab.js"></script>
+    <script src="src/js/frontend--toggle.js"></script>
+    <script src="src/js/frontend--template.js"></script>
+
+<script src="index.js"></script></body>
+
+</html>

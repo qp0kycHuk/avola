@@ -1,0 +1,1454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="shortcut icon" type="image/x-icon" href="icon/favicon.ico">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<link rel="stylesheet" href="source/_libs.css">
+	<link rel="stylesheet" href="css/frontend--fonts.css">
+	<link rel="stylesheet" href="css/frontend--style.css">
+
+	<title>Главная - Сервис Кравченко</title>
+<link href="css/style.css" rel="stylesheet"></head>
+
+<body data-theme="default">
+
+
+	<header class="header">
+		<a href="/" class="lk-header-logo logo">
+			<div class="logo__img"><img src="img/icons/logo.svg" alt=""></div>
+			<div class="logo__text">
+				Помощь в подборе <br>
+				недвижимости в Москве
+			</div>
+		</a>
+		<div class="header-control">
+			<div class="header-control__btns">
+				<button class="btn btn--link" data-modal-link="info-modal">
+					<img class=" btn-icon" src="img/icons/expertise.svg" alt="" class="">
+					Заказать экспертизу
+				</button>
+				<button class="btn btn--link">
+					<img src="img/icons/add.svg" alt="" class="btn-icon">
+					Добавить объект
+				</button>
+			</div>
+			<div class="header-control__likes">
+				<div class="header-control__like dropdown">
+					<button class="like-btn icon waves" data-toggle-link="favorites-dropdown">
+						<svg>
+							<use xlink:href="img/sprite.svg#like" />
+						</svg>
+					</button>
+					<div class="dropdown-content header-favorites card card--l2" id="favorites-dropdown">
+						<div class="header-favorites__title">Избранное</div>
+						<div class="header-favorites__list">
+							<a class="jk-min-item">
+								<div class="jk-min-item__img"><img src="https://picsum.photos/id/772/600/400" alt=""></div>
+								<div class="jk-min-item__content">
+									<div class="jk-min-item__name">2-этажный коттедж, 500 м²</div>
+									<div class="jk-min-item__cost">27 100 000 ₽</div>
+								</div>
+								<div class="jk-min-item__status">Москва, СВАО, р-н Северный, Чело...</div>
+							</a>
+							<a class="jk-min-item">
+								<div class="jk-min-item__img"><img src="https://picsum.photos/id/572/600/400" alt=""></div>
+								<div class="jk-min-item__content">
+									<div class="jk-min-item__name">2-этажный коттедж, 500 м²</div>
+									<div class="jk-min-item__cost">27 100 000 ₽</div>
+								</div>
+								<div class="jk-min-item__status">Москва, СВАО, р-н Северный, Чело...</div>
+							</a>
+							<a class="jk-min-item">
+								<div class="jk-min-item__img"><img src="https://picsum.photos/id/472/600/400" alt=""></div>
+								<div class="jk-min-item__content">
+									<div class="jk-min-item__name">2-этажный коттедж, 500 м²</div>
+									<div class="jk-min-item__cost">27 100 000 ₽</div>
+								</div>
+								<div class="jk-min-item__status">Москва, СВАО, р-н Северный, Чело...</div>
+							</a>
+							<a class="jk-min-item">
+								<div class="jk-min-item__img"><img src="https://picsum.photos/id/372/600/400" alt=""></div>
+								<div class="jk-min-item__content">
+									<div class="jk-min-item__name">2-этажный коттедж, 500 м²</div>
+									<div class="jk-min-item__cost">27 100 000 ₽</div>
+								</div>
+								<div class="jk-min-item__status">Москва, СВАО, р-н Северный, Чело...</div>
+							</a>
+							<a class="jk-min-item">
+								<div class="jk-min-item__img"><img src="https://picsum.photos/id/272/600/400" alt=""></div>
+								<div class="jk-min-item__content">
+									<div class="jk-min-item__name">2-этажный коттедж, 500 м²</div>
+									<div class="jk-min-item__cost">27 100 000 ₽</div>
+								</div>
+								<div class="jk-min-item__status">Москва, СВАО, р-н Северный, Чело...</div>
+							</a>
+							<a class="jk-min-item">
+								<div class="jk-min-item__img"><img src="https://picsum.photos/id/172/600/400" alt=""></div>
+								<div class="jk-min-item__content">
+									<div class="jk-min-item__name">2-этажный коттедж, 500 м²</div>
+									<div class="jk-min-item__cost">27 100 000 ₽</div>
+								</div>
+								<div class="jk-min-item__status">Москва, СВАО, р-н Северный, Чело...</div>
+							</a>
+							<a class="jk-min-item">
+								<div class="jk-min-item__img"><img src="https://picsum.photos/id/72/600/400" alt=""></div>
+								<div class="jk-min-item__content">
+									<div class="jk-min-item__name">2-этажный коттедж, 500 м²</div>
+									<div class="jk-min-item__cost">27 100 000 ₽</div>
+								</div>
+								<div class="jk-min-item__status">Москва, СВАО, р-н Северный, Чело...</div>
+							</a>
+							<a class="jk-min-item">
+								<div class="jk-min-item__img"><img src="https://picsum.photos/id/872/600/400" alt=""></div>
+								<div class="jk-min-item__content">
+									<div class="jk-min-item__name">2-этажный коттедж, 500 м²</div>
+									<div class="jk-min-item__cost">27 100 000 ₽</div>
+								</div>
+								<div class="jk-min-item__status">Москва, СВАО, р-н Северный, Чело...</div>
+							</a>
+						</div>
+						<div class="header-favorites__bottom">
+							<button class="btn btn--primary header-favorites__btn">Перейти в избранное</button>
+						</div>
+					</div>
+				</div>
+				<div class="header-control__like">
+					<button class="like-btn icon waves">
+						<svg>
+							<use xlink:href="img/sprite.svg#notification" />
+						</svg>
+					</button>
+				</div>
+
+			</div>
+			<button class="header-control__signup btn btn--primary" data-modal-link="login-modal">
+				<svg class="btn-icon">
+					<use xlink:href="img/sprite.svg#user" />
+				</svg>
+				Войти
+			</button>
+
+		</div>
+	</header>
+
+
+	<header class="header-mobile">
+		<button class="header-mobile__icon btn" data-modal-link="menu-modal">
+			<svg>
+				<use xlink:href="img/sprite.svg#burger" />
+			</svg>
+		</button>
+		<div class="header-mobile-logo logo">
+			<div class="logo__img"><img src="img/icons/logo.svg" alt=""></div>
+		</div>
+		<!-- <div class="header-mobile__title">Личный кабинет</div> -->
+		<button class="header-mobile__btn btn btn--contur" data-modal-link="filter-modal">
+			<svg class="btn-icon">
+				<use xlink:href="img/sprite.svg#filter" />
+			</svg>
+			Фильтр объектов
+		</button>
+	</header>
+
+
+	<div class="filter-inner-cover" id="filter-inner">
+		<section class="filter filter--inner filter-not-area-and-metro">
+
+
+			<div class="filter-form-fields">
+				<label class="form-field form-field--select">
+					<div class="form-label">Жильё</div>
+					<select name="" class="form-input" placeholder="Дом">
+						<option value="Дом" selected>Дом</option>
+						<option value="Не дом">Не дом</option>
+					</select>
+				</label>
+				<label class="form-field form-field--select">
+					<div class="form-label">Тип</div>
+					<select name="" class="form-input" placeholder="Кирпичный">
+						<option value="Кирпичный">Кирпичный</option>
+						<option value="Не кирпичный">Не кирпичный</option>
+					</select>
+				</label>
+				<label class="form-field form-field--select">
+					<div class="form-label">Район</div>
+					<select name="" class="form-input" placeholder="Внуковское">
+						<option value="Внуковское">Внуковское</option>
+						<option value="Дедовское">Дедовское</option>
+					</select>
+				</label>
+				<label class="form-field form-field--select">
+					<div class="form-label">Метро</div>
+					<select name="" class="form-input" placeholder="Алтуфьево">
+						<option value="Алтуфьево">Алтуфьево</option>
+						<option value="...">...</option>
+					</select>
+				</label>
+
+				<label class="form-field">
+					<div class="form-label">Цена, руб</div>
+					<div class="form-input-group">
+						<input type="number" class="form-input" placeholder="От">
+						<input type="number" class="form-input" placeholder="До">
+					</div>
+				</label>
+				<label class="form-field">
+					<div class="form-label">Площадь дома, м²</div>
+					<div class="form-input-group">
+						<input type="number" class="form-input" placeholder="От">
+						<input type="number" class="form-input" placeholder="До">
+					</div>
+				</label>
+				<label class="form-field">
+					<div class="form-label">Площадь участка, м²</div>
+					<div class="form-input-group">
+						<input type="number" class="form-input" placeholder="От">
+						<input type="number" class="form-input" placeholder="До">
+					</div>
+				</label>
+				<label class="form-field">
+					<div class="form-label">Расстояние от МКАД, км</div>
+					<div class="form-input-group">
+						<input type="number" class="form-input" placeholder="От">
+						<input type="number" class="form-input" placeholder="До">
+					</div>
+				</label>
+
+				<button type="button" class="filter-form-clear">Очистить все поля</button>
+			</div>
+			<div class="filter-form-control">
+				<div class="filter-form__link ">
+					<button class="link" data-modal-link="print-email">
+						<svg class="icon">
+							<use xlink:href="img/sprite.svg#like-search" /></svg>
+						Сохранить фильтр и оповещать о новых объектах
+					</button>
+				</div>
+				<div class="filter-form__btns">
+					<button class="filter-form__btn btn btn--contur-primary">Показать на карте</button>
+					<button class="filter-form__btn btn btn--primary">Показать объекты</button>
+				</div>
+			</div>
+
+		</section>
+	</div>
+
+	<div class="filter-inner-cover" id="filter-inner">
+		<section class="filter filter--inner filter-not-area-and-metro">
+
+
+			<div class="filter-form-fields">
+				<label class="form-field form-field--select">
+					<div class="form-label">Жильё</div>
+					<select name="" class="form-input" placeholder="Дом">
+						<option value="Дом" selected>Дом</option>
+						<option value="Не дом">Не дом</option>
+					</select>
+				</label>
+				<label class="form-field form-field--select">
+					<div class="form-label">Тип</div>
+					<select name="" class="form-input" placeholder="Кирпичный">
+						<option value="Кирпичный">Кирпичный</option>
+						<option value="Не кирпичный">Не кирпичный</option>
+					</select>
+				</label>
+				<label class="form-field form-field--select">
+					<div class="form-label">Район</div>
+					<select name="" class="form-input" placeholder="Внуковское">
+						<option value="Внуковское">Внуковское</option>
+						<option value="Дедовское">Дедовское</option>
+					</select>
+				</label>
+				<label class="form-field form-field--select">
+					<div class="form-label">Метро</div>
+					<select name="" class="form-input" placeholder="Алтуфьево">
+						<option value="Алтуфьево">Алтуфьево</option>
+						<option value="...">...</option>
+					</select>
+				</label>
+
+				<label class="form-field">
+					<div class="form-label">Цена, руб</div>
+					<div class="form-input-group">
+						<input type="number" class="form-input" placeholder="От">
+						<input type="number" class="form-input" placeholder="До">
+					</div>
+				</label>
+				<label class="form-field">
+					<div class="form-label">Площадь дома, м²</div>
+					<div class="form-input-group">
+						<input type="number" class="form-input" placeholder="От">
+						<input type="number" class="form-input" placeholder="До">
+					</div>
+				</label>
+				<label class="form-field">
+					<div class="form-label">Площадь участка, м²</div>
+					<div class="form-input-group">
+						<input type="number" class="form-input" placeholder="От">
+						<input type="number" class="form-input" placeholder="До">
+					</div>
+				</label>
+				<label class="form-field">
+					<div class="form-label">Расстояние от МКАД, км</div>
+					<div class="form-input-group">
+						<input type="number" class="form-input" placeholder="От">
+						<input type="number" class="form-input" placeholder="До">
+					</div>
+				</label>
+
+				<button type="button" class="filter-form-clear">Очистить все поля</button>
+			</div>
+			<div class="filter-form-control">
+				<div class="filter-form__link filter-form__remove">
+					<button class="link" data-modal-link="delete-saved">
+						<svg class="icon">
+							<use xlink:href="img/sprite.svg#delete" /></svg>
+						Удалить поиск
+					</button>
+				</div>
+				<div class="filter-form__btns">
+					<button class="filter-form__btn btn btn--contur-primary">Показать на карте</button>
+					<button class="filter-form__btn btn btn--primary">Показать объекты</button>
+				</div>
+			</div>
+
+		</section>
+	</div>
+
+	<section class="user-cover">
+		<div class="jk-list">
+			<div class="card jk-item ">
+				<div class="jk-item-gallery">
+					<div class="jk-item-gallery-slider swiper-container">
+						<div class="swiper-wrapper">
+							<a data-height="800" data-fancybox="gallery-1" href="img/test-exterier.jpg"
+								class="jk-item-gallery__anons waves swiper-slide">
+								<picture>
+									<source srcset="img/test-exterier-min.webp" type="image/webp">
+									<img src="img/test-exterier-min.jpg" alt="" loading="lazy">
+								</picture>
+							</a>
+							<a data-height="800" data-fancybox="gallery-1" href="img/test-interier.jpg"
+								class="jk-item-gallery__anons waves swiper-slide">
+								<picture>
+									<source srcset="img/test-interier-min.webp" type="image/webp">
+									<img src="img/test-interier-min.jpg" alt="" loading="lazy">
+								</picture>
+							</a>
+
+						</div>
+
+						<div class="jk-item-gallery-pagination"></div>
+						<button class="jk-item-gallery-arrow jk-item-gallery-arrow-prev"></button>
+						<button class="jk-item-gallery-arrow jk-item-gallery-arrow-next"></button>
+					</div>
+					<a data-height="800" data-fancybox="gallery-1" href="img/test-interier.jpg"
+						class="jk-item-gallery__preview waves">
+						<picture>
+							<source srcset="img/test-interier-min.webp" type="image/webp">
+							<img src="img/test-interier-min.jpg" alt="" loading="lazy">
+						</picture>
+					</a>
+					<a data-height="800" data-fancybox="gallery-1" href="img/test-exterier.jpg"
+						class="jk-item-gallery__preview waves">
+						<picture>
+							<source srcset="img/test-exterier-min.webp" type="image/webp">
+							<img src="img/test-exterier-min.jpg" alt="" loading="lazy">
+						</picture>
+					</a>
+
+					<a class="jk-item-gallery__preview waves ">
+						<div class="jk-item-gallery__link">Еще фото</div>
+						<picture>
+							<source srcset="img/test-interier-min.webp" type="image/webp">
+							<img src="img/test-interier-min.jpg" alt="" loading="lazy">
+						</picture>
+					</a>
+
+				</div>
+				<div class="jk-item-content">
+					<div class="jk-item-content__name">2-этажный коттедж, 500 м²</div>
+					<div class="jk-item-content__status">Москва, СВАО, р-н Северный, Челобитьевское ш., 1Гк11</div>
+					<div class="jk-item-content__verify jk-item-content__verify--success">
+						<div class="jk-item-properties__info">
+							<img src="img/icons/verified--success.svg" alt=""><span>Прошел экспертизу</span>
+						</div>
+						<button class="jk-item-properties__btn btn btn--success">Скачать отчет</button>
+					</div>
+					<div class="jk-item-content__info"><img src="img/icons/metro.svg" alt="">Алтуфьево ⋅ 15 мин. на транспорте
+					</div>
+					<div class="jk-item-content__info"><img src="img/icons/car.svg" alt="">Дмитровское шоссе, 1 км от МКАД
+					</div>
+
+					<div class="jk-item-content__cost">27 100 000 ₽</div>
+					<div class="jk-item-content__btns">
+						<button class="jk-item-content__like like-btn waves"><svg>
+								<use xlink:href="img/sprite.svg#like" />
+							</svg></button>
+						<button class="jk-item-content__btn jk-item-content__btn--mobile btn btn--primary">Подробнее</button>
+						<button class="jk-item-content__btn jk-item-content__phone btn btn--primary">Показать телефон</button>
+						<button class="jk-item-content__btn jk-item-content__record btn--icon-left btn btn--accent--light">
+							<svg class="btn-icon">
+								<use xlink:href="img/sprite.svg#hide" />
+							</svg>
+							Отменить запись
+						</button>
+					</div>
+				</div>
+				<div class="jk-item-properties">
+					<div class="jk-item-properties__info">
+						<img src="img/icons/home.svg" alt=""><span>Тип: </span>Монолитный
+					</div>
+					<div class="jk-item-properties__info">
+						<img src="img/icons/square-1.svg" alt=""><span>Площадь дома: </span>191.3 м²
+					</div>
+					<div class="jk-item-properties__info">
+						<img src="img/icons/square-2.svg" alt=""><span>Площадь участка: </span>235 соток
+					</div>
+					<div class="jk-item-properties__info">
+						<img src="img/icons/floors.svg" alt=""><span>Количество этажей: </span>2
+					</div>
+					<div class="jk-item-properties__line"></div>
+					<div class="jk-item-properties__verify">
+						<div class="jk-item-properties__info">
+							<img src="img/icons/verified--success.svg" alt=""><span>Дом прошел экспертизу</span>
+						</div>
+						<button class="jk-item-properties__btn btn btn--success">Скачать отчет</button>
+					</div>
+
+				</div>
+			</div>
+			<div class="card jk-item ">
+				<div class="jk-item-gallery">
+					<div class="jk-item-gallery-slider swiper-container">
+						<div class="swiper-wrapper">
+							<a data-height="800" data-fancybox="gallery-2" href="img/test-interier-min.jpg"
+								class="jk-item-gallery__anons waves swiper-slide">
+								<picture>
+									<source srcset="img/test-interier-min.webp" type="image/webp">
+									<img src="img/test-interier-min.jpg" alt="" loading="lazy">
+								</picture>
+							</a>
+							<a data-height="800" data-fancybox="gallery-2" href="img/test-exterier-min.jpg"
+								class="jk-item-gallery__anons waves swiper-slide">
+								<picture>
+									<source srcset="img/test-exterier-min.webp" type="image/webp">
+									<img src="img/test-exterier-min.jpg" alt="" loading="lazy">
+								</picture>
+							</a>
+						</div>
+
+						<div class="jk-item-gallery-pagination"></div>
+						<button class="jk-item-gallery-arrow jk-item-gallery-arrow-prev"></button>
+						<button class="jk-item-gallery-arrow jk-item-gallery-arrow-next"></button>
+					</div>
+					<a data-height="800" data-fancybox="gallery-2" href="img/test-exterier.jpg"
+						class="jk-item-gallery__preview waves">
+						<picture>
+							<source srcset="img/test-exterier-min.webp" type="image/webp">
+							<img src="img/test-exterier-min.jpg" alt="" loading="lazy">
+						</picture>
+					</a>
+					<a data-height="800" data-fancybox="gallery-2" href="img/test-interier.jpg"
+						class="jk-item-gallery__preview waves">
+						<picture>
+							<source srcset="img/test-interier-min.webp" type="image/webp">
+							<img src="img/test-interier-min.jpg" alt="" loading="lazy">
+						</picture>
+					</a>
+					<a class="jk-item-gallery__preview waves ">
+						<div class="jk-item-gallery__link">Еще фото</div>
+						<picture>
+							<source srcset="img/test-exterier-min.webp" type="image/webp">
+							<img src="img/test-exterier-min.jpg" alt="" loading="lazy">
+						</picture>
+					</a>
+				</div>
+				<div class="jk-item-content">
+					<div class="jk-item-content__name">2-этажный коттедж, 500 м²</div>
+					<div class="jk-item-content__status">Москва, СВАО, р-н Северный, Челобитьевское ш., 1Гк11</div>
+					<div class="jk-item-content__verify">
+						<div class="jk-item-properties__info">
+							<span>Не проходил экспертизу</span>
+						</div>
+						<button class="jk-item-properties__btn btn btn--pikachu">Заказать отчет</button>
+					</div>
+					<div class="jk-item-content__info"><img src="img/icons/metro.svg" alt="">Алтуфьево ⋅ 15 мин. на транспорте
+					</div>
+					<div class="jk-item-content__info"><img src="img/icons/car.svg" alt="">Дмитровское шоссе, 1 км от МКАД
+					</div>
+
+					<div class="jk-item-content__cost">27 100 000 ₽</div>
+					<div class="jk-item-content__btns">
+						<button class="jk-item-content__like like-btn like-btn--active waves">
+							<svg>
+								<use xlink:href="img/sprite.svg#like" />
+							</svg>
+						</button>
+						<button class="jk-item-content__btn jk-item-content__btn--mobile btn btn--primary">Подробнее</button>
+						<button class="jk-item-content__btn jk-item-content__phone btn btn--primary">Показать телефон</button>
+						<button class="jk-item-content__btn jk-item-content__record btn--icon-left btn btn--contur">
+							<svg class="btn-icon">
+								<use xlink:href="img/sprite.svg#eye" />
+							</svg>
+							Записаться на просмотр
+						</button>
+					</div>
+				</div>
+				<div class="jk-item-properties">
+					<div class="jk-item-properties__info">
+						<img src="img/icons/home.svg" alt=""><span>Тип: </span>Монолитный
+					</div>
+					<div class="jk-item-properties__info">
+						<img src="img/icons/square-1.svg" alt=""><span>Площадь дома: </span>191.3 м²
+					</div>
+					<div class="jk-item-properties__info">
+						<img src="img/icons/square-2.svg" alt=""><span>Площадь участка: </span>235 соток
+					</div>
+					<div class="jk-item-properties__info">
+						<img src="img/icons/floors.svg" alt=""><span>Количество этажей: </span>2
+					</div>
+					<div class="jk-item-properties__line"></div>
+					<div class="jk-item-properties__verify">
+						<div class="jk-item-properties__info">
+							<span>Дом не проходил экспертизу</span>
+						</div>
+						<button class="jk-item-properties__btn btn btn--pikachu">Заказать отчет</button>
+					</div>
+
+				</div>
+			</div>
+			<div class="card jk-item ">
+				<div class="jk-item-gallery">
+					<div class="jk-item-gallery-slider swiper-container">
+						<div class="swiper-wrapper">
+							<a data-height="800" data-fancybox="gallery-3" href="img/test-exterier.jpg"
+								class="jk-item-gallery__anons waves swiper-slide">
+								<picture>
+									<source srcset="img/test-exterier-min.webp" type="image/webp">
+									<img src="img/test-exterier-min.jpg" alt="" loading="lazy">
+								</picture>
+							</a>
+							<a data-height="800" data-fancybox="gallery-3" href="img/test-interier.jpg"
+								class="jk-item-gallery__anons waves swiper-slide">
+								<picture>
+									<source srcset="img/test-interier-min.webp" type="image/webp">
+									<img src="img/test-interier-min.jpg" alt="" loading="lazy">
+								</picture>
+							</a>
+
+						</div>
+
+						<div class="jk-item-gallery-pagination"></div>
+						<button class="jk-item-gallery-arrow jk-item-gallery-arrow-prev"></button>
+						<button class="jk-item-gallery-arrow jk-item-gallery-arrow-next"></button>
+					</div>
+					<a data-height="800" data-fancybox="gallery-3" href="img/test-interier.jpg"
+						class="jk-item-gallery__preview waves">
+						<picture>
+							<source srcset="img/test-interier-min.webp" type="image/webp">
+							<img src="img/test-interier-min.jpg" alt="" loading="lazy">
+						</picture>
+					</a>
+					<a data-height="800" data-fancybox="gallery-3" href="img/test-exterier.jpg"
+						class="jk-item-gallery__preview waves">
+						<picture>
+							<source srcset="img/test-exterier-min.webp" type="image/webp">
+							<img src="img/test-exterier-min.jpg" alt="" loading="lazy">
+						</picture>
+					</a>
+
+					<a class="jk-item-gallery__preview waves ">
+						<div class="jk-item-gallery__link">Еще фото</div>
+						<picture>
+							<source srcset="img/test-interier-min.webp" type="image/webp">
+							<img src="img/test-interier-min.jpg" alt="" loading="lazy">
+						</picture>
+					</a>
+
+				</div>
+				<div class="jk-item-content">
+					<div class="jk-item-content__name">2-этажный коттедж, 500 м²</div>
+					<div class="jk-item-content__status">Москва, СВАО, р-н Северный, Челобитьевское ш., 1Гк11</div>
+					<div class="jk-item-content__verify jk-item-content__verify--success">
+						<div class="jk-item-properties__info">
+							<img src="img/icons/verified--success.svg" alt=""><span>Прошел экспертизу</span>
+						</div>
+						<button class="jk-item-properties__btn btn btn--success">Скачать отчет</button>
+					</div>
+					<div class="jk-item-content__info"><img src="img/icons/metro.svg" alt="">Алтуфьево ⋅ 15 мин. на транспорте
+					</div>
+					<div class="jk-item-content__info"><img src="img/icons/car.svg" alt="">Дмитровское шоссе, 1 км от МКАД
+					</div>
+
+					<div class="jk-item-content__cost">27 100 000 ₽</div>
+					<div class="jk-item-content__btns">
+						<button class="jk-item-content__like like-btn waves">
+							<svg>
+								<use xlink:href="img/sprite.svg#like" />
+							</svg>
+						</button>
+						<button class="jk-item-content__btn jk-item-content__btn--mobile btn btn--primary">Подробнее</button>
+						<button class="jk-item-content__btn jk-item-content__phone btn btn--primary--light">+7 918
+							000-00-00</button>
+						<button class="jk-item-content__btn jk-item-content__record btn--icon-left btn btn--accent--light">
+							<img src="img/icons/hide--red.svg" alt="" class="btn-icon">Отменить запись
+						</button>
+					</div>
+				</div>
+				<div class="jk-item-properties">
+					<div class="jk-item-properties__info">
+						<img src="img/icons/home.svg" alt=""><span>Тип: </span>Монолитный
+					</div>
+					<div class="jk-item-properties__info">
+						<img src="img/icons/square-1.svg" alt=""><span>Площадь дома: </span>191.3 м²
+					</div>
+					<div class="jk-item-properties__info">
+						<img src="img/icons/square-2.svg" alt=""><span>Площадь участка: </span>235 соток
+					</div>
+					<div class="jk-item-properties__info">
+						<img src="img/icons/floors.svg" alt=""><span>Количество этажей: </span>2
+					</div>
+					<div class="jk-item-properties__line"></div>
+					<div class="jk-item-properties__verify">
+						<div class="jk-item-properties__info">
+							<img src="img/icons/verified--success.svg" alt=""><span>Дом прошел экспертизу</span>
+						</div>
+						<button class="jk-item-properties__btn btn btn--success">Скачать отчет</button>
+					</div>
+
+				</div>
+			</div>
+
+			<button class="jk-list__more btn btn--white">
+				<svg class="btn-icon">
+					<use xlink:href="img/sprite.svg#user" />
+				</svg>
+				Войдите, чтобы увидеть больше предложений
+			</button>
+		</div>
+
+
+
+
+	</section>
+
+
+
+
+
+	<footer class="footer">
+		<div class="footer-logo logo">
+			<div class="logo__img"><img src="img/icons/logo.svg" alt=""></div>
+			<div class="logo__text">
+				Помощь в подборе <br>
+				недвижимости в Москве
+			</div>
+		</div>
+		<div class="footer-nav">
+			<a href="" class="footer-nav__item">О нас</a>
+			<a href="" class="footer-nav__item">Для партнеров</a>
+			<a href="" class="footer-nav__item">Помощь</a>
+			<a href="" class="footer-nav__item">Контакты</a>
+		</div>
+		<div class="footer-soc">
+			<a href="" class="footer-soc__item" target="_blank"><img src="img/icons/soc-instagramm.png" alt=""></a>
+			<a href="" class="footer-soc__item" target="_blank"><img src="img/icons/soc-youtube.svg" alt=""></a>
+			<a href="" class="footer-soc__item" target="_blank"><img src="img/icons/soc-vk.svg" alt=""></a>
+		</div>
+	</footer>
+
+
+	<section class="modal" data-modal-cover id="info-modal">
+		<div class="modal-container">
+			<div class="info-modal">
+				<div class="info-modal__img">
+					<picture>
+						<source srcset="img/sempl/info-modal.webp" type="image/webp">
+						<img src="img/sempl/info-modal.png" alt="">
+					</picture>
+				</div>
+				<div class="info-modal__content">
+					<div class="info-modal__title">
+						Зарегистрируйтесь,
+						чтобы заказать экспертизу
+					</div>
+					<button class="info-modal__btn btn btn--primary" data-modal-link="reg-modal" data-modal-close>
+						<svg class="btn-icon">
+							<use xlink:href="img/sprite.svg#user" />
+						</svg>
+						Регистрация
+					</button>
+				</div>
+			</div>
+
+
+			<!-- <button class="modal-close" data-modal-close>
+				<span></span>
+				<span></span>
+			</button> -->
+		</div>
+	</section>
+
+
+
+
+	<section class="modal" data-modal-cover id="filter-help-modal">
+		<div class="modal-container">
+			<div class="filter-help-modal card">
+				<div class="filter-help-modal__top">
+					<div class="filter-help-modal__title">не нашли что искали?</div>
+					<div class="filter-help-modal__subtitle">Мы заметили, что вы искали объект со следующими параметрами</div>
+				</div>
+				<div class="filter-help-modal__content">
+					<div class="filter-help-modal__list">
+						<div class="filter-help-modal-item">
+							<div class="filter-help-modal-item__title">Жильё: </div>
+							<div class="filter-help-modal-item__value">Коттедж</div>
+						</div>
+						<div class="filter-help-modal-item">
+							<div class="filter-help-modal-item__title">Тип дома: </div>
+							<div class="filter-help-modal-item__value">Кирпичный</div>
+						</div>
+						<div class="filter-help-modal-item">
+							<div class="filter-help-modal-item__title">Район</div>
+							<div class="filter-help-modal-item__value">Китай-город</div>
+						</div>
+						<div class="filter-help-modal-item">
+
+							<div class="filter-help-modal-item__title">Метр: </div>
+							<div class="filter-help-modal-item__value">Театральная площадь</div>
+						</div>
+
+						<div class="filter-help-modal-item">
+							<div class="filter-help-modal-item__title">Цена, руб: </div>
+							<div class="filter-help-modal-item__value">От 4000000 До 12000000</div>
+						</div>
+						<div class="filter-help-modal-item">
+							<div class="filter-help-modal-item__title">Площадь дома, м²: </div>
+							<div class="filter-help-modal-item__value">От 1000 до 2000</div>
+						</div>
+						<div class="filter-help-modal-item">
+							<div class="filter-help-modal-item__title">Площадь участка, сот</div>
+							<div class="filter-help-modal-item__value">От 20000 до 30000 </div>
+						</div>
+						<div class="filter-help-modal-item">
+							<div class="filter-help-modal-item__title">Расстояние от МКАД, км</div>
+							<div class="filter-help-modal-item__value">12-15 </div>
+						</div>
+					</div>
+					<div class="filter-help-modal__btns">
+						<button class="filter-help-modal__btn btn btn--primary" data-modal-link="reg-modal">Верно</button>
+						<button class="filter-help-modal__btn btn btn--contur-primary" data-modal-link="filter-desktop-modal">Не
+							верно</button>
+					</div>
+				</div>
+
+			</div>
+
+
+			<!-- <button class="modal-close" data-modal-close>
+				<span></span>
+				<span></span>
+			</button> -->
+		</div>
+	</section>
+
+	<section class="modal" data-modal-cover id="filter-help-modal">
+		<div class="modal-container">
+			<div class="filter-success-modal card">
+				<div class="filter-success-modal__img"></div>
+				<div class="filter-success-modal__title">мы уже начали искать!</div>
+				<div class="filter-success-modal__desc">Наши специалисты подберут вам подходящие варианты.
+					Следите за уведомлениями!</div>
+				<button class="filter-success-modal__btn btn btn--primary">Вернуться</button>
+			</div>
+
+
+			<!-- <button class="modal-close" data-modal-close>
+				<span></span>
+				<span></span>
+			</button> -->
+		</div>
+	</section>
+
+	<section class="modal" data-modal-cover id="filter-desktop-modal">
+		<div class="modal-container">
+			<div class="filter-help-modal card">
+				<div class="filter-help-modal__top">
+					<div class="filter-help-modal__title">введите нужные параметры</div>
+				</div>
+				<div class="filter-help-modal__content">
+					<div class="filter-form-fields">
+						<label class="form-field form-field--select">
+							<div class="form-label">Жильё</div>
+							<select name="" class="form-input" placeholder="Дом">
+								<option value="Дом" selected>Дом</option>
+								<option value="Не дом">Не дом</option>
+							</select>
+						</label>
+						<label class="form-field form-field--select">
+							<div class="form-label">Тип</div>
+							<select name="" class="form-input" placeholder="Кирпичный">
+								<option value="Кирпичный">Кирпичный</option>
+								<option value="Не кирпичный">Не кирпичный</option>
+							</select>
+						</label>
+						<label class="form-field form-field--select">
+							<div class="form-label">Район</div>
+							<select name="" class="form-input" placeholder="Внуковское">
+								<option value="Внуковское">Внуковское</option>
+								<option value="Дедовское">Дедовское</option>
+							</select>
+						</label>
+						<label class="form-field form-field--select">
+							<div class="form-label">Метро</div>
+							<select name="" class="form-input" placeholder="Алтуфьево">
+								<option value="Алтуфьево">Алтуфьево</option>
+								<option value="...">...</option>
+							</select>
+						</label>
+
+						<label class="form-field">
+							<div class="form-label">Цена, руб</div>
+							<div class="form-input-group">
+								<input type="number" class="form-input" placeholder="От">
+								<input type="number" class="form-input" placeholder="До">
+							</div>
+						</label>
+						<label class="form-field">
+							<div class="form-label">Площадь дома, м²</div>
+							<div class="form-input-group">
+								<input type="number" class="form-input" placeholder="От">
+								<input type="number" class="form-input" placeholder="До">
+							</div>
+						</label>
+						<label class="form-field">
+							<div class="form-label">Площадь участка, м²</div>
+							<div class="form-input-group">
+								<input type="number" class="form-input" placeholder="От">
+								<input type="number" class="form-input" placeholder="До">
+							</div>
+						</label>
+						<label class="form-field">
+							<div class="form-label">Расстояние от МКАД, км</div>
+							<div class="form-input-group">
+								<input type="number" class="form-input" placeholder="От">
+								<input type="number" class="form-input" placeholder="До">
+							</div>
+						</label>
+					</div>
+
+					<div class="filter-help-modal__btns">
+						<button class="filter-help-modal_btn btn btn--primary" data-modal-link="filter-success-modal">Запросить
+							объект</button>
+					</div>
+				</div>
+
+			</div>
+
+
+			<!-- <button class="modal-close" data-modal-close>
+				<span></span>
+				<span></span>
+			</button> -->
+		</div>
+	</section>
+
+	<section class="modal" data-modal-cover id="filter-success-modal">
+		<div class="modal-container">
+			<div class="filter-success-modal card">
+				<div class="filter-success-modal__img">
+					<img src="img/sempl/filter-success-modal.png" alt="">
+				</div>
+				<div class="filter-success-modal__title">мы уже начали искать!</div>
+				<div class="filter-success-modal__subtitle">
+					Наши специалисты подберут вам подходящие варианты.
+					Следите за уведомлениями!
+				</div>
+				<button class="filter-success-modal__btn btn btn--primary" data-modal-close>Вернуться</button>
+			</div>
+
+
+			<!-- <button class="modal-close" data-modal-close>
+				<span></span>
+				<span></span>
+			</button> -->
+		</div>
+	</section>
+
+	<section class="modal" data-modal-cover id="form-modal">
+		<div class="modal-container">
+			<div class="form-modal">
+				<div class="modal-top">
+					<div class="modal-top__title">регистрация</div>
+				</div>
+				<div class="form-modal__content">
+					<div class="form-modal__fields">
+						<label class="form-field">
+							<div class="form-label">Ваше имя</div>
+							<input type="text" class="form-input" placeholder="">
+						</label>
+						<label class="form-field">
+							<div class="form-label">Ваш телефон</div>
+							<input type="tel" class="form-input" placeholder="+7 (_ _ _) _ _ _ - _ _  - _ _ ">
+						</label>
+					</div>
+
+					<button class="form-modal__btn btn btn--primary">Получить пароль</button>
+					<button class="form-modal__agree" data-modal-link="agreement-modal">Отправляя форму Вы даете согласие на
+						обработку Ваших персональных данных</button>
+				</div>
+
+
+			</div>
+
+
+			<button class="modal-mobile-close" data-modal-close>
+				<svg>
+					<use xlink:href="img/sprite.svg#arrow" />
+				</svg>
+			</button>
+
+
+		</div>
+	</section>
+
+	<section class="modal" data-modal-cover id="callback-modal-loggined">
+		<div class="modal-container">
+			<div class="form-modal callback-modal">
+				<div class="modal-top">
+					<div class="modal-top__title">заказать звонок</div>
+				</div>
+				<div class="form-modal__content">
+					<div class="form-modal__fields">
+						<label class="form-field">
+							<div class="form-label">Ваш телефон</div>
+							<div class="form-input-cover">
+								<input type="tel" class="form-input" placeholder="+7 (_ _ _) _ _ _ - _ _  - _ _ "
+									value="+7 (918) 000 - 00  - 00">
+								<svg class="form-input__end">
+									<use xlink:href="img/sprite.svg#edit" /></svg>
+							</div>
+							<div class="form-sign">Это ваш номер?</div>
+						</label>
+					</div>
+
+					<button class="form-modal__btn btn btn--primary">Заказать</button>
+					<button class="form-modal__agree" data-modal-link="agreement-modal">Отправляя форму Вы даете согласие на
+						обработку Ваших персональных данных</button>
+				</div>
+
+
+			</div>
+
+
+			<button class="modal-mobile-close" data-modal-close>
+				<svg>
+					<use xlink:href="img/sprite.svg#arrow" />
+				</svg>
+			</button>
+
+
+		</div>
+	</section>
+
+	<section class="modal" data-modal-cover id="callback-modal">
+		<div class="modal-container">
+			<div class="form-modal callback-modal">
+				<div class="modal-top">
+					<div class="modal-top__title">заказать звонок</div>
+				</div>
+				<div class="form-modal__content">
+					<div class="form-modal__fields">
+						<label class="form-field">
+							<div class="form-label">Ваше имя</div>
+							<input type="text" class="form-input" placeholder="">
+						</label>
+						<label class="form-field">
+							<div class="form-label">Ваш телефон</div>
+							<input type="tel" class="form-input" placeholder="+7 (_ _ _) _ _ _ - _ _  - _ _ ">
+						</label>
+					</div>
+
+					<button class="form-modal__btn btn btn--primary">Заказать</button>
+					<button class="form-modal__agree" data-modal-link="agreement-modal">Отправляя форму Вы даете согласие на
+						обработку Ваших персональных данных</button>
+				</div>
+
+
+			</div>
+
+
+			<button class="modal-mobile-close" data-modal-close>
+				<svg>
+					<use xlink:href="img/sprite.svg#arrow" />
+				</svg>
+			</button>
+
+
+		</div>
+	</section>
+
+	<section class="modal modal--left" data-modal-cover id="menu-modal">
+		<div class="modal-container menu-modal">
+			<div class="menu-modal-user">
+				<div class="menu-modal-user__img user-img">
+					<img src="https://picsum.photos/id/633/600/400" alt="">
+				</div>
+
+				<button data-modal-link="login-modal" class="menu-modal-user__name waves">Войти в личный кабинет
+					<svg>
+						<use xlink:href="img/sprite.svg#slider-arrow" />
+					</svg>
+				</button>
+			</div>
+			<div class="menu-modal-nav">
+				<a href="" class="menu-modal-nav__item waves">
+					<svg>
+						<use xlink:href="img/sprite.svg#like" />
+					</svg>
+					Избранное (10)
+				</a>
+				<a href="" class="menu-modal-nav__item waves">
+					<svg>
+						<use xlink:href="img/sprite.svg#notification" />
+					</svg>
+					Уведомления (0)
+				</a>
+				<a href="" class="menu-modal-nav__item waves">
+					<svg>
+						<use xlink:href="img/sprite.svg#eye" />
+					</svg>
+					Записи на просмотр (2)
+				</a>
+				<a href="" class="menu-modal-nav__item waves">
+					<svg>
+						<use xlink:href="img/sprite.svg#doc" />
+					</svg>
+					Заказы экспертизы (0)
+				</a>
+				<a href="" class="menu-modal-nav__item waves">
+					<svg>
+						<use xlink:href="img/sprite.svg#plus" />
+					</svg>
+					Добавленные объекты (12)
+				</a>
+
+				<div class="menu-modal__btns">
+					<button class="menu-modal__btn btn btn--primary--light btn--icon-left">
+						<svg class="btn-icon">
+							<use xlink:href="img/sprite.svg#plus" />
+						</svg>
+						Добавить объект
+					</button>
+					<button class="menu-modal__btn btn btn--pikachu--light btn--icon-left">
+						<svg class="btn-icon">
+							<use xlink:href="img/sprite.svg#doc" />
+						</svg>
+						Заказать экспертизу
+					</button>
+				</div>
+			</div>
+
+			<button class="modal-mobile-close" data-modal-close>
+				<svg>
+					<use xlink:href="img/sprite.svg#arrow" />
+				</svg>
+			</button>
+		</div>
+	</section>
+
+
+	<section class="modal" data-modal-cover id="agreement-modal">
+		<div class="modal-container">
+			<div class="agreement-modal">
+				<div class=" agreement-modal__top">
+					<div class="modal-top__title">СОГЛАШЕНИЕ ОБ ОБРАБОТКЕ ПЕРСОНАЛЬНЫХ ДАННЫХ </div>
+				</div>
+				<div class="agreement-modal__content">
+					<p>
+						Данное соглашение об обработке персональных данных разработано в соответствии с законодательством Российской
+						Федерации.
+					</p>
+					<p>
+						Все лица заполнившие сведения, составляющие персональные данные на данном сайте, а также разместившие иную
+						информацию обозначенными действиями, подтверждают свое согласие на обработку персональных данных и их
+						передачу
+						оператору обработки персональных данных.
+					</p>
+					<p>
+						Под персональными данными Гражданина понимается нижеуказанная информация:
+					</p>
+					<p>
+						Общая информация (Имя, номер телефона и адрес электронной почты); посетители сайта направляют свои
+						персональные данные для получения телефонного звонка или сообщения электронной почты от специалиста
+						компании-исполнителя (владельца сайта) с целью заказа консультации относительно услуг компании-исполнителя.
+					</p>
+					<p>
+						Гражданин, принимая настоящее Соглашение, выражает свою заинтересованность и полное согласие, что обработка
+						их
+						персональных данных может включать в себя следующие действия: сбор, систематизацию, накопление, хранение,
+						уточнение (обновление, изменение), использование, уничтожение.
+					</p>
+					<p>
+						Гражданин гарантирует: информация, им предоставленная, не нарушает действующее законодательство Российской
+						Федерации, законные права и интересы третьих лиц; вся предоставленная информация заполнена Гражданином в
+						отношении себя лично.
+					</p>
+
+
+				</div>
+			</div>
+
+			<button class="modal-mobile-close" data-modal-close>
+				<svg>
+					<use xlink:href="img/sprite.svg#arrow" />
+				</svg>
+			</button>
+
+		</div>
+	</section>
+
+
+
+	<section class="modal" data-modal-cover id="filter-modal">
+		<div class="modal-container">
+
+
+			<header class="header-mobile">
+				<button class="header-mobile__icon btn" data-modal-close>
+					<svg>
+						<use xlink:href="img/sprite.svg#arrow" />
+					</svg>
+				</button>
+				<div class="header-mobile__title">Личный кабинет</div>
+			</header>
+			<form class="filter-modal">
+				<div class="filter-modal-cards">
+
+					<label class="filter-modal-card card filter-modal-select">
+						<div class="filter-modal-select-label">Жильё</div>
+						<select name="" class="filter-modal-select-input">
+							<option value="">Дом</option>
+							<option value="">Не дом</option>
+						</select>
+					</label>
+					<label class="filter-modal-card card filter-modal-select">
+						<div class="filter-modal-select-label">Тип</div>
+						<select name="" class="filter-modal-select-input">
+							<option value="">Кирпичный</option>
+							<option value="">Не кирпичный</option>
+						</select>
+					</label>
+					<label class="filter-modal-card card filter-modal-select">
+						<div class="filter-modal-select-label">Район</div>
+						<select name="" class="filter-modal-select-input">
+							<option value="">Внуковское</option>
+							<option value="">Дедовское</option>
+						</select>
+					</label>
+					<label class="filter-modal-card card filter-modal-select">
+						<div class="filter-modal-select-label">Метро</div>
+						<select name="" class="filter-modal-select-input">
+							<option value="">Алтуфьево</option>
+							<option value="">...</option>
+						</select>
+					</label>
+
+
+
+				</div>
+				<div class="filter-modal-card card">
+					<label class="form-field">
+						<div class="form-label">Цена, руб</div>
+						<input type="text" class="form-input" placeholder="От">
+						<input type="text" class="form-input" placeholder="До">
+					</label>
+				</div>
+				<div class="filter-modal-card card">
+					<label class="form-field">
+						<div class="form-label">Площадь дома, м²</div>
+						<input type="text" class="form-input" placeholder="От">
+						<input type="text" class="form-input" placeholder="До">
+					</label>
+				</div>
+				<div class="filter-modal-card card">
+					<label class="form-field">
+						<div class="form-label">Площадь участка, м²</div>
+						<input type="text" class="form-input" placeholder="От">
+						<input type="text" class="form-input" placeholder="До">
+					</label>
+				</div>
+				<div class="filter-modal-card card">
+					<label class="form-field">
+						<div class="form-label">Расстояние от МКАД, км</div>
+						<input type="text" class="form-input" placeholder="От">
+						<input type="text" class="form-input" placeholder="До">
+					</label>
+				</div>
+				<div class="modal-mobile-bottom">
+					<button type="button" data-modal-link="filter-success-modal"
+						class="filter-modal__btn btn btn--primary">Показать результаты</button>
+				</div>
+			</form>
+		</div>
+
+	</section>
+
+
+	<section class="modal" data-modal-cover id="success-modal">
+		<div class="modal-container">
+			<div class="success-modal">
+				<div class="success-modal__img">
+					<svg>
+						<use xlink:href="img/sprite.svg#success" /></svg>
+				</div>
+				<div class="success-modal__title">заявка успешно
+					отправлена</div>
+				<div class="success-modal__subtitle">
+					Наш специалист свяжется с вами
+					в ближайшее время
+				</div>
+				<button class="btn btn--primary success-modal__btn" data-modal-close>Вернуться на сайт</button>
+			</div>
+
+
+
+		</div>
+	</section>
+
+
+	<section class="modal" data-modal-cover id="login-modal">
+		<div class="modal-container">
+			<div class="form-modal">
+				<div class="modal-top">
+					<div class="modal-top__title">вход</div>
+				</div>
+				<div class="form-modal__content">
+					<div class="form-modal__fields">
+
+						<label class="form-field">
+							<div class="form-label">Ваш телефон</div>
+							<div class="form-input-cover">
+								<input type="tel" class="form-input" placeholder="+7 (_ _ _) _ _ _ - _ _  - _ _ ">
+							</div>
+						</label>
+						<label class="form-field">
+							<div class="form-label">Пароль</div>
+							<div class="form-input-cover">
+								<input type="password" class="form-input">
+							</div>
+							<button data-modal-link="pass-reset-modal" class="form-link">Забыли пароль?</button>
+						</label>
+					</div>
+
+					<button class="form-modal__btn btn btn--primary">Войти</button>
+
+					<div class="form-modal-link">
+						Нет аккаунта?
+						<button data-modal-link="reg-modal" class="form-modal-link__mark">Зарегистрируйтесь</button>
+					</div>
+
+					<button class="form-modal__agree" data-modal-link="agreement-modal">Отправляя форму Вы даете согласие на
+						обработку Ваших персональных данных</button>
+				</div>
+
+
+			</div>
+
+
+			<button class="modal-mobile-close" data-modal-close>
+				<svg>
+					<use xlink:href="img/sprite.svg#arrow" />
+				</svg>
+			</button>
+
+
+		</div>
+	</section>
+
+	<section class="modal" data-modal-cover id="reg-modal">
+		<div class="modal-container">
+			<div class="form-modal">
+				<div class="modal-top">
+					<div class="modal-top__title">регистрация</div>
+				</div>
+				<div class="form-modal__content">
+					<div class="form-modal__fields">
+						<label class="form-field">
+							<div class="form-label">Ваше имя</div>
+							<div class="form-input-cover">
+								<input type="text" class="form-input" placeholder="">
+							</div>
+						</label>
+						<label class="form-field form-field--required">
+							<div class="form-label">Ваш телефон</div>
+							<div class="form-input-cover">
+								<input required type="tel" class="form-input" placeholder="+7 (_ _ _) _ _ _ - _ _  - _ _ ">
+							</div>
+						</label>
+						<label class="form-field">
+							<div class="form-label">Код из смс</div>
+							<div class="form-input-cover">
+								<input type="text" class="form-input" placeholder="">
+							</div>
+						</label>
+					</div>
+
+					<button data-modal-link="reg-pass-modal" class="form-modal__btn btn btn--primary">Получить код</button>
+
+
+
+					<button class="form-modal__agree" data-modal-link="agreement-modal">Отправляя форму Вы даете согласие на
+						обработку Ваших персональных данных</button>
+				</div>
+
+
+			</div>
+
+
+			<button class="modal-mobile-close" data-modal-close>
+				<svg>
+					<use xlink:href="img/sprite.svg#arrow" />
+				</svg>
+			</button>
+
+
+		</div>
+	</section>
+
+	<section class="modal" data-modal-cover id="reg-pass-modal">
+		<div class="modal-container">
+			<div class="form-modal">
+				<div class="modal-top">
+					<div class="modal-top__title">регистрация</div>
+				</div>
+				<div class="form-modal__content">
+					<div class="form-modal__fields">
+						<label class="form-field">
+							<div class="form-label">Придумайте пароль</div>
+							<div class="form-input-cover">
+								<input type="password" class="form-input">
+							</div>
+							<div class="form-sign">Не менее 4 символов</div>
+						</label>
+					</div>
+
+					<button class="form-modal__btn btn btn--primary">Зарегистрироваться</button>
+				</div>
+			</div>
+
+
+			<button class="modal-mobile-close" data-modal-close>
+				<svg>
+					<use xlink:href="img/sprite.svg#arrow" />
+				</svg>
+			</button>
+
+
+		</div>
+	</section>
+
+	<section class="modal" data-modal-cover id="pass-reset-modal">
+		<div class="modal-container">
+			<div class="form-modal">
+				<div class="modal-top">
+					<div class="modal-top__title">Восстановление</div>
+				</div>
+				<div class="form-modal__content">
+					<div class="form-modal__fields">
+						<label class="form-field form-field--required">
+							<div class="form-label">Ваш телефон</div>
+							<div class="form-input-cover">
+								<input required type="tel" class="form-input" placeholder="+7 (_ _ _) _ _ _ - _ _  - _ _ ">
+							</div>
+						</label>
+					</div>
+
+					<button class="form-modal__btn btn btn--primary">Получить код</button>
+				</div>
+			</div>
+
+
+			<button class="modal-mobile-close" data-modal-close>
+				<svg>
+					<use xlink:href="img/sprite.svg#arrow" />
+				</svg>
+			</button>
+
+
+		</div>
+	</section>
+
+
+
+
+	<section class="modal" data-modal-cover id="print-email">
+		<div class="modal-container">
+			<div class="print-email-modal card">
+				<div class="lk-modal-plate">
+					<div class="lk-modal-top__title">Передать объект</div>
+				</div>
+				<div class="lk-modal-content">
+					<div class="print-email-modal-fields">
+						<label class="form-field">
+							<div class="form-label">Введит e-mail</div>
+							<input type="email" class="form-input">
+						</label>
+						<div class="print-email-modal__caption">
+							Сюда вы будете получать уведомления
+							о новых объектах
+						</div>
+					</div>
+					<div class="lk-modal-btns">
+						<button class="lk-modal-btn btn btn--primary">Сохранить</button>
+						<button class="lk-modal-btn btn btn--primary--light">Отмена</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="modal" data-modal-cover id="delete-saved">
+		<div class="modal-container">
+			<div class="print-email-modal card">
+				<div class="lk-modal-plate">
+					<div class="lk-modal-top__title">Передать объект</div>
+				</div>
+				<div class="lk-modal-content">
+					<div class="print-email-modal__desc">
+						Вы очистите фильтр и не будете <br>
+						получать рассылку объектов <br>
+						с данными параметрами
+					</div>
+					<div class="lk-modal-btns">
+						<button class="lk-modal-btn btn btn--primary">Удалить</button>
+						<button class="lk-modal-btn btn btn--primary--light">Отмена</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="source/jquery-3.5.0.min.js"></script>
+	<script src="source/jquery.fancybox.min.js"></script>
+	<script src="source/maskedinput.js"></script>
+	<script src="source/waves.js"></script>
+	<script src="source/swiper-bundle.min.js"></script>
+	<script src="source/select.bundle.min.js"></script>
+
+	<script src="js/frontend--polifils.js"></script>
+	<script src="js/frontend--modal.js"></script>
+	<script src="js/frontend--tab.js"></script>
+	<script src="js/frontend--toggle.js"></script>
+	<script src="js/frontend--template.js"></script>
+
+<script src="index.js"></script></body>
+
+</html>

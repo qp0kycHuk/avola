@@ -1,0 +1,2097 @@
+<div class="fancybox-content">
+	<div class="lk-user-modal card">
+		<div class="jk-edit-form__title title">Записались на просмотр </div>
+		<div class="lk-user-modal-list">
+			<div class="lk-user card card--border">
+				<div class="lk-user__manager">
+					<div class="avatar avatar--type-1">
+						<div class="avatar__img">
+							<img src="https://static.wallpapers-anime.com/upload/20170531/647/Z/s/7/Zs7FEF.jpg" alt="" />
+						</div>
+					</div>
+				</div>
+				<div class="lk-user-top">
+					<div class="lk-user-mood mood dropdown" data-tab-cover>
+
+
+						<div data-toggle-link="user-mood-select-1" data-tab-content="user-mood-1-1"
+							class="lk-user-mood__item mood-item mood-item--happy">
+							<input type="radio" name="user-mood-1" id="user-mood-1-1" checked>
+							<span class="mood-item__content">
+								<svg>
+									<use xlink:href="img/sprite.svg#mood-happy" />
+								</svg>
+							</span>
+						</div>
+						<div data-toggle-link="user-mood-select-1" data-tab-content="user-mood-1-2"
+							class="lk-user-mood__item mood-item mood-item--angry">
+							<input type="radio" name="user-mood-1" id="user-mood-1-2">
+							<span class="mood-item__content">
+								<svg>
+									<use xlink:href="img/sprite.svg#mood-angry" />
+								</svg>
+							</span>
+						</div>
+						<div data-toggle-link="user-mood-select-1" data-tab-content="user-mood-1-3"
+							class="lk-user-mood__item mood-item mood-item--netral">
+							<input type="radio" name="user-mood-1" id="user-mood-1-3">
+							<span class="mood-item__content">
+								<svg>
+									<use xlink:href="img/sprite.svg#mood-netral" />
+								</svg>
+							</span>
+						</div>
+
+
+						<div class="lk-user-mood-select card card--l2 dropdown-content" id="user-mood-select-1">
+							<label for="user-mood-1-1" class="lk-user-mood-select__item mood-item mood-item--happy"
+								data-tab-link="user-mood-1-1">
+								<svg>
+									<use xlink:href="img/sprite.svg#mood-happy" />
+								</svg>
+							</label>
+							<label for="user-mood-1-2" class="lk-user-mood-select__item mood-item mood-item--angry"
+								data-tab-link="user-mood-1-2">
+								<svg>
+									<use xlink:href="img/sprite.svg#mood-angry" />
+								</svg>
+							</label>
+							<label for="user-mood-1-3" class="lk-user-mood-select__item mood-item mood-item--netral"
+								data-tab-link="user-mood-1-3">
+								<svg>
+									<use xlink:href="img/sprite.svg#mood-netral" />
+								</svg>
+							</label>
+						</div>
+
+
+
+					</div>
+					<div class="avatar lk-user-top__img">
+						<button class="avatar__img tooltip-parent">
+							<div class="tooltip tooltip--top">редактировать</div>
+							<img src="https://static.wallpapers-anime.com/upload/20170531/647/Z/s/7/Zs7FEF.jpg" alt="">
+							<div class="avatar__edit">
+								<svg>
+									<use xlink:href="img/sprite.svg#edit" />
+								</svg>
+							</div>
+						</button>
+					</div>
+					<div class="lk-user-top__info">
+						<div class="lk-user-top__name">Ин Ян</div>
+						<div class="lk-user-top__phone">+7 (918) 000 00 00</div>
+					</div>
+					<div class="lk-user-top-properties">
+						<div class="lk-user-top-propertie">
+							<div class="lk-user-top-propertie__title">Дата записи</div>
+							<div class="lk-user-top-propertie__value">01.11.20</div>
+						</div>
+						<div class="lk-user-top-propertie">
+							<div class="lk-user-top-propertie__title">Дата созвона</div>
+							<label class="lk-user-top-propertie__value">
+								<svg class="icon">
+									<use xlink:href="img/sprite.svg#calendar" /></svg>
+								<input type="text" id="date-sozvon-datapicker-1" class="datapicker-input ">
+							</label>
+						</div>
+						<div class="lk-user-top-propertie">
+							<div class="lk-user-top-propertie__title">Дата встречи</div>
+							<div class="lk-user-top-propertie__value">
+								<svg class="icon">
+									<use xlink:href="img/sprite.svg#calendar" /></svg>
+								<input type="text" id="date-vstrecha-datapicker-1" class="datapicker-input ">
+							</div>
+						</div>
+
+					</div>
+					<script>
+						(() => {
+							let date = new Date()
+							$('#date-sozvon-datapicker-1').datepicker({
+								// timepicker: true,
+								position: "bottom center",
+								classes:'lk-datepicker',
+
+							});
+							$('#date-sozvon-datapicker-1').data('datepicker').selectDate(date);
+						})();
+						(() => {
+							let date = new Date()
+							$('#date-vstrecha-datapicker-1').datepicker({
+								timepicker: true,
+								position: "bottom center",
+								classes:'lk-datepicker',
+
+							});
+							$('#date-vstrecha-datapicker-1').data('datepicker').selectDate(date);
+						})();
+					</script>
+
+
+					<button class="lk-user-top__btn btn btn--contur" data-toggle-link="user-content-1">
+						<svg>
+							<use xlink:href="img/sprite.svg#slider-arrow" />
+						</svg>
+					</button>
+				</div>
+				<div class="lk-user-content" id="user-content-1" data-toggle-static="true" data-toggle-height="true">
+					<div class="lk-user__sign">
+						<svg>
+							<use xlink:href="img/sprite.svg#quote" />
+						</svg>
+						Поиск недвижимости в Москве – задача не из легких. Сейчас найти
+						подходящее предложение стало нелегко, независимо от специфики предстоящей сделки
+					</div>
+					<div class="lk-user-tables">
+						<div class="lk-user-tabs" data-tab-cover>
+							<div class="lk-user-request__links">
+								<button class="lk-user-request__link" data-tab-link="user-table-1">Записи на просмотр </button>
+								<button class="lk-user-request__link" data-tab-link="user-table-2">Подборка</button>
+								<button class="lk-user-request__link" data-tab-link="user-table-3">Просмотренные</button>
+
+								<button class="btn btn--contur-primary lk-user-tables__btn">Показать на карте</button>
+								<div class="user-tab-plate" data-tab-plate></div>
+							</div>
+							<div class="lk-user-tabs__content">
+								<div class="lk-user-table lk-user-tabs__item" data-tab-content="user-table-1">
+									<div class="lk-user-table-row lk-user-table-head">
+										<div class="lk-user-table-cell">Фото и название объекта</div>
+										<div class="lk-user-table-cell">Добавил</div>
+										<div class="lk-user-table-cell">Адрес</div>
+										<div class="lk-user-table-cell">Цена, руб</div>
+										<div class="lk-user-table-cell">Дата записи</div>
+									</div>
+									<div class="lk-user-table-row">
+										<a href="jk-inner.html" class="lk-user-table__info lk-table-jk lk-user-table-cell">
+											<div class="lk-table-jk__img">
+												<picture>
+													<source srcset="img/test-exterier-min.webp" type="image/webp">
+													<img src="img/test-exterier-min.jpg" alt="" loading="lazy">
+												</picture>
+											</div>
+											<div class="lk-table-jk__title">
+												<img src="img/icons/verified--success.svg" alt="">
+												2-этажный коттедж, 500 м²
+											</div>
+										</a>
+
+										<a href="account.html" class="lk-user-table__user lk-user-table-cell">
+											<div class="avatar avatar--star avatar--type-1">
+												<div class="avatar__img">
+													<img src="https://static.wallpapers-anime.com/upload/20170531/647/Z/s/7/Zs7FEF.jpg" alt="">
+												</div>
+											</div>
+										</a>
+
+										<button class="lk-user-table__address tooltip-parent lk-user-table-cell">
+											Московская область, Одинцовский городской округ,
+											Никологорское коттеджный поселок, ул. Звенигородская
+											<div class="tooltip tooltip--primary tooltip--center tooltip--top">
+												<svg>
+													<use xlink:href="img/sprite.svg#map-flag" />
+												</svg>
+												Смотреть на карте
+											</div>
+										</button>
+
+										<div class="lk-user-table__cost lk-user-table-cell">
+											28 000 000
+										</div>
+
+										<div class="lk-user-table__date lk-user-table-cell">
+											08.11.2020
+										</div>
+
+										<div class="lk-user-table-settings settings dropdown" data-toggle-cover>
+											<button class="waves settings-btn" data-toggle-link>
+												<svg>
+													<use xlink:href="img/sprite.svg#settings" />
+												</svg>
+											</button>
+											<div class="settings-list dropdown-content card card--l2" data-toggle-content>
+												<button class="settings-link btn btn--link ">
+													<svg>
+														<use xlink:href="img/sprite.svg#flag" />
+													</svg>
+													В подборку
+												</button>
+												<button class="settings-link btn btn--link ">
+													<svg>
+														<use xlink:href="img/sprite.svg#eye" />
+													</svg>
+													В просмотренное
+												</button>
+												<button class="settings-link btn btn--link link--accent">
+													<svg>
+														<use xlink:href="img/sprite.svg#delete" />
+													</svg>
+													Удалить
+												</button>
+											</div>
+
+
+
+
+										</div>
+
+									</div>
+									<div class="lk-user-table-row">
+										<a href="jk-inner.html" class="lk-user-table__info lk-table-jk lk-user-table-cell">
+											<div class="lk-table-jk__img">
+												<picture>
+													<source srcset="img/test-interier-min.webp" type="image/webp">
+													<img src="img/test-interier-min.jpg" alt="" loading="lazy">
+												</picture>
+											</div>
+											<div class="lk-table-jk__title">2-этажный коттедж, 500 м²</div>
+										</a>
+
+										<a href="account.html" class="lk-user-table__user lk-user-table-cell">
+											<div class="avatar avatar--type-1">
+												<div class="avatar__img">
+													<img src="https://static.wallpapers-anime.com/upload/20170531/647/Z/s/7/Zs7FEF.jpg" alt="">
+												</div>
+											</div>
+										</a>
+
+										<button class="lk-user-table__address tooltip-parent lk-user-table-cell">
+											Московская область, Одинцовский городской округ,
+											Никологорское коттеджный поселок, ул. Звенигородская
+											<div class="tooltip tooltip--primary tooltip--center tooltip--top">
+												<svg>
+													<use xlink:href="img/sprite.svg#map-flag" />
+												</svg>
+												Смотреть на карте
+											</div>
+										</button>
+
+										<div class="lk-user-table__cost lk-user-table-cell">
+											28 000 000
+										</div>
+
+										<div class="lk-user-table__date lk-user-table-cell">
+											08.11.2020
+										</div>
+
+
+										<div class="lk-user-table-settings settings dropdown" data-toggle-cover>
+											<button class="waves settings-btn" data-toggle-link>
+												<svg>
+													<use xlink:href="img/sprite.svg#settings" />
+												</svg>
+											</button>
+											<div class="settings-list dropdown-content card card--l2" data-toggle-content>
+												<button class="settings-link btn btn--link ">
+													<svg>
+														<use xlink:href="img/sprite.svg#flag" />
+													</svg>
+													В подборку
+												</button>
+												<button class="settings-link btn btn--link ">
+													<svg>
+														<use xlink:href="img/sprite.svg#eye" />
+													</svg>
+													В просмотренное
+												</button>
+												<button class="settings-link btn btn--link link--accent">
+													<svg>
+														<use xlink:href="img/sprite.svg#delete" />
+													</svg>
+													Удалить
+												</button>
+											</div>
+
+
+
+
+										</div>
+
+									</div>
+									<div class="lk-user-table-row">
+										<a href="jk-inner.html" class="lk-user-table__info lk-table-jk lk-user-table-cell">
+											<div class="lk-table-jk__img">
+												<picture>
+													<source srcset="img/test-exterier-min.webp" type="image/webp">
+													<img src="img/test-exterier-min.jpg" alt="" loading="lazy">
+												</picture>
+											</div>
+											<div class="lk-table-jk__title">2-этажный коттедж, 500 м²</div>
+										</a>
+
+										<a href="account.html" class="lk-user-table__user lk-user-table-cell">
+											<div class="avatar avatar--star avatar--type-2">
+												<div class="avatar__img">
+													<img src="https://static.wallpapers-anime.com/upload/20170531/647/Z/s/7/Zs7FEF.jpg" alt="">
+												</div>
+											</div>
+										</a>
+
+										<button class="lk-user-table__address tooltip-parent lk-user-table-cell">
+											Московская область, Одинцовский городской округ,
+											Никологорское коттеджный поселок, ул. Звенигородская
+											<div class="tooltip tooltip--primary tooltip--center tooltip--top">
+												<svg>
+													<use xlink:href="img/sprite.svg#map-flag" />
+												</svg>
+												Смотреть на карте
+											</div>
+										</button>
+
+										<div class="lk-user-table__cost lk-user-table-cell">
+											28 000 000
+										</div>
+
+										<div class="lk-user-table__date lk-user-table-cell">
+											08.11.2020
+										</div>
+
+
+										<div class="lk-user-table-settings settings dropdown" data-toggle-cover>
+											<button class="waves settings-btn" data-toggle-link>
+												<svg>
+													<use xlink:href="img/sprite.svg#settings" />
+												</svg>
+											</button>
+											<div class="settings-list dropdown-content card card--l2" data-toggle-content>
+												<button class="settings-link btn btn--link ">
+													<svg>
+														<use xlink:href="img/sprite.svg#flag" />
+													</svg>
+													В подборку
+												</button>
+												<button class="settings-link btn btn--link ">
+													<svg>
+														<use xlink:href="img/sprite.svg#eye" />
+													</svg>
+													В просмотренное
+												</button>
+												<button class="settings-link btn btn--link link--accent">
+													<svg>
+														<use xlink:href="img/sprite.svg#delete" />
+													</svg>
+													Удалить
+												</button>
+											</div>
+
+
+
+
+										</div>
+
+									</div>
+									<div class="lk-user-table-row">
+										<a href="jk-inner.html" class="lk-user-table__info lk-table-jk lk-user-table-cell">
+											<div class="lk-table-jk__img">
+												<picture>
+													<source srcset="img/test-interier-min.webp" type="image/webp">
+													<img src="img/test-interier-min.jpg" alt="" loading="lazy">
+												</picture>
+											</div>
+											<div class="lk-table-jk__title">2-этажный коттедж, 500 м²</div>
+										</a>
+
+										<a href="account.html" class="lk-user-table__user lk-user-table-cell">
+											<div class="avatar  avatar--type-2">
+												<div class="avatar__img">
+													<img src="https://static.wallpapers-anime.com/upload/20170531/647/Z/s/7/Zs7FEF.jpg" alt="">
+												</div>
+											</div>
+										</a>
+
+										<button class="lk-user-table__address tooltip-parent lk-user-table-cell">
+											Московская область, Одинцовский городской округ,
+											Никологорское коттеджный поселок, ул. Звенигородская
+											<div class="tooltip tooltip--primary tooltip--center tooltip--top">
+												<svg>
+													<use xlink:href="img/sprite.svg#map-flag" />
+												</svg>
+												Смотреть на карте
+											</div>
+										</button>
+
+										<div class="lk-user-table__cost lk-user-table-cell">
+											28 000 000
+										</div>
+
+										<div class="lk-user-table__date lk-user-table-cell">
+											08.11.2020
+										</div>
+
+
+										<div class="lk-user-table-settings settings dropdown" data-toggle-cover>
+											<button class="waves settings-btn" data-toggle-link>
+												<svg>
+													<use xlink:href="img/sprite.svg#settings" />
+												</svg>
+											</button>
+											<div class="settings-list dropdown-content card card--l2" data-toggle-content>
+												<button class="settings-link btn btn--link ">
+													<svg>
+														<use xlink:href="img/sprite.svg#flag" />
+													</svg>
+													В подборку
+												</button>
+												<button class="settings-link btn btn--link ">
+													<svg>
+														<use xlink:href="img/sprite.svg#eye" />
+													</svg>
+													В просмотренное
+												</button>
+												<button class="settings-link btn btn--link link--accent">
+													<svg>
+														<use xlink:href="img/sprite.svg#delete" />
+													</svg>
+													Удалить
+												</button>
+											</div>
+
+
+
+
+										</div>
+
+									</div>
+								</div>
+								<div class="lk-user-table lk-user-tabs__item" data-tab-content="user-table-2">
+									<div class="lk-user-table-row lk-user-table-head">
+										<div class="lk-user-table-cell">Фото и название объекта</div>
+										<div class="lk-user-table-cell">Добавил</div>
+										<div class="lk-user-table-cell">Адрес</div>
+										<div class="lk-user-table-cell">Цена, руб</div>
+										<div class="lk-user-table-cell">Дата записи</div>
+									</div>
+
+									<div class="lk-user-table-row">
+										<a href="jk-inner.html" class="lk-user-table__info lk-table-jk lk-user-table-cell">
+											<div class="lk-table-jk__img">
+												<picture>
+													<source srcset="img/test-interier-min.webp" type="image/webp">
+													<img src="img/test-interier-min.jpg" alt="" loading="lazy">
+												</picture>
+											</div>
+											<div class="lk-table-jk__title">2-этажный коттедж, 500 м²</div>
+										</a>
+
+										<a href="account.html" class="lk-user-table__user lk-user-table-cell">
+											<div class="avatar avatar--type-1">
+												<div class="avatar__img">
+													<img src="https://static.wallpapers-anime.com/upload/20170531/647/Z/s/7/Zs7FEF.jpg" alt="">
+												</div>
+											</div>
+										</a>
+
+										<button class="lk-user-table__address tooltip-parent lk-user-table-cell">
+											Московская область, Одинцовский городской округ,
+											Никологорское коттеджный поселок, ул. Звенигородская
+											<div class="tooltip tooltip--primary tooltip--center tooltip--top">
+												<svg>
+													<use xlink:href="img/sprite.svg#map-flag" />
+												</svg>
+												Смотреть на карте
+											</div>
+										</button>
+
+										<div class="lk-user-table__cost lk-user-table-cell">
+											28 000 000
+										</div>
+
+										<div class="lk-user-table__date lk-user-table-cell">
+											08.11.2020
+										</div>
+
+										<div class="lk-user-table-settings settings dropdown" data-toggle-cover>
+											<button class="waves settings-btn" data-toggle-link>
+												<svg>
+													<use xlink:href="img/sprite.svg#settings" />
+												</svg>
+											</button>
+											<div class="settings-list dropdown-content card card--l2" data-toggle-content>
+												<button class="settings-link btn btn--link ">
+													<svg>
+														<use xlink:href="img/sprite.svg#flag" />
+													</svg>
+													В подборку
+												</button>
+												<button class="settings-link btn btn--link ">
+													<svg>
+														<use xlink:href="img/sprite.svg#eye" />
+													</svg>
+													В просмотренное
+												</button>
+												<button class="settings-link btn btn--link link--accent">
+													<svg>
+														<use xlink:href="img/sprite.svg#delete" />
+													</svg>
+													Удалить
+												</button>
+											</div>
+
+										</div>
+
+									</div>
+									<div class="lk-user-table-row">
+										<a href="jk-inner.html" class="lk-user-table__info lk-table-jk lk-user-table-cell">
+											<div class="lk-table-jk__img">
+												<picture>
+													<source srcset="img/test-exterier-min.webp" type="image/webp">
+													<img src="img/test-exterier-min.jpg" alt="" loading="lazy">
+												</picture>
+											</div>
+											<div class="lk-table-jk__title">2-этажный коттедж, 500 м²</div>
+										</a>
+
+										<a href="account.html" class="lk-user-table__user lk-user-table-cell">
+											<div class="avatar avatar--star avatar--type-2">
+												<div class="avatar__img">
+													<img src="https://static.wallpapers-anime.com/upload/20170531/647/Z/s/7/Zs7FEF.jpg" alt="">
+												</div>
+											</div>
+										</a>
+
+										<button class="lk-user-table__address tooltip-parent lk-user-table-cell">
+											Московская область, Одинцовский городской округ,
+											Никологорское коттеджный поселок, ул. Звенигородская
+											<div class="tooltip tooltip--primary tooltip--center tooltip--top">
+												<svg>
+													<use xlink:href="img/sprite.svg#map-flag" />
+												</svg>
+												Смотреть на карте
+											</div>
+										</button>
+
+										<div class="lk-user-table__cost lk-user-table-cell">
+											28 000 000
+										</div>
+
+										<div class="lk-user-table__date lk-user-table-cell">
+											08.11.2020
+										</div>
+
+										<div class="lk-user-table-settings settings dropdown" data-toggle-cover>
+											<button class="waves settings-btn" data-toggle-link>
+												<svg>
+													<use xlink:href="img/sprite.svg#settings" />
+												</svg>
+											</button>
+											<div class="settings-list dropdown-content card card--l2" data-toggle-content>
+												<button class="settings-link btn btn--link ">
+													<svg>
+														<use xlink:href="img/sprite.svg#flag" />
+													</svg>
+													В подборку
+												</button>
+												<button class="settings-link btn btn--link ">
+													<svg>
+														<use xlink:href="img/sprite.svg#eye" />
+													</svg>
+													В просмотренное
+												</button>
+												<button class="settings-link btn btn--link link--accent">
+													<svg>
+														<use xlink:href="img/sprite.svg#delete" />
+													</svg>
+													Удалить
+												</button>
+											</div>
+
+										</div>
+
+									</div>
+									<div class="lk-user-table-row">
+										<a href="jk-inner.html" class="lk-user-table__info lk-table-jk lk-user-table-cell">
+											<div class="lk-table-jk__img">
+												<picture>
+													<source srcset="img/test-interier-min.webp" type="image/webp">
+													<img src="img/test-interier-min.jpg" alt="" loading="lazy">
+												</picture>
+											</div>
+											<div class="lk-table-jk__title">2-этажный коттедж, 500 м²</div>
+										</a>
+
+										<a href="account.html" class="lk-user-table__user lk-user-table-cell">
+											<div class="avatar  avatar--type-2">
+												<div class="avatar__img">
+													<img src="https://static.wallpapers-anime.com/upload/20170531/647/Z/s/7/Zs7FEF.jpg" alt="">
+												</div>
+											</div>
+										</a>
+
+										<button class="lk-user-table__address tooltip-parent lk-user-table-cell">
+											Московская область, Одинцовский городской округ,
+											Никологорское коттеджный поселок, ул. Звенигородская
+											<div class="tooltip tooltip--primary tooltip--center tooltip--top">
+												<svg>
+													<use xlink:href="img/sprite.svg#map-flag" />
+												</svg>
+												Смотреть на карте
+											</div>
+										</button>
+
+										<div class="lk-user-table__cost lk-user-table-cell">
+											28 000 000
+										</div>
+
+										<div class="lk-user-table__date lk-user-table-cell">
+											08.11.2020
+										</div>
+
+										<div class="lk-user-table-settings settings dropdown" data-toggle-cover>
+											<button class="waves settings-btn" data-toggle-link>
+												<svg>
+													<use xlink:href="img/sprite.svg#settings" />
+												</svg>
+											</button>
+											<div class="settings-list dropdown-content card card--l2" data-toggle-content>
+												<button class="settings-link btn btn--link ">
+													<svg>
+														<use xlink:href="img/sprite.svg#flag" />
+													</svg>
+													В подборку
+												</button>
+												<button class="settings-link btn btn--link ">
+													<svg>
+														<use xlink:href="img/sprite.svg#eye" />
+													</svg>
+													В просмотренное
+												</button>
+												<button class="settings-link btn btn--link link--accent">
+													<svg>
+														<use xlink:href="img/sprite.svg#delete" />
+													</svg>
+													Удалить
+												</button>
+											</div>
+
+										</div>
+
+									</div>
+								</div>
+								<div class="lk-user-table lk-user-tabs__item" data-tab-content="user-table-3">
+									<div class="lk-user-table-row lk-user-table-head">
+										<div class="lk-user-table-cell">Фото и название объекта</div>
+										<div class="lk-user-table-cell">Добавил</div>
+										<div class="lk-user-table-cell">Адрес</div>
+										<div class="lk-user-table-cell">Цена, руб</div>
+										<div class="lk-user-table-cell">Дата записи</div>
+									</div>
+									<div class="lk-user-table-row">
+										<a href="jk-inner.html" class="lk-user-table__info lk-table-jk lk-user-table-cell">
+											<div class="lk-table-jk__img">
+												<picture>
+													<source srcset="img/test-exterier-min.webp" type="image/webp">
+													<img src="img/test-exterier-min.jpg" alt="" loading="lazy">
+												</picture>
+											</div>
+											<div class="lk-table-jk__title">2-этажный коттедж, 500 м²</div>
+										</a>
+
+										<a href="account.html" class="lk-user-table__user lk-user-table-cell">
+											<div class="avatar avatar--star avatar--type-1">
+												<div class="avatar__img">
+													<img src="https://static.wallpapers-anime.com/upload/20170531/647/Z/s/7/Zs7FEF.jpg" alt="">
+												</div>
+											</div>
+										</a>
+
+										<button class="lk-user-table__address tooltip-parent lk-user-table-cell">
+											Московская область, Одинцовский городской округ,
+											Никологорское коттеджный поселок, ул. Звенигородская
+											<div class="tooltip tooltip--primary tooltip--center tooltip--top">
+												<svg>
+													<use xlink:href="img/sprite.svg#map-flag" />
+												</svg>
+												Смотреть на карте
+											</div>
+										</button>
+
+										<div class="lk-user-table__cost lk-user-table-cell">
+											28 000 000
+										</div>
+
+										<div class="lk-user-table__date lk-user-table-cell">
+											08.11.2020
+										</div>
+
+
+										<div class="lk-user-table-settings settings dropdown" data-toggle-cover>
+											<button class="waves settings-btn" data-toggle-link>
+												<svg>
+													<use xlink:href="img/sprite.svg#settings" />
+												</svg>
+											</button>
+											<div class="settings-list dropdown-content card card--l2" data-toggle-content>
+												<button class="settings-link btn btn--link ">
+													<svg>
+														<use xlink:href="img/sprite.svg#flag" />
+													</svg>
+													В подборку
+												</button>
+												<button class="settings-link btn btn--link ">
+													<svg>
+														<use xlink:href="img/sprite.svg#eye" />
+													</svg>
+													В просмотренное
+												</button>
+												<button class="settings-link btn btn--link link--accent">
+													<svg>
+														<use xlink:href="img/sprite.svg#delete" />
+													</svg>
+													Удалить
+												</button>
+											</div>
+
+										</div>
+
+									</div>
+									<div class="lk-user-table-row">
+										<a href="jk-inner.html" class="lk-user-table__info lk-table-jk lk-user-table-cell">
+											<div class="lk-table-jk__img">
+												<picture>
+													<source srcset="img/test-interier-min.webp" type="image/webp">
+													<img src="img/test-interier-min.jpg" alt="" loading="lazy">
+												</picture>
+											</div>
+											<div class="lk-table-jk__title">2-этажный коттедж, 500 м²</div>
+										</a>
+
+										<a href="account.html" class="lk-user-table__user lk-user-table-cell">
+											<div class="avatar avatar--type-1">
+												<div class="avatar__img">
+													<img src="https://static.wallpapers-anime.com/upload/20170531/647/Z/s/7/Zs7FEF.jpg" alt="">
+												</div>
+											</div>
+										</a>
+
+										<button class="lk-user-table__address tooltip-parent lk-user-table-cell">
+											Московская область, Одинцовский городской округ,
+											Никологорское коттеджный поселок, ул. Звенигородская
+											<div class="tooltip tooltip--primary tooltip--center tooltip--top">
+												<svg>
+													<use xlink:href="img/sprite.svg#map-flag" />
+												</svg>
+												Смотреть на карте
+											</div>
+										</button>
+
+										<div class="lk-user-table__cost lk-user-table-cell">
+											28 000 000
+										</div>
+
+										<div class="lk-user-table__date lk-user-table-cell">
+											08.11.2020
+										</div>
+
+										<div class="lk-user-table-settings settings dropdown" data-toggle-cover>
+											<button class="waves settings-btn" data-toggle-link>
+												<svg>
+													<use xlink:href="img/sprite.svg#settings" />
+												</svg>
+											</button>
+											<div class="settings-list dropdown-content card card--l2" data-toggle-content>
+												<button class="settings-link btn btn--link ">
+													<svg>
+														<use xlink:href="img/sprite.svg#flag" />
+													</svg>
+													В подборку
+												</button>
+												<button class="settings-link btn btn--link ">
+													<svg>
+														<use xlink:href="img/sprite.svg#eye" />
+													</svg>
+													В просмотренное
+												</button>
+												<button class="settings-link btn btn--link link--accent">
+													<svg>
+														<use xlink:href="img/sprite.svg#delete" />
+													</svg>
+													Удалить
+												</button>
+											</div>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="lk-user-request" data-tab-cover>
+							<div class="lk-user-request__links">
+								<button class="lk-user-request__link" data-tab-link="user-request-1">Запросы на экспертизу </button>
+								<button class="lk-user-request__link" data-tab-link="user-request-2">Выполненные экспертизы</button>
+
+								<div class="user-tab-plate" data-tab-plate></div>
+							</div>
+							<div class="lk-user-request__content">
+								<div class="lk-user-table lk-user-request__item" data-tab-content="user-request-1">
+									<div class="lk-user-table-row lk-user-table-head">
+										<div class="lk-user-table-cell">Фото и название объекта</div>
+										<div class="lk-user-table-cell">Добавил</div>
+										<div class="lk-user-table-cell">Адрес</div>
+										<div class="lk-user-table-cell">Цена, руб</div>
+										<div class="lk-user-table-cell">Дата записи</div>
+									</div>
+									<div class="lk-user-table-row">
+										<a href="jk-inner.html" class="lk-user-table__info lk-table-jk lk-user-table-cell">
+											<div class="lk-table-jk__img">
+												<picture>
+													<source srcset="img/test-interier-min.webp" type="image/webp">
+													<img src="img/test-interier-min.jpg" alt="" loading="lazy">
+												</picture>
+											</div>
+											<div class="lk-table-jk__title">2-этажный коттедж, 500 м²</div>
+										</a>
+
+										<a href="account.html" class="lk-user-table__user lk-user-table-cell">
+											<div class="avatar avatar--type-1">
+												<div class="avatar__img">
+													<img src="https://static.wallpapers-anime.com/upload/20170531/647/Z/s/7/Zs7FEF.jpg" alt="">
+												</div>
+											</div>
+										</a>
+
+										<button class="lk-user-table__address tooltip-parent lk-user-table-cell">
+											Московская область, Одинцовский городской округ,
+											Никологорское коттеджный поселок, ул. Звенигородская
+											<div class="tooltip tooltip--primary tooltip--center tooltip--top">
+												<svg>
+													<use xlink:href="img/sprite.svg#map-flag" />
+												</svg>
+												Смотреть на карте
+											</div>
+										</button>
+
+										<div class="lk-user-table__cost lk-user-table-cell">
+											28 000 000
+										</div>
+
+										<div class="lk-user-table__date lk-user-table-cell">
+											08.11.2020
+										</div>
+
+										<div class="lk-user-table-settings settings dropdown" data-toggle-cover>
+											<button class="waves settings-btn" data-toggle-link>
+												<svg>
+													<use xlink:href="img/sprite.svg#settings" />
+												</svg>
+											</button>
+											<div class="settings-list dropdown-content card card--l2" data-toggle-content>
+												<button class="settings-link btn btn--link ">
+													<svg>
+														<use xlink:href="img/sprite.svg#flag" />
+													</svg>
+													В подборку
+												</button>
+												<button class="settings-link btn btn--link ">
+													<svg>
+														<use xlink:href="img/sprite.svg#eye" />
+													</svg>
+													В просмотренное
+												</button>
+												<button class="settings-link btn btn--link link--accent">
+													<svg>
+														<use xlink:href="img/sprite.svg#delete" />
+													</svg>
+													Удалить
+												</button>
+											</div>
+
+										</div>
+
+									</div>
+									<div class="lk-user-table-row lk-user-table-custom">
+										<div class="lk-user-table__info lk-table-jk lk-user-table-cell">
+											<div class="lk-table-jk__img jk-img-placeholder">
+												<svg>
+													<use xlink:href="img/sprite.svg#home" />
+												</svg>
+											</div>
+											<div class="lk-table-jk__title">Запрос на экспертизу собственного объекта</div>
+										</div>
+
+										<div class="lk-user-table__date lk-user-table-cell">
+											08.11.2020
+										</div>
+
+									</div>
+
+								</div>
+								<div class="lk-user-table lk-user-request__item" data-tab-content="user-request-2">
+									<div class="lk-user-table-row lk-user-table-head">
+										<div class="lk-user-table-cell">Фото и название объекта</div>
+										<div class="lk-user-table-cell">Добавил</div>
+										<div class="lk-user-table-cell">Адрес</div>
+										<div class="lk-user-table-cell">Цена, руб</div>
+										<div class="lk-user-table-cell">Дата записи</div>
+									</div>
+									<div class="lk-user-table-row">
+										<a href="jk-inner.html" class="lk-user-table__info lk-table-jk lk-user-table-cell">
+											<div class="lk-table-jk__img">
+												<picture>
+													<source srcset="img/test-exterier-min.webp" type="image/webp">
+													<img src="img/test-exterier-min.jpg" alt="" loading="lazy">
+												</picture>
+											</div>
+											<div class="lk-table-jk__title">3-этажный Особняк, 500 м²</div>
+										</a>
+
+										<a href="account.html" class="lk-user-table__user lk-user-table-cell">
+											<div class="avatar avatar--type-1">
+												<div class="avatar__img">
+													<img src="https://static.wallpapers-anime.com/upload/20170531/647/Z/s/7/Zs7FEF.jpg" alt="">
+												</div>
+											</div>
+										</a>
+
+										<button class="lk-user-table__address tooltip-parent lk-user-table-cell">
+											Московская область,
+											Никологорское коттеджный поселок, ул. Звенигородская
+											<div class="tooltip tooltip--primary tooltip--center tooltip--top">
+												<svg>
+													<use xlink:href="img/sprite.svg#map-flag" />
+												</svg>
+												Смотреть на карте
+											</div>
+										</button>
+
+										<div class="lk-user-table__cost lk-user-table-cell">
+											28 000 000
+										</div>
+
+										<div class="lk-user-table__date lk-user-table-cell">
+											08.11.2020
+										</div>
+
+										<div class="lk-user-table-settings settings dropdown" data-toggle-cover>
+											<button class="waves settings-btn" data-toggle-link>
+												<svg>
+													<use xlink:href="img/sprite.svg#settings" />
+												</svg>
+											</button>
+											<div class="settings-list dropdown-content card card--l2" data-toggle-content>
+												<button class="settings-link btn btn--link ">
+													<svg>
+														<use xlink:href="img/sprite.svg#flag" />
+													</svg>
+													В подборку
+												</button>
+												<button class="settings-link btn btn--link ">
+													<svg>
+														<use xlink:href="img/sprite.svg#eye" />
+													</svg>
+													В просмотренное
+												</button>
+												<button class="settings-link btn btn--link link--accent">
+													<svg>
+														<use xlink:href="img/sprite.svg#delete" />
+													</svg>
+													Удалить
+												</button>
+											</div>
+
+										</div>
+
+									</div>
+
+								</div>
+							</div>
+						</div>
+
+
+
+						<div class="lk-user-tables__title">Запрос на подбор</div>
+						<div class="lk-user-properties">
+							<div class="lk-user-properties__list">
+								<div class="lk-user-propertie">
+									<div class="lk-user-propertie__title">Тип дома </div>
+									<div class="lk-user-propertie__value">Кирпичный</div>
+								</div>
+								<div class="lk-user-propertie">
+									<div class="lk-user-propertie__title">Цена дома</div>
+									<div class="lk-user-propertie__value">От 32 000 000 до 40 000 000 &#8381;</div>
+								</div>
+								<div class="lk-user-propertie">
+									<div class="lk-user-propertie__title">Район</div>
+									<div class="lk-user-propertie__value">Арбат | Басманный | Замоскворечье</div>
+								</div>
+								<div class="lk-user-propertie">
+									<div class="lk-user-propertie__title">Метро</div>
+									<div class="lk-user-propertie__value">Алтуфьево</div>
+								</div>
+
+							</div>
+
+
+							<div class="lk-user-properties__list">
+								<div class="lk-user-propertie">
+									<div class="lk-user-propertie__title">Площадь дома</div>
+									<div class="lk-user-propertie__value">От 20000 до 30000 м<sup>2</sup></div>
+								</div>
+								<div class="lk-user-propertie">
+									<div class="lk-user-propertie__title">Площадь участка</div>
+									<div class="lk-user-propertie__value">От 20000 до 30000 м<sup>2</sup></div>
+								</div>
+								<div class="lk-user-propertie">
+									<div class="lk-user-propertie__title">Расстояние от МКАД</div>
+									<div class="lk-user-propertie__value">От 15 до 20</div>
+								</div>
+							</div>
+
+
+						</div>
+						<div class="lk-user-btns">
+							<button class="lk-user__like like-btn waves tooltip-parent">
+								<div class="tooltip tooltip--top">Поделиться</div>
+								<svg>
+									<use xlink:href="img/sprite.svg#share"></use>
+								</svg>
+							</button>
+							<button class="lk-user__like like-btn waves tooltip-parent">
+								<div class="tooltip tooltip--top">Распечатать</div>
+								<svg>
+									<use xlink:href="img/sprite.svg#printer"></use>
+								</svg>
+							</button>
+							<button class="lk-user__like like-btn waves tooltip-parent">
+								<div class="tooltip tooltip--top">Отправить</div>
+								<img class="amo-img" src="img/icons/amosrm-like.png" alt="">
+							</button>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+
+
+			<div class="lk-user card card--border">
+				<div class="lk-user__manager">
+					<div class="avatar avatar--type-1">
+						<div class="avatar__img">
+							<img src="https://static.wallpapers-anime.com/upload/20170531/647/Z/s/7/Zs7FEF.jpg" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="lk-user-top">
+					<div class="lk-user-mood mood dropdown" data-tab-cover>
+
+
+						<div data-toggle-link="user-mood-select-2" data-tab-content="user-mood-2-1"
+							class="lk-user-mood__item mood-item mood-item--happy">
+							<input type="radio" name="user-mood-2" id="user-mood-2-1" checked>
+							<span class="mood-item__content">
+								<svg>
+									<use xlink:href="img/sprite.svg#mood-happy" />
+								</svg>
+							</span>
+						</div>
+						<div data-toggle-link="user-mood-select-2" data-tab-content="user-mood-2-2"
+							class="lk-user-mood__item mood-item mood-item--angry">
+							<input type="radio" name="user-mood-2" id="user-mood-2-2">
+							<span class="mood-item__content">
+								<svg>
+									<use xlink:href="img/sprite.svg#mood-angry" />
+								</svg>
+							</span>
+						</div>
+						<div data-toggle-link="user-mood-select-2" data-tab-content="user-mood-2-3"
+							class="lk-user-mood__item mood-item mood-item--netral">
+							<input type="radio" name="user-mood-2" id="user-mood-2-3">
+							<span class="mood-item__content">
+								<svg>
+									<use xlink:href="img/sprite.svg#mood-netral" />
+								</svg>
+							</span>
+						</div>
+
+
+						<div class="lk-user-mood-select card card--l2 dropdown-content" id="user-mood-select-2">
+							<label for="user-mood-2-1" class="lk-user-mood-select__item mood-item mood-item--happy"
+								data-tab-link="user-mood-2-1">
+								<svg>
+									<use xlink:href="img/sprite.svg#mood-happy" />
+								</svg>
+							</label>
+							<label for="user-mood-2-2" class="lk-user-mood-select__item mood-item mood-item--angry"
+								data-tab-link="user-mood-2-2">
+								<svg>
+									<use xlink:href="img/sprite.svg#mood-angry" />
+								</svg>
+							</label>
+							<label for="user-mood-2-3" class="lk-user-mood-select__item mood-item mood-item--netral"
+								data-tab-link="user-mood-2-3">
+								<svg>
+									<use xlink:href="img/sprite.svg#mood-netral" />
+								</svg>
+							</label>
+						</div>
+
+
+
+					</div>
+					<div class="avatar lk-user-top__img">
+						<button class="avatar__img tooltip-parent">
+							<div class="tooltip tooltip--top">редактировать</div>
+							<img src="https://static.wallpapers-anime.com/upload/20170531/647/Z/s/7/Zs7FEF.jpg" alt="">
+							<div class="avatar__edit">
+								<svg>
+									<use xlink:href="img/sprite.svg#edit" />
+								</svg>
+							</div>
+						</button>
+					</div>
+					<div class="lk-user-top__info">
+						<div class="lk-user-top__name">Ин Ян</div>
+						<div class="lk-user-top__phone">+7 (918) 000 00 00</div>
+					</div>
+					<div class="lk-user-top-properties">
+						<div class="lk-user-top-propertie">
+							<div class="lk-user-top-propertie__title">Дата регистрации</div>
+							<div class="lk-user-top-propertie__value">01.11.20</div>
+						</div>
+						<div class="lk-user-top-propertie">
+							<div class="lk-user-top-propertie__title">Дата созвона</div>
+							<div class="lk-user-top-propertie__value">01.11.20</div>
+						</div>
+						<div class="lk-user-top-propertie">
+							<div class="lk-user-top-propertie__title">Дата встречи</div>
+							<div class="lk-user-top-propertie__value">01.11.20</div>
+						</div>
+
+					</div>
+					<button class="lk-user-top__btn btn btn--contur" data-toggle-link="user-content-2">
+						<svg>
+							<use xlink:href="img/sprite.svg#slider-arrow" />
+						</svg>
+					</button>
+				</div>
+				<div class="lk-user-content" id="user-content-2" data-toggle-static="true" data-toggle-height="true">
+					<div class="lk-user__sign">
+						<svg>
+							<use xlink:href="img/sprite.svg#quote" />
+						</svg>
+						Поиск недвижимости в Москве – задача не из легких. Сейчас найти
+						подходящее предложение стало нелегко, независимо от специфики предстоящей сделки
+					</div>
+					<div class="lk-user-tables">
+						<div class="lk-user-tabs" data-tab-cover>
+							<div class="lk-user-request__links">
+								<button class="lk-user-request__link" data-tab-link="user-table-1">Записи на просмотр </button>
+								<button class="lk-user-request__link" data-tab-link="user-table-2">Подборка</button>
+								<button class="lk-user-request__link" data-tab-link="user-table-3">Просмотренные</button>
+
+								<button class="btn btn--contur-primary lk-user-tables__btn">Показать на карте</button>
+								<div class="user-tab-plate" data-tab-plate></div>
+							</div>
+							<div class="lk-user-tabs__content">
+								<div class="lk-user-table lk-user-tabs__item" data-tab-content="user-table-1">
+									<div class="lk-user-table-row lk-user-table-head">
+										<div class="lk-user-table-cell">Фото и название объекта</div>
+										<div class="lk-user-table-cell">Добавил</div>
+										<div class="lk-user-table-cell">Адрес</div>
+										<div class="lk-user-table-cell">Цена, руб</div>
+										<div class="lk-user-table-cell">Дата записи</div>
+									</div>
+									<div class="lk-user-table-row">
+										<a href="jk-inner.html" class="lk-user-table__info lk-table-jk lk-user-table-cell">
+											<div class="lk-table-jk__img">
+												<picture>
+													<source srcset="img/test-exterier-min.webp" type="image/webp">
+													<img src="img/test-exterier-min.jpg" alt="" loading="lazy">
+												</picture>
+											</div>
+											<div class="lk-table-jk__title">
+												<img src="img/icons/verified--success.svg" alt="">
+												2-этажный коттедж, 500 м²
+											</div>
+										</a>
+
+										<a href="account.html" class="lk-user-table__user lk-user-table-cell">
+											<div class="avatar avatar--star avatar--type-1">
+												<div class="avatar__img">
+													<img src="https://static.wallpapers-anime.com/upload/20170531/647/Z/s/7/Zs7FEF.jpg" alt="">
+												</div>
+											</div>
+										</a>
+
+										<button class="lk-user-table__address tooltip-parent lk-user-table-cell">
+											Московская область, Одинцовский городской округ,
+											Никологорское коттеджный поселок, ул. Звенигородская
+											<div class="tooltip tooltip--primary tooltip--center tooltip--top">
+												<svg>
+													<use xlink:href="img/sprite.svg#map-flag" />
+												</svg>
+												Смотреть на карте
+											</div>
+										</button>
+
+										<div class="lk-user-table__cost lk-user-table-cell">
+											28 000 000
+										</div>
+
+										<div class="lk-user-table__date lk-user-table-cell">
+											08.11.2020
+										</div>
+
+										<div class="lk-user-table-settings settings dropdown" data-toggle-cover>
+											<button class="waves settings-btn" data-toggle-link>
+												<svg>
+													<use xlink:href="img/sprite.svg#settings" />
+												</svg>
+											</button>
+											<div class="settings-list dropdown-content card card--l2" data-toggle-content>
+												<button class="settings-link btn btn--link ">
+													<svg>
+														<use xlink:href="img/sprite.svg#flag" />
+													</svg>
+													В подборку
+												</button>
+												<button class="settings-link btn btn--link ">
+													<svg>
+														<use xlink:href="img/sprite.svg#eye" />
+													</svg>
+													В просмотренное
+												</button>
+												<button class="settings-link btn btn--link link--accent">
+													<svg>
+														<use xlink:href="img/sprite.svg#delete" />
+													</svg>
+													Удалить
+												</button>
+											</div>
+
+
+
+
+										</div>
+
+									</div>
+									<div class="lk-user-table-row">
+										<a href="jk-inner.html" class="lk-user-table__info lk-table-jk lk-user-table-cell">
+											<div class="lk-table-jk__img">
+												<picture>
+													<source srcset="img/test-interier-min.webp" type="image/webp">
+													<img src="img/test-interier-min.jpg" alt="" loading="lazy">
+												</picture>
+											</div>
+											<div class="lk-table-jk__title">2-этажный коттедж, 500 м²</div>
+										</a>
+
+										<a href="account.html" class="lk-user-table__user lk-user-table-cell">
+											<div class="avatar avatar--type-1">
+												<div class="avatar__img">
+													<img src="https://static.wallpapers-anime.com/upload/20170531/647/Z/s/7/Zs7FEF.jpg" alt="">
+												</div>
+											</div>
+										</a>
+
+										<button class="lk-user-table__address tooltip-parent lk-user-table-cell">
+											Московская область, Одинцовский городской округ,
+											Никологорское коттеджный поселок, ул. Звенигородская
+											<div class="tooltip tooltip--primary tooltip--center tooltip--top">
+												<svg>
+													<use xlink:href="img/sprite.svg#map-flag" />
+												</svg>
+												Смотреть на карте
+											</div>
+										</button>
+
+										<div class="lk-user-table__cost lk-user-table-cell">
+											28 000 000
+										</div>
+
+										<div class="lk-user-table__date lk-user-table-cell">
+											08.11.2020
+										</div>
+
+
+										<div class="lk-user-table-settings settings dropdown" data-toggle-cover>
+											<button class="waves settings-btn" data-toggle-link>
+												<svg>
+													<use xlink:href="img/sprite.svg#settings" />
+												</svg>
+											</button>
+											<div class="settings-list dropdown-content card card--l2" data-toggle-content>
+												<button class="settings-link btn btn--link ">
+													<svg>
+														<use xlink:href="img/sprite.svg#flag" />
+													</svg>
+													В подборку
+												</button>
+												<button class="settings-link btn btn--link ">
+													<svg>
+														<use xlink:href="img/sprite.svg#eye" />
+													</svg>
+													В просмотренное
+												</button>
+												<button class="settings-link btn btn--link link--accent">
+													<svg>
+														<use xlink:href="img/sprite.svg#delete" />
+													</svg>
+													Удалить
+												</button>
+											</div>
+
+
+
+
+										</div>
+
+									</div>
+									<div class="lk-user-table-row">
+										<a href="jk-inner.html" class="lk-user-table__info lk-table-jk lk-user-table-cell">
+											<div class="lk-table-jk__img">
+												<picture>
+													<source srcset="img/test-exterier-min.webp" type="image/webp">
+													<img src="img/test-exterier-min.jpg" alt="" loading="lazy">
+												</picture>
+											</div>
+											<div class="lk-table-jk__title">2-этажный коттедж, 500 м²</div>
+										</a>
+
+										<a href="account.html" class="lk-user-table__user lk-user-table-cell">
+											<div class="avatar avatar--star avatar--type-2">
+												<div class="avatar__img">
+													<img src="https://static.wallpapers-anime.com/upload/20170531/647/Z/s/7/Zs7FEF.jpg" alt="">
+												</div>
+											</div>
+										</a>
+
+										<button class="lk-user-table__address tooltip-parent lk-user-table-cell">
+											Московская область, Одинцовский городской округ,
+											Никологорское коттеджный поселок, ул. Звенигородская
+											<div class="tooltip tooltip--primary tooltip--center tooltip--top">
+												<svg>
+													<use xlink:href="img/sprite.svg#map-flag" />
+												</svg>
+												Смотреть на карте
+											</div>
+										</button>
+
+										<div class="lk-user-table__cost lk-user-table-cell">
+											28 000 000
+										</div>
+
+										<div class="lk-user-table__date lk-user-table-cell">
+											08.11.2020
+										</div>
+
+
+										<div class="lk-user-table-settings settings dropdown" data-toggle-cover>
+											<button class="waves settings-btn" data-toggle-link>
+												<svg>
+													<use xlink:href="img/sprite.svg#settings" />
+												</svg>
+											</button>
+											<div class="settings-list dropdown-content card card--l2" data-toggle-content>
+												<button class="settings-link btn btn--link ">
+													<svg>
+														<use xlink:href="img/sprite.svg#flag" />
+													</svg>
+													В подборку
+												</button>
+												<button class="settings-link btn btn--link ">
+													<svg>
+														<use xlink:href="img/sprite.svg#eye" />
+													</svg>
+													В просмотренное
+												</button>
+												<button class="settings-link btn btn--link link--accent">
+													<svg>
+														<use xlink:href="img/sprite.svg#delete" />
+													</svg>
+													Удалить
+												</button>
+											</div>
+
+
+
+
+										</div>
+
+									</div>
+									<div class="lk-user-table-row">
+										<a href="jk-inner.html" class="lk-user-table__info lk-table-jk lk-user-table-cell">
+											<div class="lk-table-jk__img">
+												<picture>
+													<source srcset="img/test-interier-min.webp" type="image/webp">
+													<img src="img/test-interier-min.jpg" alt="" loading="lazy">
+												</picture>
+											</div>
+											<div class="lk-table-jk__title">2-этажный коттедж, 500 м²</div>
+										</a>
+
+										<a href="account.html" class="lk-user-table__user lk-user-table-cell">
+											<div class="avatar  avatar--type-2">
+												<div class="avatar__img">
+													<img src="https://static.wallpapers-anime.com/upload/20170531/647/Z/s/7/Zs7FEF.jpg" alt="">
+												</div>
+											</div>
+										</a>
+
+										<button class="lk-user-table__address tooltip-parent lk-user-table-cell">
+											Московская область, Одинцовский городской округ,
+											Никологорское коттеджный поселок, ул. Звенигородская
+											<div class="tooltip tooltip--primary tooltip--center tooltip--top">
+												<svg>
+													<use xlink:href="img/sprite.svg#map-flag" />
+												</svg>
+												Смотреть на карте
+											</div>
+										</button>
+
+										<div class="lk-user-table__cost lk-user-table-cell">
+											28 000 000
+										</div>
+
+										<div class="lk-user-table__date lk-user-table-cell">
+											08.11.2020
+										</div>
+
+
+										<div class="lk-user-table-settings settings dropdown" data-toggle-cover>
+											<button class="waves settings-btn" data-toggle-link>
+												<svg>
+													<use xlink:href="img/sprite.svg#settings" />
+												</svg>
+											</button>
+											<div class="settings-list dropdown-content card card--l2" data-toggle-content>
+												<button class="settings-link btn btn--link ">
+													<svg>
+														<use xlink:href="img/sprite.svg#flag" />
+													</svg>
+													В подборку
+												</button>
+												<button class="settings-link btn btn--link ">
+													<svg>
+														<use xlink:href="img/sprite.svg#eye" />
+													</svg>
+													В просмотренное
+												</button>
+												<button class="settings-link btn btn--link link--accent">
+													<svg>
+														<use xlink:href="img/sprite.svg#delete" />
+													</svg>
+													Удалить
+												</button>
+											</div>
+
+
+
+
+										</div>
+
+									</div>
+								</div>
+								<div class="lk-user-table lk-user-tabs__item" data-tab-content="user-table-2">
+									<div class="lk-user-table-row lk-user-table-head">
+										<div class="lk-user-table-cell">Фото и название объекта</div>
+										<div class="lk-user-table-cell">Добавил</div>
+										<div class="lk-user-table-cell">Адрес</div>
+										<div class="lk-user-table-cell">Цена, руб</div>
+										<div class="lk-user-table-cell">Дата записи</div>
+									</div>
+
+									<div class="lk-user-table-row">
+										<a href="jk-inner.html" class="lk-user-table__info lk-table-jk lk-user-table-cell">
+											<div class="lk-table-jk__img">
+												<picture>
+													<source srcset="img/test-interier-min.webp" type="image/webp">
+													<img src="img/test-interier-min.jpg" alt="" loading="lazy">
+												</picture>
+											</div>
+											<div class="lk-table-jk__title">2-этажный коттедж, 500 м²</div>
+										</a>
+
+										<a href="account.html" class="lk-user-table__user lk-user-table-cell">
+											<div class="avatar avatar--type-1">
+												<div class="avatar__img">
+													<img src="https://static.wallpapers-anime.com/upload/20170531/647/Z/s/7/Zs7FEF.jpg" alt="">
+												</div>
+											</div>
+										</a>
+
+										<button class="lk-user-table__address tooltip-parent lk-user-table-cell">
+											Московская область, Одинцовский городской округ,
+											Никологорское коттеджный поселок, ул. Звенигородская
+											<div class="tooltip tooltip--primary tooltip--center tooltip--top">
+												<svg>
+													<use xlink:href="img/sprite.svg#map-flag" />
+												</svg>
+												Смотреть на карте
+											</div>
+										</button>
+
+										<div class="lk-user-table__cost lk-user-table-cell">
+											28 000 000
+										</div>
+
+										<div class="lk-user-table__date lk-user-table-cell">
+											08.11.2020
+										</div>
+
+										<div class="lk-user-table-settings settings dropdown" data-toggle-cover>
+											<button class="waves settings-btn" data-toggle-link>
+												<svg>
+													<use xlink:href="img/sprite.svg#settings" />
+												</svg>
+											</button>
+											<div class="settings-list dropdown-content card card--l2" data-toggle-content>
+												<button class="settings-link btn btn--link ">
+													<svg>
+														<use xlink:href="img/sprite.svg#flag" />
+													</svg>
+													В подборку
+												</button>
+												<button class="settings-link btn btn--link ">
+													<svg>
+														<use xlink:href="img/sprite.svg#eye" />
+													</svg>
+													В просмотренное
+												</button>
+												<button class="settings-link btn btn--link link--accent">
+													<svg>
+														<use xlink:href="img/sprite.svg#delete" />
+													</svg>
+													Удалить
+												</button>
+											</div>
+
+										</div>
+
+									</div>
+									<div class="lk-user-table-row">
+										<a href="jk-inner.html" class="lk-user-table__info lk-table-jk lk-user-table-cell">
+											<div class="lk-table-jk__img">
+												<picture>
+													<source srcset="img/test-exterier-min.webp" type="image/webp">
+													<img src="img/test-exterier-min.jpg" alt="" loading="lazy">
+												</picture>
+											</div>
+											<div class="lk-table-jk__title">2-этажный коттедж, 500 м²</div>
+										</a>
+
+										<a href="account.html" class="lk-user-table__user lk-user-table-cell">
+											<div class="avatar avatar--star avatar--type-2">
+												<div class="avatar__img">
+													<img src="https://static.wallpapers-anime.com/upload/20170531/647/Z/s/7/Zs7FEF.jpg" alt="">
+												</div>
+											</div>
+										</a>
+
+										<button class="lk-user-table__address tooltip-parent lk-user-table-cell">
+											Московская область, Одинцовский городской округ,
+											Никологорское коттеджный поселок, ул. Звенигородская
+											<div class="tooltip tooltip--primary tooltip--center tooltip--top">
+												<svg>
+													<use xlink:href="img/sprite.svg#map-flag" />
+												</svg>
+												Смотреть на карте
+											</div>
+										</button>
+
+										<div class="lk-user-table__cost lk-user-table-cell">
+											28 000 000
+										</div>
+
+										<div class="lk-user-table__date lk-user-table-cell">
+											08.11.2020
+										</div>
+
+										<div class="lk-user-table-settings settings dropdown" data-toggle-cover>
+											<button class="waves settings-btn" data-toggle-link>
+												<svg>
+													<use xlink:href="img/sprite.svg#settings" />
+												</svg>
+											</button>
+											<div class="settings-list dropdown-content card card--l2" data-toggle-content>
+												<button class="settings-link btn btn--link ">
+													<svg>
+														<use xlink:href="img/sprite.svg#flag" />
+													</svg>
+													В подборку
+												</button>
+												<button class="settings-link btn btn--link ">
+													<svg>
+														<use xlink:href="img/sprite.svg#eye" />
+													</svg>
+													В просмотренное
+												</button>
+												<button class="settings-link btn btn--link link--accent">
+													<svg>
+														<use xlink:href="img/sprite.svg#delete" />
+													</svg>
+													Удалить
+												</button>
+											</div>
+
+										</div>
+
+									</div>
+									<div class="lk-user-table-row">
+										<a href="jk-inner.html" class="lk-user-table__info lk-table-jk lk-user-table-cell">
+											<div class="lk-table-jk__img">
+												<picture>
+													<source srcset="img/test-interier-min.webp" type="image/webp">
+													<img src="img/test-interier-min.jpg" alt="" loading="lazy">
+												</picture>
+											</div>
+											<div class="lk-table-jk__title">2-этажный коттедж, 500 м²</div>
+										</a>
+
+										<a href="account.html" class="lk-user-table__user lk-user-table-cell">
+											<div class="avatar  avatar--type-2">
+												<div class="avatar__img">
+													<img src="https://static.wallpapers-anime.com/upload/20170531/647/Z/s/7/Zs7FEF.jpg" alt="">
+												</div>
+											</div>
+										</a>
+
+										<button class="lk-user-table__address tooltip-parent lk-user-table-cell">
+											Московская область, Одинцовский городской округ,
+											Никологорское коттеджный поселок, ул. Звенигородская
+											<div class="tooltip tooltip--primary tooltip--center tooltip--top">
+												<svg>
+													<use xlink:href="img/sprite.svg#map-flag" />
+												</svg>
+												Смотреть на карте
+											</div>
+										</button>
+
+										<div class="lk-user-table__cost lk-user-table-cell">
+											28 000 000
+										</div>
+
+										<div class="lk-user-table__date lk-user-table-cell">
+											08.11.2020
+										</div>
+
+										<div class="lk-user-table-settings settings dropdown" data-toggle-cover>
+											<button class="waves settings-btn" data-toggle-link>
+												<svg>
+													<use xlink:href="img/sprite.svg#settings" />
+												</svg>
+											</button>
+											<div class="settings-list dropdown-content card card--l2" data-toggle-content>
+												<button class="settings-link btn btn--link ">
+													<svg>
+														<use xlink:href="img/sprite.svg#flag" />
+													</svg>
+													В подборку
+												</button>
+												<button class="settings-link btn btn--link ">
+													<svg>
+														<use xlink:href="img/sprite.svg#eye" />
+													</svg>
+													В просмотренное
+												</button>
+												<button class="settings-link btn btn--link link--accent">
+													<svg>
+														<use xlink:href="img/sprite.svg#delete" />
+													</svg>
+													Удалить
+												</button>
+											</div>
+
+										</div>
+
+									</div>
+								</div>
+								<div class="lk-user-table lk-user-tabs__item" data-tab-content="user-table-3">
+									<div class="lk-user-table-row lk-user-table-head">
+										<div class="lk-user-table-cell">Фото и название объекта</div>
+										<div class="lk-user-table-cell">Добавил</div>
+										<div class="lk-user-table-cell">Адрес</div>
+										<div class="lk-user-table-cell">Цена, руб</div>
+										<div class="lk-user-table-cell">Дата записи</div>
+									</div>
+									<div class="lk-user-table-row">
+										<a href="jk-inner.html" class="lk-user-table__info lk-table-jk lk-user-table-cell">
+											<div class="lk-table-jk__img">
+												<picture>
+													<source srcset="img/test-exterier-min.webp" type="image/webp">
+													<img src="img/test-exterier-min.jpg" alt="" loading="lazy">
+												</picture>
+											</div>
+											<div class="lk-table-jk__title">2-этажный коттедж, 500 м²</div>
+										</a>
+
+										<a href="account.html" class="lk-user-table__user lk-user-table-cell">
+											<div class="avatar avatar--star avatar--type-1">
+												<div class="avatar__img">
+													<img src="https://static.wallpapers-anime.com/upload/20170531/647/Z/s/7/Zs7FEF.jpg" alt="">
+												</div>
+											</div>
+										</a>
+
+										<button class="lk-user-table__address tooltip-parent lk-user-table-cell">
+											Московская область, Одинцовский городской округ,
+											Никологорское коттеджный поселок, ул. Звенигородская
+											<div class="tooltip tooltip--primary tooltip--center tooltip--top">
+												<svg>
+													<use xlink:href="img/sprite.svg#map-flag" />
+												</svg>
+												Смотреть на карте
+											</div>
+										</button>
+
+										<div class="lk-user-table__cost lk-user-table-cell">
+											28 000 000
+										</div>
+
+										<div class="lk-user-table__date lk-user-table-cell">
+											08.11.2020
+										</div>
+
+										<div class="lk-user-table-settings settings dropdown" data-toggle-cover>
+											<button class="waves settings-btn" data-toggle-link>
+												<svg>
+													<use xlink:href="img/sprite.svg#settings" />
+												</svg>
+											</button>
+											<div class="settings-list dropdown-content card card--l2" data-toggle-content>
+												<button class="settings-link btn btn--link ">
+													<svg>
+														<use xlink:href="img/sprite.svg#flag" />
+													</svg>
+													В подборку
+												</button>
+												<button class="settings-link btn btn--link ">
+													<svg>
+														<use xlink:href="img/sprite.svg#eye" />
+													</svg>
+													В просмотренное
+												</button>
+												<button class="settings-link btn btn--link link--accent">
+													<svg>
+														<use xlink:href="img/sprite.svg#delete" />
+													</svg>
+													Удалить
+												</button>
+											</div>
+
+										</div>
+
+									</div>
+									<div class="lk-user-table-row">
+										<a href="jk-inner.html" class="lk-user-table__info lk-table-jk lk-user-table-cell">
+											<div class="lk-table-jk__img">
+												<picture>
+													<source srcset="img/test-interier-min.webp" type="image/webp">
+													<img src="img/test-interier-min.jpg" alt="" loading="lazy">
+												</picture>
+											</div>
+											<div class="lk-table-jk__title">2-этажный коттедж, 500 м²</div>
+										</a>
+
+										<a href="account.html" class="lk-user-table__user lk-user-table-cell">
+											<div class="avatar avatar--type-1">
+												<div class="avatar__img">
+													<img src="https://static.wallpapers-anime.com/upload/20170531/647/Z/s/7/Zs7FEF.jpg" alt="">
+												</div>
+											</div>
+										</a>
+
+										<button class="lk-user-table__address tooltip-parent lk-user-table-cell">
+											Московская область, Одинцовский городской округ,
+											Никологорское коттеджный поселок, ул. Звенигородская
+											<div class="tooltip tooltip--primary tooltip--center tooltip--top">
+												<svg>
+													<use xlink:href="img/sprite.svg#map-flag" />
+												</svg>
+												Смотреть на карте
+											</div>
+										</button>
+
+										<div class="lk-user-table__cost lk-user-table-cell">
+											28 000 000
+										</div>
+
+										<div class="lk-user-table__date lk-user-table-cell">
+											08.11.2020
+										</div>
+
+										<div class="lk-user-table-settings settings dropdown" data-toggle-cover>
+											<button class="waves settings-btn" data-toggle-link>
+												<svg>
+													<use xlink:href="img/sprite.svg#settings" />
+												</svg>
+											</button>
+											<div class="settings-list dropdown-content card card--l2" data-toggle-content>
+												<button class="settings-link btn btn--link ">
+													<svg>
+														<use xlink:href="img/sprite.svg#flag" />
+													</svg>
+													В подборку
+												</button>
+												<button class="settings-link btn btn--link ">
+													<svg>
+														<use xlink:href="img/sprite.svg#eye" />
+													</svg>
+													В просмотренное
+												</button>
+												<button class="settings-link btn btn--link link--accent">
+													<svg>
+														<use xlink:href="img/sprite.svg#delete" />
+													</svg>
+													Удалить
+												</button>
+											</div>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="lk-user-request" data-tab-cover>
+							<div class="lk-user-request__links">
+								<button class="lk-user-request__link" data-tab-link="user-request-1">Запросы на экспертизу </button>
+								<button class="lk-user-request__link" data-tab-link="user-request-2">Выполненные экспертизы</button>
+
+								<div class="user-tab-plate" data-tab-plate></div>
+							</div>
+							<div class="lk-user-request__content">
+								<div class="lk-user-table lk-user-request__item" data-tab-content="user-request-1">
+									<div class="lk-user-table-row lk-user-table-head">
+										<div class="lk-user-table-cell">Фото и название объекта</div>
+										<div class="lk-user-table-cell">Добавил</div>
+										<div class="lk-user-table-cell">Адрес</div>
+										<div class="lk-user-table-cell">Цена, руб</div>
+										<div class="lk-user-table-cell">Дата записи</div>
+									</div>
+									<div class="lk-user-table-row">
+										<a href="jk-inner.html" class="lk-user-table__info lk-table-jk lk-user-table-cell">
+											<div class="lk-table-jk__img">
+												<picture>
+													<source srcset="img/test-interier-min.webp" type="image/webp">
+													<img src="img/test-interier-min.jpg" alt="" loading="lazy">
+												</picture>
+											</div>
+											<div class="lk-table-jk__title">2-этажный коттедж, 500 м²</div>
+										</a>
+
+										<a href="account.html" class="lk-user-table__user lk-user-table-cell">
+											<div class="avatar avatar--type-1">
+												<div class="avatar__img">
+													<img src="https://static.wallpapers-anime.com/upload/20170531/647/Z/s/7/Zs7FEF.jpg" alt="">
+												</div>
+											</div>
+										</a>
+
+										<button class="lk-user-table__address tooltip-parent lk-user-table-cell">
+											Московская область, Одинцовский городской округ,
+											Никологорское коттеджный поселок, ул. Звенигородская
+											<div class="tooltip tooltip--primary tooltip--center tooltip--top">
+												<svg>
+													<use xlink:href="img/sprite.svg#map-flag" />
+												</svg>
+												Смотреть на карте
+											</div>
+										</button>
+
+										<div class="lk-user-table__cost lk-user-table-cell">
+											28 000 000
+										</div>
+
+										<div class="lk-user-table__date lk-user-table-cell">
+											08.11.2020
+										</div>
+
+										<div class="lk-user-table-settings settings dropdown" data-toggle-cover>
+											<button class="waves settings-btn" data-toggle-link>
+												<svg>
+													<use xlink:href="img/sprite.svg#settings" />
+												</svg>
+											</button>
+											<div class="settings-list dropdown-content card card--l2" data-toggle-content>
+												<button class="settings-link btn btn--link ">
+													<svg>
+														<use xlink:href="img/sprite.svg#flag" />
+													</svg>
+													В подборку
+												</button>
+												<button class="settings-link btn btn--link ">
+													<svg>
+														<use xlink:href="img/sprite.svg#eye" />
+													</svg>
+													В просмотренное
+												</button>
+												<button class="settings-link btn btn--link link--accent">
+													<svg>
+														<use xlink:href="img/sprite.svg#delete" />
+													</svg>
+													Удалить
+												</button>
+											</div>
+
+										</div>
+									</div>
+									<div class="lk-user-table-row lk-user-table-custom">
+										<div class="lk-user-table__info lk-table-jk lk-user-table-cell">
+											<div class="lk-table-jk__img jk-img-placeholder">
+												<svg>
+													<use xlink:href="img/sprite.svg#home" />
+												</svg>
+											</div>
+											<div class="lk-table-jk__title">Запрос на экспертизу собственного объекта</div>
+										</div>
+
+										<div class="lk-user-table__date lk-user-table-cell">
+											08.11.2020
+										</div>
+
+									</div>
+
+								</div>
+								<div class="lk-user-table lk-user-request__item" data-tab-content="user-request-2">
+									<div class="lk-user-table-row lk-user-table-head">
+										<div class="lk-user-table-cell">Фото и название объекта</div>
+										<div class="lk-user-table-cell">Добавил</div>
+										<div class="lk-user-table-cell">Адрес</div>
+										<div class="lk-user-table-cell">Цена, руб</div>
+										<div class="lk-user-table-cell">Дата записи</div>
+									</div>
+									<div class="lk-user-table-row">
+										<a href="jk-inner.html" class="lk-user-table__info lk-table-jk lk-user-table-cell">
+											<div class="lk-table-jk__img">
+												<picture>
+													<source srcset="img/test-exterier-min.webp" type="image/webp">
+													<img src="img/test-exterier-min.jpg" alt="" loading="lazy">
+												</picture>
+											</div>
+											<div class="lk-table-jk__title">3-этажный Особняк, 500 м²</div>
+										</a>
+
+										<a href="account.html" class="lk-user-table__user lk-user-table-cell">
+											<div class="avatar avatar--type-1">
+												<div class="avatar__img">
+													<img src="https://static.wallpapers-anime.com/upload/20170531/647/Z/s/7/Zs7FEF.jpg" alt="">
+												</div>
+											</div>
+										</a>
+
+										<button class="lk-user-table__address tooltip-parent lk-user-table-cell">
+											Московская область,
+											Никологорское коттеджный поселок, ул. Звенигородская
+											<div class="tooltip tooltip--primary tooltip--center tooltip--top">
+												<svg>
+													<use xlink:href="img/sprite.svg#map-flag" />
+												</svg>
+												Смотреть на карте
+											</div>
+										</button>
+
+										<div class="lk-user-table__cost lk-user-table-cell">
+											28 000 000
+										</div>
+
+										<div class="lk-user-table__date lk-user-table-cell">
+											08.11.2020
+										</div>
+
+
+										<div class="lk-user-table-settings settings dropdown" data-toggle-cover>
+											<button class="waves settings-btn" data-toggle-link>
+												<svg>
+													<use xlink:href="img/sprite.svg#settings" />
+												</svg>
+											</button>
+											<div class="settings-list dropdown-content card card--l2" data-toggle-content>
+												<button class="settings-link btn btn--link ">
+													<svg>
+														<use xlink:href="img/sprite.svg#flag" />
+													</svg>
+													В подборку
+												</button>
+												<button class="settings-link btn btn--link ">
+													<svg>
+														<use xlink:href="img/sprite.svg#eye" />
+													</svg>
+													В просмотренное
+												</button>
+												<button class="settings-link btn btn--link link--accent">
+													<svg>
+														<use xlink:href="img/sprite.svg#delete" />
+													</svg>
+													Удалить
+												</button>
+											</div>
+
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+
+						<div class="lk-user-tables__title">Запрос на подбор</div>
+						<div class="lk-user-properties">
+							<div class="lk-user-properties__list">
+								<div class="lk-user-propertie">
+									<div class="lk-user-propertie__title">Тип дома </div>
+									<div class="lk-user-propertie__value">Кирпичный</div>
+								</div>
+								<div class="lk-user-propertie">
+									<div class="lk-user-propertie__title">Цена дома</div>
+									<div class="lk-user-propertie__value">От 32 000 000 до 40 000 000 &#8381;</div>
+								</div>
+								<div class="lk-user-propertie">
+									<div class="lk-user-propertie__title">Район</div>
+									<div class="lk-user-propertie__value">Арбат | Басманный | Замоскворечье</div>
+								</div>
+								<div class="lk-user-propertie">
+									<div class="lk-user-propertie__title">Метро</div>
+									<div class="lk-user-propertie__value">Алтуфьево</div>
+								</div>
+
+							</div>
+
+
+							<div class="lk-user-properties__list">
+								<div class="lk-user-propertie">
+									<div class="lk-user-propertie__title">Площадь дома</div>
+									<div class="lk-user-propertie__value">От 20000 до 30000 м<sup>2</sup></div>
+								</div>
+								<div class="lk-user-propertie">
+									<div class="lk-user-propertie__title">Площадь участка</div>
+									<div class="lk-user-propertie__value">От 20000 до 30000 м<sup>2</sup></div>
+								</div>
+								<div class="lk-user-propertie">
+									<div class="lk-user-propertie__title">Расстояние от МКАД</div>
+									<div class="lk-user-propertie__value">От 15 до 20</div>
+								</div>
+							</div>
+
+
+						</div>
+						<div class="lk-user-btns">
+							<button class="lk-user__like like-btn waves tooltip-parent">
+								<div class="tooltip tooltip--top">Поделиться</div>
+								<svg>
+									<use xlink:href="img/sprite.svg#share"></use>
+								</svg>
+							</button>
+							<button class="lk-user__like like-btn waves tooltip-parent">
+								<div class="tooltip tooltip--top">Распечатать</div>
+								<svg>
+									<use xlink:href="img/sprite.svg#printer"></use>
+								</svg>
+							</button>
+							<button class="lk-user__like like-btn waves tooltip-parent">
+								<div class="tooltip tooltip--top">Отправить</div>
+								<img class="amo-img" src="img/icons/amosrm-like.png" alt="">
+							</button>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+
+
+	</div>
+</div>

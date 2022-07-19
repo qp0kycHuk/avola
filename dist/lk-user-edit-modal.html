@@ -1,0 +1,63 @@
+<div class="fancybox-content">
+	<div class="lk-user-edit-modal card">
+		<div class="lk-modal-plate lk-user-edit-top">
+			<div class="avatar avatar--star avatar--type-1">
+				<div class="avatar__img">
+					<img src="https://static.wallpapers-anime.com/upload/20170531/647/Z/s/7/Zs7FEF.jpg" alt="">
+				</div>
+				<div class="avatar__content">
+					<div class="avatar__title">Алиса Константинова</div>
+				</div>
+			</div>
+			<div class="lk-user-edit-control">
+				<button class="lk-user-edit-control__item btn btn--accent--light">
+					<svg class="icon ">
+						<use xlink:href="img/sprite.svg#lock" />
+					</svg>
+				</button>
+				<button class="lk-user-edit-control__item btn btn--primary--light">
+					<svg class="icon ">
+						<use xlink:href="img/sprite.svg#folders" />
+					</svg>
+				</button>
+			</div>
+		</div>
+		<div class="lk-modal-content">
+			<div class="lk-modal-form">
+
+
+				<div class="lk-modal-fields">
+					<label class="form-field form-field--select">
+						<div class="form-label">Статус</div>
+						<select name="" class="form-input" placeholder="Дом" id="mood-select-id">
+							<option data-icon="img/user/status/1.png" value="Риелтор">Риелтор</option>
+							<option data-icon="img/user/status/2.png" value="Сейчас в поиске">Сейчас в поиске</option>
+							<option data-icon="img/user/status/3.png" value="Планирует покупку скоро">Планирует покупку скоро</option>
+							<option data-icon="img/user/status/4.png" value="Смотрящий-мечтатель">Смотрящий-мечтатель</option>
+							<option data-icon="img/user/status/5.png" value="Купил">Купил</option>
+							<option data-icon="img/user/status/6.png" value="Не планирует покупку">Не планирует покупку</option>
+							<option data-icon="img/user/status/7.png" value="Бан">Бан</option>
+						</select>
+					</label>
+		
+					<label class="form-field">
+						<div class="form-label">Комментарий</div>
+						<div class="form-input-cover">
+							<textarea class="form-input"></textarea>
+						</div>
+					</label>
+				</div>
+				<div class="lk-modal-btns">
+					<button class="lk-modal-btn btn btn--primary">Сохранить</button>
+					<button class="lk-modal-btn btn btn--primary--light">Отмена</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		initSelect(document.getElementById('mood-select-id'), {
+			
+		})
+	</script>
+</div>

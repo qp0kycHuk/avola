@@ -54,10 +54,22 @@ function initSelect(select, settings = {
 	}
 
 	let options = [...select.querySelectorAll('option')]
-	let customOptions = options.map((option) => ({
-		label: option.innerHTML,
-		value: option.value,
-	}));
+
+
+
+	let customOptions = options.map((option) => {
+
+		const icon = option.getAttribute('data-icon')
+
+		const iconHtml = icon ? `<img class="icon mr-2 text-h6" src="${icon}">` : ''
+
+		return {
+			label: '<div class="flex flex-align-center pe-none">' + iconHtml + option.innerHTML + '</div>',
+			// label: '<div>' + option.innerHTML + '</div>',
+			value: option.value,
+
+		}
+	});
 	let id = select.id
 
 	select.setAttribute('data-select-id', id);
@@ -1736,28 +1748,5 @@ document.addEventListener('click', (event) => {
 		aux.select();
 		document.execCommand("copy");
 		event.target.closest('.jk-inner-share__copy').textContent = 'Скопировано';
-	}
-})
-
-
-window.addEventListener('change', (event) => {
-	if (!event.target.closest('.filter-radio-group')) return
-	const cover = event.target.closest('.filter-radio-group')
-	const toggler = cover.querySelector('.filter-radio-group__grouper')
-	const items = Array.from(cover.querySelectorAll('.filter-radio-group__item'))
-
-	if (event.target.classList.contains('filter-radio-group__item')) {
-		if (event.target.checked) {
-			toggler.checked = true
-		}
-	}
-	if (event.target.classList.contains('filter-radio-group__grouper')) {
-		if (event.target.checked) {
-			if (!items.some((c) => c.checked)) {
-				items[0].checked = true
-			}
-		} else {
-			items.forEach((c) => c.checked = false)
-		}
 	}
 })

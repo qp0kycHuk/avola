@@ -10,17 +10,593 @@
 
 
 	<title>Объекты - Сервис Кравченко</title>
-</head>
+<link href="css/style.css" rel="stylesheet"></head>
 
 <body class="">
-	<%= require('../html_includes/lk-header.html').default %>
-	<%= require('../html_includes/lk-sidebar.html').default %>
-	<%= require('../html_includes/lk-filter-object.html').default %>
+
+	<header class="lk-header">
+    <a href="/" class="lk-header-logo logo">
+        <div class="logo__img"><img src="img/icons/logo.svg" alt=""></div>
+        <div class="logo__text">
+            Помощь в подборе <br>
+            недвижимости в Москве
+        </div>
+    </a>
+
+    <section class="lk-header__content">
+        <div class="lk-header__btns">
+            <button class="lk-header__btn btn btn--link" data-modal-link="jk-edit-modal">
+                <div class="btn-icon-round">
+                    <svg class="btn-icon">
+                        <use xlink:href="img/sprite.svg#flat" />
+                    </svg>
+                </div>
+                Добавить квартиру
+            </button>
+            <button class="lk-header__btn btn btn--link" data-modal-link="jk-edit-modal">
+                <div class="btn-icon-round">
+                    <svg class="btn-icon">
+                        <use xlink:href="img/sprite.svg#home-add" />
+                    </svg>
+                </div>
+                Добавить объект
+            </button>
+            <button class="lk-header__btn btn btn--link lk-header__btn--user">
+                <div class="btn-icon-round">
+                    <svg class="btn-icon">
+                        <use xlink:href="img/sprite.svg#user" />
+                    </svg>
+                </div>
+                Добавить пользователя
+            </button>
+        </div>
+    </section>
+
+    <div class="header__control">
+        <div class="lk-header__user">
+            <div class="user-control  dropdown">
+                <button class="user-control__btn waves" data-toggle-link="user-control-dropdown">
+                    <div class="user-control__arrow"></div>
+                    <div class="user-control__img">
+                        <img loading="lazy" src="img/test-avatar.png" alt="">
+                    </div>
+                </button>
+                <div class="user-control-content card card--l2 dropdown-content" id="user-control-dropdown">
+                    <div class="user-control__name">Иван Иванов</div>
+
+                    <button class="user-control__logout btn btn--accent--light">Выйти</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<header class="lk-header lk-header-mobile header-mobile">
+    <button class="header-mobile__icon btn" data-toggle-link="lk-sidebar">
+        <svg>
+            <use xlink:href="img/sprite.svg#burger" />
+        </svg>
+    </button>
+
+    <div class="header-mobile__title">Личный кабинет</div>
+    <button class="header-mobile__btn btn btn--contur" data-toggle-link="lk-filter">
+        <svg class="btn-icon">
+            <use xlink:href="img/sprite.svg#filter" />
+        </svg>
+        Фильтр объектов
+    </button>
+</header>
 
 
 
+
+
+
+	<div class="lk-sidebar" data-toggle-cover id="lk-sidebar">
+		<div class="lk-sidebar-content">
+			<div class="lk-sidebar-item waves waves-light" data-toggle-link>
+				<div class="lk-sidebar-item__img"><img src="img/icons/burger.svg" alt=""></div>
+				<div class="lk-sidebar-item__title">Свернуть меню</div>
+
+			</div>
+			<a href="lk-object.html" class="lk-sidebar-item waves waves-light current">
+				<div class="lk-sidebar-item__img"><img src="img/icons/home--white.svg" alt=""></div>
+				<div class="lk-sidebar-item__title">Объекты</div>
+
+			</a>
+			<a href="lk-users.html" class="lk-sidebar-item waves waves-light">
+				<div class="lk-sidebar-item__img"><img src="img/icons/users.svg" alt=""></div>
+				<div class="lk-sidebar-item__title">Пользователи</div>
+				<div class="lk-sidebar-item__count">25</div>
+			</a>
+			<a href="" class="lk-sidebar-item waves waves-light">
+				<div class="lk-sidebar-item__img"><img src="img/icons/search.svg" alt=""></div>
+				<div class="lk-sidebar-item__title">Запросы на подборку</div>
+				<div class="lk-sidebar-item__count">2</div>
+			</a>
+			<a href="" class="lk-sidebar-item waves waves-light">
+				<div class="lk-sidebar-item__img"><img src="img/icons/eye.svg" alt=""></div>
+				<div class="lk-sidebar-item__title">Запросы на просмотр</div>
+
+			</a>
+			<a href="" class="lk-sidebar-item waves waves-light">
+				<div class="lk-sidebar-item__img"><img src="img/icons/doc.svg" alt=""></div>
+				<div class="lk-sidebar-item__title">Запросы на экспертизу</div>
+				<div class="lk-sidebar-item__count">7</div>
+			</a>
+			<a href="" class="lk-sidebar-item waves waves-light">
+				<div class="lk-sidebar-item__img"><img src="img/icons/home-add.svg" alt=""></div>
+				<div class="lk-sidebar-item__title">Запросы на добавление</div>
+				<div class="lk-sidebar-item__count">1</div>
+			</a>
+
+			<a href="" class="lk-sidebar-item waves waves-light">
+				<div class="lk-sidebar-item__img"><img src="img/icons/folders.svg" alt=""></div>
+				<div class="lk-sidebar-item__title">Архив</div>
+
+			</a>
+			<a href="" class="lk-sidebar-item waves waves-light">
+				<div class="lk-sidebar-item__img"><img src="img/icons/logo-abc.svg" alt=""></div>
+				<div class="lk-sidebar-item__title">Команда</div>
+
+			</a>
+			<a href="" class="lk-sidebar-item waves waves-light">
+				<div class="lk-sidebar-item__img"><img src="img/icons/flag.svg" alt=""></div>
+				<div class="lk-sidebar-item__title">Сохраненные подборки</div>
+
+			</a>
+		</div>
+
+	</div>
+
+	<div class="lk-filter " data-toggle-cover id="lk-filter">
+		<div class="lk-filter__content">
+			<div class="lk-filter-link" data-toggle-link>
+				<svg>
+					<use xlink:href="img/sprite.svg#filter" />
+				</svg>
+				<div class="lk-filter-link__title">Свернуть фильтр</div>
+			</div>
+			<div class="lk-filter__form">
+				<div class="lk-filter__title">Фильтр жилья</div>
+				<div class="lk-filter__fields">
+					<div class="lk-filter-compas" data-toggle-cover data-toggle-height="42">
+						<button class="lk-filter-compas-btn" data-toggle-link>
+							Сторона света
+							<svg class="icon">
+								<use xlink:href="img/sprite.svg#slider-arrow" />
+							</svg>
+						</button>
+						<div class="lk-filter-compas-content">
+							<div class="lk-filter-compas-inner">
+								<label class="lk-filter-compas-item lk-filter-compas-top">
+									<input type="checkbox">
+									<div class="lk-filter-compas-label">С</div>
+									<div class="lk-filter-compas-img">
+										<svg width="10" height="33" viewBox="0 0 10 33" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M4.00567 1.30007C4.13307 0.108479 5.86693 0.108483 5.99433 1.30007L9.21184 31.3937C9.27503 31.9847 8.81187 32.5 8.21751 32.5H1.78249C1.18814 32.5 0.72497 31.9847 0.788156 31.3937L4.00567 1.30007Z" />
+										</svg>
+
+									</div>
+								</label>
+								<label class="lk-filter-compas-item lk-filter-compas-right">
+									<input type="checkbox">
+									<div class="lk-filter-compas-img">
+										<svg width="33" height="10" viewBox="0 0 33 10" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M31.6999 4.00567C32.8915 4.13307 32.8915 5.86693 31.6999 5.99433L1.60631 9.21184C1.01532 9.27503 0.5 8.81186 0.5 8.21751L0.5 1.78249C0.5 1.18813 1.01532 0.724968 1.60631 0.788155L31.6999 4.00567Z" />
+										</svg>
+
+									</div>
+									<div class="lk-filter-compas-label">В</div>
+
+								</label>
+								<label class="lk-filter-compas-item lk-filter-compas-bottom">
+									<input type="checkbox">
+									<div class="lk-filter-compas-img">
+										<svg width="10" height="33" viewBox="0 0 10 33" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M5.99433 31.6999C5.86693 32.8915 4.13307 32.8915 4.00567 31.6999L0.788156 1.60631C0.724969 1.01532 1.18813 0.5 1.78249 0.5H8.21751C8.81186 0.5 9.27503 1.01532 9.21184 1.60631L5.99433 31.6999Z" />
+										</svg>
+
+									</div>
+									<div class="lk-filter-compas-label">Ю</div>
+
+								</label>
+								<label class="lk-filter-compas-item lk-filter-compas-left">
+									<input type="checkbox">
+									<div class="lk-filter-compas-label">З</div>
+									<div class="lk-filter-compas-img">
+										<svg width="33" height="10" viewBox="0 0 33 10" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M1.30007 5.99433C0.10848 5.86693 0.108484 4.13307 1.30007 4.00567L31.3937 0.788156C31.9847 0.72497 32.5 1.18814 32.5 1.78249L32.5 8.21751C32.5 8.81187 31.9847 9.27503 31.3937 9.21185L1.30007 5.99433Z" />
+										</svg>
+
+									</div>
+								</label>
+								<label class="lk-filter-compas-item lk-filter-compas-center">
+									<input type="checkbox">
+									<div class="lk-filter-compas-label">ЦАО</div>
+									<div class="lk-filter-compas-round"></div>
+								</label>
+
+
+								<label class="lk-filter-compas-item lk-filter-compas-rt">
+									<input type="checkbox">
+
+									<div class="lk-filter-compas-label">СВ</div>
+									<div class="lk-filter-compas-img">
+										<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M18.987 3.68441C19.9117 2.99293 21.0781 4.15936 20.3867 5.08412L7.07567 22.8858C6.7109 23.3737 5.99842 23.4248 5.5677 22.9941L1.07697 18.5034C0.646243 18.0726 0.697396 17.3602 1.18523 16.9954L18.987 3.68441Z" />
+										</svg>
+									</div>
+								</label>
+
+								<label class="lk-filter-compas-item lk-filter-compas-rb">
+									<input type="checkbox">
+									<div class="lk-filter-compas-img">
+										<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M18.987 20.3156C19.9117 21.0071 21.0781 19.8406 20.3867 18.9159L7.07567 1.11416C6.7109 0.626328 5.99842 0.575174 5.5677 1.0059L1.07697 5.49663C0.646243 5.92735 0.697396 6.63983 1.18523 7.0046L18.987 20.3156Z" />
+										</svg>
+
+									</div>
+									<div class="lk-filter-compas-label">ЮВ</div>
+								</label>
+
+								<label class="lk-filter-compas-item lk-filter-compas-lb">
+									<input type="checkbox">
+									<div class="lk-filter-compas-img">
+										<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M5.01305 20.3156C4.08828 21.0071 2.92186 19.8406 3.61334 18.9159L16.9243 1.11416C17.2891 0.626328 18.0016 0.575174 18.4323 1.0059L22.923 5.49663C23.3538 5.92735 23.3026 6.63983 22.8148 7.0046L5.01305 20.3156Z" />
+										</svg>
+
+									</div>
+									<div class="lk-filter-compas-label">ЮЗ</div>
+								</label>
+
+								<label class="lk-filter-compas-item lk-filter-compas-lt">
+									<input type="checkbox">
+									<div class="lk-filter-compas-label">СЗ</div>
+									<div class="lk-filter-compas-img">
+										<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M5.01305 3.68441C4.08828 2.99293 2.92186 4.15936 3.61334 5.08412L16.9243 22.8858C17.2891 23.3737 18.0016 23.4248 18.4323 22.9941L22.923 18.5034C23.3538 18.0726 23.3026 17.3602 22.8148 16.9954L5.01305 3.68441Z" />
+										</svg>
+
+									</div>
+								</label>
+							</div>
+						</div>
+					</div>
+
+					<label class="form-field form-field--select">
+						<div class="form-label">Жильё</div>
+						<select name="" class="form-input" placeholder="Дом">
+							<option value="Дом">Дом</option>
+							<option value="Не дом" selected>Не дом</option>
+						</select>
+					</label>
+					<label class="form-field form-field--select">
+						<div class="form-label">Тип</div>
+						<select name="" class="form-input" placeholder="Кирпичный">
+							<option value="Кирпичный">Кирпичный</option>
+							<option value="Не кирпичный">Не кирпичный</option>
+						</select>
+					</label>
+					<label class="form-field form-field--select">
+						<div class="form-label">Район</div>
+						<select name="" class="form-input" placeholder="Внуковское">
+							<option value="Внуковское">Внуковское</option>
+							<option value="Дедовское">Дедовское</option>
+							<option selected value="Дедовское 1">Дедовское 1</option>
+							<option value="Дедовское 2">Дедовское 2</option>
+						</select>
+					</label>
+					<label class="form-field form-field--select">
+						<div class="form-label">Метро</div>
+						<select name="" class="form-input" placeholder="Алтуфьево">
+							<option value="Алтуфьево">Алтуфьево</option>
+							<option value="...">...</option>
+						</select>
+					</label>
+					<label class="form-field">
+						<div class="form-label">Цена, руб</div>
+						<div class="form-input-group">
+							<input type="number" class="form-input" placeholder="От">
+							<input type="number" class="form-input" placeholder="До">
+						</div>
+					</label>
+					<label class="form-field">
+						<div class="form-label">Площадь дома, м²</div>
+						<div class="form-input-group">
+							<input type="number" class="form-input" placeholder="От">
+							<input type="number" class="form-input" placeholder="До">
+						</div>
+					</label>
+					<label class="form-field">
+						<div class="form-label">Площадь участка, м²</div>
+						<div class="form-input-group">
+							<input type="number" class="form-input" placeholder="От">
+							<input type="number" class="form-input" placeholder="До">
+						</div>
+					</label>
+					<label class="form-field">
+						<div class="form-label">Расстояние от МКАД, км</div>
+						<div class="form-input-group">
+							<input type="number" class="form-input" placeholder="От">
+							<input type="number" class="form-input" placeholder="До">
+						</div>
+					</label>
+				</div>
+				<div class="lk-filter__btns">
+					<button class="lk-filter__btn btn btn--primary">Показать объекты</button>
+					<button class="lk-filter__btn btn btn--contur-primary">Показать на карте</button>
+				</div>
+
+
+
+			</div>
+
+		</div>
+		<div class="lk-filter-badges">
+			<div class="lk-filter-badges-item">
+				<svg class="icon">
+					<use xlink:href="img/sprite.svg#homegroup" />
+				</svg>
+			</div>
+			<div class="lk-filter-badges-item">
+				<svg class="icon">
+					<use xlink:href="img/sprite.svg#home" />
+				</svg>
+			</div>
+			<div class="lk-filter-badges-item">
+				<svg class="icon">
+					<use xlink:href="img/sprite.svg#bench" />
+				</svg>
+			</div>
+			<div class="lk-filter-badges-item">
+				<svg class="icon">
+					<use xlink:href="img/sprite.svg#metro" />
+				</svg>
+			</div>
+			<div class="lk-filter-badges-item">
+				<svg class="icon">
+					<use xlink:href="img/sprite.svg#wallet-filled-money-tool" />
+				</svg>
+			</div>
+			<div class="lk-filter-badges-item">
+				<svg class="icon">
+					<use xlink:href="img/sprite.svg#square-1" />
+				</svg>
+			</div>
+			<div class="lk-filter-badges-item">
+				<svg class="icon">
+					<use xlink:href="img/sprite.svg#square-2" />
+				</svg>
+			</div>
+
+			<div class="lk-filter-badges-item">
+				<svg class="icon">
+					<use xlink:href="img/sprite.svg#car" />
+				</svg>
+			</div>
+
+			<div class="lk-filter-badges-item">
+				<svg class="icon">
+					<use xlink:href="img/sprite.svg#call" />
+				</svg>
+			</div>
+		</div>
+	</div>
 
 	<section class="lk-content">
+		<div class="card-remove-cover" data-id="jk-1">
+			<div class="card">
+				<div class="jk-item">
+					<div class="jk-item-gallery">
+						<div class="jk-item-gallery-slider swiper-container">
+							<div class="swiper-wrapper">
+								<a data-fancybox="gallery-1" href="img/test-exterier.jpg"
+									class="jk-item-gallery__anons waves swiper-slide">
+									<picture>
+										<source srcset="img/test-exterier-min.webp" type="image/webp">
+										<img src="img/test-exterier-min.jpg" alt="" loading="lazy">
+									</picture>
+								</a>
+								<a data-fancybox="gallery-1" href="img/test-interier.jpg"
+									class="jk-item-gallery__anons waves swiper-slide">
+									<picture>
+										<source srcset="img/test-interier-min.webp" type="image/webp">
+										<img src="img/test-interier-min.jpg" alt="" loading="lazy">
+									</picture>
+								</a>
+
+							</div>
+
+							<div class="jk-item-gallery-pagination"></div>
+							<button class="jk-item-gallery-arrow jk-item-gallery-arrow-prev"></button>
+							<button class="jk-item-gallery-arrow jk-item-gallery-arrow-next"></button>
+						</div>
+						<a data-fancybox="gallery-1-previews" href="img/test-interier.jpg" class="jk-item-gallery__preview waves">
+							<picture>
+								<source srcset="img/test-interier-min.webp" type="image/webp">
+								<img src="img/test-interier-min.jpg" alt="" loading="lazy">
+							</picture>
+						</a>
+						<a data-fancybox="gallery-1-previews" href="img/test-exterier.jpg" class="jk-item-gallery__preview waves">
+							<picture>
+								<source srcset="img/test-exterier-min.webp" type="image/webp">
+								<img src="img/test-exterier-min.jpg" alt="" loading="lazy">
+							</picture>
+						</a>
+						<a data-fancybox="gallery-1-previews" href="img/test-exterier.jpg" class="jk-item-gallery__preview waves">
+							<picture>
+								<source srcset="img/test-exterier-min.webp" type="image/webp">
+								<img src="img/test-exterier-min.jpg" alt="" loading="lazy">
+							</picture>
+						</a>
+
+						<a data-fancybox="gallery-1-previews" href="https://picsum.photo/600/400?random=5" style="display:none"></a>
+						<a data-fancybox="gallery-1-previews" href="https://picsum.photo/600/400?random=6" style="display:none"></a>
+						<a data-fancybox="gallery-1-previews" href="https://picsum.photo/600/400?random=7" style="display:none"></a>
+
+
+						<a class="jk-item-gallery__preview waves ">
+							<div class="jk-item-gallery__link">Еще фото</div>
+							<picture>
+								<source srcset="img/test-interier-min.webp" type="image/webp">
+								<img src="img/test-interier-min.jpg" alt="" loading="lazy">
+							</picture>
+						</a>
+
+					</div>
+					<div class="jk-item-content">
+						<div class="jk-item-content__name">2-этажный коттедж, 500 м<sup>2</sup></div>
+						<div class="jk-item-content__status">Москва, СВАО, р-н Северный, Челобитьевское ш., 1Гк11
+							<a data-fancybox data-type="iframe"
+								data-src="https://yandex.ru/map-widget/v1/?um=constructor%3A2e5040778f1101d4afacf107320478c422ca01f0d00c537ed96eff00a6fd0ffc&amp;source=constructor"
+								href="javascript:;" class="link">на карте</a>
+						</div>
+						<div class="jk-item-content__verify jk-item-content__verify--success">
+							<div class="jk-item-properties__info">
+								<img src="img/icons/verified--success.svg" alt=""><span>Прошел экспертизу</span>
+							</div>
+							<button class="jk-item-properties__btn btn btn--success">Скачать отчет</button>
+						</div>
+						<div class="jk-item-content__info"><img src="img/icons/metro.svg" alt="">Алтуфьево ⋅ 15 мин. на
+							транспорте
+						</div>
+						<div class="jk-item-content__info"><img src="img/icons/car.svg" alt="">Дмитровское шоссе, 1 км от МКАД
+						</div>
+
+						<div class="jk-item-content__cost">27 100 000 ₽</div>
+						<div class="jk-item-content__user">
+							<div class="avatar avatar--star avatar--type-1">
+								<div class="avatar__img">
+									<img src="https://static.wallpapers-anime.com/upload/20170531/647/Z/s/7/Zs7FEF.jpg" alt="">
+								</div>
+								<div class="avatar__content">
+									<div class="avatar__title">Добавил(а) Алиса Константинова</div>
+									<div class="avatar__subtitle">17.11.2020</div>
+								</div>
+							</div>
+						</div>
+
+
+
+						<div class="jk-item-asign">
+							<div class="jk-item-source">
+								<div class="jk-item-source__title">Исходное объявление</div>
+								<!-- <div class="jk-item-source__link">https://www.avito.ru/s...</div> -->
+								<div class="jk-item-source__list">
+									<div class="jk-item-source__item tooltip-parent">
+										<img src="https://picsum.photos/id/1081/600/400" alt="">
+										<div class="tooltip tooltip--top">domhub.com</div>
+									</div>
+									<div class="jk-item-source__item tooltip-parent">
+										<img src="https://picsum.photos/id/1081/600/400" alt="">
+										<div class="tooltip tooltip--top">domhub.com</div>
+									</div>
+									<div class="jk-item-source__item tooltip-parent">
+										<img src="https://picsum.photos/id/1081/600/400" alt="">
+										<div class="tooltip tooltip--top">domhub.com</div>
+									</div>
+								</div>
+							</div>
+
+
+							<div class="jk-item-builder">
+								<div class="jk-item-builder__title">Застройщик</div>
+								<div class="jk-item-builder__link">8 (918) 000-00-00</div>
+							</div>
+
+						</div>
+
+					</div>
+					<div class="jk-item-properties">
+						<div class="jk-item-properties__info">
+							<img src="img/icons/home.svg" alt=""><span>Тип: </span>Монолитный
+						</div>
+						<div class="jk-item-properties__info">
+							<img src="img/icons/square-1.svg" alt=""><span>Площадь дома: </span>191.3 м²
+						</div>
+						<div class="jk-item-properties__info">
+							<img src="img/icons/square-2.svg" alt=""><span>Площадь участка: </span>235 соток
+						</div>
+						<div class="jk-item-properties__info">
+							<img src="img/icons/floors.svg" alt=""><span>Количество этажей: </span>2
+						</div>
+						<div class="jk-item-properties__line"></div>
+						<div class="jk-item-properties__verify">
+							<div class="jk-item-properties__info">
+								<img src="img/icons/verified--success.svg" alt=""><span>Дом прошел экспертизу</span>
+							</div>
+							<button data-modal-link="message-modal" class="jk-item-properties__btn btn btn--red">И не пройдет
+								=)</button>
+						</div>
+
+					</div>
+
+					<div class="jk-item-control">
+						<div class=" jk-item-control-left">
+							<button class="jk-item-control__btn btn btn--contur-primary">
+								<svg class="btn-icon">
+									<use xlink:href="img/sprite.svg#plus-1" />
+								</svg>
+							</button>
+						</div>
+						<div class="jk-item-control-right">
+							<button class="jk-item-control__btn btn btn--icon-light btn--primary--light" title="Редактировать"
+								data-tooltip data-tooltip-position="top">
+								<svg class="btn-icon">
+									<use xlink:href="img/sprite.svg#edit" />
+								</svg>
+
+
+							</button>
+							<button class="jk-item-control__btn btn btn--icon-light btn--primary--light tooltip-parent">
+								<svg class="btn-icon">
+									<use xlink:href="img/sprite.svg#folders" />
+								</svg>
+								<div class="tooltip tooltip--top">В архив</div>
+							</button>
+							<button class="jk-item-control__btn btn btn--accent--light tooltip-parent"
+								onclick="Actions.jk().remove('jk-1').start()">
+								<svg class="btn-icon">
+									<use xlink:href="img/sprite.svg#delete" />
+								</svg>
+								<div class="tooltip tooltip--top">Удалить</div>
+							</button>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+
+			<button class="jk-return btn btn--white" onclick="Actions.jk().remove('jk-1').cancel()">
+
+				<div class="jk-return__title">2-этажный коттедж, 500 м<sup>2</sup> </div>
+				<div class="jk-return__subtitle">Москва, СВАО, р-н Северный, Челобитьевское ш., 1Гк11</div>
+				<div class="jk-return__cost">27 100 000 ₽</div>
+				<svg class="btn-icon">
+					<use xlink:href="img/sprite.svg#return" />
+				</svg>
+				Нажмите чтобы восстановить&nbsp;
+
+				<div class="jk-return-time"> 5</div>с
+			</button>
+		</div>
+
+
+
+
+
+
 		<div class="lk-cover">
 			<label class="form-field form-field--select">
 				<div class="form-label">Жильё</div>
@@ -10101,6 +10677,11 @@
 		</div>
 	</section>
 
+
+
+
+
+
 	<section class="modal" data-modal-cover id="lk-team-edit">
 		<div class="modal-container">
 			<div class="lk-team-edit-modal card">
@@ -10204,6 +10785,8 @@
 		</div>
 	</section>
 
+
+
 	<section class="modal" data-modal-cover id="lk-user-return">
 		<div class="modal-container">
 			<div class="lk-user-edit-modal card">
@@ -10257,6 +10840,9 @@
 			</div>
 		</div>
 	</section>
+
+
+
 
 	<section class="modal" data-modal-cover id="lk-peredat-object">
 		<div class="modal-container">
@@ -10683,6 +11269,10 @@
 		</div>
 	</section>
 
+
+
+
+
 	<script src="source/jquery-3.5.0.min.js"></script>
 	<script src="source/jquery.fancybox.min.js"></script>
 	<script src="source/maskedinput.js"></script>
@@ -10704,6 +11294,6 @@
 		})
 	</script>
 
-</body>
+<script src="index.js"></script></body>
 
 </html>
