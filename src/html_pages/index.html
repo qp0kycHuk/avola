@@ -11,7 +11,21 @@
 	<!-- <link rel="stylesheet" href="css/frontend--fonts.css"> -->
 	<!-- <link rel="stylesheet" href="css/frontend--style.css"> -->
 	<!-- <link rel="stylesheet" href="css/krd-styles.css"> -->
-	<link rel="stylesheet" href="dist/css/style.css">
+	<!-- <link rel="stylesheet" href="dist/css/style.css"> -->
+	
+	<script src="source/jquery-3.5.0.min.js"></script>
+	<script src="source/jquery.fancybox.min.js"></script>
+	<script src="source/maskedinput.js"></script>
+	<script src="source/waves.js"></script>
+	<script src="source/swiper-bundle.min.js"></script>
+	<script src="source/select.bundle.min.js"></script>
+
+	<script src="js/frontend--polifils.js"></script>
+	<script src="js/frontend--modal.js"></script>
+	<script src="js/frontend--tab.js"></script>
+	<script src="js/frontend--toggle.js"></script>
+	<script src="js/frontend--template.js"></script>
+
 
 	<title>Главная - Сервис Кравченко</title>
 </head>
@@ -23,7 +37,7 @@
 			<div class="notify-title">Сервис Avola находится на стадии тестирования и постоянно улучшается =)</div>
 			<button class="notify-btn" data-toggle-link>
 				<svg class="icon">
-					<use xlink:href="dist/img/sprite.svg#cross" />
+					<use xlink:href="img/sprite.svg#cross" />
 				</svg>
 			</button>
 		</div>
@@ -40,12 +54,9 @@
 		})();
 	</script>
 
-
-
-
 	<header class="header">
 		<a href="/" class="lk-header-logo logo">
-			<div class="logo__img"><img src="dist/img/icons/logo.svg" alt=""></div>
+			<div class="logo__img"><img src="img/icons/logo.svg" alt=""></div>
 			<div class="logo__text">
 				Помощь в подборе <br>
 				недвижимости в Москве
@@ -54,11 +65,11 @@
 		<div class="header-control">
 			<div class="header-control__btns">
 				<button class="btn btn--link" data-modal-link="info-modal">
-					<img class=" btn-icon" src="dist/img/icons/expertise.svg" alt="" class="">
+					<img class=" btn-icon" src="img/icons/expertise.svg" alt="" class="">
 					Заказать экспертизу
 				</button>
 				<button class="btn btn--link">
-					<img src="dist/img/icons/add.svg" alt="" class="btn-icon">
+					<img src="img/icons/add.svg" alt="" class="btn-icon">
 					Добавить объект
 				</button>
 			</div>
@@ -66,7 +77,7 @@
 				<div class="header-control__like dropdown">
 					<button class="like-btn icon waves" data-toggle-link="favorites-dropdown">
 						<svg>
-							<use xlink:href="dist/img/sprite.svg#like" />
+							<use xlink:href="img/sprite.svg#like" />
 						</svg>
 					</button>
 					<div class="dropdown-content header-favorites card card--l2" id="favorites-dropdown">
@@ -145,7 +156,7 @@
 				<div class="header-control__like">
 					<button class="like-btn icon waves">
 						<svg>
-							<use xlink:href="dist/img/sprite.svg#notification" />
+							<use xlink:href="img/sprite.svg#notification" />
 						</svg>
 					</button>
 				</div>
@@ -153,7 +164,7 @@
 			</div>
 			<button class="header-control__signup btn btn--primary" data-modal-link="login-modal">
 				<svg class="btn-icon">
-					<use xlink:href="dist/img/sprite.svg#user" />
+					<use xlink:href="img/sprite.svg#user" />
 				</svg>
 				Войти
 			</button>
@@ -165,12 +176,12 @@
 	<header class="header-mobile">
 		<button class="header-mobile__icon btn" data-modal-link="menu-modal">
 			<svg>
-				<use xlink:href="dist/img/sprite.svg#burger" />
+				<use xlink:href="img/sprite.svg#burger" />
 			</svg>
 		</button>
 		<div class="header-mobile-logo logo">
 			<div class="logo__img"><svg class="icon">
-					<use xlink:href="dist/img/utils.svg#logo" />
+					<use xlink:href="img/utils.svg#logo" />
 				</svg></div>
 			<div class="logo__text">
 				Помощь в подборе <br>
@@ -180,7 +191,7 @@
 		<!-- <div class="header-mobile__title">Личный кабинет</div> -->
 		<button class="header-mobile__btn btn btn--contur" data-modal-link="filter-modal">
 			<svg class="btn-icon">
-				<use xlink:href="dist/img/sprite.svg#filter" />
+				<use xlink:href="img/sprite.svg#filter" />
 			</svg>
 			Фильтр объектов
 		</button>
@@ -202,7 +213,7 @@
 			<div class="filter__title">подберем Вам идеальное жилье в москве</div>
 			<button data-modal-link="filter-modal" class="btn btn--white filter-mobile-btn">
 				<svg class="icon btn-icon">
-					<use xlink:href="dist/img/sprite.svg#filter" />
+					<use xlink:href="img/sprite.svg#filter" />
 				</svg>
 				Поиск объектов
 			</button>
@@ -368,11 +379,11 @@
 
 		<div class="float-buner float-buner-hidden" style="display:none">
 			<div class="float-buner-img">
-				<img src="dist/img/broken.svg" alt="">
+				<img src="img/broken.svg" alt="">
 			</div>
 			<button class="float-buner-close">
 				<svg class="icon">
-					<use xlink:href="dist/img/sprite.svg#cross" />
+					<use xlink:href="img/sprite.svg#cross" />
 				</svg>
 			</button>
 			<div class="float-buner-content">
@@ -420,7 +431,7 @@
 		<!-- <div class="team-list ">
 			<div class="team-item team-item-1" style="background: #FFD281;">
 				<div class="team-item__img">
-					<img src="dist/img/sempl/team-kravchenko.png" alt="">
+					<img src="img/sempl/team-kravchenko.png" alt="">
 				</div>
 				<div class="team-item__content">
 					<div class="team-item__title">
@@ -442,7 +453,7 @@
 					</div>
 					<a href="" target="_blank" class="team-item__link">
 						<div class="team-item__youtube">
-							<img src="dist/img/icons/soc-youtube.svg" alt="">
+							<img src="img/icons/soc-youtube.svg" alt="">
 						</div>
 						90 000+ подписчиков
 						на YouTube
@@ -451,7 +462,7 @@
 			</div>
 			<div class="team-item team-item-2" style="background: #FFC2BE;">
 				<div class="team-item__img">
-					<img src="dist/img/sempl/team-petrusha.png" alt="">
+					<img src="img/sempl/team-petrusha.png" alt="">
 				</div>
 				<div class="team-item__content">
 					<div class="team-item__title">
@@ -474,7 +485,7 @@
 					</div>
 					<a href="https://www.youtube.com/channel/UCq04tnZGXkeQE8VkxI1OXDg" target="_blank" class="team-item__link">
 						<div class="team-item__youtube">
-							<img src="dist/img/icons/soc-youtube.svg" alt="">
+							<img src="img/icons/soc-youtube.svg" alt="">
 						</div>
 						420 000+ подписчиков
 						на YouTube
@@ -488,7 +499,7 @@
 			<div class="team-banner__bg team-banner__bg--2"></div>
 			<div class="team-banner__block">
 				<div class="team-banner__pic">
-					<img class="team-banner__img" src="dist/img/krav.png" alt="">
+					<img class="team-banner__img" src="img/krav.png" alt="">
 				</div>
 				<div class="team-banner__content">
 					<div class="team-banner__title">ПОДБИРАЕМ ЛУЧШУЮ НЕДВИЖИМОСТЬ</div>
@@ -499,7 +510,7 @@
 						<div class="team-banner__name">Александр Кравченко</div>
 						<div class="team-banner__text">Самый популярный эксперт по недвижимости</div>
 						<a class="team-banner__yt" href="https://www.youtube.com/channel/UCq04tnZGXkeQE8VkxI1OXDg" target="">
-							<img class="team-banner__icon icon" src="dist/img/icons/yt.svg" alt="">
+							<img class="team-banner__icon icon" src="img/icons/yt.svg" alt="">
 							<span class="team-banner__yt-text">100 000+ подписчиков на YouTube</span>
 						</a>
 					</div>
@@ -533,18 +544,18 @@
 				<div class="jk-item-gallery">
 					<div class="jk-item-gallery-slider swiper-container">
 						<div class="swiper-wrapper">
-							<a data-height="800" data-fancybox="gallery-2" href="dist/img/test-interier-min.jpg"
+							<a data-height="800" data-fancybox="gallery-2" href="img/test-interier-min.jpg"
 								class="jk-item-gallery__anons waves swiper-slide">
 								<picture>
-									<source srcset="dist/img/test-interier-min.webp" type="image/webp">
-									<img src="dist/img/test-interier-min.jpg" alt="" loading="lazy">
+									<source srcset="img/test-interier-min.webp" type="image/webp">
+									<img src="img/test-interier-min.jpg" alt="" loading="lazy">
 								</picture>
 							</a>
-							<a data-height="800" data-fancybox="gallery-2" href="dist/img/test-exterier-min.jpg"
+							<a data-height="800" data-fancybox="gallery-2" href="img/test-exterier-min.jpg"
 								class="jk-item-gallery__anons waves swiper-slide">
 								<picture>
-									<source srcset="dist/img/test-exterier-min.webp" type="image/webp">
-									<img src="dist/img/test-exterier-min.jpg" alt="" loading="lazy">
+									<source srcset="img/test-exterier-min.webp" type="image/webp">
+									<img src="img/test-exterier-min.jpg" alt="" loading="lazy">
 								</picture>
 							</a>
 						</div>
@@ -553,25 +564,25 @@
 						<button class="jk-item-gallery-arrow jk-item-gallery-arrow-prev"></button>
 						<button class="jk-item-gallery-arrow jk-item-gallery-arrow-next"></button>
 					</div>
-					<a data-height="800" data-fancybox="gallery-2" href="dist/img/test-exterier.jpg"
+					<a data-height="800" data-fancybox="gallery-2" href="img/test-exterier.jpg"
 						class="jk-item-gallery__preview waves">
 						<picture>
-							<source srcset="dist/img/test-exterier-min.webp" type="image/webp">
-							<img src="dist/img/test-exterier-min.jpg" alt="" loading="lazy">
+							<source srcset="img/test-exterier-min.webp" type="image/webp">
+							<img src="img/test-exterier-min.jpg" alt="" loading="lazy">
 						</picture>
 					</a>
-					<a data-height="800" data-fancybox="gallery-2" href="dist/img/test-interier.jpg"
+					<a data-height="800" data-fancybox="gallery-2" href="img/test-interier.jpg"
 						class="jk-item-gallery__preview waves">
 						<picture>
-							<source srcset="dist/img/test-interier-min.webp" type="image/webp">
-							<img src="dist/img/test-interier-min.jpg" alt="" loading="lazy">
+							<source srcset="img/test-interier-min.webp" type="image/webp">
+							<img src="img/test-interier-min.jpg" alt="" loading="lazy">
 						</picture>
 					</a>
 					<a class="jk-item-gallery__preview waves ">
 						<div class="jk-item-gallery__link">Еще фото</div>
 						<picture>
-							<source srcset="dist/img/test-exterier-min.webp" type="image/webp">
-							<img src="dist/img/test-exterier-min.jpg" alt="" loading="lazy">
+							<source srcset="img/test-exterier-min.webp" type="image/webp">
+							<img src="img/test-exterier-min.jpg" alt="" loading="lazy">
 						</picture>
 					</a>
 				</div>
@@ -584,38 +595,38 @@
 						</div>
 						<button class="jk-item-properties__btn btn btn--pikachu">Заказать отчет</button>
 					</div>
-					<div class="jk-item-content__info"><img src="dist/img/icons/metro.svg" alt="">Алтуфьево ⋅ 15 мин. на транспорте
+					<div class="jk-item-content__info"><img src="img/icons/metro.svg" alt="">Алтуфьево ⋅ 15 мин. на транспорте
 					</div>
-					<div class="jk-item-content__info"><img src="dist/img/icons/car.svg" alt="">Дмитровское шоссе, 1 км от МКАД
+					<div class="jk-item-content__info"><img src="img/icons/car.svg" alt="">Дмитровское шоссе, 1 км от МКАД
 					</div>
 
 					<div class="jk-item-content__cost">27 100 000 ₽</div>
 					<div class="jk-item-content__btns">
 						<button class="jk-item-content__like like-btn like-btn--active waves">
 							<svg>
-								<use xlink:href="dist/img/sprite.svg#like" />
+								<use xlink:href="img/sprite.svg#like" />
 							</svg>
 						</button>
 						<button class="jk-item-content__btn jk-item-content__btn--mobile btn btn--primary">Подробнее</button>
 						<button class="jk-item-content__btn jk-item-content__phone btn btn--primary">Показать телефон</button>
 						<a class="jk-item-content__btn jk-item-content__record btn--icon-left btn btn--contur">
-							<img src="dist/img/icons/play-circle.svg" alt="" class="btn-icon">
+							<img src="img/icons/play-circle.svg" alt="" class="btn-icon">
 							Смотреть видеообзор
 						</a>
 					</div>
 				</div>
 				<div class="jk-item-properties">
 					<div class="jk-item-properties__info">
-						<img src="dist/img/icons/home.svg" alt=""><span>Тип: </span>Монолитный
+						<img src="img/icons/home.svg" alt=""><span>Тип: </span>Монолитный
 					</div>
 					<div class="jk-item-properties__info">
-						<img src="dist/img/icons/square-1.svg" alt=""><span>Площадь дома: </span>191.3 м²
+						<img src="img/icons/square-1.svg" alt=""><span>Площадь дома: </span>191.3 м²
 					</div>
 					<div class="jk-item-properties__info">
-						<img src="dist/img/icons/square-2.svg" alt=""><span>Площадь участка: </span>235 соток
+						<img src="img/icons/square-2.svg" alt=""><span>Площадь участка: </span>235 соток
 					</div>
 					<div class="jk-item-properties__info">
-						<img src="dist/img/icons/floors.svg" alt=""><span>Количество этажей: </span>2
+						<img src="img/icons/floors.svg" alt=""><span>Количество этажей: </span>2
 					</div>
 					<div class="jk-item-properties__line"></div>
 					<div class="jk-item-properties__verify">
@@ -631,18 +642,18 @@
 				<div class="jk-item-gallery">
 					<div class="jk-item-gallery-slider swiper-container">
 						<div class="swiper-wrapper">
-							<a data-height="800" data-fancybox="gallery-1" href="dist/img/test-exterier.jpg"
+							<a data-height="800" data-fancybox="gallery-1" href="img/test-exterier.jpg"
 								class="jk-item-gallery__anons waves swiper-slide">
 								<picture>
-									<source srcset="dist/img/test-exterier-min.webp" type="image/webp">
-									<img src="dist/img/test-exterier-min.jpg" alt="" loading="lazy">
+									<source srcset="img/test-exterier-min.webp" type="image/webp">
+									<img src="img/test-exterier-min.jpg" alt="" loading="lazy">
 								</picture>
 							</a>
-							<a data-height="800" data-fancybox="gallery-1" href="dist/img/test-interier.jpg"
+							<a data-height="800" data-fancybox="gallery-1" href="img/test-interier.jpg"
 								class="jk-item-gallery__anons waves swiper-slide">
 								<picture>
-									<source srcset="dist/img/test-interier-min.webp" type="image/webp">
-									<img src="dist/img/test-interier-min.jpg" alt="" loading="lazy">
+									<source srcset="img/test-interier-min.webp" type="image/webp">
+									<img src="img/test-interier-min.jpg" alt="" loading="lazy">
 								</picture>
 							</a>
 
@@ -652,26 +663,26 @@
 						<button class="jk-item-gallery-arrow jk-item-gallery-arrow-prev"></button>
 						<button class="jk-item-gallery-arrow jk-item-gallery-arrow-next"></button>
 					</div>
-					<a data-height="800" data-fancybox="gallery-1" href="dist/img/test-interier.jpg"
+					<a data-height="800" data-fancybox="gallery-1" href="img/test-interier.jpg"
 						class="jk-item-gallery__preview waves">
 						<picture>
-							<source srcset="dist/img/test-interier-min.webp" type="image/webp">
-							<img src="dist/img/test-interier-min.jpg" alt="" loading="lazy">
+							<source srcset="img/test-interier-min.webp" type="image/webp">
+							<img src="img/test-interier-min.jpg" alt="" loading="lazy">
 						</picture>
 					</a>
-					<a data-height="800" data-fancybox="gallery-1" href="dist/img/test-exterier.jpg"
+					<a data-height="800" data-fancybox="gallery-1" href="img/test-exterier.jpg"
 						class="jk-item-gallery__preview waves">
 						<picture>
-							<source srcset="dist/img/test-exterier-min.webp" type="image/webp">
-							<img src="dist/img/test-exterier-min.jpg" alt="" loading="lazy">
+							<source srcset="img/test-exterier-min.webp" type="image/webp">
+							<img src="img/test-exterier-min.jpg" alt="" loading="lazy">
 						</picture>
 					</a>
 
 					<a class="jk-item-gallery__preview waves ">
 						<div class="jk-item-gallery__link">Еще фото</div>
 						<picture>
-							<source srcset="dist/img/test-interier-min.webp" type="image/webp">
-							<img src="dist/img/test-interier-min.jpg" alt="" loading="lazy">
+							<source srcset="img/test-interier-min.webp" type="image/webp">
+							<img src="img/test-interier-min.jpg" alt="" loading="lazy">
 						</picture>
 					</a>
 
@@ -681,25 +692,25 @@
 					<div class="jk-item-content__status">Москва, СВАО, р-н Северный, Челобитьевское ш., 1Гк11</div>
 					<div class="jk-item-content__verify jk-item-content__verify--success">
 						<div class="jk-item-properties__info">
-							<img src="dist/img/icons/verified--success.svg" alt=""><span>Прошел экспертизу</span>
+							<img src="img/icons/verified--success.svg" alt=""><span>Прошел экспертизу</span>
 						</div>
 						<button class="jk-item-properties__btn btn btn--success">Скачать отчет</button>
 					</div>
-					<div class="jk-item-content__info"><img src="dist/img/icons/metro.svg" alt="">Алтуфьево ⋅ 15 мин. на транспорте
+					<div class="jk-item-content__info"><img src="img/icons/metro.svg" alt="">Алтуфьево ⋅ 15 мин. на транспорте
 					</div>
-					<div class="jk-item-content__info"><img src="dist/img/icons/car.svg" alt="">Дмитровское шоссе, 1 км от МКАД
+					<div class="jk-item-content__info"><img src="img/icons/car.svg" alt="">Дмитровское шоссе, 1 км от МКАД
 					</div>
 
 					<div class="jk-item-content__cost">27 100 000 ₽</div>
 					<div class="jk-item-content__btns">
 						<button class="jk-item-content__like like-btn waves"><svg>
-								<use xlink:href="dist/img/sprite.svg#like" />
+								<use xlink:href="img/sprite.svg#like" />
 							</svg></button>
 						<button class="jk-item-content__btn jk-item-content__btn--mobile btn btn--primary">Подробнее</button>
 						<button class="jk-item-content__btn jk-item-content__phone btn btn--primary">Показать телефон</button>
 						<button class="jk-item-content__btn jk-item-content__record btn--icon-left btn btn--accent--light">
 							<svg class="btn-icon">
-								<use xlink:href="dist/img/sprite.svg#hide" />
+								<use xlink:href="img/sprite.svg#hide" />
 							</svg>
 							Отменить запись
 						</button>
@@ -707,21 +718,21 @@
 				</div>
 				<div class="jk-item-properties">
 					<div class="jk-item-properties__info">
-						<img src="dist/img/icons/home.svg" alt=""><span>Тип: </span>Монолитный
+						<img src="img/icons/home.svg" alt=""><span>Тип: </span>Монолитный
 					</div>
 					<div class="jk-item-properties__info">
-						<img src="dist/img/icons/square-1.svg" alt=""><span>Площадь дома: </span>191.3 м²
+						<img src="img/icons/square-1.svg" alt=""><span>Площадь дома: </span>191.3 м²
 					</div>
 					<div class="jk-item-properties__info">
-						<img src="dist/img/icons/square-2.svg" alt=""><span>Площадь участка: </span>235 соток
+						<img src="img/icons/square-2.svg" alt=""><span>Площадь участка: </span>235 соток
 					</div>
 					<div class="jk-item-properties__info">
-						<img src="dist/img/icons/floors.svg" alt=""><span>Количество этажей: </span>2
+						<img src="img/icons/floors.svg" alt=""><span>Количество этажей: </span>2
 					</div>
 					<div class="jk-item-properties__line"></div>
 					<div class="jk-item-properties__verify">
 						<div class="jk-item-properties__info">
-							<img src="dist/img/icons/verified--success.svg" alt=""><span>Дом прошел экспертизу</span>
+							<img src="img/icons/verified--success.svg" alt=""><span>Дом прошел экспертизу</span>
 						</div>
 						<button class="jk-item-properties__btn btn btn--success">Скачать отчет</button>
 					</div>
@@ -732,18 +743,18 @@
 				<div class="jk-item-gallery">
 					<div class="jk-item-gallery-slider swiper-container">
 						<div class="swiper-wrapper">
-							<a data-height="800" data-fancybox="gallery-2" href="dist/img/test-interier-min.jpg"
+							<a data-height="800" data-fancybox="gallery-2" href="img/test-interier-min.jpg"
 								class="jk-item-gallery__anons waves swiper-slide">
 								<picture>
-									<source srcset="dist/img/test-interier-min.webp" type="image/webp">
-									<img src="dist/img/test-interier-min.jpg" alt="" loading="lazy">
+									<source srcset="img/test-interier-min.webp" type="image/webp">
+									<img src="img/test-interier-min.jpg" alt="" loading="lazy">
 								</picture>
 							</a>
-							<a data-height="800" data-fancybox="gallery-2" href="dist/img/test-exterier-min.jpg"
+							<a data-height="800" data-fancybox="gallery-2" href="img/test-exterier-min.jpg"
 								class="jk-item-gallery__anons waves swiper-slide">
 								<picture>
-									<source srcset="dist/img/test-exterier-min.webp" type="image/webp">
-									<img src="dist/img/test-exterier-min.jpg" alt="" loading="lazy">
+									<source srcset="img/test-exterier-min.webp" type="image/webp">
+									<img src="img/test-exterier-min.jpg" alt="" loading="lazy">
 								</picture>
 							</a>
 						</div>
@@ -752,25 +763,25 @@
 						<button class="jk-item-gallery-arrow jk-item-gallery-arrow-prev"></button>
 						<button class="jk-item-gallery-arrow jk-item-gallery-arrow-next"></button>
 					</div>
-					<a data-height="800" data-fancybox="gallery-2" href="dist/img/test-exterier.jpg"
+					<a data-height="800" data-fancybox="gallery-2" href="img/test-exterier.jpg"
 						class="jk-item-gallery__preview waves">
 						<picture>
-							<source srcset="dist/img/test-exterier-min.webp" type="image/webp">
-							<img src="dist/img/test-exterier-min.jpg" alt="" loading="lazy">
+							<source srcset="img/test-exterier-min.webp" type="image/webp">
+							<img src="img/test-exterier-min.jpg" alt="" loading="lazy">
 						</picture>
 					</a>
-					<a data-height="800" data-fancybox="gallery-2" href="dist/img/test-interier.jpg"
+					<a data-height="800" data-fancybox="gallery-2" href="img/test-interier.jpg"
 						class="jk-item-gallery__preview waves">
 						<picture>
-							<source srcset="dist/img/test-interier-min.webp" type="image/webp">
-							<img src="dist/img/test-interier-min.jpg" alt="" loading="lazy">
+							<source srcset="img/test-interier-min.webp" type="image/webp">
+							<img src="img/test-interier-min.jpg" alt="" loading="lazy">
 						</picture>
 					</a>
 					<a class="jk-item-gallery__preview waves ">
 						<div class="jk-item-gallery__link">Еще фото</div>
 						<picture>
-							<source srcset="dist/img/test-exterier-min.webp" type="image/webp">
-							<img src="dist/img/test-exterier-min.jpg" alt="" loading="lazy">
+							<source srcset="img/test-exterier-min.webp" type="image/webp">
+							<img src="img/test-exterier-min.jpg" alt="" loading="lazy">
 						</picture>
 					</a>
 				</div>
@@ -783,23 +794,23 @@
 						</div>
 						<button class="jk-item-properties__btn btn btn--pikachu">Заказать отчет</button>
 					</div>
-					<div class="jk-item-content__info"><img src="dist/img/icons/metro.svg" alt="">Алтуфьево ⋅ 15 мин. на транспорте
+					<div class="jk-item-content__info"><img src="img/icons/metro.svg" alt="">Алтуфьево ⋅ 15 мин. на транспорте
 					</div>
-					<div class="jk-item-content__info"><img src="dist/img/icons/car.svg" alt="">Дмитровское шоссе, 1 км от МКАД
+					<div class="jk-item-content__info"><img src="img/icons/car.svg" alt="">Дмитровское шоссе, 1 км от МКАД
 					</div>
 
 					<div class="jk-item-content__cost">27 100 000 ₽</div>
 					<div class="jk-item-content__btns">
 						<button class="jk-item-content__like like-btn like-btn--active waves">
 							<svg>
-								<use xlink:href="dist/img/sprite.svg#like" />
+								<use xlink:href="img/sprite.svg#like" />
 							</svg>
 						</button>
 						<button class="jk-item-content__btn jk-item-content__btn--mobile btn btn--primary">Подробнее</button>
 						<button class="jk-item-content__btn jk-item-content__phone btn btn--primary">Показать телефон</button>
 						<button class="jk-item-content__btn jk-item-content__record btn--icon-left btn btn--contur">
 							<svg class="btn-icon">
-								<use xlink:href="dist/img/sprite.svg#eye" />
+								<use xlink:href="img/sprite.svg#eye" />
 							</svg>
 							Записаться на просмотр
 						</button>
@@ -807,16 +818,16 @@
 				</div>
 				<div class="jk-item-properties">
 					<div class="jk-item-properties__info">
-						<img src="dist/img/icons/home.svg" alt=""><span>Тип: </span>Монолитный
+						<img src="img/icons/home.svg" alt=""><span>Тип: </span>Монолитный
 					</div>
 					<div class="jk-item-properties__info">
-						<img src="dist/img/icons/square-1.svg" alt=""><span>Площадь дома: </span>191.3 м²
+						<img src="img/icons/square-1.svg" alt=""><span>Площадь дома: </span>191.3 м²
 					</div>
 					<div class="jk-item-properties__info">
-						<img src="dist/img/icons/square-2.svg" alt=""><span>Площадь участка: </span>235 соток
+						<img src="img/icons/square-2.svg" alt=""><span>Площадь участка: </span>235 соток
 					</div>
 					<div class="jk-item-properties__info">
-						<img src="dist/img/icons/floors.svg" alt=""><span>Количество этажей: </span>2
+						<img src="img/icons/floors.svg" alt=""><span>Количество этажей: </span>2
 					</div>
 					<div class="jk-item-properties__line"></div>
 					<div class="jk-item-properties__verify">
@@ -831,12 +842,12 @@
 			<div class="pray pray--orange">
 				<div class="pray__img">
 					<picture>
-						<source media="(min-width: 992px)" srcset="dist/img/sempl/pray-1.webp" type="image/webp">
-						<source media="(min-width: 992px)" srcset="dist/img/sempl/pray-1.png">
-						<source media="(min-width: 680px)" srcset="dist/img/sempl/pray-1--landscape.webp" type="image/webp">
-						<source media="(min-width: 680px)" srcset="dist/img/sempl/pray-1--landscape.png">
-						<source srcset="dist/img/sempl/pray-1--mobile.webp" type="image/webp">
-						<img src="dist/img/sempl/pray-1--mobile.png" alt="" loading="lazy">
+						<source media="(min-width: 992px)" srcset="img/sempl/pray-1.webp" type="image/webp">
+						<source media="(min-width: 992px)" srcset="img/sempl/pray-1.png">
+						<source media="(min-width: 680px)" srcset="img/sempl/pray-1--landscape.webp" type="image/webp">
+						<source media="(min-width: 680px)" srcset="img/sempl/pray-1--landscape.png">
+						<source srcset="img/sempl/pray-1--mobile.webp" type="image/webp">
+						<img src="img/sempl/pray-1--mobile.png" alt="" loading="lazy">
 					</picture>
 				</div>
 				<div class="pray__content">
@@ -846,7 +857,7 @@
 					</div>
 					<button class="pray__btn btn btn--pikachu" data-modal-link="login-modal">
 						<svg class="btn-icon">
-							<use xlink:href="dist/img/sprite.svg#doc" />
+							<use xlink:href="img/sprite.svg#doc" />
 						</svg>
 						Заказать экспертизу
 					</button>
@@ -857,18 +868,18 @@
 				<div class="jk-item-gallery">
 					<div class="jk-item-gallery-slider swiper-container">
 						<div class="swiper-wrapper">
-							<a data-height="800" data-fancybox="gallery-3" href="dist/img/test-exterier.jpg"
+							<a data-height="800" data-fancybox="gallery-3" href="img/test-exterier.jpg"
 								class="jk-item-gallery__anons waves swiper-slide">
 								<picture>
-									<source srcset="dist/img/test-exterier-min.webp" type="image/webp">
-									<img src="dist/img/test-exterier-min.jpg" alt="" loading="lazy">
+									<source srcset="img/test-exterier-min.webp" type="image/webp">
+									<img src="img/test-exterier-min.jpg" alt="" loading="lazy">
 								</picture>
 							</a>
-							<a data-height="800" data-fancybox="gallery-3" href="dist/img/test-interier.jpg"
+							<a data-height="800" data-fancybox="gallery-3" href="img/test-interier.jpg"
 								class="jk-item-gallery__anons waves swiper-slide">
 								<picture>
-									<source srcset="dist/img/test-interier-min.webp" type="image/webp">
-									<img src="dist/img/test-interier-min.jpg" alt="" loading="lazy">
+									<source srcset="img/test-interier-min.webp" type="image/webp">
+									<img src="img/test-interier-min.jpg" alt="" loading="lazy">
 								</picture>
 							</a>
 
@@ -878,26 +889,26 @@
 						<button class="jk-item-gallery-arrow jk-item-gallery-arrow-prev"></button>
 						<button class="jk-item-gallery-arrow jk-item-gallery-arrow-next"></button>
 					</div>
-					<a data-height="800" data-fancybox="gallery-3" href="dist/img/test-interier.jpg"
+					<a data-height="800" data-fancybox="gallery-3" href="img/test-interier.jpg"
 						class="jk-item-gallery__preview waves">
 						<picture>
-							<source srcset="dist/img/test-interier-min.webp" type="image/webp">
-							<img src="dist/img/test-interier-min.jpg" alt="" loading="lazy">
+							<source srcset="img/test-interier-min.webp" type="image/webp">
+							<img src="img/test-interier-min.jpg" alt="" loading="lazy">
 						</picture>
 					</a>
-					<a data-height="800" data-fancybox="gallery-3" href="dist/img/test-exterier.jpg"
+					<a data-height="800" data-fancybox="gallery-3" href="img/test-exterier.jpg"
 						class="jk-item-gallery__preview waves">
 						<picture>
-							<source srcset="dist/img/test-exterier-min.webp" type="image/webp">
-							<img src="dist/img/test-exterier-min.jpg" alt="" loading="lazy">
+							<source srcset="img/test-exterier-min.webp" type="image/webp">
+							<img src="img/test-exterier-min.jpg" alt="" loading="lazy">
 						</picture>
 					</a>
 
 					<a class="jk-item-gallery__preview waves ">
 						<div class="jk-item-gallery__link">Еще фото</div>
 						<picture>
-							<source srcset="dist/img/test-interier-min.webp" type="image/webp">
-							<img src="dist/img/test-interier-min.jpg" alt="" loading="lazy">
+							<source srcset="img/test-interier-min.webp" type="image/webp">
+							<img src="img/test-interier-min.jpg" alt="" loading="lazy">
 						</picture>
 					</a>
 
@@ -907,47 +918,47 @@
 					<div class="jk-item-content__status">Москва, СВАО, р-н Северный, Челобитьевское ш., 1Гк11</div>
 					<div class="jk-item-content__verify jk-item-content__verify--success">
 						<div class="jk-item-properties__info">
-							<img src="dist/img/icons/verified--success.svg" alt=""><span>Прошел экспертизу</span>
+							<img src="img/icons/verified--success.svg" alt=""><span>Прошел экспертизу</span>
 						</div>
 						<button class="jk-item-properties__btn btn btn--success">Скачать отчет</button>
 					</div>
-					<div class="jk-item-content__info"><img src="dist/img/icons/metro.svg" alt="">Алтуфьево ⋅ 15 мин. на транспорте
+					<div class="jk-item-content__info"><img src="img/icons/metro.svg" alt="">Алтуфьево ⋅ 15 мин. на транспорте
 					</div>
-					<div class="jk-item-content__info"><img src="dist/img/icons/car.svg" alt="">Дмитровское шоссе, 1 км от МКАД
+					<div class="jk-item-content__info"><img src="img/icons/car.svg" alt="">Дмитровское шоссе, 1 км от МКАД
 					</div>
 
 					<div class="jk-item-content__cost">27 100 000 ₽</div>
 					<div class="jk-item-content__btns">
 						<button class="jk-item-content__like like-btn waves">
 							<svg>
-								<use xlink:href="dist/img/sprite.svg#like" />
+								<use xlink:href="img/sprite.svg#like" />
 							</svg>
 						</button>
 						<button class="jk-item-content__btn jk-item-content__btn--mobile btn btn--primary">Подробнее</button>
 						<button class="jk-item-content__btn jk-item-content__phone btn btn--primary--light">+7 918
 							000-00-00</button>
 						<button class="jk-item-content__btn jk-item-content__record btn--icon-left btn btn--accent--light">
-							<img src="dist/img/icons/hide--red.svg" alt="" class="btn-icon">Отменить запись
+							<img src="img/icons/hide--red.svg" alt="" class="btn-icon">Отменить запись
 						</button>
 					</div>
 				</div>
 				<div class="jk-item-properties">
 					<div class="jk-item-properties__info">
-						<img src="dist/img/icons/home.svg" alt=""><span>Тип: </span>Монолитный
+						<img src="img/icons/home.svg" alt=""><span>Тип: </span>Монолитный
 					</div>
 					<div class="jk-item-properties__info">
-						<img src="dist/img/icons/square-1.svg" alt=""><span>Площадь дома: </span>191.3 м²
+						<img src="img/icons/square-1.svg" alt=""><span>Площадь дома: </span>191.3 м²
 					</div>
 					<div class="jk-item-properties__info">
-						<img src="dist/img/icons/square-2.svg" alt=""><span>Площадь участка: </span>235 соток
+						<img src="img/icons/square-2.svg" alt=""><span>Площадь участка: </span>235 соток
 					</div>
 					<div class="jk-item-properties__info">
-						<img src="dist/img/icons/floors.svg" alt=""><span>Количество этажей: </span>2
+						<img src="img/icons/floors.svg" alt=""><span>Количество этажей: </span>2
 					</div>
 					<div class="jk-item-properties__line"></div>
 					<div class="jk-item-properties__verify">
 						<div class="jk-item-properties__info">
-							<img src="dist/img/icons/verified--success.svg" alt=""><span>Дом прошел экспертизу</span>
+							<img src="img/icons/verified--success.svg" alt=""><span>Дом прошел экспертизу</span>
 						</div>
 						<button class="jk-item-properties__btn btn btn--success">Скачать отчет</button>
 					</div>
@@ -957,12 +968,12 @@
 			<div class="pray pray--purple">
 				<div class="pray__img">
 					<picture>
-						<source media="(min-width: 992px)" srcset="dist/img/sempl/pray-2.webp" type="image/webp">
-						<source media="(min-width: 992px)" srcset="dist/img/sempl/pray-2.png">
-						<source media="(min-width: 680px)" srcset="dist/img/sempl/pray-2--landscape.webp" type="image/webp">
-						<source media="(min-width: 680px)" srcset="dist/img/sempl/pray-2--landscape.png">
-						<source srcset="dist/img/sempl/pray-2--mobile.webp" type="image/webp">
-						<img src="dist/img/sempl/pray-2--mobile.png" alt="" loading="lazy">
+						<source media="(min-width: 992px)" srcset="img/sempl/pray-2.webp" type="image/webp">
+						<source media="(min-width: 992px)" srcset="img/sempl/pray-2.png">
+						<source media="(min-width: 680px)" srcset="img/sempl/pray-2--landscape.webp" type="image/webp">
+						<source media="(min-width: 680px)" srcset="img/sempl/pray-2--landscape.png">
+						<source srcset="img/sempl/pray-2--mobile.webp" type="image/webp">
+						<img src="img/sempl/pray-2--mobile.png" alt="" loading="lazy">
 					</picture>
 
 				</div>
@@ -983,7 +994,7 @@
 
 			<button class="jk-list__more btn btn--white">
 				<svg class="btn-icon">
-					<use xlink:href="dist/img/sprite.svg#user" />
+					<use xlink:href="img/sprite.svg#user" />
 				</svg>
 				Войдите, чтобы увидеть больше предложений
 			</button>
@@ -997,7 +1008,7 @@
 
 	<footer class="footer">
 		<div class="footer-logo logo">
-			<div class="logo__img"><img src="dist/img/icons/logo.svg" alt=""></div>
+			<div class="logo__img"><img src="img/icons/logo.svg" alt=""></div>
 			<div class="logo__text">
 				Помощь в подборе <br>
 				недвижимости в Москве
@@ -1010,9 +1021,9 @@
 			<a href="" class="footer-nav__item">Контакты</a>
 		</div>
 		<div class="footer-soc">
-			<a href="" class="footer-soc__item" target="_blank"><img src="dist/img/icons/soc-instagramm.png" alt=""></a>
-			<a href="" class="footer-soc__item" target="_blank"><img src="dist/img/icons/soc-youtube.svg" alt=""></a>
-			<a href="" class="footer-soc__item" target="_blank"><img src="dist/img/icons/soc-vk.svg" alt=""></a>
+			<a href="" class="footer-soc__item" target="_blank"><img src="img/icons/soc-instagramm.png" alt=""></a>
+			<a href="" class="footer-soc__item" target="_blank"><img src="img/icons/soc-youtube.svg" alt=""></a>
+			<a href="" class="footer-soc__item" target="_blank"><img src="img/icons/soc-vk.svg" alt=""></a>
 		</div>
 	</footer>
 
@@ -1022,8 +1033,8 @@
 			<div class="info-modal">
 				<div class="info-modal__img">
 					<picture>
-						<source srcset="dist/img/sempl/info-modal.webp" type="image/webp">
-						<img src="dist/img/sempl/info-modal.png" alt="">
+						<source srcset="img/sempl/info-modal.webp" type="image/webp">
+						<img src="img/sempl/info-modal.png" alt="">
 					</picture>
 				</div>
 				<div class="info-modal__content">
@@ -1033,7 +1044,7 @@
 					</div>
 					<button class="info-modal__btn btn btn--primary" data-modal-link="reg-modal" data-modal-close>
 						<svg class="btn-icon">
-							<use xlink:href="dist/img/sprite.svg#user" />
+							<use xlink:href="img/sprite.svg#user" />
 						</svg>
 						Регистрация
 					</button>
@@ -1217,7 +1228,7 @@
 		<div class="modal-container">
 			<div class="filter-success-modal card">
 				<div class="filter-success-modal__img">
-					<img src="dist/img/sempl/filter-success-modal.png" alt="">
+					<img src="img/sempl/filter-success-modal.png" alt="">
 				</div>
 				<div class="filter-success-modal__title">мы уже начали искать!</div>
 				<div class="filter-success-modal__subtitle">
@@ -1264,7 +1275,7 @@
 
 			<button class="modal-mobile-close" data-modal-close>
 				<svg>
-					<use xlink:href="dist/img/sprite.svg#arrow" />
+					<use xlink:href="img/sprite.svg#arrow" />
 				</svg>
 			</button>
 
@@ -1286,7 +1297,7 @@
 								<input type="tel" class="form-input" placeholder="+7 (_ _ _) _ _ _ - _ _  - _ _ "
 									value="+7 (918) 000 - 00  - 00">
 								<svg class="form-input__end">
-									<use xlink:href="dist/img/sprite.svg#edit" />
+									<use xlink:href="img/sprite.svg#edit" />
 								</svg>
 							</div>
 							<div class="form-sign">Это ваш номер?</div>
@@ -1304,7 +1315,7 @@
 
 			<button class="modal-mobile-close" data-modal-close>
 				<svg>
-					<use xlink:href="dist/img/sprite.svg#arrow" />
+					<use xlink:href="img/sprite.svg#arrow" />
 				</svg>
 			</button>
 
@@ -1341,7 +1352,7 @@
 
 			<button class="modal-mobile-close" data-modal-close>
 				<svg>
-					<use xlink:href="dist/img/sprite.svg#arrow" />
+					<use xlink:href="img/sprite.svg#arrow" />
 				</svg>
 			</button>
 
@@ -1358,38 +1369,38 @@
 
 				<button data-modal-link="login-modal" class="menu-modal-user__name waves">Войти в личный кабинет
 					<svg>
-						<use xlink:href="dist/img/sprite.svg#slider-arrow" />
+						<use xlink:href="img/sprite.svg#slider-arrow" />
 					</svg>
 				</button>
 			</div>
 			<div class="menu-modal-nav">
 				<a href="" class="menu-modal-nav__item waves">
 					<svg>
-						<use xlink:href="dist/img/sprite.svg#like" />
+						<use xlink:href="img/sprite.svg#like" />
 					</svg>
 					Избранное (10)
 				</a>
 				<a href="" class="menu-modal-nav__item waves">
 					<svg>
-						<use xlink:href="dist/img/sprite.svg#notification" />
+						<use xlink:href="img/sprite.svg#notification" />
 					</svg>
 					Уведомления (0)
 				</a>
 				<a href="" class="menu-modal-nav__item waves">
 					<svg>
-						<use xlink:href="dist/img/sprite.svg#eye" />
+						<use xlink:href="img/sprite.svg#eye" />
 					</svg>
 					Записи на просмотр (2)
 				</a>
 				<a href="" class="menu-modal-nav__item waves">
 					<svg>
-						<use xlink:href="dist/img/sprite.svg#doc" />
+						<use xlink:href="img/sprite.svg#doc" />
 					</svg>
 					Заказы экспертизы (0)
 				</a>
 				<a href="" class="menu-modal-nav__item waves">
 					<svg>
-						<use xlink:href="dist/img/sprite.svg#plus" />
+						<use xlink:href="img/sprite.svg#plus" />
 					</svg>
 					Добавленные объекты (12)
 				</a>
@@ -1397,13 +1408,13 @@
 				<div class="menu-modal__btns">
 					<button class="menu-modal__btn btn btn--primary--light btn--icon-left">
 						<svg class="btn-icon">
-							<use xlink:href="dist/img/sprite.svg#plus" />
+							<use xlink:href="img/sprite.svg#plus" />
 						</svg>
 						Добавить объект
 					</button>
 					<button class="menu-modal__btn btn btn--pikachu--light btn--icon-left">
 						<svg class="btn-icon">
-							<use xlink:href="dist/img/sprite.svg#doc" />
+							<use xlink:href="img/sprite.svg#doc" />
 						</svg>
 						Заказать экспертизу
 					</button>
@@ -1413,7 +1424,7 @@
 
 			<button class="modal-mobile-close" data-modal-close>
 				<svg>
-					<use xlink:href="dist/img/sprite.svg#arrow" />
+					<use xlink:href="img/sprite.svg#arrow" />
 				</svg>
 			</button>
 		</div>
@@ -1462,7 +1473,7 @@
 
 			<button class="modal-mobile-close" data-modal-close>
 				<svg>
-					<use xlink:href="dist/img/sprite.svg#arrow" />
+					<use xlink:href="img/sprite.svg#arrow" />
 				</svg>
 			</button>
 
@@ -1476,7 +1487,7 @@
 			<header class="header-mobile">
 				<button class="header-mobile__icon btn" data-modal-close>
 					<svg>
-						<use xlink:href="dist/img/sprite.svg#arrow" />
+						<use xlink:href="img/sprite.svg#arrow" />
 					</svg>
 				</button>
 				<div class="header-mobile__title">Личный кабинет</div>
@@ -1558,7 +1569,7 @@
 			<div class="success-modal">
 				<div class="success-modal__img">
 					<svg>
-						<use xlink:href="dist/img/sprite.svg#success" />
+						<use xlink:href="img/sprite.svg#success" />
 					</svg>
 				</div>
 				<div class="success-modal__title">заявка успешно
@@ -1616,7 +1627,7 @@
 
 			<button class="modal-mobile-close" data-modal-close>
 				<svg>
-					<use xlink:href="dist/img/sprite.svg#arrow" />
+					<use xlink:href="img/sprite.svg#arrow" />
 				</svg>
 			</button>
 
@@ -1666,7 +1677,7 @@
 
 			<button class="modal-mobile-close" data-modal-close>
 				<svg>
-					<use xlink:href="dist/img/sprite.svg#arrow" />
+					<use xlink:href="img/sprite.svg#arrow" />
 				</svg>
 			</button>
 
@@ -1698,7 +1709,7 @@
 
 			<button class="modal-mobile-close" data-modal-close>
 				<svg>
-					<use xlink:href="dist/img/sprite.svg#arrow" />
+					<use xlink:href="img/sprite.svg#arrow" />
 				</svg>
 			</button>
 
@@ -1729,26 +1740,13 @@
 
 			<button class="modal-mobile-close" data-modal-close>
 				<svg>
-					<use xlink:href="dist/img/sprite.svg#arrow" />
+					<use xlink:href="img/sprite.svg#arrow" />
 				</svg>
 			</button>
 
 
 		</div>
 	</section>
-
-	<script src="src/source/jquery-3.5.0.min.js"></script>
-	<script src="src/source/jquery.fancybox.min.js"></script>
-	<script src="src/source/maskedinput.js"></script>
-	<script src="src/source/waves.js"></script>
-	<script src="src/source/swiper-bundle.min.js"></script>
-	<script src="src/source/select.bundle.min.js"></script>
-
-	<script src="src/js/frontend--polifils.js"></script>
-	<script src="src/js/frontend--modal.js"></script>
-	<script src="src/js/frontend--tab.js"></script>
-	<script src="src/js/frontend--toggle.js"></script>
-	<script src="src/js/frontend--template.js"></script>
 
 </body>
 
